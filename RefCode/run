@@ -1,0 +1,6 @@
+#!/bin/bash
+gcc -Wall -g -o exec main.c myAccel.c
+# the parameters are given in the following order
+# exec ./executable_name -seed -size -dim -threshold 
+exec ./exec 10000 10000 16 1000
+
