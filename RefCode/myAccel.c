@@ -4,8 +4,6 @@ void myFuncAccel (unsigned int size, unsigned int dim, dataType_t threshold, dat
 {
 	unsigned int i, k, l;
 
-	//printf("size %d\tdim %d\tthreshold %f\n",size,dim, threshold );
-
 	for ( i = 0 ; i < size ; i ++ )
 	{
 		for ( k = 0 ; k < dim ; k ++ )

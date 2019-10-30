@@ -43,6 +43,24 @@ void myFunc (unsigned int size, unsigned int dim, dataType_t threshold, dataType
 	}
 }
 
+/*Compare elements one by one for the same input. Both functions are supposed to
+ *work in the same way so for the same input output must be the same.
+ *If an element does not match something went wrong so print an error message
+ */
+void validityChecker(unsigned int size, unsigned int dim, dataType_t * data2, dataType_t * data2_hw){
+	
+	unsigned int flag = 0;
+	for(int i=0; flag!=1 && i<dim*size; i++){
+		//printf("%f, %f \n", data2[i], data2_hw[i] );
+		flag = data2[i] != data2_hw[i] ? 1 : 0;
+		
+	}
+
+	printf(flag==1 ? RED "SOMETHING WENT WRONG\n" RESET : GRN "SUCCESS\n" RESET);
+	fflush(stdout);
+
+}
+
 int main(int argc, char ** argv)
 {	
 
@@ -132,19 +150,7 @@ int main(int argc, char ** argv)
 	printf("Hardware execution time: %f\n\n", totalTime_hw);
 	fflush(stdout);
 
-	/*Compare elements one by one for the same input. Both functions are supposed to
-	 *work in the same way so for the same input output must be the same.
-	 *If an element does not match something went wrong so print an error message
-	 */
-	unsigned int flag = 0;
-	for(int i=0; flag!=1 && i<dim*size; i++){
-		//printf("%f, %f \n", data2[i], data2_hw[i] );
-		flag = data2[i] != data2_hw[i] ? 1 : 0;
-		
-	}
-
-	printf(flag==1 ? RED "SOMETHING WENT WRONG\n" RESET : GRN "SUCCESS\n" RESET);
-	fflush(stdout);
+	validityChecker(size, dim, data2, data2_hw);
 
 	free(data0);
 	free(data1);
