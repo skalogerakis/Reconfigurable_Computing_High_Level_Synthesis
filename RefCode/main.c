@@ -51,7 +51,7 @@ void validityChecker(unsigned int size, unsigned int dim, dataType_t * data2, da
 	
 	unsigned int flag = 0;
 	for(int i=0; flag!=1 && i<dim*size; i++){
-		//printf("%f, %f \n", data2[i], data2_hw[i] );
+		// printf("%f, %f \n", data2[i], data2_hw[i] );
 		flag = data2[i] != data2_hw[i] ? 1 : 0;
 		
 	}
