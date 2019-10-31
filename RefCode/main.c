@@ -28,9 +28,9 @@ void myFunc (unsigned int size, unsigned int dim, dataType_t threshold, dataType
 		//the value already assigned value zero is assigned
 		for ( l = 0 ; r && ( l < dim ) ; l ++ )
 		{
-			//printf("\nsize %d fin data2 %f\n",i,data2 [ i*dim + l ] );
+			// printf("\nsize %d fin data2 %f\n",i,data2 [ i*dim + l ] );
 			r = ( data2 [ i*dim + l ] > threshold ) ;
-			//printf("r %d\n",r );
+			// printf("r %d\n",r );
 		}
 
 		if ( r )
@@ -142,7 +142,7 @@ int main(int argc, char ** argv)
 
 	clock_gettime(CLOCK_REALTIME, &timerStart_hw);
 
-	myFuncAccel (size, dim, threshold, data0, data1, data2_hw);
+	myFuncAccelTester (size, dim, threshold, data0, data1, data2_hw);
 
 	clock_gettime(CLOCK_REALTIME, &timerStop_hw);
 	totalTime_hw = (timerStop_hw.tv_sec-timerStart_hw.tv_sec)+ (timerStop_hw.tv_nsec-timerStart_hw.tv_nsec) / BILLION;
