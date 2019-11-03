@@ -56,7 +56,7 @@ void validityChecker(unsigned int size, unsigned int dim, dataType_t * data2, da
 		
 	}
 
-	printf(flag==1 ? RED "SOMETHING WENT WRONG\n" RESET : GRN "SUCCESS\n" RESET);
+	printf(flag==1 ? RED "SOMETHING WENT WRONG\n\n" RESET : GRN "SUCCESS\n\n" RESET);
 	fflush(stdout);
 
 }
@@ -142,7 +142,7 @@ int main(int argc, char ** argv)
 
 	clock_gettime(CLOCK_REALTIME, &timerStart_hw);
 
-	myFuncAccelTester (size, dim, threshold, data0, data1, data2_hw);
+	myFuncAccel (size, dim, threshold, data0, data1, data2_hw);
 
 	clock_gettime(CLOCK_REALTIME, &timerStop_hw);
 	totalTime_hw = (timerStop_hw.tv_sec-timerStart_hw.tv_sec)+ (timerStop_hw.tv_nsec-timerStart_hw.tv_nsec) / BILLION;
@@ -152,10 +152,36 @@ int main(int argc, char ** argv)
 
 	validityChecker(size, dim, data2, data2_hw);
 
+	/**********Hardware Code Execution. Another implementation**********/
+	dataType_t * data2_hw2 = (dataType_t *)malloc(sizeof(dataType_t)*dim*size);
+	assert(data2_hw2!=NULL);
+
+	printf("Executing myFuncAccelDif...\n");
+	fflush(stdout);
+
+	/* timing */
+	double totalTime_hw2=0.0;
+	struct timespec timerStart_hw2;
+	struct timespec timerStop_hw2;
+
+	clock_gettime(CLOCK_REALTIME, &timerStart_hw2);
+
+	myFuncAccelDif (size, dim, threshold, data0, data1, data2_hw2);
+
+	clock_gettime(CLOCK_REALTIME, &timerStop_hw2);
+	totalTime_hw2 = (timerStop_hw2.tv_sec-timerStart_hw2.tv_sec)+ (timerStop_hw2.tv_nsec-timerStart_hw2.tv_nsec) / BILLION;
+
+	printf("Hardware execution time: %f\n\n", totalTime_hw2);
+	fflush(stdout);
+
+	validityChecker(size, dim, data2, data2_hw2);
+
 	free(data0);
 	free(data1);
 	free(data2);
-	free(data2_hw);	
+	free(data2_hw);
+	free(data2_hw2);	
+	
 
 	return 0;
 }
