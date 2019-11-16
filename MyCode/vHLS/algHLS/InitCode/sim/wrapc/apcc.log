@@ -1,0 +1,13 @@
+INFO: [HLS 200-10] Running '/tools/Xilinx/Vivado/2018.3/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'root' on host 'skl' (Linux_x86_64 version 5.0.0-36-generic) on Fri Nov 15 13:15:08 EET 2019
+INFO: [HLS 200-10] On os Ubuntu 18.04.3 LTS
+INFO: [HLS 200-10] In directory '/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/vHLS/algHLS/InitCode/sim/wrapc'
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+In file included from /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/main.c:1:
+/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/main.c:71:63: warning: comparison of unsigned expression >= 0 is always true [-Wtautological-compare]
+ ((void) sizeof ((seed>=0) ? 1 : 0), __extension__ ({ if (seed>=0) ; else __assert_fail ("seed>=0", "/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/main.c", 71, __extension__ __PRETTY_FUNCTION__); }));
+                                                          ~~~~^ ~
+1 warning generated.
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_root/65021573816508538282
+INFO: [APCC 202-1] APCC is done.

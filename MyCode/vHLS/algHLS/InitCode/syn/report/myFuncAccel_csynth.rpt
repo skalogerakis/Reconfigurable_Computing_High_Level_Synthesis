@@ -1,0 +1,227 @@
+
+
+================================================================
+== Vivado HLS Report for 'myFuncAccel'
+================================================================
+* Date:           Sat Nov 16 22:25:10 2019
+
+* Version:        2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)
+* Project:        algHLS
+* Solution:       InitCode
+* Product family: zynq
+* Target device:  xc7z020clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|     8.750|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +--------+--------+--------+--------+---------+
+    |     Latency     |     Interval    | Pipeline|
+    |   min  |   max  |   min  |   max  |   Type  |
+    +--------+--------+--------+--------+---------+
+    |  205001|  225001|  205001|  225001|   none  |
+    +--------+--------+--------+--------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +--------------------+--------+--------+-----------+-----------+-----------+------+----------+
+        |                    |     Latency     | Iteration |  Initiation Interval  | Trip |          |
+        |      Loop Name     |   min  |   max  |  Latency  |  achieved |   target  | Count| Pipelined|
+        +--------------------+--------+--------+-----------+-----------+-----------+------+----------+
+        |- sizeLoop          |  205000|  225000| 205 ~ 225 |          -|          -|  1000|    no    |
+        | + initLoop         |       4|       4|          1|          -|          -|     4|    no    |
+        | + valueAsn         |     188|     188|         47|          -|          -|     4|    no    |
+        |  ++ valueAsnInner  |      44|      44|         11|          -|          -|     4|    no    |
+        | + thresCheck       |       8|      24|   2 ~ 6   |          -|          -|     4|    no    |
+        | + zeroAsn          |       4|       4|          1|          -|          -|     4|    no    |
+        +--------------------+--------+--------+-----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+-------+
+|       Name      | BRAM_18K| DSP48E|   FF   |  LUT  |
++-----------------+---------+-------+--------+-------+
+|DSP              |        -|      -|       -|      -|
+|Expression       |        -|      -|       0|    200|
+|FIFO             |        -|      -|       -|      -|
+|Instance         |        -|      5|     414|    950|
+|Memory           |        -|      -|       -|      -|
+|Multiplexer      |        -|      -|       -|    236|
+|Register         |        -|      -|     391|      -|
++-----------------+---------+-------+--------+-------+
+|Total            |        0|      5|     805|   1386|
++-----------------+---------+-------+--------+-------+
+|Available        |      280|    220|  106400|  53200|
++-----------------+---------+-------+--------+-------+
+|Utilization (%)  |        0|      2|   ~0   |      2|
++-----------------+---------+-------+--------+-------+
+
++ Detail: 
+    * Instance: 
+    +-----------------------------------------------+--------------------------------------------+---------+-------+-----+-----+
+    |                    Instance                   |                   Module                   | BRAM_18K| DSP48E|  FF | LUT |
+    +-----------------------------------------------+--------------------------------------------+---------+-------+-----+-----+
+    |myFuncAccel_fadd_32ns_32ns_32_5_full_dsp_1_U1  |myFuncAccel_fadd_32ns_32ns_32_5_full_dsp_1  |        0|      2|  205|  390|
+    |myFuncAccel_fcmp_32ns_32ns_1_1_1_U3            |myFuncAccel_fcmp_32ns_32ns_1_1_1            |        0|      0|   66|  239|
+    |myFuncAccel_fmul_32ns_32ns_32_4_max_dsp_1_U2   |myFuncAccel_fmul_32ns_32ns_32_4_max_dsp_1   |        0|      3|  143|  321|
+    +-----------------------------------------------+--------------------------------------------+---------+-------+-----+-----+
+    |Total                                          |                                            |        0|      5|  414|  950|
+    +-----------------------------------------------+--------------------------------------------+---------+-------+-----+-----+
+
+    * DSP48: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +----------------------------------+----------+-------+---+----+------------+------------+
+    |           Variable Name          | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +----------------------------------+----------+-------+---+----+------------+------------+
+    |i_1_fu_262_p2                     |     +    |      0|  0|  14|          10|           1|
+    |k_2_fu_292_p2                     |     +    |      0|  0|  12|           3|           1|
+    |k_3_fu_319_p2                     |     +    |      0|  0|  12|           3|           1|
+    |l_3_fu_368_p2                     |     +    |      0|  0|  12|           3|           1|
+    |l_4_fu_384_p2                     |     +    |      0|  0|  12|           3|           1|
+    |l_5_fu_415_p2                     |     +    |      0|  0|  12|           3|           1|
+    |tmp_17_fu_390_p2                  |     +    |      0|  0|  12|          12|          12|
+    |tmp_8_fu_348_p2                   |     +    |      0|  0|  12|          12|          12|
+    |ap_block_state23                  |    and   |      0|  0|   2|           1|           1|
+    |ap_block_state3                   |    and   |      0|  0|   2|           1|           1|
+    |ap_predicate_op141_write_state23  |    and   |      0|  0|   2|           1|           1|
+    |grp_fu_250_p2                     |   icmp   |      0|  0|  18|          32|           1|
+    |is_0iter3_fu_421_p2               |   icmp   |      0|  0|   9|           3|           1|
+    |is_0iter_fu_298_p2                |   icmp   |      0|  0|   9|           3|           1|
+    |tmp_20_fu_409_p2                  |   icmp   |      0|  0|   9|           3|           4|
+    |tmp_2_fu_286_p2                   |   icmp   |      0|  0|   9|           3|           4|
+    |tmp_5_fu_362_p2                   |   icmp   |      0|  0|   9|           3|           4|
+    |tmp_6_fu_313_p2                   |   icmp   |      0|  0|   9|           3|           4|
+    |tmp_fu_256_p2                     |   icmp   |      0|  0|  13|          10|           6|
+    |tmp_s_fu_378_p2                   |   icmp   |      0|  0|   9|           3|           4|
+    |ap_block_state6                   |    or    |      0|  0|   2|           1|           1|
+    +----------------------------------+----------+-------+---+----+------------+------------+
+    |Total                             |          |      0|  0| 200|         116|          63|
+    +----------------------------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    +---------------+-----+-----------+-----+-----------+
+    |      Name     | LUT | Input Size| Bits| Total Bits|
+    +---------------+-----+-----------+-----+-----------+
+    |ap_NS_fsm      |  113|         24|    1|         24|
+    |data2_address  |   21|          4|   32|        128|
+    |data2_dataout  |   15|          3|   32|         96|
+    |data2_size     |   15|          3|   32|         96|
+    |i_reg_147      |    9|          2|   10|         20|
+    |k_1_reg_169    |    9|          2|    3|          6|
+    |k_reg_158      |    9|          2|    3|          6|
+    |l_1_reg_191    |    9|          2|    3|          6|
+    |l_2_reg_226    |    9|          2|    3|          6|
+    |l_reg_180      |    9|          2|    3|          6|
+    |r_be_reg_214   |    9|          2|   32|         64|
+    |r_reg_202      |    9|          2|   32|         64|
+    +---------------+-----+-----------+-----+-----------+
+    |Total          |  236|         50|  186|        522|
+    +---------------+-----+-----------+-----+-----------+
+
+    * Register: 
+    +---------------------------+----+----+-----+-----------+
+    |            Name           | FF | LUT| Bits| Const Bits|
+    +---------------------------+----+----+-----+-----------+
+    |ap_CS_fsm                  |  23|   0|   23|          0|
+    |data0_addr_read_reg_501    |  32|   0|   32|          0|
+    |data1_addr_read_reg_506    |  32|   0|   32|          0|
+    |data1_addr_reg_462         |  10|   0|   32|         22|
+    |data2_addr_1_read_reg_516  |  32|   0|   32|          0|
+    |data2_addr_1_reg_487       |  12|   0|   32|         20|
+    |data2_addr_2_read_reg_552  |  32|   0|   32|          0|
+    |data2_addr_reg_446         |  10|   0|   32|         22|
+    |i_1_reg_430                |  10|   0|   10|          0|
+    |i_reg_147                  |  10|   0|   10|          0|
+    |k_1_cast4_reg_468          |   3|   0|   12|          9|
+    |k_1_reg_169                |   3|   0|    3|          0|
+    |k_3_reg_476                |   3|   0|    3|          0|
+    |k_reg_158                  |   3|   0|    3|          0|
+    |l_1_reg_191                |   3|   0|    3|          0|
+    |l_2_reg_226                |   3|   0|    3|          0|
+    |l_3_reg_496                |   3|   0|    3|          0|
+    |l_4_reg_529                |   3|   0|    3|          0|
+    |l_reg_180                  |   3|   0|    3|          0|
+    |r_be_reg_214               |  32|   0|   32|          0|
+    |r_reg_202                  |  32|   0|   32|          0|
+    |tmp_10_reg_542             |   1|   0|    1|          0|
+    |tmp_15_reg_511             |  32|   0|   32|          0|
+    |tmp_16_reg_521             |  32|   0|   32|          0|
+    |tmp_17_reg_537             |  12|   0|   12|          0|
+    |tmp_1_reg_435              |  10|   0|   12|          2|
+    |tmp_4_reg_441              |  10|   0|   64|         54|
+    +---------------------------+----+----+-----+-----------+
+    |Total                      | 391|   0|  520|        129|
+    +---------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-------------------+-----+-----+------------+--------------+--------------+
+|     RTL Ports     | Dir | Bits|  Protocol  | Source Object|    C Type    |
++-------------------+-----+-----+------------+--------------+--------------+
+|ap_clk             |  in |    1| ap_ctrl_hs |  myFuncAccel | return value |
+|ap_rst             |  in |    1| ap_ctrl_hs |  myFuncAccel | return value |
+|ap_start           |  in |    1| ap_ctrl_hs |  myFuncAccel | return value |
+|ap_done            | out |    1| ap_ctrl_hs |  myFuncAccel | return value |
+|ap_idle            | out |    1| ap_ctrl_hs |  myFuncAccel | return value |
+|ap_ready           | out |    1| ap_ctrl_hs |  myFuncAccel | return value |
+|size               |  in |   32|   ap_none  |     size     |    scalar    |
+|dim                |  in |   32|   ap_none  |      dim     |    scalar    |
+|threshold          |  in |   32|   ap_none  |   threshold  |    scalar    |
+|data0_req_din      | out |    1|   ap_bus   |     data0    |    pointer   |
+|data0_req_full_n   |  in |    1|   ap_bus   |     data0    |    pointer   |
+|data0_req_write    | out |    1|   ap_bus   |     data0    |    pointer   |
+|data0_rsp_empty_n  |  in |    1|   ap_bus   |     data0    |    pointer   |
+|data0_rsp_read     | out |    1|   ap_bus   |     data0    |    pointer   |
+|data0_address      | out |   32|   ap_bus   |     data0    |    pointer   |
+|data0_datain       |  in |   32|   ap_bus   |     data0    |    pointer   |
+|data0_dataout      | out |   32|   ap_bus   |     data0    |    pointer   |
+|data0_size         | out |   32|   ap_bus   |     data0    |    pointer   |
+|data1_req_din      | out |    1|   ap_bus   |     data1    |    pointer   |
+|data1_req_full_n   |  in |    1|   ap_bus   |     data1    |    pointer   |
+|data1_req_write    | out |    1|   ap_bus   |     data1    |    pointer   |
+|data1_rsp_empty_n  |  in |    1|   ap_bus   |     data1    |    pointer   |
+|data1_rsp_read     | out |    1|   ap_bus   |     data1    |    pointer   |
+|data1_address      | out |   32|   ap_bus   |     data1    |    pointer   |
+|data1_datain       |  in |   32|   ap_bus   |     data1    |    pointer   |
+|data1_dataout      | out |   32|   ap_bus   |     data1    |    pointer   |
+|data1_size         | out |   32|   ap_bus   |     data1    |    pointer   |
+|data2_req_din      | out |    1|   ap_bus   |     data2    |    pointer   |
+|data2_req_full_n   |  in |    1|   ap_bus   |     data2    |    pointer   |
+|data2_req_write    | out |    1|   ap_bus   |     data2    |    pointer   |
+|data2_rsp_empty_n  |  in |    1|   ap_bus   |     data2    |    pointer   |
+|data2_rsp_read     | out |    1|   ap_bus   |     data2    |    pointer   |
+|data2_address      | out |   32|   ap_bus   |     data2    |    pointer   |
+|data2_datain       |  in |   32|   ap_bus   |     data2    |    pointer   |
+|data2_dataout      | out |   32|   ap_bus   |     data2    |    pointer   |
+|data2_size         | out |   32|   ap_bus   |     data2    |    pointer   |
++-------------------+-----+-----+------------+--------------+--------------+
+

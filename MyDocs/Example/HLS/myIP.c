@@ -9,7 +9,7 @@ void myFunc_hw (int * array1, int * array2, int * array3, int N)
 	//int M = 1000; // 7. Quick resource/performance check after synthesis
 
 	int i;
-	for(i=0;i<N;i++)
+	for(i=0;i<1000;i++)
 	{
 //#pragma HLS PIPELINE II=1 // 6. pipeline
 		array3[i] = array1[i] + array2[i]+i; // 4. To check in the waveform
