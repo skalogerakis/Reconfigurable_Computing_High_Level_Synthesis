@@ -55,6 +55,8 @@
                                     									
                                     <listOptionValue builtIn="false" value="/tools/Xilinx/Vivado/2018.3/lnx64/tools/auto_cc/include"/>
                                     									
+                                    <listOptionValue builtIn="false" value="/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/vHLS"/>
+                                    									
                                     <listOptionValue builtIn="false" value="/tools/Xilinx/Vivado/2018.3/include"/>
                                     									
                                     <listOptionValue builtIn="false" value="/tools/Xilinx/Vivado/2018.3/include/ap_sysc"/>
@@ -88,6 +90,8 @@
                                     <listOptionValue builtIn="false" value="/tools/Xilinx/Vivado/2018.3/lnx64/tools/systemc/include"/>
                                     									
                                     <listOptionValue builtIn="false" value="/tools/Xilinx/Vivado/2018.3/lnx64/tools/auto_cc/include"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/vHLS"/>
                                     									
                                     <listOptionValue builtIn="false" value="/tools/Xilinx/Vivado/2018.3/include"/>
                                     									
@@ -189,7 +193,7 @@
                     					
                     <sourceEntries>
                         						
-                        <entry excluding="InitCode|Optimization_1|*.c*|*.C*" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+                        <entry excluding="InitCode|Optimazation_2|Optimization_1|*.c*|*.C*" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
                         					
                     </sourceEntries>
                     				
@@ -253,6 +257,8 @@
                                     									
                                     <listOptionValue builtIn="false" value="/tools/Xilinx/Vivado/2018.3/lnx64/tools/auto_cc/include"/>
                                     									
+                                    <listOptionValue builtIn="false" value="/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/vHLS"/>
+                                    									
                                     <listOptionValue builtIn="false" value="/tools/Xilinx/Vivado/2018.3/include"/>
                                     									
                                     <listOptionValue builtIn="false" value="/tools/Xilinx/Vivado/2018.3/include/ap_sysc"/>
@@ -276,6 +282,8 @@
                                     <listOptionValue builtIn="false" value="/tools/Xilinx/Vivado/2018.3/lnx64/tools/systemc/include"/>
                                     									
                                     <listOptionValue builtIn="false" value="/tools/Xilinx/Vivado/2018.3/lnx64/tools/auto_cc/include"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/vHLS"/>
                                     									
                                     <listOptionValue builtIn="false" value="/tools/Xilinx/Vivado/2018.3/include"/>
                                     									
@@ -367,7 +375,7 @@
                     					
                     <sourceEntries>
                         						
-                        <entry excluding="InitCode|Optimization_1|*.c*|*.C*" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+                        <entry excluding="InitCode|Optimazation_2|Optimization_1|*.c*|*.C*" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
                         					
                     </sourceEntries>
                     				

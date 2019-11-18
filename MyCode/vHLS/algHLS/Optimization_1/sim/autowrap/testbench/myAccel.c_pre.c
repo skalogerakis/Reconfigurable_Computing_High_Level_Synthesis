@@ -2135,17 +2135,17 @@ valueAsnInner: for ( l = 0 ; l < dim ; l ++ )
 
 thresCheck: for ( l = 0 ; l < dim ; l ++ )
    {
-#pragma HLS pipeline II=1
-
-
-
- r = data2 [ i*dim + l ] > threshold ? 1 : 0;
 
 
 
 
 
-
+    if(data2 [ i*dim + l ] > threshold){
+     r=1;
+    }else{
+     r=0;
+     break;
+    }
 
    }
 

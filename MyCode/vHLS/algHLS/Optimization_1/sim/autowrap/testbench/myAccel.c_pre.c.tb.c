@@ -1,5 +1,5 @@
 // ==============================================================
-// File generated on Sun Nov 17 00:46:38 EET 2019
+// File generated on Sun Nov 17 01:00:26 EET 2019
 // Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
 // SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
 // IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
@@ -2142,17 +2142,17 @@ valueAsnInner: for ( l = 0 ; l < dim ; l ++ )
 
 thresCheck: for ( l = 0 ; l < dim ; l ++ )
    {
-#pragma HLS pipeline II=1
-
-
-
- r = data2 [ i*dim + l ] > threshold ? 1 : 0;
 
 
 
 
 
-
+    if(data2 [ i*dim + l ] > threshold){
+     r=1;
+    }else{
+     r=0;
+     break;
+    }
 
    }
 

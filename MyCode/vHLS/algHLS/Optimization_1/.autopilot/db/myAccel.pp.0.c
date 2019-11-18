@@ -2219,7 +2219,7 @@ void myFuncAccel (unsigned int size, unsigned int dim, dataType_t threshold, dat
 #pragma HLS INTERFACE ap_bus depth=4000 port=&data1
 #pragma HLS INTERFACE ap_bus depth=4000 port=&data2
 
- unsigned int i, k, l;
+ unsigned int i, k, l, check;
  dataType_t tempVal;
  size = 1000;
  dim = 4;
@@ -2229,16 +2229,17 @@ void myFuncAccel (unsigned int size, unsigned int dim, dataType_t threshold, dat
   sizeLoop:
   for ( i = 0 ; i < size ; i ++ )
   {
-
+#pragma HLS pipeline II=1
 initLoop: for ( k = 0 ; k < dim ; k ++ )
    {
 #pragma HLS UNROLL factor=4
 
  data2 [ i*dim + k ] = 0.0 ;
    }
-
+check = 0;
 valueAsn: for ( k = 0 ; k < dim ; k ++ )
    {
+
 
     tempVal=0;
 
@@ -2253,18 +2254,26 @@ valueAsnInner: for ( l = 0 ; l < dim ; l ++ )
     }
 
     data2 [ i*dim + k ] = tempVal;
+
+
+
    }
 
    int r = 1 ;
-
-
+# 66 "../myAccel.c"
 thresCheck: for ( l = 0 ; l < dim ; l ++ )
    {
-#pragma HLS pipeline II=1
 
 
 
- r = data2 [ i*dim + l ] > threshold ? 1 : 0;
+
+
+    if(data2 [ i*dim + l ] > threshold){
+     r=1;
+    }else{
+     r=0;
+     break;
+    }
 
 
 
@@ -2274,13 +2283,17 @@ thresCheck: for ( l = 0 ; l < dim ; l ++ )
 
    }
 
-   if ( r )
+   if ( !r )
    {
-zeroAsn: for ( l = 0 ; l < dim ; l ++ )
+    continue;
+   }
+
+zeroAsn: for ( l = 0 ;l < dim ; l ++ )
     {
+
 #pragma HLS UNROLL factor=4
  data2 [ i*dim + l ] = 0.0;
     }
-   }
+
   }
 }

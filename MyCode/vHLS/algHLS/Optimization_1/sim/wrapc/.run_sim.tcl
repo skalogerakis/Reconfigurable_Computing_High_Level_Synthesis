@@ -1,5 +1,5 @@
 # ==============================================================
-# File generated on Sun Nov 17 00:46:49 EET 2019
+# File generated on Sun Nov 17 01:00:38 EET 2019
 # Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
@@ -44,7 +44,7 @@ proc run_exec {fileExe} {
 		return -code error -errorcode 10
 	}
 
-	set ret [catch {eval exec "./$fileExe 1000 1000 4 1000 | tee tmp.log" >&@ stdout} err]
+	set ret [catch {eval exec "./$fileExe 1000 1000 4 100 | tee tmp.log" >&@ stdout} err]
 
 	cpfilecontent tmp.log ../../.temp11.log
 	set errfile "err.log"

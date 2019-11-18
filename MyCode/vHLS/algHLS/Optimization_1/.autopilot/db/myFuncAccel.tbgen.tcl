@@ -17,7 +17,7 @@ set C_modelArgList {
 	{ threshold float 32 unused  }
 	{ data0 float 32 regular {bus 0}  }
 	{ data1 float 32 regular {bus 0}  }
-	{ data2 float 32 regular {bus 2}  }
+	{ data2 float 32 regular {bus 1}  }
 }
 set C_modelArgMapList {[ 
 	{ "Name" : "size", "interface" : "wire", "bitwidth" : 32, "direction" : "READONLY", "bitSlice":[{"low":0,"up":31,"cElement": [{"cName": "size","cData": "unsigned int","bit_use": { "low": 0,"up": 31},"cArray": [{"low" : 0,"up" : 0,"step" : 0}]}]}]} , 
@@ -25,7 +25,7 @@ set C_modelArgMapList {[
  	{ "Name" : "threshold", "interface" : "wire", "bitwidth" : 32, "direction" : "READONLY", "bitSlice":[{"low":0,"up":31,"cElement": [{"cName": "threshold","cData": "float","bit_use": { "low": 0,"up": 31},"cArray": [{"low" : 0,"up" : 0,"step" : 0}]}]}]} , 
  	{ "Name" : "data0", "interface" : "bus", "bitwidth" : 32, "direction" : "READONLY", "bitSlice":[{"low":0,"up":31,"cElement": [{"cName": "data0","cData": "float","bit_use": { "low": 0,"up": 31},"cArray": [{"low" : 0,"up" : 15,"step" : 1}]}]}]} , 
  	{ "Name" : "data1", "interface" : "bus", "bitwidth" : 32, "direction" : "READONLY", "bitSlice":[{"low":0,"up":31,"cElement": [{"cName": "data1","cData": "float","bit_use": { "low": 0,"up": 31},"cArray": [{"low" : 0,"up" : 3999,"step" : 1}]}]}]} , 
- 	{ "Name" : "data2", "interface" : "bus", "bitwidth" : 32, "direction" : "READWRITE", "bitSlice":[{"low":0,"up":31,"cElement": [{"cName": "data2","cData": "float","bit_use": { "low": 0,"up": 31},"cArray": [{"low" : 0,"up" : 3999,"step" : 1}]}]}]} ]}
+ 	{ "Name" : "data2", "interface" : "bus", "bitwidth" : 32, "direction" : "WRITEONLY", "bitSlice":[{"low":0,"up":31,"cElement": [{"cName": "data2","cData": "float","bit_use": { "low": 0,"up": 31},"cArray": [{"low" : 0,"up" : 3999,"step" : 1}]}]}]} ]}
 # RTL Port declarations: 
 set portNum 36
 set portList { 
@@ -111,7 +111,7 @@ set RtlHierarchyInfo {[
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1",
 		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
 		"II" : "0",
-		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "126001", "EstimateLatencyMax" : "128001",
+		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "16030", "EstimateLatencyMax" : "16030",
 		"Combinational" : "0",
 		"Datapath" : "0",
 		"ClockEnable" : "0",
@@ -124,7 +124,7 @@ set RtlHierarchyInfo {[
 			{"Name" : "threshold", "Type" : "None", "Direction" : "I"},
 			{"Name" : "data0", "Type" : "Bus", "Direction" : "I"},
 			{"Name" : "data1", "Type" : "Bus", "Direction" : "I"},
-			{"Name" : "data2", "Type" : "Bus", "Direction" : "IO"}]},
+			{"Name" : "data2", "Type" : "Bus", "Direction" : "O"}]},
 	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.myFuncAccel_fadd_32ns_32ns_32_5_full_dsp_1_U1", "Parent" : "0"},
 	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.myFuncAccel_fmul_32ns_32ns_32_4_max_dsp_1_U2", "Parent" : "0"},
 	{"ID" : "3", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.myFuncAccel_fcmp_32ns_32ns_1_1_1_U3", "Parent" : "0"}]}
@@ -135,15 +135,15 @@ set ArgLastReadFirstWriteLatency {
 		size {Type I LastRead -1 FirstWrite -1}
 		dim {Type I LastRead -1 FirstWrite -1}
 		threshold {Type I LastRead -1 FirstWrite -1}
-		data0 {Type I LastRead 18 FirstWrite -1}
-		data1 {Type I LastRead 18 FirstWrite -1}
-		data2 {Type IO LastRead 32 FirstWrite 1}}}
+		data0 {Type I LastRead 19 FirstWrite -1}
+		data1 {Type I LastRead 7 FirstWrite -1}
+		data2 {Type O LastRead 42 FirstWrite 30}}}
 
 set hasDtUnsupportedChannel 0
 
 set PerformanceInfo {[
-	{"Name" : "Latency", "Min" : "126001", "Max" : "128001"}
-	, {"Name" : "Interval", "Min" : "126002", "Max" : "128002"}
+	{"Name" : "Latency", "Min" : "16030", "Max" : "16030"}
+	, {"Name" : "Interval", "Min" : "16031", "Max" : "16031"}
 ]}
 
 set PipelineEnableSignalInfo {[

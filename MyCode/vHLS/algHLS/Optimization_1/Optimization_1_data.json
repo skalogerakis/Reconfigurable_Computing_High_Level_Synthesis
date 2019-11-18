@@ -20,7 +20,7 @@
     "ClockPeriod": "10",
     "IsCombLogic": "0",
     "II": "x",
-    "Latency": "126001",
+    "Latency": "16030",
     "Uncertainty": "1.25"
   },
   "Xdc": {"OocClocks": ["create_clock -name ap_clk -period 10.000 [get_ports ap_clk]"]},
@@ -556,12 +556,10 @@
     "Hierarchy": {"ModuleName": "myFuncAccel"},
     "Metrics": {"myFuncAccel": {
         "Latency": {
-          "LatencyBest": "126001",
-          "LatencyAvg": "127001",
-          "LatencyWorst": "128001",
-          "PipelineIIMin": "126002",
-          "PipelineIIMax": "128002",
-          "PipelineII": "126002 ~ 128002",
+          "LatencyBest": "16030",
+          "LatencyAvg": "16030",
+          "LatencyWorst": "16030",
+          "PipelineII": "16031",
           "PipelineDepth": "",
           "PipelineType": "none"
         },
@@ -573,35 +571,15 @@
         "Loops": [{
             "Name": "sizeLoop",
             "TripCount": "1000",
-            "LatencyMin": "126000",
-            "LatencyMax": "128000",
-            "Latency": "126000 ~ 128000",
-            "PipelineII": "",
-            "PipelineDepthMin": "126",
-            "PipelineDepthMax": "128",
-            "PipelineDepth": "126 ~ 128",
-            "Loops": [
-              {
-                "Name": "valueAsn",
-                "TripCount": "4",
-                "Latency": "112",
-                "PipelineII": "",
-                "PipelineDepth": "28"
-              },
-              {
-                "Name": "thresCheck",
-                "TripCount": "4",
-                "Latency": "5",
-                "PipelineII": "1",
-                "PipelineDepth": "3"
-              }
-            ]
+            "Latency": "16028",
+            "PipelineII": "16",
+            "PipelineDepth": "45"
           }],
         "Area": {
+          "BRAM_18K": "0",
           "DSP48E": "5",
-          "FF": "765",
-          "LUT": "1402",
-          "BRAM_18K": "0"
+          "FF": "1348",
+          "LUT": "1523"
         }
       }}
   },
@@ -615,7 +593,7 @@
   },
   "GenData": {
     "DataVersion": "0.1",
-    "Time": "2019-11-17 00:46:27 EET",
+    "Time": "2019-11-18 09:35:48 EET",
     "ToolName": "vivado_hls",
     "ToolVersion": "2018.3"
   }

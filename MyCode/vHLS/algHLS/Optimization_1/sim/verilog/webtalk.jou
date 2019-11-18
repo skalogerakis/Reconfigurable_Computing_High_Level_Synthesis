@@ -2,8 +2,8 @@
 # Webtalk v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Sun Nov 17 00:51:21 2019
-# Process ID: 9053
+# Start of session at: Sun Nov 17 01:04:08 2019
+# Process ID: 5443
 # Current directory: /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/vHLS/algHLS/Optimization_1/sim/verilog
 # Command line: wbtcv -mode batch -source /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/vHLS/algHLS/Optimization_1/sim/verilog/xsim.dir/myFuncAccel/webtalk/xsim_webtalk.tcl -notrace
 # Log file: /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/vHLS/algHLS/Optimization_1/sim/verilog/webtalk.log

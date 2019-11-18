@@ -2219,7 +2219,7 @@ _ssdm_op_SpecInterface(data0, "ap_bus", 0, 0, "", 0, 16, "", "", "", 0, 0, 0, 0,
 _ssdm_op_SpecInterface(data1, "ap_bus", 0, 0, "", 0, 4000, "", "", "", 0, 0, 0, 0, "", "");
 _ssdm_op_SpecInterface(data2, "ap_bus", 0, 0, "", 0, 4000, "", "", "", 0, 0, 0, 0, "", "");
 
- unsigned int i, k, l;
+ unsigned int i, k, l, check;
  dataType_t tempVal;
  size = 1000;
  dim = 4;
@@ -2229,16 +2229,17 @@ _ssdm_op_SpecInterface(data2, "ap_bus", 0, 0, "", 0, 4000, "", "", "", 0, 0, 0, 
   sizeLoop:
   for ( i = 0 ; i < size ; i ++ )
   {
-
+_ssdm_op_SpecPipeline(1, 1, 1, 0, "");
 initLoop: for ( k = 0 ; k < dim ; k ++ )
    {
 _ssdm_Unroll(1, 0, 4, "");
 
  data2 [ i*dim + k ] = 0.0 ;
    }
-
+check = 0;
 valueAsn: for ( k = 0 ; k < dim ; k ++ )
    {
+
 
     tempVal=0;
 
@@ -2253,18 +2254,26 @@ _ssdm_Unroll(1, 0, 4, "");
     }
 
     data2 [ i*dim + k ] = tempVal;
+
+
+
    }
 
    int r = 1 ;
-
-
+# 66 "../myAccel.c"
 thresCheck: for ( l = 0 ; l < dim ; l ++ )
    {
-_ssdm_op_SpecPipeline(1, 1, 1, 0, "");
 
 
 
- r = data2 [ i*dim + l ] > threshold ? 1 : 0;
+
+
+    if(data2 [ i*dim + l ] > threshold){
+     r=1;
+    }else{
+     r=0;
+     break;
+    }
 
 
 
@@ -2274,13 +2283,17 @@ _ssdm_op_SpecPipeline(1, 1, 1, 0, "");
 
    }
 
-   if ( r )
+   if ( !r )
    {
-zeroAsn: for ( l = 0 ; l < dim ; l ++ )
+    continue;
+   }
+
+zeroAsn: for ( l = 0 ;l < dim ; l ++ )
     {
+
 _ssdm_Unroll(1, 0, 4, "");
  data2 [ i*dim + l ] = 0.0;
     }
-   }
+
   }
 }

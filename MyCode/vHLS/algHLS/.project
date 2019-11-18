@@ -42,6 +42,11 @@
 			<location>/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/vHLS/algHLS/InitCode/.tcls</location>
 		</link>
 		<link>
+			<name>Optimazation_2/constraints</name>
+			<type>2</type>
+			<location>/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/vHLS/algHLS/Optimazation_2/.tcls</location>
+		</link>
+		<link>
 			<name>Optimization_1/constraints</name>
 			<type>2</type>
 			<location>/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/vHLS/algHLS/Optimization_1/.tcls</location>
@@ -75,6 +80,21 @@
 			<name>InitCode/constraints/script.tcl</name>
 			<type>1</type>
 			<location>/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/vHLS/algHLS/InitCode/script.tcl</location>
+		</link>
+		<link>
+			<name>Optimazation_2/constraints/.xml.directive</name>
+			<type>1</type>
+			<location>/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/vHLS/algHLS/Optimazation_2/Optimazation_2.directive</location>
+		</link>
+		<link>
+			<name>Optimazation_2/constraints/directives.tcl</name>
+			<type>1</type>
+			<location>/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/vHLS/algHLS/Optimazation_2/directives.tcl</location>
+		</link>
+		<link>
+			<name>Optimazation_2/constraints/script.tcl</name>
+			<type>1</type>
+			<location>/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/vHLS/algHLS/Optimazation_2/script.tcl</location>
 		</link>
 		<link>
 			<name>Optimization_1/constraints/.xml.directive</name>

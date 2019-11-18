@@ -1,0 +1,466 @@
+==============================================================
+File generated on Mon Nov 18 09:50:52 EET 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+File generated on Mon Nov 18 10:12:19 EET 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+File generated on Mon Nov 18 10:12:58 EET 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+File generated on Mon Nov 18 10:13:26 EET 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+File generated on Mon Nov 18 10:14:27 EET 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+File generated on Mon Nov 18 10:33:26 EET 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+File generated on Mon Nov 18 10:33:52 EET 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+File generated on Mon Nov 18 10:34:10 EET 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+File generated on Mon Nov 18 10:34:51 EET 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+File generated on Mon Nov 18 10:35:33 EET 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+File generated on Mon Nov 18 10:37:07 EET 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+File generated on Mon Nov 18 10:38:22 EET 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+File generated on Mon Nov 18 10:56:59 EET 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+File generated on Mon Nov 18 10:57:36 EET 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg484-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file '../myAccel.c' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 444.918 ; gain = 0.098 ; free physical = 1785 ; free virtual = 5909
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 444.918 ; gain = 0.098 ; free physical = 1785 ; free virtual = 5909
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [XFORM 203-501] Unrolling loop 'initLoop' (../myAccel.c:27) in function 'myFuncAccel': changing partial unrolling into complete unrolling since the unrolling factor (=4) is no less than the loop trip count (=4).
+INFO: [XFORM 203-501] Unrolling loop 'valueAsnInner' (../myAccel.c:41) in function 'myFuncAccel': changing partial unrolling into complete unrolling since the unrolling factor (=4) is no less than the loop trip count (=4).
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 444.918 ; gain = 0.098 ; free physical = 1784 ; free virtual = 5908
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 444.918 ; gain = 0.098 ; free physical = 1784 ; free virtual = 5908
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'valueAsn' (../myAccel.c:34) in function 'myFuncAccel' for pipelining.
+WARNING: [XFORM 203-505] Ignored pipeline directive for loop 'valueAsnInner' (../myAccel.c:41) because its parent loop or function is pipelined.
+WARNING: [XFORM 203-503] Ignored partial unroll directive for loop 'valueAsnInner' (../myAccel.c:41) because its parent loop or function is pipelined.
+INFO: [XFORM 203-501] Unrolling loop 'initLoop' (../myAccel.c:27) in function 'myFuncAccel': changing partial unrolling into complete unrolling since the unrolling factor (=4) is no less than the loop trip count (=4).
+INFO: [HLS 200-489] Unrolling loop 'initLoop' (../myAccel.c:27) in function 'myFuncAccel' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'valueAsnInner' (../myAccel.c:41) in function 'myFuncAccel' completely with a factor of 4.
+INFO: [XFORM 203-501] Unrolling loop 'zeroAsn' (../myAccel.c:89) in function 'myFuncAccel' partially with a factor of 4.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 572.820 ; gain = 128.000 ; free physical = 1764 ; free virtual = 5888
+WARNING: [XFORM 203-542] Cannot flatten a loop nest 'sizeLoop' (../myAccel.c:24:4) in function 'myFuncAccel' : 
+
+more than one sub loop.
+INFO: [HLS 200-444] Inferring multiple bus burst read of a total cumulative length 4 on port 'data2' (../myAccel.c:73:5). These data requests might be further partitioned to multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.
+INFO: [HLS 200-444] Inferring multiple bus burst write of a total cumulative length 4 on port 'data2' (../myAccel.c:49:5). These data requests might be further partitioned to multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.
+INFO: [XFORM 203-811] Inferring bus burst write of length 4 on port 'data2' (../myAccel.c:30:2).
+INFO: [XFORM 203-811] Inferring bus burst read of length 4 on port 'data0' (../myAccel.c:45:2).
+INFO: [XFORM 203-811] Inferring bus burst read of length 4 on port 'data1' (../myAccel.c:45:2).
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 572.820 ; gain = 128.000 ; free physical = 1771 ; free virtual = 5895
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'myFuncAccel' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'myFuncAccel' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'valueAsn'.
+WARNING: [SCHED 204-68] The II Violation in module 'myFuncAccel': Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1)
+   between bus read on port 'data0' (../myAccel.c:45) and bus read on port 'data0' (../myAccel.c:45).
+WARNING: [SCHED 204-68] The II Violation in module 'myFuncAccel': Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1)
+   between bus read on port 'data0' (../myAccel.c:45) and bus read on port 'data0' (../myAccel.c:45).
+WARNING: [SCHED 204-68] The II Violation in module 'myFuncAccel': Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 1)
+   between bus read on port 'data0' (../myAccel.c:45) and bus read on port 'data0' (../myAccel.c:45).
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 4, Depth = 29.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 6.01 seconds; current allocated memory: 64.093 MB.
+INFO: [HLS 200-434] Only 1 loops out of a total 4 loops have been pipelined in this design.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.17 seconds; current allocated memory: 64.764 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'myFuncAccel' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'myFuncAccel/size' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myFuncAccel/dim' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myFuncAccel/threshold' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myFuncAccel/data0' to 'ap_bus'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myFuncAccel/data1' to 'ap_bus'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myFuncAccel/data2' to 'ap_bus'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'myFuncAccel' to 'ap_ctrl_hs'.
+WARNING: [RTGEN 206-101] Port 'myFuncAccel/size' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'myFuncAccel/dim' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'myFuncAccel/threshold' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'myFuncAccel/data0_dataout' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'myFuncAccel/data1_dataout' to 0.
+INFO: [RTGEN 206-100] Generating core module 'myFuncAccel_fadd_32ns_32ns_32_5_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'myFuncAccel_fcmp_32ns_32ns_1_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'myFuncAccel_fmul_32ns_32ns_32_4_max_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'myFuncAccel'.
+INFO: [HLS 200-111]  Elapsed time: 0.14 seconds; current allocated memory: 65.927 MB.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 572.820 ; gain = 128.000 ; free physical = 1754 ; free virtual = 5883
+INFO: [SYSC 207-301] Generating SystemC RTL for myFuncAccel.
+INFO: [VHDL 208-304] Generating VHDL RTL for myFuncAccel.
+INFO: [VLOG 209-307]==============================================================
+File generated on Mon Nov 18 10:58:12 EET 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+File generated on Mon Nov 18 10:59:52 EET 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+File generated on Mon Nov 18 11:00:52 EET 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+File generated on Mon Nov 18 11:12:33 EET 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+File generated on Mon Nov 18 13:07:07 EET 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+File generated on Mon Nov 18 13:09:16 EET 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+File generated on Mon Nov 18 13:09:51 EET 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+File generated on Mon Nov 18 13:10:10 EET 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+File generated on Mon Nov 18 13:11:05 EET 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+File generated on Mon Nov 18 13:14:35 EET 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+File generated on Mon Nov 18 13:14:54 EET 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+File generated on Mon Nov 18 13:21:25 EET 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+File generated on Mon Nov 18 13:23:00 EET 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg484-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file '../myAccel.c' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 444.918 ; gain = 0.098 ; free physical = 1580 ; free virtual = 5787
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 444.918 ; gain = 0.098 ; free physical = 1580 ; free virtual = 5787
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [XFORM 203-501] Unrolling loop 'initLoop' (../myAccel.c:27) in function 'myFuncAccel': changing partial unrolling into complete unrolling since the unrolling factor (=4) is no less than the loop trip count (=4).
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 444.918 ; gain = 0.098 ; free physical = 1580 ; free virtual = 5786
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 444.918 ; gain = 0.098 ; free physical = 1579 ; free virtual = 5786
+INFO: [XFORM 203-501] Unrolling loop 'initLoop' (../myAccel.c:27) in function 'myFuncAccel': changing partial unrolling into complete unrolling since the unrolling factor (=4) is no less than the loop trip count (=4).
+INFO: [HLS 200-489] Unrolling loop 'initLoop' (../myAccel.c:27) in function 'myFuncAccel' completely with a factor of 4.
+INFO: [XFORM 203-501] Unrolling loop 'zeroAsn' (../myAccel.c:80) in function 'myFuncAccel' partially with a factor of 4.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 572.820 ; gain = 128.000 ; free physical = 1560 ; free virtual = 5766
+INFO: [XFORM 203-541] Flattening a loop nest 'valueAsn' (../myAccel.c:34:5) in function 'myFuncAccel'.
+WARNING: [XFORM 203-542] Cannot flatten a loop nest 'sizeLoop' (../myAccel.c:24:4) in function 'myFuncAccel' : 
+
+more than one sub loop.
+INFO: [HLS 200-444] Inferring multiple bus burst read of a total cumulative length 4 on port 'data0' (../myAccel.c:45:2). These data requests might be further partitioned to multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.
+INFO: [HLS 200-444] Inferring multiple bus burst read of a total cumulative length 4 on port 'data1' (../myAccel.c:45:2). These data requests might be further partitioned to multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.
+INFO: [HLS 200-444] Inferring multiple bus burst read of a total cumulative length 4 on port 'data2' (../myAccel.c:64:5). These data requests might be further partitioned to multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.
+INFO: [HLS 200-444] Inferring multiple bus burst write of a total cumulative length 4 on port 'data2' (../myAccel.c:49:5). These data requests might be further partitioned to multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.
+INFO: [XFORM 203-811] Inferring bus burst write of length 4 on port 'data2' (../myAccel.c:30:2).
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 572.820 ; gain = 128.000 ; free physical = 1567 ; free virtual = 5774
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'myFuncAccel' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'myFuncAccel' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'valueAsn_valueAsnInner'.
+WARNING: [SCHED 204-68] The II Violation in module 'myFuncAccel': Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 0)
+   between 'fadd' operation ('tempVal', ../myAccel.c:45) and 'select' operation ('tempVal_mid2', ../myAccel.c:40).
+WARNING: [SCHED 204-68] The II Violation in module 'myFuncAccel': Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 0)
+   between 'fadd' operation ('tempVal', ../myAccel.c:45) and 'select' operation ('tempVal_mid2', ../myAccel.c:40).
+WARNING: [SCHED 204-68] The II Violation in module 'myFuncAccel': Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 0)
+   between 'fadd' operation ('tempVal', ../myAccel.c:45) and 'select' operation ('tempVal_mid2', ../myAccel.c:40).
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 4, Depth = 14.
+WARNING: [SCHED 204-70] Cannot meet target clock period from 'fadd' operation ('tempVal') to 'select' operation ('tempVal_mid2') (combination delay: 9.723 ns) to honor II or Latency constraint in region 'valueAsn_valueAsnInner'.
+WARNING: [SCHED 204-21] Estimated clock period (15.21ns) exceeds the target (target clock period: 10ns, clock uncertainty: 1.25ns, effective delay budget: 8.75ns).
+WARNING: [SCHED 204-21] The critical path in module 'myFuncAccel' consists of the following:
+	'fadd' operation ('tempVal', ../myAccel.c:45) [75]  (7.26 ns)
+	'phi' operation ('tempVal') with incoming values : ('tempVal', ../myAccel.c:45) [42]  (0 ns)
+	'select' operation ('tempVal_mid2', ../myAccel.c:40) [49]  (0.698 ns)
+	'fadd' operation ('tempVal', ../myAccel.c:45) [75]  (7.26 ns)
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 6.05 seconds; current allocated memory: 64.185 MB.
+INFO: [HLS 200-434] Only 1 loops out of a total 4 loops have been pipelined in this design.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.12 seconds; current allocated memory: 64.828 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'myFuncAccel' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'myFuncAccel/size' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myFuncAccel/dim' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myFuncAccel/threshold' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myFuncAccel/data0' to 'ap_bus'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myFuncAccel/data1' to 'ap_bus'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myFuncAccel/data2' to 'ap_bus'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'myFuncAccel' to 'ap_ctrl_hs'.
+WARNING: [RTGEN 206-101] Port 'myFuncAccel/size' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'myFuncAccel/dim' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'myFuncAccel/threshold' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'myFuncAccel/data0_dataout' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'myFuncAccel/data1_dataout' to 0.
+INFO: [RTGEN 206-100] Generating core module 'myFuncAccel_fadd_32ns_32ns_32_5_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'myFuncAccel_fcmp_32ns_32ns_1_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'myFuncAccel_fmul_32ns_32ns_32_4_max_dsp_1': 1 instance(s).
+==============================================================
+File generated on Mon Nov 18 13:24:24 EET 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+File generated on Mon Nov 18 13:25:07 EET 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+File generated on Mon Nov 18 13:25:48 EET 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+File generated on Mon Nov 18 13:26:24 EET 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+File generated on Mon Nov 18 13:27:23 EET 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg484-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file '../myAccel.c' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 444.918 ; gain = 0.098 ; free physical = 1586 ; free virtual = 5794
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 444.918 ; gain = 0.098 ; free physical = 1586 ; free virtual = 5794
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [XFORM 203-501] Unrolling loop 'initLoop' (../myAccel.c:27) in function 'myFuncAccel': changing partial unrolling into complete unrolling since the unrolling factor (=4) is no less than the loop trip count (=4).
+INFO: [XFORM 203-501] Unrolling loop 'zeroAsn' (../myAccel.c:80) in function 'myFuncAccel': changing partial unrolling into complete unrolling since the unrolling factor (=4) is no less than the loop trip count (=4).
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 444.918 ; gain = 0.098 ; free physical = 1585 ; free virtual = 5793
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 444.918 ; gain = 0.098 ; free physical = 1585 ; free virtual = 5793
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'sizeLoop' (../myAccel.c:24) in function 'myFuncAccel' for pipelining.
+WARNING: [XFORM 203-503] Ignored partial unroll directive for loop 'initLoop' (../myAccel.c:27) because its parent loop or function is pipelined.
+WARNING: [XFORM 203-503] Ignored partial unroll directive for loop 'zeroAsn' (../myAccel.c:80) because its parent loop or function is pipelined.
+INFO: [HLS 200-489] Unrolling loop 'initLoop' (../myAccel.c:27) in function 'myFuncAccel' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'valueAsn' (../myAccel.c:34) in function 'myFuncAccel' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'valueAsnInner' (../myAccel.c:41) in function 'myFuncAccel' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'thresCheck' (../myAccel.c:57) in function 'myFuncAccel' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'zeroAsn' (../myAccel.c:80) in function 'myFuncAccel' completely with a factor of 4.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 572.820 ; gain = 128.000 ; free physical = 1568 ; free virtual = 5773
+INFO: [XFORM 203-811] Inferring bus burst write of length 4 on port 'data2' (../myAccel.c:83:2).
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 572.820 ; gain = 128.000 ; free physical = 1574 ; free virtual = 5779
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'myFuncAccel' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'myFuncAccel' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'sizeLoop'.
+WARNING: [SCHED 204-68] The II Violation in module 'myFuncAccel': Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1)
+   between bus write on port 'data2' (../myAccel.c:83) and bus request on port 'data2' (../myAccel.c:83).
+WARNING: [SCHED 204-68] The II Violation in module 'myFuncAccel': Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1)
+   between bus write on port 'data2' (../myAccel.c:83) and bus request on port 'data2' (../myAccel.c:83).
+WARNING: [SCHED 204-68] The II Violation in module 'myFuncAccel': Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 1)
+   between bus write on port 'data2' (../myAccel.c:83) and bus request on port 'data2' (../myAccel.c:83).
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 4, Depth = 5.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 5.95 seconds; current allocated memory: 62.473 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.04 seconds; current allocated memory: 62.625 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'myFuncAccel' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'myFuncAccel/size' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myFuncAccel/dim' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myFuncAccel/threshold' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myFuncAccel/data0' to 'ap_bus'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myFuncAccel/data1' to 'ap_bus'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'myFuncAccel/data2' to 'ap_bus'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'myFuncAccel' to 'ap_ctrl_hs'.
+WARNING: [RTGEN 206-101] Port 'myFuncAccel/size' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'myFuncAccel/dim' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'myFuncAccel/threshold' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'myFuncAccel/data0_req_din' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'myFuncAccel/data0_req_din' to 0.
+WARNING: [RTGEN 206-101] Port 'myFuncAccel/data0_req_full_n' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'myFuncAccel/data0_req_write' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'myFuncAccel/data0_req_write' to 0.
+WARNING: [RTGEN 206-101] Port 'myFuncAccel/data0_rsp_empty_n' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'myFuncAccel/data0_rsp_read' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'myFuncAccel/data0_rsp_read' to 0.
+WARNING: [RTGEN 206-101] Port 'myFuncAccel/data0_address' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'myFuncAccel/data0_address' to 0.
+WARNING: [RTGEN 206-101] Port 'myFuncAccel/data0_datain' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'myFuncAccel/data0_dataout' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+==============================================================
+File generated on Mon Nov 18 13:35:03 EET 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
