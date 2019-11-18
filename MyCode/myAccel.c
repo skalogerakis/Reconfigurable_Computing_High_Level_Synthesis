@@ -12,7 +12,7 @@ void myFuncAccel (unsigned int size, unsigned int dim, dataType_t threshold, dat
 #pragma HLS INTERFACE ap_bus depth=4000 port=data1
 #pragma HLS INTERFACE ap_bus depth=4000 port=data2
 
-	unsigned int i, k, l, check;
+	unsigned int i, k, l,count,r;
 	dataType_t tempVal;
 	size = 1000;
 	dim = 4;
@@ -22,66 +22,47 @@ void myFuncAccel (unsigned int size, unsigned int dim, dataType_t threshold, dat
 		sizeLoop:
 		for ( i = 0 ; i < size ; i ++ )
 		{
-#pragma HLS pipeline II=1	//THIS ALSO DROPS THE LATENCY BUT WHAT ABOUT INTERVAL????
+#pragma HLS pipeline II=4	//BEST SOLUTION SO FAR. WHAT ABOUT INTERVAL????
+//#pragma HLS UNROLL factor=4
 initLoop:	for ( k = 0 ; k < dim ; k ++ )
 			{
-#pragma HLS UNROLL factor=4
-//#pragma HLS pipeline II=1
+//#pragma HLS UNROLL factor=4
 				data2 [ i*dim + k ] = 0.0 ;
 			}
-check = 0;
+
+			//count=0;
+			r=0;
 valueAsn:	for ( k = 0 ; k < dim ; k ++ )
 			{
-
+				//data2 [ i*dim + k ] = 0.0 ;
 				//Optimazation_1 solution: Added a tempVal to reduce read and write accesses in array
 				tempVal=0;
-//#pragma HLS pipeline II=1//THIS DROPS DRAMATICALLY COMPUTATIONS BUT INCREASES LOOP INITIATION INTERVAL!!!
+
+#pragma HLS pipeline II=4 // COMPUTATIONS DROP BUT INCREASES LOOP INITIATION INTERVAL!!!
 //#pragma HLS UNROLL factor=4
 valueAsnInner:	for ( l = 0 ; l < dim ; l ++ )
 				{
-//#pragma HLS pipeline II=1	//CLOCK ISSUE. STILL NO BETTER THAN FULL PIPELINE
-//#pragma HLS UNROLL factor=4
+
 					//Optimazation_1 solution
-					tempVal += data0 [ k * dim + l ] * data1 [ i*dim+ l ];
+					tempVal += data0 [ k * dim + l ] * data1 [ i * dim + l ];
+
 
 				}
 				//Optimazation_1 solution
-				data2 [ i*dim + k ] = tempVal;
+				data2 [ i*dim + k ]= tempVal;
+				if(tempVal <= threshold){
+					r = 1;
+					//break;
+				}
+
 			}
 
-			int r = 1 ;
-//#pragma HLS pipeline II=1
-
-
-thresCheck:	for ( l = 0 ; l < dim ; l ++ )
+zeroAsn:	for ( l = 0 ;l < dim ; l ++ )
 			{
-
-				//In the init code nothing would show up
-				//Now the projection can happen as the num of loops will be specific no matter what
-//#pragma HLS pipeline II=1
-				//r=(data2 [ i*dim + l ] > threshold);
-//#pragma HLS UNROLL factor=4
-				if(data2 [ i*dim + l ] > threshold){	//THIS WORKS SLIGHTLY BETTER
-					r=1;
-				}else{
-					r=0;
-					break;
-				}
-//#pragma HLS UNROLL factor=4
-//				if(r==0){
-//					continue;
-//				}else if(data2 [ i*dim + l ] <= threshold){
-//					r = 0;
-//				}
+	//#pragma HLS UNROLL factor=4
+				data2 [ i*dim + l ] *= r;
 
 			}
-
-zeroAsn:		for ( l = 0 ;l < r*dim ; l ++ )
-				{
-//#pragma HLS PIPELINE
-#pragma HLS UNROLL factor=4
-					data2 [ i*dim + l ] = 0.0;
-				}
 
 		}
 }

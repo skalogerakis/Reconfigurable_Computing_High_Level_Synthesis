@@ -105,13 +105,13 @@ set NewPortList {[
  	{ "name": "data2_size", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "data2", "role": "size" }}  ]}
 
 set RtlHierarchyInfo {[
-	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "", "Child" : ["1", "2", "3"],
+	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "", "Child" : ["1", "2", "3", "4"],
 		"CDFG" : "myFuncAccel",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1",
 		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
 		"II" : "0",
-		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "42001", "EstimateLatencyMax" : "46001",
+		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "16034", "EstimateLatencyMax" : "16034",
 		"Combinational" : "0",
 		"Datapath" : "0",
 		"ClockEnable" : "0",
@@ -127,7 +127,8 @@ set RtlHierarchyInfo {[
 			{"Name" : "data2", "Type" : "Bus", "Direction" : "O"}]},
 	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.myFuncAccel_fadd_32ns_32ns_32_5_full_dsp_1_U1", "Parent" : "0"},
 	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.myFuncAccel_fmul_32ns_32ns_32_4_max_dsp_1_U2", "Parent" : "0"},
-	{"ID" : "3", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.myFuncAccel_fcmp_32ns_32ns_1_1_1_U3", "Parent" : "0"}]}
+	{"ID" : "3", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.myFuncAccel_fmul_32ns_32ns_32_4_max_dsp_1_U3", "Parent" : "0"},
+	{"ID" : "4", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.myFuncAccel_fcmp_32ns_32ns_1_1_1_U4", "Parent" : "0"}]}
 
 
 set ArgLastReadFirstWriteLatency {
@@ -135,18 +136,19 @@ set ArgLastReadFirstWriteLatency {
 		size {Type I LastRead -1 FirstWrite -1}
 		dim {Type I LastRead -1 FirstWrite -1}
 		threshold {Type I LastRead -1 FirstWrite -1}
-		data0 {Type I LastRead 30 FirstWrite -1}
-		data1 {Type I LastRead 6 FirstWrite -1}
-		data2 {Type O LastRead 42 FirstWrite 28}}}
+		data0 {Type I LastRead 19 FirstWrite -1}
+		data1 {Type I LastRead 7 FirstWrite -1}
+		data2 {Type O LastRead 46 FirstWrite 46}}}
 
 set hasDtUnsupportedChannel 0
 
 set PerformanceInfo {[
-	{"Name" : "Latency", "Min" : "42001", "Max" : "46001"}
-	, {"Name" : "Interval", "Min" : "42002", "Max" : "46002"}
+	{"Name" : "Latency", "Min" : "16034", "Max" : "16034"}
+	, {"Name" : "Interval", "Min" : "16035", "Max" : "16035"}
 ]}
 
 set PipelineEnableSignalInfo {[
+	{"Pipeline" : "0", "EnableSignal" : "ap_enable_pp0"}
 ]}
 
 set Spec2ImplPortList { 

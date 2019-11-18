@@ -182,7 +182,7 @@ puts "@W \[IMPL-101\] Cannot find ::AESL_LIB_XILINX_FPV6::fpv6_gen, check your p
 }
 
 
-set id 3
+set id 4
 set name myFuncAccel_fcmp_32ns_32ns_1_1_1
 set corename simcore_fcmp
 set op fcmp
@@ -268,7 +268,7 @@ if {${::AESL::PGuard_autoexp_gen}} {
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 7 \
+    id 8 \
     name data0 \
     type other \
     dir I \
@@ -283,7 +283,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 8 \
+    id 9 \
     name data1 \
     type other \
     dir I \
@@ -298,7 +298,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 9 \
+    id 10 \
     name data2 \
     type other \
     dir O \

@@ -20,7 +20,7 @@
     "ClockPeriod": "10",
     "IsCombLogic": "0",
     "II": "x",
-    "Latency": "42001",
+    "Latency": "16034",
     "Uncertainty": "1.25"
   },
   "Xdc": {"OocClocks": ["create_clock -name ap_clk -period 10.000 [get_ports ap_clk]"]},
@@ -556,12 +556,10 @@
     "Hierarchy": {"ModuleName": "myFuncAccel"},
     "Metrics": {"myFuncAccel": {
         "Latency": {
-          "LatencyBest": "42001",
-          "LatencyAvg": "",
-          "LatencyWorst": "46001",
-          "PipelineIIMin": "42002",
-          "PipelineIIMax": "46002",
-          "PipelineII": "42002 ~ 46002",
+          "LatencyBest": "16034",
+          "LatencyAvg": "16034",
+          "LatencyWorst": "16034",
+          "PipelineII": "16035",
           "PipelineDepth": "",
           "PipelineType": "none"
         },
@@ -573,28 +571,15 @@
         "Loops": [{
             "Name": "sizeLoop",
             "TripCount": "1000",
-            "LatencyMin": "42000",
-            "LatencyMax": "46000",
-            "Latency": "42000 ~ 46000",
-            "PipelineII": "",
-            "PipelineDepthMin": "42",
-            "PipelineDepthMax": "46",
-            "PipelineDepth": "42 ~ 46",
-            "Loops": [{
-                "Name": "zeroAsn",
-                "TripCount": "",
-                "LatencyMin": "0",
-                "LatencyMax": "4",
-                "Latency": "0 ~ 4",
-                "PipelineII": "",
-                "PipelineDepth": "1"
-              }]
+            "Latency": "16032",
+            "PipelineII": "16",
+            "PipelineDepth": "49"
           }],
         "Area": {
-          "DSP48E": "5",
-          "FF": "1172",
-          "LUT": "1568",
-          "BRAM_18K": "0"
+          "BRAM_18K": "0",
+          "DSP48E": "8",
+          "FF": "1687",
+          "LUT": "1896"
         }
       }}
   },
@@ -608,7 +593,7 @@
   },
   "GenData": {
     "DataVersion": "0.1",
-    "Time": "2019-11-18 13:35:10 EET",
+    "Time": "2019-11-18 19:53:45 EET",
     "ToolName": "vivado_hls",
     "ToolVersion": "2018.3"
   }

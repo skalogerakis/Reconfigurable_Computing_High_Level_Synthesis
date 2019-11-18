@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'myFuncAccel'" level="0">
-<item name = "Date">Mon Nov 18 13:35:09 2019
+<item name = "Date">Mon Nov 18 19:53:44 2019
 </item>
 <item name = "Version">2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)</item>
 <item name = "Project">algHLS</item>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="6">, min, max, min, max, Type</keys>
-<column name="">42001, 46001, 42001, 46001, none</column>
+<column name="">16034, 16034, 16034, 16034, none</column>
 </table>
 </item>
 <item name = "Detail">
@@ -35,8 +35,7 @@
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- sizeLoop">42000, 46000, 42 ~ 46, -, -, 1000, no</column>
-<column name=" + zeroAsn">0, 4, 1, -, -, 0 ~ 4, no</column>
+<column name="- sizeLoop">16032, 16032, 49, 16, 4, 1000, yes</column>
 </table>
 </item>
 </section>

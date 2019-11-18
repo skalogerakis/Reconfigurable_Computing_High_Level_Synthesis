@@ -2219,7 +2219,7 @@ _ssdm_op_SpecInterface(data0, "ap_bus", 0, 0, "", 0, 16, "", "", "", 0, 0, 0, 0,
 _ssdm_op_SpecInterface(data1, "ap_bus", 0, 0, "", 0, 4000, "", "", "", 0, 0, 0, 0, "", "");
 _ssdm_op_SpecInterface(data2, "ap_bus", 0, 0, "", 0, 4000, "", "", "", 0, 0, 0, 0, "", "");
 
- unsigned int i, k, l, check;
+ unsigned int i, k, l,count,r;
  dataType_t tempVal;
  size = 1000;
  dim = 4;
@@ -2229,66 +2229,47 @@ _ssdm_op_SpecInterface(data2, "ap_bus", 0, 0, "", 0, 4000, "", "", "", 0, 0, 0, 
   sizeLoop:
   for ( i = 0 ; i < size ; i ++ )
   {
-_ssdm_op_SpecPipeline(1, 1, 1, 0, "");
+_ssdm_op_SpecPipeline(4, 1, 1, 0, "");
+
 initLoop: for ( k = 0 ; k < dim ; k ++ )
    {
-_ssdm_Unroll(1, 0, 4, "");
 
- data2 [ i*dim + k ] = 0.0 ;
+    data2 [ i*dim + k ] = 0.0 ;
    }
-check = 0;
+
+
+   r=0;
 valueAsn: for ( k = 0 ; k < dim ; k ++ )
    {
 
 
     tempVal=0;
 
+_ssdm_op_SpecPipeline(4, 1, 1, 0, "");
 
 valueAsnInner: for ( l = 0 ; l < dim ; l ++ )
     {
 
 
+     tempVal += data0 [ k * dim + l ] * data1 [ i * dim + l ];
 
-     tempVal += data0 [ k * dim + l ] * data1 [ i*dim+ l ];
 
     }
 
-    data2 [ i*dim + k ] = tempVal;
+    data2 [ i*dim + k ]= tempVal;
+    if(tempVal <= threshold){
+     r = 1;
+
+    }
+
    }
 
-   int r = 1 ;
-
-
-
-thresCheck: for ( l = 0 ; l < dim ; l ++ )
+zeroAsn: for ( l = 0 ;l < dim ; l ++ )
    {
 
-
-
-
-
-
-    if(data2 [ i*dim + l ] > threshold){
-     r=1;
-    }else{
-     r=0;
-     break;
-    }
-
-
-
-
-
-
+    data2 [ i*dim + l ] *= r;
 
    }
-
-zeroAsn: for ( l = 0 ;l < r*dim ; l ++ )
-    {
-
-_ssdm_Unroll(1, 0, 4, "");
- data2 [ i*dim + l ] = 0.0;
-    }
 
   }
 }
