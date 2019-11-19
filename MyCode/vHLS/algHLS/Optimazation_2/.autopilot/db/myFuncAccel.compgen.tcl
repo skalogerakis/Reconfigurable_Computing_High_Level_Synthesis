@@ -301,7 +301,7 @@ eval "cg_default_interface_gen_dc { \
     id 10 \
     name data2 \
     type other \
-    dir O \
+    dir IO \
     reset_level 1 \
     sync_rst true \
     corename dc_data2 \

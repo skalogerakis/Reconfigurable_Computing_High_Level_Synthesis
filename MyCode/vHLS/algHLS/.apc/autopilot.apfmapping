@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
   <source>
-    <originFiles name="myLib.h" path="/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/myLib.h"/>
     <originFiles name="myAccel.c" path="/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/myAccel.c"/>
+    <originFiles name="myLib.h" path="/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/myLib.h"/>
   </source>
   <testbench>
     <originFiles name="main.c" path="/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/main.c"/>

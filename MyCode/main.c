@@ -18,6 +18,7 @@ void myFunc (unsigned int size, unsigned int dim, dataType_t threshold, dataType
 			for ( l = 0 ; l < dim ; l ++ )
 			{
 				data2 [ i*dim + k ] += data0 [ k * dim + l ] * data1 [ i*dim+ l ];
+				printf("l %d value %f data0 %f data1 %f\n",l, (data2 [ i*dim + k ]), (data0 [ k * dim + l ]), (data1 [ i*dim+ l ]1));
 				
 			}			
 		}

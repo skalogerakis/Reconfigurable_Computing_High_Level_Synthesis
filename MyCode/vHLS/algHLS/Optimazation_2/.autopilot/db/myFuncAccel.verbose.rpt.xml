@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'myFuncAccel'" level="0">
-<item name = "Date">Mon Nov 18 23:04:28 2019
+<item name = "Date">Tue Nov 19 02:07:11 2019
 </item>
 <item name = "Version">2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)</item>
 <item name = "Project">algHLS</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00, 8.750, 1.25</column>
+<column name="ap_clk">10.00, 14.452, 1.25</column>
 </table>
 </item>
 </section>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="6">, min, max, min, max, Type</keys>
-<column name="">16034, 16034, 16034, 16034, none</column>
+<column name="">32034, 32034, 32034, 32034, none</column>
 </table>
 </item>
 <item name = "Detail">
@@ -35,7 +35,7 @@
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- sizeLoop">16032, 16032, 49, 16, 4, 1000, yes</column>
+<column name="- sizeLoop">32032, 32032, 65, 32, 4, 1000, yes</column>
 </table>
 </item>
 </section>
@@ -48,12 +48,12 @@
 <item name = "Summary"><table name="" hasTotal="1">
 <keys size="5">Name, BRAM_18K, DSP48E, FF, LUT</keys>
 <column name="DSP">-, -, -, -</column>
-<column name="Expression">-, -, 0, 215</column>
+<column name="Expression">-, -, 0, 308</column>
 <column name="FIFO">-, -, -, -</column>
 <column name="Instance">-, 8, 557, 1271</column>
 <column name="Memory">-, -, -, -</column>
-<column name="Multiplexer">-, -, -, 346</column>
-<column name="Register">0, -, 1130, 64</column>
+<column name="Multiplexer">-, -, -, 503</column>
+<column name="Register">-, -, 881, -</column>
 <specialColumn name="Available">280, 220, 106400, 53200</specialColumn>
 <specialColumn name="Utilization (%)">0, 3, 1, 3</specialColumn>
 </table>
@@ -82,103 +82,117 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="i_1_fu_220_p2">+, 0, 0, 14, 10, 1</column>
+<column name="count_1_fu_672_p2">+, 0, 0, 12, 3, 12</column>
+<column name="i_1_fu_342_p2">+, 0, 0, 14, 10, 1</column>
+<column name="tmp_25_1_fu_540_p2">+, 0, 0, 17, 1, 13</column>
+<column name="ap_block_pp0_stage0_00001">and, 0, 0, 2, 1, 1</column>
 <column name="ap_block_pp0_stage10_11001">and, 0, 0, 2, 1, 1</column>
 <column name="ap_block_pp0_stage1_11001">and, 0, 0, 2, 1, 1</column>
-<column name="ap_block_pp0_stage3_11001">and, 0, 0, 2, 1, 1</column>
+<column name="ap_block_pp0_stage23_11001">and, 0, 0, 2, 1, 1</column>
 <column name="ap_block_state10_pp0_stage8_iter0">and, 0, 0, 2, 1, 1</column>
-<column name="ap_block_state19_pp0_stage1_iter1">and, 0, 0, 2, 1, 1</column>
-<column name="ap_block_state47_pp0_stage13_iter2">and, 0, 0, 2, 1, 1</column>
-<column name="tmp_10_fu_285_p2">and, 0, 0, 2, 1, 1</column>
-<column name="tmp_15_fu_325_p2">and, 0, 0, 2, 1, 1</column>
-<column name="tmp_20_fu_372_p2">and, 0, 0, 2, 1, 1</column>
-<column name="tmp_25_fu_412_p2">and, 0, 0, 2, 1, 1</column>
-<column name="notlhs5_fu_307_p2">icmp, 0, 0, 11, 8, 2</column>
-<column name="notlhs7_fu_354_p2">icmp, 0, 0, 11, 8, 2</column>
-<column name="notlhs9_fu_394_p2">icmp, 0, 0, 11, 8, 2</column>
-<column name="notlhs_fu_267_p2">icmp, 0, 0, 11, 8, 2</column>
-<column name="notrhs1_fu_400_p2">icmp, 0, 0, 18, 23, 1</column>
-<column name="notrhs6_fu_313_p2">icmp, 0, 0, 18, 23, 1</column>
-<column name="notrhs8_fu_360_p2">icmp, 0, 0, 18, 23, 1</column>
-<column name="notrhs_fu_273_p2">icmp, 0, 0, 18, 23, 1</column>
-<column name="tmp_fu_214_p2">icmp, 0, 0, 13, 10, 6</column>
-<column name="ap_block_pp0_stage0_00001">or, 0, 0, 2, 1, 1</column>
-<column name="ap_block_pp0_stage13_11001">or, 0, 0, 2, 1, 1</column>
+<column name="ap_block_state35_pp0_stage1_iter1">and, 0, 0, 2, 1, 1</column>
+<column name="ap_block_state45_pp0_stage11_iter1">and, 0, 0, 2, 1, 1</column>
+<column name="tmp_13_fu_467_p2">and, 0, 0, 2, 1, 1</column>
+<column name="tmp_18_fu_508_p2">and, 0, 0, 2, 1, 1</column>
+<column name="tmp_23_fu_596_p2">and, 0, 0, 2, 1, 1</column>
+<column name="tmp_28_fu_647_p2">and, 0, 0, 2, 1, 1</column>
+<column name="exitcond1_fu_336_p2">icmp, 0, 0, 13, 10, 6</column>
+<column name="notlhs1_fu_629_p2">icmp, 0, 0, 11, 8, 2</column>
+<column name="notlhs6_fu_490_p2">icmp, 0, 0, 11, 8, 2</column>
+<column name="notlhs8_fu_580_p2">icmp, 0, 0, 11, 8, 2</column>
+<column name="notlhs_fu_449_p2">icmp, 0, 0, 11, 8, 2</column>
+<column name="notrhs1_fu_635_p2">icmp, 0, 0, 18, 23, 1</column>
+<column name="notrhs7_fu_496_p2">icmp, 0, 0, 18, 23, 1</column>
+<column name="notrhs9_fu_586_p2">icmp, 0, 0, 18, 23, 1</column>
+<column name="notrhs_fu_455_p2">icmp, 0, 0, 18, 23, 1</column>
+<column name="ap_block_pp0_stage11_11001">or, 0, 0, 2, 1, 1</column>
+<column name="ap_block_pp0_stage14_11001">or, 0, 0, 2, 1, 1</column>
+<column name="ap_block_pp0_stage3_11001">or, 0, 0, 2, 1, 1</column>
 <column name="ap_block_state5_pp0_stage3_iter0">or, 0, 0, 2, 1, 1</column>
-<column name="tmp_13_fu_319_p2">or, 0, 0, 2, 1, 1</column>
-<column name="tmp_18_fu_366_p2">or, 0, 0, 2, 1, 1</column>
-<column name="tmp_23_fu_406_p2">or, 0, 0, 2, 1, 1</column>
-<column name="tmp_26_fu_331_p2">or, 0, 0, 2, 1, 1</column>
-<column name="tmp_27_fu_418_p2">or, 0, 0, 2, 1, 1</column>
-<column name="tmp_28_fu_424_p2">or, 0, 0, 2, 1, 1</column>
-<column name="tmp_9_fu_279_p2">or, 0, 0, 2, 1, 1</column>
-<column name="tmp_7_fu_428_p3">select, 0, 0, 30, 1, 30</column>
+<column name="tmp_10_fu_461_p2">or, 0, 0, 2, 1, 1</column>
+<column name="tmp_16_fu_502_p2">or, 0, 0, 2, 1, 1</column>
+<column name="tmp_1_4_fu_388_p2">or, 0, 0, 12, 12, 2</column>
+<column name="tmp_21_fu_592_p2">or, 0, 0, 2, 1, 1</column>
+<column name="tmp_25_2_fu_546_p2">or, 0, 0, 12, 12, 2</column>
+<column name="tmp_25_s_fu_519_p2">or, 0, 0, 12, 12, 1</column>
+<column name="tmp_26_fu_641_p2">or, 0, 0, 2, 1, 1</column>
+<column name="tmp_29_fu_513_p2">or, 0, 0, 2, 1, 1</column>
+<column name="tmp_2_5_fu_404_p2">or, 0, 0, 12, 12, 2</column>
+<column name="tmp_30_fu_653_p2">or, 0, 0, 2, 1, 1</column>
+<column name="tmp_31_fu_659_p2">or, 0, 0, 2, 1, 1</column>
+<column name="tmp_s_fu_372_p2">or, 0, 0, 12, 12, 1</column>
+<column name="tmp_s_6_fu_663_p3">select, 0, 0, 30, 1, 30</column>
 <column name="ap_enable_pp0">xor, 0, 0, 2, 1, 2</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
 <keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
-<column name="ap_NS_fsm">93, 19, 1, 19</column>
-<column name="ap_enable_reg_pp0_iter3">9, 2, 1, 2</column>
-<column name="ap_phi_mux_i_phi_fu_120_p4">9, 2, 10, 20</column>
-<column name="grp_fu_127_p0">44, 9, 32, 288</column>
-<column name="grp_fu_127_p1">59, 14, 32, 448</column>
-<column name="grp_fu_132_p0">27, 5, 32, 160</column>
-<column name="grp_fu_132_p1">27, 5, 32, 160</column>
-<column name="grp_fu_136_p0">27, 5, 32, 160</column>
-<column name="grp_fu_136_p1">15, 3, 32, 96</column>
-<column name="grp_fu_140_p0">27, 5, 32, 160</column>
-<column name="i_reg_116">9, 2, 10, 20</column>
+<column name="ap_NS_fsm">157, 35, 1, 35</column>
+<column name="ap_enable_reg_pp0_iter2">9, 2, 1, 2</column>
+<column name="ap_phi_mux_i_phi_fu_216_p4">9, 2, 10, 20</column>
+<column name="count_reg_223">9, 2, 12, 24</column>
+<column name="data2_address">56, 13, 32, 416</column>
+<column name="data2_dataout">38, 7, 32, 224</column>
+<column name="grp_fu_235_p0">44, 9, 32, 288</column>
+<column name="grp_fu_235_p1">50, 11, 32, 352</column>
+<column name="grp_fu_240_p0">38, 7, 32, 224</column>
+<column name="grp_fu_240_p1">33, 6, 32, 192</column>
+<column name="grp_fu_244_p0">15, 3, 32, 96</column>
+<column name="grp_fu_244_p1">15, 3, 32, 96</column>
+<column name="grp_fu_256_p0">21, 4, 32, 128</column>
+<column name="i_reg_212">9, 2, 10, 20</column>
 </table>
 </item>
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
-<column name="ap_CS_fsm">18, 0, 18, 0</column>
+<column name="ap_CS_fsm">34, 0, 34, 0</column>
 <column name="ap_enable_reg_pp0_iter0">1, 0, 1, 0</column>
 <column name="ap_enable_reg_pp0_iter1">1, 0, 1, 0</column>
 <column name="ap_enable_reg_pp0_iter2">1, 0, 1, 0</column>
-<column name="ap_enable_reg_pp0_iter3">1, 0, 1, 0</column>
-<column name="data1_addr_read_1_reg_467">32, 0, 32, 0</column>
-<column name="data1_addr_read_2_reg_472">32, 0, 32, 0</column>
-<column name="data1_addr_read_3_reg_477">32, 0, 32, 0</column>
-<column name="data1_addr_read_reg_462">32, 0, 32, 0</column>
-<column name="data2_addr_reg_451">10, 0, 32, 22</column>
-<column name="i_1_reg_441">10, 0, 10, 0</column>
-<column name="i_reg_116">10, 0, 10, 0</column>
-<column name="reg_145">32, 0, 32, 0</column>
-<column name="reg_150">32, 0, 32, 0</column>
-<column name="reg_155">32, 0, 32, 0</column>
-<column name="reg_160">32, 0, 32, 0</column>
-<column name="reg_165">32, 0, 32, 0</column>
-<column name="reg_171">32, 0, 32, 0</column>
-<column name="reg_177">32, 0, 32, 0</column>
-<column name="reg_183">32, 0, 32, 0</column>
-<column name="reg_188">32, 0, 32, 0</column>
-<column name="reg_194">32, 0, 32, 0</column>
-<column name="reg_199">32, 0, 32, 0</column>
-<column name="reg_204">32, 0, 32, 0</column>
-<column name="reg_209">32, 0, 32, 0</column>
-<column name="tempVal_1_0_3_reg_522">32, 0, 32, 0</column>
-<column name="tempVal_1_1_3_reg_534">32, 0, 32, 0</column>
-<column name="tempVal_1_2_3_reg_546">32, 0, 32, 0</column>
-<column name="tempVal_1_3_3_reg_558">32, 0, 32, 0</column>
-<column name="tmp_19_0_2_reg_482">32, 0, 32, 0</column>
-<column name="tmp_19_0_3_reg_487">32, 0, 32, 0</column>
-<column name="tmp_19_1_2_reg_492">32, 0, 32, 0</column>
-<column name="tmp_19_1_3_reg_497">32, 0, 32, 0</column>
-<column name="tmp_19_2_2_reg_502">32, 0, 32, 0</column>
-<column name="tmp_19_2_3_reg_507">32, 0, 32, 0</column>
-<column name="tmp_19_3_2_reg_512">32, 0, 32, 0</column>
-<column name="tmp_19_3_3_reg_517">32, 0, 32, 0</column>
-<column name="tmp_19_reg_553">1, 0, 1, 0</column>
-<column name="tmp_1_reg_446">10, 0, 12, 2</column>
-<column name="tmp_26_reg_541">1, 0, 1, 0</column>
-<column name="tmp_27_reg_565">1, 0, 1, 0</column>
-<column name="tmp_5_reg_529">1, 0, 1, 0</column>
-<column name="tmp_7_reg_570">7, 0, 32, 25</column>
-<column name="tmp_reg_437">1, 0, 1, 0</column>
-<column name="data2_addr_reg_451">64, 32, 32, 22</column>
-<column name="tmp_reg_437">64, 32, 1, 0</column>
+<column name="count_reg_223">12, 0, 12, 0</column>
+<column name="data1_addr_read_1_reg_712">32, 0, 32, 0</column>
+<column name="data1_addr_read_2_reg_717">32, 0, 32, 0</column>
+<column name="data1_addr_read_3_reg_722">32, 0, 32, 0</column>
+<column name="data1_addr_read_reg_707">32, 0, 32, 0</column>
+<column name="data2_addr_1_reg_762">10, 0, 32, 22</column>
+<column name="data2_addr_2_reg_768">10, 0, 32, 22</column>
+<column name="data2_addr_3_reg_774">10, 0, 32, 22</column>
+<column name="data2_addr_reg_695">10, 0, 32, 22</column>
+<column name="data2_addr_reg_695_pp0_iter1_reg">10, 0, 32, 22</column>
+<column name="exitcond1_reg_678">1, 0, 1, 0</column>
+<column name="exitcond1_reg_678_pp0_iter1_reg">1, 0, 1, 0</column>
+<column name="i_1_reg_682">10, 0, 10, 0</column>
+<column name="i_reg_212">10, 0, 10, 0</column>
+<column name="notlhs8_reg_800">1, 0, 1, 0</column>
+<column name="notrhs9_reg_805">1, 0, 1, 0</column>
+<column name="reg_261">32, 0, 32, 0</column>
+<column name="reg_266">32, 0, 32, 0</column>
+<column name="reg_271">32, 0, 32, 0</column>
+<column name="reg_276">32, 0, 32, 0</column>
+<column name="reg_281">32, 0, 32, 0</column>
+<column name="reg_287">32, 0, 32, 0</column>
+<column name="reg_292">32, 0, 32, 0</column>
+<column name="reg_297">32, 0, 32, 0</column>
+<column name="reg_303">32, 0, 32, 0</column>
+<column name="reg_311">32, 0, 32, 0</column>
+<column name="reg_317">32, 0, 32, 0</column>
+<column name="reg_324">32, 0, 32, 0</column>
+<column name="reg_331">32, 0, 32, 0</column>
+<column name="tmp_11_reg_752">1, 0, 1, 0</column>
+<column name="tmp_13_3_reg_747">32, 0, 32, 0</column>
+<column name="tmp_17_reg_757">1, 0, 1, 0</column>
+<column name="tmp_19_1_reg_732">32, 0, 32, 0</column>
+<column name="tmp_22_1_reg_737">32, 0, 32, 0</column>
+<column name="tmp_22_2_reg_742">32, 0, 32, 0</column>
+<column name="tmp_22_reg_780">1, 0, 1, 0</column>
+<column name="tmp_25_1_reg_790">12, 0, 13, 1</column>
+<column name="tmp_25_2_reg_795">10, 0, 12, 2</column>
+<column name="tmp_29_reg_785">1, 0, 1, 0</column>
+<column name="tmp_30_reg_810">1, 0, 1, 0</column>
+<column name="tmp_9_reg_727">32, 0, 32, 0</column>
+<column name="tmp_reg_687">10, 0, 12, 2</column>
+<column name="tmp_reg_687_pp0_iter1_reg">10, 0, 12, 2</column>
+<column name="tmp_s_6_reg_815">7, 0, 32, 25</column>
 </table>
 </item>
 </section>
