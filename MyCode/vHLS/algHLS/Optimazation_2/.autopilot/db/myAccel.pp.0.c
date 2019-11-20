@@ -2219,52 +2219,82 @@ void myFuncAccel (unsigned int size, unsigned int dim, dataType_t threshold, dat
 #pragma HLS INTERFACE ap_bus depth=4000 port=&data1
 #pragma HLS INTERFACE ap_bus depth=4000 port=&data2
 
- unsigned int i, k, l,count,r,newcounter;
+ unsigned int i, k, l,count,r;
  dataType_t tempVal;
  size = 1000;
  dim = 4;
  threshold = 100;
+ dataType_t tempArrOut[16];
+ dataType_t tempArrData1[4];
 
-  count = 0;
+ dataType_t tempArrData0[4];
+ dataType_t finalOut[4];
+
   sizeLoop:
   for ( i = 0 ; i < size ; i ++ )
   {
 #pragma HLS pipeline II=4
 
-initLoop: for ( k = 0 ; k < dim ; k ++ )
-   {
 
-    data2 [ i*dim + k ] = 0.0 ;
-   }
 
-   newcounter=0;
-   r=0;
-valueAsn: for ( k = 0 ; k < dim*dim ; k +=dim )
+
+
+
+
+
+ r=0;
+valueAsn: for ( k = 0 ; k < dim ; k ++ )
    {
 
 
     tempVal=0;
-# 51 "../myAccel.c"
-    tempVal += data0 [ newcounter*dim +0 ] * data1 [ i * dim + 0 ];
-    tempVal += data0 [ newcounter*dim +1 ] * data1 [ i * dim + 1 ];
-    tempVal += data0 [ newcounter*dim +2 ] * data1 [ i * dim + 2 ];
-    tempVal += data0 [ newcounter*dim +3 ] * data1 [ i * dim + 3 ];
-
-    newcounter++;
-    data2 [ count ]= tempVal;
+    float tempTotal;
 
 
 
 
 
-
-    if(data2 [ count] <= threshold){
-     r = 1;
+    for ( l = 0 ; l < dim ; l ++ )
+    {
+     if(i == 0){
+      tempArrData0[l] = data0 [ k * dim + l ];
+     }
 
     }
-    count++;
+
+valueAsnInner: for ( l = 0 ; l < dim ; l ++ )
+    {
+
+     if(k == 0){
+      tempArrData1[l] = data1 [ i * dim + l ];
+     }
+
+
+
+
+
+     tempArrOut[k * dim + l] = tempArrData0[l] * tempArrData1[l];
+
+
+
+    }
+# 94 "../myAccel.c"
    }
 
+
+
+
+   for ( k = 0 ; k < dim ; k ++ )
+   {
+    finalOut[k] = tempArrOut[k * dim + 0]+tempArrOut[k * dim + 1]+tempArrOut[k * dim + 2]+tempArrOut[k * dim + 3];
+
+    data2 [ i*dim + k ] = finalOut[k];
+        if(finalOut[k] <= threshold){
+         r = 1;
+
+        }
+   }
+# 129 "../myAccel.c"
 zeroAsn: for ( l = 0 ;l < dim ; l ++ )
    {
 

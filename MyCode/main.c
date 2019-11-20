@@ -18,11 +18,11 @@ void myFunc (unsigned int size, unsigned int dim, dataType_t threshold, dataType
 			for ( l = 0 ; l < dim ; l ++ )
 			{
 				data2 [ i*dim + k ] += data0 [ k * dim + l ] * data1 [ i*dim+ l ];
-				printf("l %d value %f data0 %f data1 %f\n",l, (data2 [ i*dim + k ]), (data0 [ k * dim + l ]), (data1 [ i*dim+ l ]1));
-				
-			}			
+				//printf("l %d value %f data0 %f data1 %f\n",l, (data2 [ i*dim + k ]), (data0 [ k * dim + l ]), (data1 [ i*dim+ l ]));
+
+			}
 		}
-		
+
 		int r = 1 ;
 
 		//In this case threshold works as upper bound. If threshold cannot surpass
@@ -49,12 +49,12 @@ void myFunc (unsigned int size, unsigned int dim, dataType_t threshold, dataType
  *If an element does not match something went wrong so print an error message
  */
 void validityChecker(unsigned int size, unsigned int dim, dataType_t * data2, dataType_t * data2_hw){
-	
+
 	unsigned int flag = 0;
 	for(int i=0; flag!=1 && i<dim*size; i++){
 		// printf("%f, %f \n", data2[i], data2_hw[i] );
 		flag = data2[i] != data2_hw[i] ? 1 : 0;
-		
+
 	}
 
 	printf(flag==1 ? "SOMETHING WENT WRONG\n\n" : "SUCCESS\n\n");
@@ -63,7 +63,7 @@ void validityChecker(unsigned int size, unsigned int dim, dataType_t * data2, da
 }
 
 int main(int argc, char ** argv)
-{	
+{
 
 	unsigned int i;
 
@@ -83,7 +83,7 @@ int main(int argc, char ** argv)
 	assert(threshold>=0.0);
 
 	printf("Seed %u\nSize %u\nDimension %u\nThreshold %f\n\n", seed, size, dim, threshold);
-	fflush(stdout);	
+	fflush(stdout);
 
 	/* Allocate space and assign rand values*/
 	dataType_t * data0 = (dataType_t *)malloc(sizeof(dataType_t)*dim*dim);
@@ -95,7 +95,7 @@ int main(int argc, char ** argv)
 		dataType_t d = ((float)(rand()%10))/10;
 		data0[i] = t+d;
 	}
-	
+
 	dataType_t * data1 = (dataType_t *)malloc(sizeof(dataType_t)*dim*size);
 	assert(data1!=NULL);
 
@@ -158,6 +158,6 @@ int main(int argc, char ** argv)
 	free(data2);
 	free(data2_hw);
 
-	
+
 	return 0;
 }
