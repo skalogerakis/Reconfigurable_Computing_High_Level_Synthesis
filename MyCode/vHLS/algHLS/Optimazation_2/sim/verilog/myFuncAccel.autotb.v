@@ -1,5 +1,5 @@
 // ==============================================================
-// File generated on Mon Nov 18 23:04:56 EET 2019
+// File generated on Thu Nov 21 13:36:25 EET 2019
 // Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
 // SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
 // IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
@@ -38,7 +38,7 @@ module `AUTOTB_TOP;
 
 parameter AUTOTB_TRANSACTION_NUM = 1;
 parameter PROGRESS_TIMEOUT = 10000000;
-parameter LATENCY_ESTIMATION = 16034;
+parameter LATENCY_ESTIMATION = 4066;
 parameter LENGTH_data0 = 16;
 parameter LENGTH_data1 = 4000;
 parameter LENGTH_data2 = 4000;

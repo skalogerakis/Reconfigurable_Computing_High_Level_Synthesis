@@ -1,5 +1,5 @@
 // ==============================================================
-// File generated on Mon Nov 18 23:04:42 EET 2019
+// File generated on Thu Nov 21 13:36:10 EET 2019
 // Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
 // SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
 // IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
@@ -2108,6 +2108,7 @@ void myFunc (unsigned int size, unsigned int dim, dataType_t threshold, dataType
    {
     data2 [ i*dim + k ] += data0 [ k * dim + l ] * data1 [ i*dim+ l ];
 
+
    }
   }
 
@@ -2152,13 +2153,13 @@ void validityChecker(unsigned int size, unsigned int dim, dataType_t * data2, da
 
 
 #ifndef HLS_FASTSIM
-#64 "/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/main.c"
+#65 "/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/main.c"
 
 #ifndef HLS_FASTSIM
 #include "apatb_myFuncAccel.h"
 #endif
 
-#64 "/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/main.c"
+#65 "/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/main.c"
 int main(int argc, char ** argv)
 {
 
@@ -2166,25 +2167,25 @@ int main(int argc, char ** argv)
 
 
  unsigned int seed = (unsigned int)atoi(argv[1]);
- ((void) sizeof ((seed>=0) ? 1 : 0), __extension__ ({ if (seed>=0) ; else __assert_fail ("seed>=0", "/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/main.c", 71, __extension__ __PRETTY_FUNCTION__); }));
+ ((void) sizeof ((seed>=0) ? 1 : 0), __extension__ ({ if (seed>=0) ; else __assert_fail ("seed>=0", "/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/main.c", 72, __extension__ __PRETTY_FUNCTION__); }));
 
  srand(seed);
 
  unsigned int size = (unsigned int)atoi(argv[2]);
- ((void) sizeof ((size>=1) ? 1 : 0), __extension__ ({ if (size>=1) ; else __assert_fail ("size>=1", "/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/main.c", 76, __extension__ __PRETTY_FUNCTION__); }));
+ ((void) sizeof ((size>=1) ? 1 : 0), __extension__ ({ if (size>=1) ; else __assert_fail ("size>=1", "/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/main.c", 77, __extension__ __PRETTY_FUNCTION__); }));
 
  unsigned int dim = (unsigned int)atoi(argv[3]);
- ((void) sizeof ((dim>=2) ? 1 : 0), __extension__ ({ if (dim>=2) ; else __assert_fail ("dim>=2", "/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/main.c", 79, __extension__ __PRETTY_FUNCTION__); }));
+ ((void) sizeof ((dim>=2) ? 1 : 0), __extension__ ({ if (dim>=2) ; else __assert_fail ("dim>=2", "/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/main.c", 80, __extension__ __PRETTY_FUNCTION__); }));
 
  dataType_t threshold = (dataType_t)atof(argv[4]);
- ((void) sizeof ((threshold>=0.0) ? 1 : 0), __extension__ ({ if (threshold>=0.0) ; else __assert_fail ("threshold>=0.0", "/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/main.c", 82, __extension__ __PRETTY_FUNCTION__); }));
+ ((void) sizeof ((threshold>=0.0) ? 1 : 0), __extension__ ({ if (threshold>=0.0) ; else __assert_fail ("threshold>=0.0", "/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/main.c", 83, __extension__ __PRETTY_FUNCTION__); }));
 
  printf("Seed %u\nSize %u\nDimension %u\nThreshold %f\n\n", seed, size, dim, threshold);
  fflush(stdout);
 
 
  dataType_t * data0 = (dataType_t *)malloc(sizeof(dataType_t)*dim*dim);
- ((void) sizeof ((data0!=((void*)0)) ? 1 : 0), __extension__ ({ if (data0!=((void*)0)) ; else __assert_fail ("data0!=NULL", "/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/main.c", 89, __extension__ __PRETTY_FUNCTION__); }));
+ ((void) sizeof ((data0!=((void*)0)) ? 1 : 0), __extension__ ({ if (data0!=((void*)0)) ; else __assert_fail ("data0!=NULL", "/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/main.c", 90, __extension__ __PRETTY_FUNCTION__); }));
 
  for(i=0;i<dim*dim;i++)
  {
@@ -2194,7 +2195,7 @@ int main(int argc, char ** argv)
  }
 
  dataType_t * data1 = (dataType_t *)malloc(sizeof(dataType_t)*dim*size);
- ((void) sizeof ((data1!=((void*)0)) ? 1 : 0), __extension__ ({ if (data1!=((void*)0)) ; else __assert_fail ("data1!=NULL", "/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/main.c", 99, __extension__ __PRETTY_FUNCTION__); }));
+ ((void) sizeof ((data1!=((void*)0)) ? 1 : 0), __extension__ ({ if (data1!=((void*)0)) ; else __assert_fail ("data1!=NULL", "/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/main.c", 100, __extension__ __PRETTY_FUNCTION__); }));
 
  for(i=0;i<dim*size;i++)
  {
@@ -2206,7 +2207,7 @@ int main(int argc, char ** argv)
 
 
  dataType_t * data2 = (dataType_t *)malloc(sizeof(dataType_t)*dim*size);
- ((void) sizeof ((data2!=((void*)0)) ? 1 : 0), __extension__ ({ if (data2!=((void*)0)) ; else __assert_fail ("data2!=NULL", "/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/main.c", 111, __extension__ __PRETTY_FUNCTION__); }));
+ ((void) sizeof ((data2!=((void*)0)) ? 1 : 0), __extension__ ({ if (data2!=((void*)0)) ; else __assert_fail ("data2!=NULL", "/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/main.c", 112, __extension__ __PRETTY_FUNCTION__); }));
 
  printf("Executing myFunc...\n");
  fflush(stdout);
@@ -2228,7 +2229,7 @@ int main(int argc, char ** argv)
 
 
  dataType_t * data2_hw = (dataType_t *)malloc(sizeof(dataType_t)*dim*size);
- ((void) sizeof ((data2_hw!=((void*)0)) ? 1 : 0), __extension__ ({ if (data2_hw!=((void*)0)) ; else __assert_fail ("data2_hw!=NULL", "/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/main.c", 133, __extension__ __PRETTY_FUNCTION__); }));
+ ((void) sizeof ((data2_hw!=((void*)0)) ? 1 : 0), __extension__ ({ if (data2_hw!=((void*)0)) ; else __assert_fail ("data2_hw!=NULL", "/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/main.c", 134, __extension__ __PRETTY_FUNCTION__); }));
 
  printf("Executing myFuncAccel...\n");
  fflush(stdout);
@@ -2245,19 +2246,19 @@ int main(int argc, char ** argv)
 #define myFuncAccel AESL_WRAP_myFuncAccel
 #endif
 
-#145 "/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/main.c"
+#146 "/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/main.c"
 
 #ifndef HLS_FASTSIM
 #define myFuncAccel AESL_WRAP_myFuncAccel
 #endif
 
-#145 "/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/main.c"
+#146 "/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/main.c"
 myFuncAccel
 #undef myFuncAccel
-#145 "/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/main.c"
+#146 "/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/main.c"
 
 #undef myFuncAccel
-#145 "/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/main.c"
+#146 "/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/main.c"
  (size, dim, threshold, data0, data1, data2_hw);
 
  clock_gettime(0, &timerStop_hw);
@@ -2277,4 +2278,4 @@ myFuncAccel
  return 0;
 }
 #endif
-#162 "/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/main.c"
+#163 "/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/main.c"

@@ -7,26 +7,26 @@ WARNING: [COSIM-76] Bus port 'data2' has a depth of '4000'. Insufficient depth m
    Compiling apatb_myFuncAccel.cpp
    Compiling (apcc) myAccel.c_pre.c.tb.c
 INFO: [HLS 200-10] Running '/tools/Xilinx/Vivado/2018.3/bin/unwrapped/lnx64.o/apcc'
-INFO: [HLS 200-10] For user 'root' on host 'skl' (Linux_x86_64 version 5.0.0-36-generic) on Mon Nov 18 23:04:47 EET 2019
+INFO: [HLS 200-10] For user 'root' on host 'skl' (Linux_x86_64 version 5.0.0-36-generic) on Thu Nov 21 13:36:16 EET 2019
 INFO: [HLS 200-10] On os Ubuntu 18.04.3 LTS
 INFO: [HLS 200-10] In directory '/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/vHLS/algHLS/Optimazation_2/sim/wrapc'
 clang: warning: argument unused during compilation: '-fno-builtin-isinf'
 clang: warning: argument unused during compilation: '-fno-builtin-isnan'
-INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_root/114971574111087679552
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_root/58881574336176750537
 INFO: [APCC 202-1] APCC is done.
    Compiling (apcc) main.c_pre.c.tb.c
 INFO: [HLS 200-10] Running '/tools/Xilinx/Vivado/2018.3/bin/unwrapped/lnx64.o/apcc'
-INFO: [HLS 200-10] For user 'root' on host 'skl' (Linux_x86_64 version 5.0.0-36-generic) on Mon Nov 18 23:04:52 EET 2019
+INFO: [HLS 200-10] For user 'root' on host 'skl' (Linux_x86_64 version 5.0.0-36-generic) on Thu Nov 21 13:36:21 EET 2019
 INFO: [HLS 200-10] On os Ubuntu 18.04.3 LTS
 INFO: [HLS 200-10] In directory '/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/vHLS/algHLS/Optimazation_2/sim/wrapc'
 clang: warning: argument unused during compilation: '-fno-builtin-isinf'
 clang: warning: argument unused during compilation: '-fno-builtin-isnan'
 In file included from /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/main.c:1:
-/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/main.c:71:63: warning: comparison of unsigned expression >= 0 is always true [-Wtautological-compare]
- ((void) sizeof ((seed>=0) ? 1 : 0), __extension__ ({ if (seed>=0) ; else __assert_fail ("seed>=0", "/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/main.c", 71, __extension__ __PRETTY_FUNCTION__); }));
+/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/main.c:72:63: warning: comparison of unsigned expression >= 0 is always true [-Wtautological-compare]
+ ((void) sizeof ((seed>=0) ? 1 : 0), __extension__ ({ if (seed>=0) ; else __assert_fail ("seed>=0", "/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/main.c", 72, __extension__ __PRETTY_FUNCTION__); }));
                                                           ~~~~^ ~
 1 warning generated.
-INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_root/115591574111092196411
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_root/59671574336181402979
 INFO: [APCC 202-1] APCC is done.
    Generating cosim.tv.exe
 INFO: [COSIM-302] Starting C TB testing ... 
@@ -41,10 +41,10 @@ Dimension 4
 Threshold 100.000000
 
 Executing myFunc...
-Reference Code execution time: 0.000363
+Reference Code execution time: 0.000515
 
 Executing myFuncAccel...
-Hardware execution time: 0.060313
+Hardware execution time: 0.058723
 
 SUCCESS
 
@@ -305,8 +305,8 @@ Built simulation snapshot myFuncAccel
     ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 
 source /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/vHLS/algHLS/Optimazation_2/sim/verilog/xsim.dir/myFuncAccel/webtalk/xsim_webtalk.tcl -notrace
-INFO: [Common 17-186] '/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/vHLS/algHLS/Optimazation_2/sim/verilog/xsim.dir/myFuncAccel/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Mon Nov 18 23:05:35 2019. For additional details about this file, please refer to the WebTalk help file at /tools/Xilinx/Vivado/2018.3/doc/webtalk_introduction.html.
-INFO: [Common 17-206] Exiting Webtalk at Mon Nov 18 23:05:35 2019...
+INFO: [Common 17-186] '/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/vHLS/algHLS/Optimazation_2/sim/verilog/xsim.dir/myFuncAccel/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Thu Nov 21 13:37:07 2019. For additional details about this file, please refer to the WebTalk help file at /tools/Xilinx/Vivado/2018.3/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Thu Nov 21 13:37:07 2019...
 
 ****** xsim v2018.3 (64-bit)
   **** SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
@@ -327,37 +327,57 @@ source myFuncAccel.tcl
 ////////////////////////////////////////////////////////////////////////////////////
 // RTL Simulation : 0 / 1 [0.00%] @ "125000"
 Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
-Time: 165 ns  Iteration: 11  Process: /apatb_myFuncAccel_top/AESL_inst_myFuncAccel/myFuncAccel_fadd_32ns_32ns_32_5_full_dsp_1_U1/myFuncAccel_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2018.3/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Time: 495 ns  Iteration: 11  Process: /apatb_myFuncAccel_top/AESL_inst_myFuncAccel/myFuncAccel_fadd_32ns_32ns_32_5_full_dsp_1_U1/myFuncAccel_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2018.3/data/vhdl/src/unisims/primitive/DSP48E1.vhd
 Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
-Time: 255 ns  Iteration: 12  Process: /apatb_myFuncAccel_top/AESL_inst_myFuncAccel/myFuncAccel_fadd_32ns_32ns_32_5_full_dsp_1_U1/myFuncAccel_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2018.3/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Time: 495 ns  Iteration: 11  Process: /apatb_myFuncAccel_top/AESL_inst_myFuncAccel/myFuncAccel_fadd_32ns_32ns_32_5_full_dsp_1_U2/myFuncAccel_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2018.3/data/vhdl/src/unisims/primitive/DSP48E1.vhd
 Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
-Time: 305 ns  Iteration: 11  Process: /apatb_myFuncAccel_top/AESL_inst_myFuncAccel/myFuncAccel_fadd_32ns_32ns_32_5_full_dsp_1_U1/myFuncAccel_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2018.3/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Time: 495 ns  Iteration: 11  Process: /apatb_myFuncAccel_top/AESL_inst_myFuncAccel/myFuncAccel_fadd_32ns_32ns_32_5_full_dsp_1_U3/myFuncAccel_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2018.3/data/vhdl/src/unisims/primitive/DSP48E1.vhd
 Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
-Time: 355 ns  Iteration: 11  Process: /apatb_myFuncAccel_top/AESL_inst_myFuncAccel/myFuncAccel_fadd_32ns_32ns_32_5_full_dsp_1_U1/myFuncAccel_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2018.3/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Time: 595 ns  Iteration: 11  Process: /apatb_myFuncAccel_top/AESL_inst_myFuncAccel/myFuncAccel_fadd_32ns_32ns_32_5_full_dsp_1_U2/myFuncAccel_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2018.3/data/vhdl/src/unisims/primitive/DSP48E1.vhd
 Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
-Time: 160245 ns  Iteration: 11  Process: /apatb_myFuncAccel_top/AESL_inst_myFuncAccel/myFuncAccel_fadd_32ns_32ns_32_5_full_dsp_1_U1/myFuncAccel_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2018.3/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Time: 595 ns  Iteration: 11  Process: /apatb_myFuncAccel_top/AESL_inst_myFuncAccel/myFuncAccel_fadd_32ns_32ns_32_5_full_dsp_1_U3/myFuncAccel_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2018.3/data/vhdl/src/unisims/primitive/DSP48E1.vhd
 Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
-Time: 160285 ns  Iteration: 11  Process: /apatb_myFuncAccel_top/AESL_inst_myFuncAccel/myFuncAccel_fadd_32ns_32ns_32_5_full_dsp_1_U1/myFuncAccel_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2018.3/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Time: 605 ns  Iteration: 11  Process: /apatb_myFuncAccel_top/AESL_inst_myFuncAccel/myFuncAccel_fadd_32ns_32ns_32_5_full_dsp_1_U1/myFuncAccel_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2018.3/data/vhdl/src/unisims/primitive/DSP48E1.vhd
 Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
-Time: 160325 ns  Iteration: 11  Process: /apatb_myFuncAccel_top/AESL_inst_myFuncAccel/myFuncAccel_fadd_32ns_32ns_32_5_full_dsp_1_U1/myFuncAccel_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2018.3/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Time: 645 ns  Iteration: 11  Process: /apatb_myFuncAccel_top/AESL_inst_myFuncAccel/myFuncAccel_fadd_32ns_32ns_32_5_full_dsp_1_U3/myFuncAccel_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2018.3/data/vhdl/src/unisims/primitive/DSP48E1.vhd
 Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
-Time: 160365 ns  Iteration: 11  Process: /apatb_myFuncAccel_top/AESL_inst_myFuncAccel/myFuncAccel_fadd_32ns_32ns_32_5_full_dsp_1_U1/myFuncAccel_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2018.3/data/vhdl/src/unisims/primitive/DSP48E1.vhd
-// RTL Simulation : 1 / 1 [100.00%] @ "160485000"
+Time: 655 ns  Iteration: 11  Process: /apatb_myFuncAccel_top/AESL_inst_myFuncAccel/myFuncAccel_fadd_32ns_32ns_32_5_full_dsp_1_U1/myFuncAccel_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2018.3/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 655 ns  Iteration: 11  Process: /apatb_myFuncAccel_top/AESL_inst_myFuncAccel/myFuncAccel_fadd_32ns_32ns_32_5_full_dsp_1_U2/myFuncAccel_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2018.3/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 40585 ns  Iteration: 11  Process: /apatb_myFuncAccel_top/AESL_inst_myFuncAccel/myFuncAccel_fadd_32ns_32ns_32_5_full_dsp_1_U1/myFuncAccel_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2018.3/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 40585 ns  Iteration: 11  Process: /apatb_myFuncAccel_top/AESL_inst_myFuncAccel/myFuncAccel_fadd_32ns_32ns_32_5_full_dsp_1_U2/myFuncAccel_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2018.3/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 40585 ns  Iteration: 11  Process: /apatb_myFuncAccel_top/AESL_inst_myFuncAccel/myFuncAccel_fadd_32ns_32ns_32_5_full_dsp_1_U3/myFuncAccel_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2018.3/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 40625 ns  Iteration: 11  Process: /apatb_myFuncAccel_top/AESL_inst_myFuncAccel/myFuncAccel_fadd_32ns_32ns_32_5_full_dsp_1_U1/myFuncAccel_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2018.3/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 40625 ns  Iteration: 11  Process: /apatb_myFuncAccel_top/AESL_inst_myFuncAccel/myFuncAccel_fadd_32ns_32ns_32_5_full_dsp_1_U2/myFuncAccel_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2018.3/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 40625 ns  Iteration: 11  Process: /apatb_myFuncAccel_top/AESL_inst_myFuncAccel/myFuncAccel_fadd_32ns_32ns_32_5_full_dsp_1_U3/myFuncAccel_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2018.3/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 40665 ns  Iteration: 11  Process: /apatb_myFuncAccel_top/AESL_inst_myFuncAccel/myFuncAccel_fadd_32ns_32ns_32_5_full_dsp_1_U1/myFuncAccel_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2018.3/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 40665 ns  Iteration: 11  Process: /apatb_myFuncAccel_top/AESL_inst_myFuncAccel/myFuncAccel_fadd_32ns_32ns_32_5_full_dsp_1_U2/myFuncAccel_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2018.3/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 40665 ns  Iteration: 11  Process: /apatb_myFuncAccel_top/AESL_inst_myFuncAccel/myFuncAccel_fadd_32ns_32ns_32_5_full_dsp_1_U3/myFuncAccel_ap_fadd_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: /tools/Xilinx/Vivado/2018.3/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+// RTL Simulation : 1 / 1 [100.00%] @ "40805000"
 ////////////////////////////////////////////////////////////////////////////////////
-$finish called at time : 160525 ns : File "/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/vHLS/algHLS/Optimazation_2/sim/verilog/myFuncAccel.autotb.v" Line 465
-run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:11 . Memory (MB): peak = 1334.203 ; gain = 0.000 ; free physical = 469 ; free virtual = 5429
+$finish called at time : 40845 ns : File "/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/vHLS/algHLS/Optimazation_2/sim/verilog/myFuncAccel.autotb.v" Line 465
+run: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:11 . Memory (MB): peak = 1342.203 ; gain = 0.000 ; free physical = 308 ; free virtual = 5916
 ## quit
-INFO: [Common 17-206] Exiting xsim at Mon Nov 18 23:05:59 2019...
+INFO: [Common 17-206] Exiting xsim at Thu Nov 21 13:37:32 2019...
 Seed 1000
 Size 1000
 Dimension 4
 Threshold 100.000000
 
 Executing myFunc...
-Reference Code execution time: 0.000524
+Reference Code execution time: 0.000394
 
 Executing myFuncAccel...
-Hardware execution time: 0.020318
+Hardware execution time: 0.021003
 
 SUCCESS
 

@@ -1,5 +1,5 @@
 // ==============================================================
-// File generated on Mon Nov 18 23:04:44 EET 2019
+// File generated on Thu Nov 21 13:36:12 EET 2019
 // Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
 // SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
 // IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
@@ -2101,45 +2101,45 @@ void myFuncAccel (unsigned int size, unsigned int dim, dataType_t threshold, dat
 #pragma HLS INTERFACE ap_bus depth=4000 port=data1
 #pragma HLS INTERFACE ap_bus depth=4000 port=data2
 
- unsigned int i, k, l,count,r;
- dataType_t tempVal;
+ unsigned int z, i, k, l,count,r,newcounter;
  size = 1000;
  dim = 4;
  threshold = 100;
+ float cach1[dim];
+ float cach2[dim];
+ float cach3[dim];
+ float cach4[dim];
 
+  count = 0;
 
-  sizeLoop:
+copyLoop: for ( z = 0 ; z < dim ; z++){
+    cach1[z]=data0[z*dim];
+    cach2[z]=data0[z*dim+1];
+    cach3[z]=data0[z*dim+2];
+    cach4[z]=data0[z*dim+3];
+
+   }
+sizeLoop:
   for ( i = 0 ; i < size ; i ++ )
   {
 #pragma HLS pipeline II=4
-
 initLoop: for ( k = 0 ; k < dim ; k ++ )
    {
 
     data2 [ i*dim + k ] = 0.0 ;
    }
-
-
+   newcounter=0;
    r=0;
+
 valueAsn: for ( k = 0 ; k < dim ; k ++ )
    {
 
-
-    tempVal=0;
-
-#pragma HLS pipeline II=4
-
-valueAsnInner: for ( l = 0 ; l < dim ; l ++ )
-    {
-
-
-     tempVal += data0 [ k * dim + l ] * data1 [ i * dim + l ];
-
-
-    }
-
-    data2 [ i*dim + k ]= tempVal;
-    if(tempVal <= threshold){
+    data2 [ i*dim + k ]=
+      (cach1[k]*data1[ i * dim ])+
+      (cach2[k]*data1[ i * dim +1 ])+
+      (cach3[k]*data1[ i * dim +2 ])+
+      (cach4[k]*data1[ i * dim +3 ]);
+    if(data2 [ i*dim + k ] <= threshold){
      r = 1;
 
     }
@@ -2148,10 +2148,9 @@ valueAsnInner: for ( l = 0 ; l < dim ; l ++ )
 
 zeroAsn: for ( l = 0 ;l < dim ; l ++ )
    {
-
     data2 [ i*dim + l ] *= r;
-
    }
+
 
   }
 }

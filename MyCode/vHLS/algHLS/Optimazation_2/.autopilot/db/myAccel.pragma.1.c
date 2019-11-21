@@ -2219,88 +2219,57 @@ _ssdm_op_SpecInterface(data0, "ap_bus", 0, 0, "", 0, 16, "", "", "", 0, 0, 0, 0,
 _ssdm_op_SpecInterface(data1, "ap_bus", 0, 0, "", 0, 4000, "", "", "", 0, 0, 0, 0, "", "");
 _ssdm_op_SpecInterface(data2, "ap_bus", 0, 0, "", 0, 4000, "", "", "", 0, 0, 0, 0, "", "");
 
- unsigned int i, k, l,count,r;
- dataType_t tempVal;
+ unsigned int z, i, k, l,count,r,newcounter;
  size = 1000;
  dim = 4;
  threshold = 100;
- dataType_t tempArrOut[16];
- dataType_t tempArrData1[4];
+ float cach1[dim];
+ float cach2[dim];
+ float cach3[dim];
+ float cach4[dim];
 
- dataType_t tempArrData0[4];
- dataType_t finalOut[4];
+  count = 0;
 
-  sizeLoop:
+copyLoop: for ( z = 0 ; z < dim ; z++){
+
+    cach1[z]=data0[z*dim];
+    cach2[z]=data0[z*dim+1];
+    cach3[z]=data0[z*dim+2];
+    cach4[z]=data0[z*dim+3];
+
+   }
+sizeLoop:
   for ( i = 0 ; i < size ; i ++ )
   {
 _ssdm_op_SpecPipeline(4, 1, 1, 0, "");
+initLoop: for ( k = 0 ; k < dim ; k ++ )
+   {
 
+    data2 [ i*dim + k ] = 0.0 ;
+   }
+   newcounter=0;
+   r=0;
 
-
-
-
-
-
-
- r=0;
 valueAsn: for ( k = 0 ; k < dim ; k ++ )
    {
 
-
-    tempVal=0;
-    float tempTotal;
-
-
-
-
-
-    for ( l = 0 ; l < dim ; l ++ )
-    {
-     if(i == 0){
-      tempArrData0[l] = data0 [ k * dim + l ];
-     }
+    data2 [ i*dim + k ]=
+      (cach1[k]*data1[ i * dim ])+
+      (cach2[k]*data1[ i * dim +1 ])+
+      (cach3[k]*data1[ i * dim +2 ])+
+      (cach4[k]*data1[ i * dim +3 ]);
+    if(data2 [ i*dim + k ] <= threshold){
+     r = 1;
 
     }
 
-valueAsnInner: for ( l = 0 ; l < dim ; l ++ )
-    {
-
-     if(k == 0){
-      tempArrData1[l] = data1 [ i * dim + l ];
-     }
-
-
-
-
-
-     tempArrOut[k * dim + l] = tempArrData0[l] * tempArrData1[l];
-
-
-
-    }
-# 94 "../myAccel.c"
    }
 
-
-
-
-   for ( k = 0 ; k < dim ; k ++ )
-   {
-    finalOut[k] = tempArrOut[k * dim + 0]+tempArrOut[k * dim + 1]+tempArrOut[k * dim + 2]+tempArrOut[k * dim + 3];
-
-    data2 [ i*dim + k ] = finalOut[k];
-        if(finalOut[k] <= threshold){
-         r = 1;
-
-        }
-   }
-# 129 "../myAccel.c"
 zeroAsn: for ( l = 0 ;l < dim ; l ++ )
    {
-
     data2 [ i*dim + l ] *= r;
-
    }
+
 
   }
 }
