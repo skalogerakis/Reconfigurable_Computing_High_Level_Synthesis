@@ -2225,6 +2225,7 @@ void myFuncAccel (unsigned int size, unsigned int dim, dataType_t threshold, dat
  float cache[dim*dim];
  float tempArrData1[dim];
  float tempArrData2[dim];
+ float tempVal;
   count = 0;
 
 copyLoop: for ( z = 0 ; z < dim ; z++){
@@ -2254,8 +2255,10 @@ initLoop: for ( k = 0 ; k < dim ; k ++ )
    newcounter=0;
    r=0;
 
+
 valueAsn: for ( k = 0 ; k < dim ; k ++ )
    {
+
 
     if(k == 0){
      for(l = 0 ;l < dim ; l ++){
@@ -2263,10 +2266,22 @@ valueAsn: for ( k = 0 ; k < dim ; k ++ )
      }
     }
 
-    for(l = 0 ;l < dim ; l ++){
-     tempArrData2[k]+=(cache[k*dim+l]*tempArrData1[l]);
-    }
-# 86 "../myAccel.c"
+
+
+
+
+
+    tempArrData2[k]=(cache[k*dim]*tempArrData1[0])+
+            (cache[k*dim+1]*tempArrData1[1])+
+            (cache[k*dim+2]*tempArrData1[2])+
+            (cache[k*dim+3]*tempArrData1[3]);
+
+
+
+
+
+
+
     if(tempArrData2[k] <= threshold){
      r = 1;
 

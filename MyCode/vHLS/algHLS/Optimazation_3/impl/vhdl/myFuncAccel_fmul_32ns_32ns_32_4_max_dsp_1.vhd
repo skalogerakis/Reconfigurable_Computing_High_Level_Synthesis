@@ -1,5 +1,5 @@
 -- ==============================================================
--- File generated on Thu Nov 21 14:56:33 EET 2019
+-- File generated on Thu Nov 21 15:19:21 EET 2019
 -- Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
 -- SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
 -- IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
@@ -10,7 +10,7 @@ use ieee.std_logic_1164.all;
 
 entity myFuncAccel_fmul_32ns_32ns_32_4_max_dsp_1 is
     generic (
-        ID         : integer := 5;
+        ID         : integer := 4;
         NUM_STAGE  : integer := 4;
         din0_WIDTH : integer := 32;
         din1_WIDTH : integer := 32;

@@ -6,14 +6,15 @@
     </Simulation>
     <files xmlns="">
         <file name="../../../main.c" sc="0" tb="1" cflags=" -Wno-unknown-pragmas" blackbox="false"/>
-        <file name="../myLib.h" sc="0" tb="false" cflags="" blackbox="false"/>
         <file name="../myAccel.c" sc="0" tb="false" cflags="" blackbox="false"/>
+        <file name="../myLib.h" sc="0" tb="false" cflags="" blackbox="false"/>
     </files>
     <solutions xmlns="">
         <solution name="InitCode" status="inactive"/>
         <solution name="Optimization_1" status="inactive"/>
         <solution name="Optimazation_2" status="inactive"/>
-        <solution name="Optimazation_3" status="active"/>
+        <solution name="Optimazation_3" status="inactive"/>
+        <solution name="Optimazation_4" status="active"/>
     </solutions>
 </project>
 
