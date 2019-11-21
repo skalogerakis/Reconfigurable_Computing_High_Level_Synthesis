@@ -2218,20 +2218,28 @@ void myFuncAccel (unsigned int size, unsigned int dim, dataType_t threshold, dat
  size = 1000;
  dim = 4;
  threshold = 100;
- float cach1[dim];
- float cach2[dim];
- float cach3[dim];
- float cach4[dim];
+
+
+
+
+ float cache[dim*dim];
  float tempArrData1[dim];
  float tempArrData2[dim];
   count = 0;
 
 copyLoop: for ( z = 0 ; z < dim ; z++){
 #pragma HLS unroll factor=4
- cach1[z]=data0[z*dim];
-    cach2[z]=data0[z*dim+1];
-    cach3[z]=data0[z*dim+2];
-    cach4[z]=data0[z*dim+3];
+
+
+
+
+
+
+
+ cache[z*dim] = data0[z*dim];
+    cache[z*dim+1] = data0[z*dim+1];
+    cache[z*dim+2] = data0[z*dim+2];
+    cache[z*dim+3] = data0[z*dim+3];
 
    }
 sizeLoop:
@@ -2255,16 +2263,10 @@ valueAsn: for ( k = 0 ; k < dim ; k ++ )
      }
     }
 
-    tempArrData2[k]=(cach1[k]*tempArrData1[0])+
-        (cach2[k]*tempArrData1[1])+
-        (cach3[k]*tempArrData1[2])+
-        (cach4[k]*tempArrData1[3]);
-
-
-
-
-
-
+    for(l = 0 ;l < dim ; l ++){
+     tempArrData2[k]+=(cache[k*dim+l]*tempArrData1[l]);
+    }
+# 86 "../myAccel.c"
     if(tempArrData2[k] <= threshold){
      r = 1;
 
@@ -2275,7 +2277,7 @@ valueAsn: for ( k = 0 ; k < dim ; k ++ )
 zeroAsn: for ( l = 0 ;l < dim ; l ++ )
    {
     tempArrData2[l] *= r;
-    if(l == 3){
+    if(l == dim - 1){
      for ( k = 0 ;k < dim ; k ++ )
      {
       data2 [ i*dim + k ] = tempArrData2[k];

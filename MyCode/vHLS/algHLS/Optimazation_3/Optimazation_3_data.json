@@ -20,7 +20,7 @@
     "ClockPeriod": "10",
     "IsCombLogic": "0",
     "II": "x",
-    "Latency": "4050",
+    "Latency": "4054",
     "Uncertainty": "1.25"
   },
   "Xdc": {"OocClocks": ["create_clock -name ap_clk -period 10.000 [get_ports ap_clk]"]},
@@ -556,10 +556,10 @@
     "Hierarchy": {"ModuleName": "myFuncAccel"},
     "Metrics": {"myFuncAccel": {
         "Latency": {
-          "LatencyBest": "4050",
-          "LatencyAvg": "4050",
-          "LatencyWorst": "4050",
-          "PipelineII": "4051",
+          "LatencyBest": "4054",
+          "LatencyAvg": "4054",
+          "LatencyWorst": "4054",
+          "PipelineII": "4055",
           "PipelineDepth": "",
           "PipelineType": "none"
         },
@@ -571,15 +571,15 @@
         "Loops": [{
             "Name": "sizeLoop",
             "TripCount": "1000",
-            "Latency": "4031",
+            "Latency": "4035",
             "PipelineII": "4",
-            "PipelineDepth": "36"
+            "PipelineDepth": "40"
           }],
         "Area": {
           "BRAM_18K": "0",
-          "DSP48E": "21",
-          "FF": "3880",
-          "LUT": "4196"
+          "DSP48E": "23",
+          "FF": "4502",
+          "LUT": "4800"
         }
       }}
   },
@@ -593,7 +593,7 @@
   },
   "GenData": {
     "DataVersion": "0.1",
-    "Time": "2019-11-21 14:15:51 EET",
+    "Time": "2019-11-21 14:56:34 EET",
     "ToolName": "vivado_hls",
     "ToolVersion": "2018.3"
   }

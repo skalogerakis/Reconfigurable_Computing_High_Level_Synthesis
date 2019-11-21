@@ -2,17 +2,17 @@ INFO: [SIM 2] *************** CSIM start ***************
 INFO: [SIM 4] CSIM will launch GCC as the compiler.
    Compiling(apcc) ../../../../../main.c in debug mode
 INFO: [HLS 200-10] Running '/tools/Xilinx/Vivado/2018.3/bin/unwrapped/lnx64.o/apcc'
-INFO: [HLS 200-10] For user 'root' on host 'skl' (Linux_x86_64 version 5.0.0-36-generic) on Thu Nov 21 14:15:27 EET 2019
+INFO: [HLS 200-10] For user 'root' on host 'skl' (Linux_x86_64 version 5.0.0-36-generic) on Thu Nov 21 14:56:10 EET 2019
 INFO: [HLS 200-10] On os Ubuntu 18.04.3 LTS
 INFO: [HLS 200-10] In directory '/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/vHLS/algHLS/Optimazation_3/csim/build'
-INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_root/105051574338527829421
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_root/34941574340970145298
 INFO: [APCC 202-1] APCC is done.
    Compiling(apcc) ../../../../../myAccel.c in debug mode
 INFO: [HLS 200-10] Running '/tools/Xilinx/Vivado/2018.3/bin/unwrapped/lnx64.o/apcc'
-INFO: [HLS 200-10] For user 'root' on host 'skl' (Linux_x86_64 version 5.0.0-36-generic) on Thu Nov 21 14:15:33 EET 2019
+INFO: [HLS 200-10] For user 'root' on host 'skl' (Linux_x86_64 version 5.0.0-36-generic) on Thu Nov 21 14:56:15 EET 2019
 INFO: [HLS 200-10] On os Ubuntu 18.04.3 LTS
 INFO: [HLS 200-10] In directory '/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/vHLS/algHLS/Optimazation_3/csim/build'
-INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_root/105841574338533589200
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_root/35621574340975835412
 INFO: [APCC 202-1] APCC is done.
    Generating csim.exe
 Seed 1000
@@ -21,10 +21,10 @@ Dimension 4
 Threshold 100.000000
 
 Executing myFunc...
-Reference Code execution time: 0.000466
+Reference Code execution time: 0.000411
 
 Executing myFuncAccel...
-Hardware execution time: 0.000270
+Hardware execution time: 0.000322
 
 SUCCESS
 
