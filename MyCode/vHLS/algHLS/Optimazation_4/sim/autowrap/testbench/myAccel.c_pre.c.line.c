@@ -6,6 +6,7 @@
 #pragma line 1 "<command line>" 1
 #pragma line 1 "<built-in>" 2
 #pragma line 1 "/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/myAccel.c" 2
+#pragma empty_line
 #pragma line 1 "/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/myLib.h" 1
 #pragma line 1 "/usr/include/stdio.h" 1 3 4
 #pragma line 27 "/usr/include/stdio.h" 3 4
@@ -2080,53 +2081,42 @@ typedef float dataType_t;
 #pragma empty_line
 void myFunc (unsigned int size, unsigned int dim, dataType_t threshold, dataType_t * data0, dataType_t * data1, dataType_t * data2);
 void myFuncAccel (unsigned int size, unsigned int dim, dataType_t threshold, dataType_t * data0, dataType_t * data1, dataType_t * data2);
-#pragma line 2 "/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/myAccel.c" 2
-#pragma line 15 "/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/myAccel.c"
+#pragma line 3 "/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/myAccel.c" 2
+#pragma line 17 "/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/myAccel.c"
 void myFuncAccel (unsigned int size, unsigned int dim, dataType_t threshold, dataType_t * data0, dataType_t * data1, dataType_t * data2)
 {
 #pragma empty_line
 #pragma HLS INTERFACE ap_bus depth=16 port=data0
-#pragma HLS INTERFACE ap_bus depth=16000 port=data1
-#pragma HLS INTERFACE ap_bus depth=16000 port=data2
+#pragma HLS INTERFACE ap_bus depth=4000 port=data1
+#pragma HLS INTERFACE ap_bus depth=4000 port=data2
 #pragma empty_line
- unsigned int z, i, k, l,count,r,newcounter;
+ unsigned int i, k, l,r;
  size = 1000;
- dim = 16;
+ dim = 4;
  threshold = 100;
+#pragma empty_line
  float cache[dim*dim];
  float tempArrData1[dim];
  float tempArrData2[dim];
-  count = 0;
 #pragma empty_line
-copyLoop: for ( z = 0 ; z < dim ; z++){
-#pragma HLS unroll factor=16
- cache[z*dim] = data0[z*dim];
-    cache[z*dim+1] = data0[z*dim+1];
-    cache[z*dim+2] = data0[z*dim+2];
-    cache[z*dim+3] = data0[z*dim+3];
-    cache[z*dim+4] = data0[z*dim+4];
-    cache[z*dim+5] = data0[z*dim+5];
-    cache[z*dim+6] = data0[z*dim+6];
-    cache[z*dim+7] = data0[z*dim+7];
-    cache[z*dim+8] = data0[z*dim+8];
-    cache[z*dim+9] = data0[z*dim+9];
-    cache[z*dim+10] = data0[z*dim+10];
-    cache[z*dim+11] = data0[z*dim+11];
-    cache[z*dim+12] = data0[z*dim+12];
-    cache[z*dim+13] = data0[z*dim+13];
-    cache[z*dim+14] = data0[z*dim+14];
-    cache[z*dim+15] = data0[z*dim+15];
+copyLoop: for ( i = 0 ; i < dim ; i++){
+#pragma HLS unroll factor=4
+ cache[i*dim] = data0[i*dim];
+    cache[i*dim+1] = data0[i*dim+1];
+    cache[i*dim+2] = data0[i*dim+2];
+    cache[i*dim+3] = data0[i*dim+3];
+#pragma empty_line
    }
 sizeLoop:
   for ( i = 0 ; i < size ; i ++ )
   {
-#pragma HLS pipeline II=16
+#pragma HLS pipeline II=4
 initLoop: for ( k = 0 ; k < dim ; k ++ )
    {
 #pragma empty_line
     tempArrData2[k] = 0.0 ;
    }
-   newcounter=0;
+#pragma empty_line
    r=0;
 #pragma empty_line
 valueAsn: for ( k = 0 ; k < dim ; k ++ )
@@ -2140,8 +2130,15 @@ valueAsn: for ( k = 0 ; k < dim ; k ++ )
     for(l = 0 ;l < dim ; l ++){
      tempArrData2[k]+=(cache[k*dim+l]*tempArrData1[l]);
     }
+#pragma empty_line
+#pragma empty_line
+#pragma empty_line
+#pragma empty_line
+#pragma empty_line
+#pragma empty_line
     if(tempArrData2[k] <= threshold){
      r = 1;
+#pragma empty_line
     }
 #pragma empty_line
    }

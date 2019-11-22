@@ -2,16 +2,16 @@
    Compiling apatb_myFuncAccel.cpp
    Compiling (apcc) myAccel.c_pre.c.tb.c
 INFO: [HLS 200-10] Running '/tools/Xilinx/Vivado/2018.3/bin/unwrapped/lnx64.o/apcc'
-INFO: [HLS 200-10] For user 'root' on host 'skl' (Linux_x86_64 version 5.0.0-36-generic) on Thu Nov 21 15:41:27 EET 2019
+INFO: [HLS 200-10] For user 'root' on host 'skl' (Linux_x86_64 version 5.0.0-36-generic) on Thu Nov 21 16:18:49 EET 2019
 INFO: [HLS 200-10] On os Ubuntu 18.04.3 LTS
 INFO: [HLS 200-10] In directory '/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/vHLS/algHLS/Optimazation_4/sim/wrapc'
 clang: warning: argument unused during compilation: '-fno-builtin-isinf'
 clang: warning: argument unused during compilation: '-fno-builtin-isnan'
-INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_root/29571574343687616461
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_root/58301574345929977822
 INFO: [APCC 202-1] APCC is done.
    Compiling (apcc) main.c_pre.c.tb.c
 INFO: [HLS 200-10] Running '/tools/Xilinx/Vivado/2018.3/bin/unwrapped/lnx64.o/apcc'
-INFO: [HLS 200-10] For user 'root' on host 'skl' (Linux_x86_64 version 5.0.0-36-generic) on Thu Nov 21 15:41:32 EET 2019
+INFO: [HLS 200-10] For user 'root' on host 'skl' (Linux_x86_64 version 5.0.0-36-generic) on Thu Nov 21 16:18:54 EET 2019
 INFO: [HLS 200-10] On os Ubuntu 18.04.3 LTS
 INFO: [HLS 200-10] In directory '/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/vHLS/algHLS/Optimazation_4/sim/wrapc'
 clang: warning: argument unused during compilation: '-fno-builtin-isinf'
@@ -21,6 +21,6 @@ In file included from /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/main.c:1:
  ((void) sizeof ((seed>=0) ? 1 : 0), __extension__ ({ if (seed>=0) ; else __assert_fail ("seed>=0", "/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/main.c", 72, __extension__ __PRETTY_FUNCTION__); }));
                                                           ~~~~^ ~
 1 warning generated.
-INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_root/30191574343692192806
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_root/58921574345934479192
 INFO: [APCC 202-1] APCC is done.
    Generating cosim.tv.exe

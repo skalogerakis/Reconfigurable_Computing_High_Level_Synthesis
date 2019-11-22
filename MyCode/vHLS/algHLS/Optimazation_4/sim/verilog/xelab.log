@@ -19,9 +19,6 @@ INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/skalogerakis/TUC_Projec
 INFO: [VRFC 10-311] analyzing module apatb_myFuncAccel_top
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/vHLS/algHLS/Optimazation_4/sim/verilog/AESL_autobus_data2.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module AESL_autobus_data2
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/vHLS/algHLS/Optimazation_4/sim/verilog/myFuncAccel_empty.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module myFuncAccel_empty_ram
-INFO: [VRFC 10-311] analyzing module myFuncAccel_empty
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/vHLS/algHLS/Optimazation_4/sim/verilog/myFuncAccel_fadd_32ns_32ns_32_5_full_dsp_1.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module myFuncAccel_fadd_32ns_32ns_32_5_full_dsp_1
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/vHLS/algHLS/Optimazation_4/sim/verilog/AESL_fifo.v" into library xil_defaultlib
@@ -92,8 +89,6 @@ Compiling package unisim.vcomponents
 Compiling package ieee.vital_timing
 Compiling package ieee.vital_primitives
 Compiling package unisim.vpkg
-Compiling module xil_defaultlib.myFuncAccel_empty_ram
-Compiling module xil_defaultlib.myFuncAccel_empty(DataWidth=32,A...
 Compiling architecture muxcy_v of entity unisim.MUXCY [muxcy_default]
 Compiling architecture synth of entity xbip_pipe_v3_0_5.xbip_pipe_v3_0_5_viv [\xbip_pipe_v3_0_5_viv(c_has_ce=1...]
 Compiling architecture rtl of entity floating_point_v7_1_7.delay [\delay(width=7,length=0)\]
@@ -246,7 +241,7 @@ Compiling module xil_defaultlib.myFuncAccel
 Compiling module xil_defaultlib.fifo(DEPTH=32'b0100000,WIDTH=32'...
 Compiling module xil_defaultlib.fifo(DEPTH=32'b0100000,WIDTH=32'...
 Compiling module xil_defaultlib.AESL_autobus_data0
-Compiling module xil_defaultlib.fifo(DEPTH=32'b011111010000000,W...
+Compiling module xil_defaultlib.fifo(DEPTH=32'b0111110100000,WID...
 Compiling module xil_defaultlib.AESL_autobus_data1
 Compiling module xil_defaultlib.AESL_autobus_data2
 Compiling module xil_defaultlib.apatb_myFuncAccel_top

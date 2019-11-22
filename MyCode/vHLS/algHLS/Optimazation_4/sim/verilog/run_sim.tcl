@@ -1,5 +1,5 @@
 # ==============================================================
-# File generated on Thu Nov 21 15:41:55 EET 2019
+# File generated on Thu Nov 21 16:19:13 EET 2019
 # Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
@@ -15,7 +15,7 @@ set ::env(LD_LIBRARY_PATH) /usr/lib/x86_64-linux-gnu:$::env(LD_LIBRARY_PATH)
 
 source check_sim.tcl
 
-set ap_argv "1000 1000 16 100"
+set ap_argv "1000 1000 4 100"
 # --> test vector generation
 
 ::AP::printMsg INFO COSIM 302 COSIM_302_998
@@ -29,7 +29,7 @@ if {![file exists cosim.tv.exe]} {
 	return -code error -errorcode $::errorCode
 }
 
-set ret [catch {eval exec ./cosim.tv.exe 1000 1000 16 100 | tee temp0.log >&@ stdout} err]
+set ret [catch {eval exec ./cosim.tv.exe 1000 1000 4 100 | tee temp0.log >&@ stdout} err]
 
 if {$ret == 1} {
 	::AP::printMsg ERR COSIM 320 COSIM_320_1000
@@ -90,6 +90,6 @@ if {![file exists cosim.pc.exe]} {
     return -code error -errorcode $::errorCode
 }
 
-set ret [catch {eval exec ./cosim.pc.exe 1000 1000 16 100 | tee temp0.log >&@ stdout} err]
+set ret [catch {eval exec ./cosim.pc.exe 1000 1000 4 100 | tee temp0.log >&@ stdout} err]
 
 sc_sim_check $ret $err "temp3.log"

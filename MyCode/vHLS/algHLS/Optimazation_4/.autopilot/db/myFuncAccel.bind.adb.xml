@@ -864,10 +864,10 @@
 
 <Node id="36" bw="10" op_0_bw="10" op_1_bw="0">
 <![CDATA[
-.preheader7:0  %i = phi i10 [ %i_1, %.preheader6.preheader ], [ 0, %.preheader7.preheader ]
+.preheader7:0  %i_1 = phi i10 [ %i, %.preheader6.preheader ], [ 0, %.preheader7.preheader ]
 
 ]]></Node>
-<StgValue><ssdm name="i"/></StgValue>
+<StgValue><ssdm name="i_1"/></StgValue>
 </operation>
 
 <operation id="90" st_id="19" stage="1" lat="1">
@@ -879,7 +879,7 @@
 
 <Node id="37" bw="1" op_0_bw="10" op_1_bw="10">
 <![CDATA[
-.preheader7:1  %tmp_s = icmp eq i10 %i, -24
+.preheader7:1  %tmp_s = icmp eq i10 %i_1, -24
 
 ]]></Node>
 <StgValue><ssdm name="tmp_s"/></StgValue>
@@ -909,10 +909,10 @@
 
 <Node id="39" bw="10" op_0_bw="10" op_1_bw="10">
 <![CDATA[
-.preheader7:3  %i_1 = add i10 %i, 1
+.preheader7:3  %i = add i10 %i_1, 1
 
 ]]></Node>
-<StgValue><ssdm name="i_1"/></StgValue>
+<StgValue><ssdm name="i"/></StgValue>
 </operation>
 
 <operation id="93" st_id="19" stage="1" lat="1">
@@ -940,7 +940,7 @@
 
 <Node id="45" bw="12" op_0_bw="12" op_1_bw="10" op_2_bw="2">
 <![CDATA[
-.preheader6.preheader:3  %tmp_1 = call i12 @_ssdm_op_BitConcatenate.i12.i10.i2(i10 %i, i2 0)
+.preheader6.preheader:3  %tmp_1 = call i12 @_ssdm_op_BitConcatenate.i12.i10.i2(i10 %i_1, i2 0)
 
 ]]></Node>
 <StgValue><ssdm name="tmp_1"/></StgValue>
@@ -4753,24 +4753,24 @@
 </dataflow>
 <dataflow id="532" from="data0" to="data0_read_15" fromId="416" toId="87">
 </dataflow>
-<dataflow id="533" from="i_1" to="i" fromId="92" toId="89">
+<dataflow id="533" from="i" to="i_1" fromId="92" toId="89">
 <BackEdge/>
 <condition id="-1">
 <or_exp><and_exp><literal name="tmp_s" val="0"/>
 </and_exp></or_exp>
 </condition>
 </dataflow>
-<dataflow id="534" from="StgValue_309" to="i" fromId="309" toId="89">
+<dataflow id="534" from="StgValue_309" to="i_1" fromId="309" toId="89">
 <BackEdge/>
 </dataflow>
-<dataflow id="536" from="StgValue_535" to="i" fromId="535" toId="89">
+<dataflow id="536" from="StgValue_535" to="i_1" fromId="535" toId="89">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </dataflow>
-<dataflow id="537" from="StgValue_88" to="i" fromId="88" toId="89">
+<dataflow id="537" from="StgValue_88" to="i_1" fromId="88" toId="89">
 </dataflow>
-<dataflow id="538" from="i" to="tmp_s" fromId="89" toId="90">
+<dataflow id="538" from="i_1" to="tmp_s" fromId="89" toId="90">
 </dataflow>
 <dataflow id="540" from="StgValue_539" to="tmp_s" fromId="539" toId="90">
 </dataflow>
@@ -4782,15 +4782,15 @@
 </dataflow>
 <dataflow id="546" from="StgValue_543" to="empty" fromId="543" toId="91">
 </dataflow>
-<dataflow id="547" from="i" to="i_1" fromId="89" toId="92">
+<dataflow id="547" from="i_1" to="i" fromId="89" toId="92">
 </dataflow>
-<dataflow id="549" from="StgValue_548" to="i_1" fromId="548" toId="92">
+<dataflow id="549" from="StgValue_548" to="i" fromId="548" toId="92">
 </dataflow>
 <dataflow id="550" from="tmp_s" to="StgValue_93" fromId="90" toId="93">
 </dataflow>
 <dataflow id="552" from="_ssdm_op_BitConcatenate.i12.i10.i2" to="tmp_1" fromId="551" toId="94">
 </dataflow>
-<dataflow id="553" from="i" to="tmp_1" fromId="89" toId="94">
+<dataflow id="553" from="i_1" to="tmp_1" fromId="89" toId="94">
 </dataflow>
 <dataflow id="555" from="StgValue_554" to="tmp_1" fromId="554" toId="94">
 </dataflow>

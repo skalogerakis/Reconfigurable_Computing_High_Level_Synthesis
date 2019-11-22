@@ -81,7 +81,7 @@ struct myFuncAccel : public sc_module {
     myFuncAccel_fcmp_32ns_32ns_1_1_1<1,1,32,32,1>* myFuncAccel_fcmp_32ns_32ns_1_1_1_U10;
     sc_signal< sc_lv<23> > ap_CS_fsm;
     sc_signal< sc_logic > ap_CS_fsm_state1;
-    sc_signal< sc_lv<10> > i_reg_116;
+    sc_signal< sc_lv<10> > i_1_reg_116;
     sc_signal< sc_lv<32> > grp_fu_163_p2;
     sc_signal< sc_lv<32> > reg_172;
     sc_signal< sc_logic > ap_CS_fsm_pp0_stage3;
@@ -179,8 +179,8 @@ struct myFuncAccel : public sc_module {
     sc_signal< sc_lv<1> > tmp_s_reg_480_pp0_iter5_reg;
     sc_signal< sc_lv<1> > tmp_s_reg_480_pp0_iter6_reg;
     sc_signal< sc_lv<1> > tmp_s_reg_480_pp0_iter7_reg;
-    sc_signal< sc_lv<10> > i_1_fu_183_p2;
-    sc_signal< sc_lv<10> > i_1_reg_484;
+    sc_signal< sc_lv<10> > i_fu_183_p2;
+    sc_signal< sc_lv<10> > i_reg_484;
     sc_signal< sc_lv<12> > tmp_1_fu_189_p3;
     sc_signal< sc_lv<12> > tmp_1_reg_489;
     sc_signal< sc_lv<32> > data2_addr_reg_500;
@@ -282,7 +282,7 @@ struct myFuncAccel : public sc_module {
     sc_signal< bool > ap_block_pp0_stage0_subdone;
     sc_signal< sc_logic > ap_condition_pp0_exit_iter0_state19;
     sc_signal< bool > ap_block_pp0_stage3_subdone;
-    sc_signal< sc_lv<10> > ap_phi_mux_i_phi_fu_120_p4;
+    sc_signal< sc_lv<10> > ap_phi_mux_i_1_phi_fu_120_p4;
     sc_signal< bool > ap_block_pp0_stage0;
     sc_signal< sc_lv<64> > tmp_2_fu_197_p1;
     sc_signal< bool > ap_block_pp0_stage1;
@@ -504,7 +504,7 @@ struct myFuncAccel : public sc_module {
     void thread_ap_enable_pp0();
     void thread_ap_idle();
     void thread_ap_idle_pp0();
-    void thread_ap_phi_mux_i_phi_fu_120_p4();
+    void thread_ap_phi_mux_i_1_phi_fu_120_p4();
     void thread_ap_ready();
     void thread_data0_address();
     void thread_data0_dataout();
@@ -552,7 +552,7 @@ struct myFuncAccel : public sc_module {
     void thread_grp_fu_163_p0();
     void thread_grp_fu_163_p1();
     void thread_grp_fu_167_p0();
-    void thread_i_1_fu_183_p2();
+    void thread_i_fu_183_p2();
     void thread_notlhs5_fu_270_p2();
     void thread_notlhs7_fu_317_p2();
     void thread_notlhs9_fu_357_p2();

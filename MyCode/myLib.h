@@ -3,6 +3,8 @@
 #include <time.h>
 #include <assert.h>
 #include <time.h>
+
+#include "ap_cint.h"
 //Put some color in your life. Used to print error and successful output
 //#define RED   "\x1B[31m"
 //#define GRN   "\x1B[32m"

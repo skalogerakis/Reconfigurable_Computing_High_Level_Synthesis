@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'myFuncAccel'
 ================================================================
-* Date:           Thu Nov 21 15:55:33 2019
+* Date:           Thu Nov 21 17:04:46 2019
 
 * Version:        2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)
 * Project:        algHLS
@@ -201,55 +201,55 @@ IsGatedGlobalClock: 0
 * FSM state operations: 
 
 State 1 <SV = 0> <Delay = 8.75>
-ST_1 : Operation 60 [2/2] (8.75ns)   --->   "%data0_req = call i1 @_ssdm_op_ReadReq.ap_bus.floatP(float* %data0, i32 16) nounwind" [../myAccel.c:35]   --->   Operation 60 'readreq' 'data0_req' <Predicate = true> <Delay = 8.75> <Core = "PLB46M">   --->   Core 1 'PLB46M' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq'>
+ST_1 : Operation 60 [2/2] (8.75ns)   --->   "%data0_req = call i1 @_ssdm_op_ReadReq.ap_bus.floatP(float* %data0, i32 16) nounwind" [../myAccel.c:37]   --->   Operation 60 'readreq' 'data0_req' <Predicate = true> <Delay = 8.75> <Core = "PLB46M">   --->   Core 1 'PLB46M' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq'>
 
 State 2 <SV = 1> <Delay = 8.75>
-ST_2 : Operation 61 [1/2] (8.75ns)   --->   "%data0_req = call i1 @_ssdm_op_ReadReq.ap_bus.floatP(float* %data0, i32 16) nounwind" [../myAccel.c:35]   --->   Operation 61 'readreq' 'data0_req' <Predicate = true> <Delay = 8.75> <Core = "PLB46M">   --->   Core 1 'PLB46M' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq'>
+ST_2 : Operation 61 [1/2] (8.75ns)   --->   "%data0_req = call i1 @_ssdm_op_ReadReq.ap_bus.floatP(float* %data0, i32 16) nounwind" [../myAccel.c:37]   --->   Operation 61 'readreq' 'data0_req' <Predicate = true> <Delay = 8.75> <Core = "PLB46M">   --->   Core 1 'PLB46M' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq'>
 
 State 3 <SV = 2> <Delay = 8.75>
-ST_3 : Operation 62 [1/1] (8.75ns)   --->   "%data0_read = call float @_ssdm_op_Read.ap_bus.floatP(float* %data0) nounwind" [../myAccel.c:35]   --->   Operation 62 'read' 'data0_read' <Predicate = true> <Delay = 8.75> <Core = "PLB46M">   --->   Core 1 'PLB46M' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq'>
+ST_3 : Operation 62 [1/1] (8.75ns)   --->   "%data0_read = call float @_ssdm_op_Read.ap_bus.floatP(float* %data0) nounwind" [../myAccel.c:37]   --->   Operation 62 'read' 'data0_read' <Predicate = true> <Delay = 8.75> <Core = "PLB46M">   --->   Core 1 'PLB46M' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq'>
 
 State 4 <SV = 3> <Delay = 8.75>
-ST_4 : Operation 63 [1/1] (8.75ns)   --->   "%data0_read_1 = call float @_ssdm_op_Read.ap_bus.floatP(float* %data0) nounwind" [../myAccel.c:36]   --->   Operation 63 'read' 'data0_read_1' <Predicate = true> <Delay = 8.75> <Core = "PLB46M">   --->   Core 1 'PLB46M' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq'>
+ST_4 : Operation 63 [1/1] (8.75ns)   --->   "%data0_read_1 = call float @_ssdm_op_Read.ap_bus.floatP(float* %data0) nounwind" [../myAccel.c:38]   --->   Operation 63 'read' 'data0_read_1' <Predicate = true> <Delay = 8.75> <Core = "PLB46M">   --->   Core 1 'PLB46M' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq'>
 
 State 5 <SV = 4> <Delay = 8.75>
-ST_5 : Operation 64 [1/1] (8.75ns)   --->   "%data0_read_2 = call float @_ssdm_op_Read.ap_bus.floatP(float* %data0) nounwind" [../myAccel.c:37]   --->   Operation 64 'read' 'data0_read_2' <Predicate = true> <Delay = 8.75> <Core = "PLB46M">   --->   Core 1 'PLB46M' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq'>
+ST_5 : Operation 64 [1/1] (8.75ns)   --->   "%data0_read_2 = call float @_ssdm_op_Read.ap_bus.floatP(float* %data0) nounwind" [../myAccel.c:39]   --->   Operation 64 'read' 'data0_read_2' <Predicate = true> <Delay = 8.75> <Core = "PLB46M">   --->   Core 1 'PLB46M' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq'>
 
 State 6 <SV = 5> <Delay = 8.75>
-ST_6 : Operation 65 [1/1] (8.75ns)   --->   "%data0_read_3 = call float @_ssdm_op_Read.ap_bus.floatP(float* %data0) nounwind" [../myAccel.c:38]   --->   Operation 65 'read' 'data0_read_3' <Predicate = true> <Delay = 8.75> <Core = "PLB46M">   --->   Core 1 'PLB46M' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq'>
+ST_6 : Operation 65 [1/1] (8.75ns)   --->   "%data0_read_3 = call float @_ssdm_op_Read.ap_bus.floatP(float* %data0) nounwind" [../myAccel.c:40]   --->   Operation 65 'read' 'data0_read_3' <Predicate = true> <Delay = 8.75> <Core = "PLB46M">   --->   Core 1 'PLB46M' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq'>
 
 State 7 <SV = 6> <Delay = 8.75>
-ST_7 : Operation 66 [1/1] (8.75ns)   --->   "%data0_read_4 = call float @_ssdm_op_Read.ap_bus.floatP(float* %data0) nounwind" [../myAccel.c:35]   --->   Operation 66 'read' 'data0_read_4' <Predicate = true> <Delay = 8.75> <Core = "PLB46M">   --->   Core 1 'PLB46M' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq'>
+ST_7 : Operation 66 [1/1] (8.75ns)   --->   "%data0_read_4 = call float @_ssdm_op_Read.ap_bus.floatP(float* %data0) nounwind" [../myAccel.c:37]   --->   Operation 66 'read' 'data0_read_4' <Predicate = true> <Delay = 8.75> <Core = "PLB46M">   --->   Core 1 'PLB46M' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq'>
 
 State 8 <SV = 7> <Delay = 8.75>
-ST_8 : Operation 67 [1/1] (8.75ns)   --->   "%data0_read_5 = call float @_ssdm_op_Read.ap_bus.floatP(float* %data0) nounwind" [../myAccel.c:36]   --->   Operation 67 'read' 'data0_read_5' <Predicate = true> <Delay = 8.75> <Core = "PLB46M">   --->   Core 1 'PLB46M' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq'>
+ST_8 : Operation 67 [1/1] (8.75ns)   --->   "%data0_read_5 = call float @_ssdm_op_Read.ap_bus.floatP(float* %data0) nounwind" [../myAccel.c:38]   --->   Operation 67 'read' 'data0_read_5' <Predicate = true> <Delay = 8.75> <Core = "PLB46M">   --->   Core 1 'PLB46M' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq'>
 
 State 9 <SV = 8> <Delay = 8.75>
-ST_9 : Operation 68 [1/1] (8.75ns)   --->   "%data0_read_6 = call float @_ssdm_op_Read.ap_bus.floatP(float* %data0) nounwind" [../myAccel.c:37]   --->   Operation 68 'read' 'data0_read_6' <Predicate = true> <Delay = 8.75> <Core = "PLB46M">   --->   Core 1 'PLB46M' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq'>
+ST_9 : Operation 68 [1/1] (8.75ns)   --->   "%data0_read_6 = call float @_ssdm_op_Read.ap_bus.floatP(float* %data0) nounwind" [../myAccel.c:39]   --->   Operation 68 'read' 'data0_read_6' <Predicate = true> <Delay = 8.75> <Core = "PLB46M">   --->   Core 1 'PLB46M' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq'>
 
 State 10 <SV = 9> <Delay = 8.75>
-ST_10 : Operation 69 [1/1] (8.75ns)   --->   "%data0_read_7 = call float @_ssdm_op_Read.ap_bus.floatP(float* %data0) nounwind" [../myAccel.c:38]   --->   Operation 69 'read' 'data0_read_7' <Predicate = true> <Delay = 8.75> <Core = "PLB46M">   --->   Core 1 'PLB46M' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq'>
+ST_10 : Operation 69 [1/1] (8.75ns)   --->   "%data0_read_7 = call float @_ssdm_op_Read.ap_bus.floatP(float* %data0) nounwind" [../myAccel.c:40]   --->   Operation 69 'read' 'data0_read_7' <Predicate = true> <Delay = 8.75> <Core = "PLB46M">   --->   Core 1 'PLB46M' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq'>
 
 State 11 <SV = 10> <Delay = 8.75>
-ST_11 : Operation 70 [1/1] (8.75ns)   --->   "%data0_read_8 = call float @_ssdm_op_Read.ap_bus.floatP(float* %data0) nounwind" [../myAccel.c:35]   --->   Operation 70 'read' 'data0_read_8' <Predicate = true> <Delay = 8.75> <Core = "PLB46M">   --->   Core 1 'PLB46M' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq'>
+ST_11 : Operation 70 [1/1] (8.75ns)   --->   "%data0_read_8 = call float @_ssdm_op_Read.ap_bus.floatP(float* %data0) nounwind" [../myAccel.c:37]   --->   Operation 70 'read' 'data0_read_8' <Predicate = true> <Delay = 8.75> <Core = "PLB46M">   --->   Core 1 'PLB46M' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq'>
 
 State 12 <SV = 11> <Delay = 8.75>
-ST_12 : Operation 71 [1/1] (8.75ns)   --->   "%data0_read_9 = call float @_ssdm_op_Read.ap_bus.floatP(float* %data0) nounwind" [../myAccel.c:36]   --->   Operation 71 'read' 'data0_read_9' <Predicate = true> <Delay = 8.75> <Core = "PLB46M">   --->   Core 1 'PLB46M' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq'>
+ST_12 : Operation 71 [1/1] (8.75ns)   --->   "%data0_read_9 = call float @_ssdm_op_Read.ap_bus.floatP(float* %data0) nounwind" [../myAccel.c:38]   --->   Operation 71 'read' 'data0_read_9' <Predicate = true> <Delay = 8.75> <Core = "PLB46M">   --->   Core 1 'PLB46M' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq'>
 
 State 13 <SV = 12> <Delay = 8.75>
-ST_13 : Operation 72 [1/1] (8.75ns)   --->   "%data0_read_10 = call float @_ssdm_op_Read.ap_bus.floatP(float* %data0) nounwind" [../myAccel.c:37]   --->   Operation 72 'read' 'data0_read_10' <Predicate = true> <Delay = 8.75> <Core = "PLB46M">   --->   Core 1 'PLB46M' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq'>
+ST_13 : Operation 72 [1/1] (8.75ns)   --->   "%data0_read_10 = call float @_ssdm_op_Read.ap_bus.floatP(float* %data0) nounwind" [../myAccel.c:39]   --->   Operation 72 'read' 'data0_read_10' <Predicate = true> <Delay = 8.75> <Core = "PLB46M">   --->   Core 1 'PLB46M' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq'>
 
 State 14 <SV = 13> <Delay = 8.75>
-ST_14 : Operation 73 [1/1] (8.75ns)   --->   "%data0_read_11 = call float @_ssdm_op_Read.ap_bus.floatP(float* %data0) nounwind" [../myAccel.c:38]   --->   Operation 73 'read' 'data0_read_11' <Predicate = true> <Delay = 8.75> <Core = "PLB46M">   --->   Core 1 'PLB46M' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq'>
+ST_14 : Operation 73 [1/1] (8.75ns)   --->   "%data0_read_11 = call float @_ssdm_op_Read.ap_bus.floatP(float* %data0) nounwind" [../myAccel.c:40]   --->   Operation 73 'read' 'data0_read_11' <Predicate = true> <Delay = 8.75> <Core = "PLB46M">   --->   Core 1 'PLB46M' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq'>
 
 State 15 <SV = 14> <Delay = 8.75>
-ST_15 : Operation 74 [1/1] (8.75ns)   --->   "%data0_read_12 = call float @_ssdm_op_Read.ap_bus.floatP(float* %data0) nounwind" [../myAccel.c:35]   --->   Operation 74 'read' 'data0_read_12' <Predicate = true> <Delay = 8.75> <Core = "PLB46M">   --->   Core 1 'PLB46M' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq'>
+ST_15 : Operation 74 [1/1] (8.75ns)   --->   "%data0_read_12 = call float @_ssdm_op_Read.ap_bus.floatP(float* %data0) nounwind" [../myAccel.c:37]   --->   Operation 74 'read' 'data0_read_12' <Predicate = true> <Delay = 8.75> <Core = "PLB46M">   --->   Core 1 'PLB46M' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq'>
 
 State 16 <SV = 15> <Delay = 8.75>
-ST_16 : Operation 75 [1/1] (8.75ns)   --->   "%data0_read_13 = call float @_ssdm_op_Read.ap_bus.floatP(float* %data0) nounwind" [../myAccel.c:36]   --->   Operation 75 'read' 'data0_read_13' <Predicate = true> <Delay = 8.75> <Core = "PLB46M">   --->   Core 1 'PLB46M' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq'>
+ST_16 : Operation 75 [1/1] (8.75ns)   --->   "%data0_read_13 = call float @_ssdm_op_Read.ap_bus.floatP(float* %data0) nounwind" [../myAccel.c:38]   --->   Operation 75 'read' 'data0_read_13' <Predicate = true> <Delay = 8.75> <Core = "PLB46M">   --->   Core 1 'PLB46M' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq'>
 
 State 17 <SV = 16> <Delay = 8.75>
-ST_17 : Operation 76 [1/1] (8.75ns)   --->   "%data0_read_14 = call float @_ssdm_op_Read.ap_bus.floatP(float* %data0) nounwind" [../myAccel.c:37]   --->   Operation 76 'read' 'data0_read_14' <Predicate = true> <Delay = 8.75> <Core = "PLB46M">   --->   Core 1 'PLB46M' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq'>
+ST_17 : Operation 76 [1/1] (8.75ns)   --->   "%data0_read_14 = call float @_ssdm_op_Read.ap_bus.floatP(float* %data0) nounwind" [../myAccel.c:39]   --->   Operation 76 'read' 'data0_read_14' <Predicate = true> <Delay = 8.75> <Core = "PLB46M">   --->   Core 1 'PLB46M' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq'>
 
 State 18 <SV = 17> <Delay = 8.75>
 ST_18 : Operation 77 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32 %size) nounwind, !map !7"   --->   Operation 77 'specbitsmap' <Predicate = true> <Delay = 0.00>
@@ -262,312 +262,312 @@ ST_18 : Operation 83 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecTop
 ST_18 : Operation 84 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* %data0, [7 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 16, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [../myAccel.c:20]   --->   Operation 84 'specinterface' <Predicate = true> <Delay = 0.00>
 ST_18 : Operation 85 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* %data1, [7 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 4000, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [../myAccel.c:21]   --->   Operation 85 'specinterface' <Predicate = true> <Delay = 0.00>
 ST_18 : Operation 86 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* %data2, [7 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 4000, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [../myAccel.c:22]   --->   Operation 86 'specinterface' <Predicate = true> <Delay = 0.00>
-ST_18 : Operation 87 [1/1] (8.75ns)   --->   "%data0_read_15 = call float @_ssdm_op_Read.ap_bus.floatP(float* %data0) nounwind" [../myAccel.c:38]   --->   Operation 87 'read' 'data0_read_15' <Predicate = true> <Delay = 8.75> <Core = "PLB46M">   --->   Core 1 'PLB46M' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq'>
-ST_18 : Operation 88 [1/1] (1.76ns)   --->   "br label %.preheader7" [../myAccel.c:42]   --->   Operation 88 'br' <Predicate = true> <Delay = 1.76>
+ST_18 : Operation 87 [1/1] (8.75ns)   --->   "%data0_read_15 = call float @_ssdm_op_Read.ap_bus.floatP(float* %data0) nounwind" [../myAccel.c:40]   --->   Operation 87 'read' 'data0_read_15' <Predicate = true> <Delay = 8.75> <Core = "PLB46M">   --->   Core 1 'PLB46M' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq'>
+ST_18 : Operation 88 [1/1] (1.76ns)   --->   "br label %.preheader7" [../myAccel.c:44]   --->   Operation 88 'br' <Predicate = true> <Delay = 1.76>
 
 State 19 <SV = 18> <Delay = 2.74>
-ST_19 : Operation 89 [1/1] (0.00ns)   --->   "%i = phi i10 [ %i_1, %.preheader6.preheader ], [ 0, %.preheader7.preheader ]"   --->   Operation 89 'phi' 'i' <Predicate = true> <Delay = 0.00>
-ST_19 : Operation 90 [1/1] (1.77ns)   --->   "%tmp_s = icmp eq i10 %i, -24" [../myAccel.c:42]   --->   Operation 90 'icmp' 'tmp_s' <Predicate = true> <Delay = 1.77> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.44> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_19 : Operation 89 [1/1] (0.00ns)   --->   "%i_1 = phi i10 [ %i, %.preheader6.preheader ], [ 0, %.preheader7.preheader ]"   --->   Operation 89 'phi' 'i_1' <Predicate = true> <Delay = 0.00>
+ST_19 : Operation 90 [1/1] (1.77ns)   --->   "%tmp_s = icmp eq i10 %i_1, -24" [../myAccel.c:44]   --->   Operation 90 'icmp' 'tmp_s' <Predicate = true> <Delay = 1.77> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.44> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
 ST_19 : Operation 91 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 1000, i64 1000, i64 1000) nounwind"   --->   Operation 91 'speclooptripcount' 'empty' <Predicate = true> <Delay = 0.00>
-ST_19 : Operation 92 [1/1] (1.73ns)   --->   "%i_1 = add i10 %i, 1" [../myAccel.c:42]   --->   Operation 92 'add' 'i_1' <Predicate = true> <Delay = 1.73> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_19 : Operation 93 [1/1] (0.00ns)   --->   "br i1 %tmp_s, label %0, label %.preheader6.preheader" [../myAccel.c:42]   --->   Operation 93 'br' <Predicate = true> <Delay = 0.00>
-ST_19 : Operation 94 [1/1] (0.00ns)   --->   "%tmp_1 = call i12 @_ssdm_op_BitConcatenate.i12.i10.i2(i10 %i, i2 0)" [../myAccel.c:57]   --->   Operation 94 'bitconcatenate' 'tmp_1' <Predicate = (!tmp_s)> <Delay = 0.00>
+ST_19 : Operation 92 [1/1] (1.73ns)   --->   "%i = add i10 %i_1, 1" [../myAccel.c:44]   --->   Operation 92 'add' 'i' <Predicate = true> <Delay = 1.73> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_19 : Operation 93 [1/1] (0.00ns)   --->   "br i1 %tmp_s, label %0, label %.preheader6.preheader" [../myAccel.c:44]   --->   Operation 93 'br' <Predicate = true> <Delay = 0.00>
+ST_19 : Operation 94 [1/1] (0.00ns)   --->   "%tmp_1 = call i12 @_ssdm_op_BitConcatenate.i12.i10.i2(i10 %i_1, i2 0)" [../myAccel.c:59]   --->   Operation 94 'bitconcatenate' 'tmp_1' <Predicate = (!tmp_s)> <Delay = 0.00>
 
 State 20 <SV = 19> <Delay = 8.75>
-ST_20 : Operation 95 [1/1] (0.00ns)   --->   "%tmp_2 = zext i12 %tmp_1 to i64" [../myAccel.c:57]   --->   Operation 95 'zext' 'tmp_2' <Predicate = (!tmp_s)> <Delay = 0.00>
-ST_20 : Operation 96 [1/1] (0.00ns)   --->   "%data1_addr = getelementptr inbounds float* %data1, i64 %tmp_2" [../myAccel.c:57]   --->   Operation 96 'getelementptr' 'data1_addr' <Predicate = (!tmp_s)> <Delay = 0.00>
-ST_20 : Operation 97 [2/2] (8.75ns)   --->   "%data1_addr_req = call i1 @_ssdm_op_ReadReq.ap_bus.floatP(float* %data1_addr, i32 4) nounwind" [../myAccel.c:57]   --->   Operation 97 'readreq' 'data1_addr_req' <Predicate = (!tmp_s)> <Delay = 8.75> <Core = "PLB46M">   --->   Core 1 'PLB46M' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq'>
-ST_20 : Operation 98 [1/1] (0.00ns)   --->   "%data2_addr = getelementptr inbounds float* %data2, i64 %tmp_2" [../myAccel.c:83]   --->   Operation 98 'getelementptr' 'data2_addr' <Predicate = (!tmp_s)> <Delay = 0.00>
+ST_20 : Operation 95 [1/1] (0.00ns)   --->   "%tmp_2 = zext i12 %tmp_1 to i64" [../myAccel.c:59]   --->   Operation 95 'zext' 'tmp_2' <Predicate = (!tmp_s)> <Delay = 0.00>
+ST_20 : Operation 96 [1/1] (0.00ns)   --->   "%data1_addr = getelementptr inbounds float* %data1, i64 %tmp_2" [../myAccel.c:59]   --->   Operation 96 'getelementptr' 'data1_addr' <Predicate = (!tmp_s)> <Delay = 0.00>
+ST_20 : Operation 97 [2/2] (8.75ns)   --->   "%data1_addr_req = call i1 @_ssdm_op_ReadReq.ap_bus.floatP(float* %data1_addr, i32 4) nounwind" [../myAccel.c:59]   --->   Operation 97 'readreq' 'data1_addr_req' <Predicate = (!tmp_s)> <Delay = 8.75> <Core = "PLB46M">   --->   Core 1 'PLB46M' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq'>
+ST_20 : Operation 98 [1/1] (0.00ns)   --->   "%data2_addr = getelementptr inbounds float* %data2, i64 %tmp_2" [../myAccel.c:85]   --->   Operation 98 'getelementptr' 'data2_addr' <Predicate = (!tmp_s)> <Delay = 0.00>
 
 State 21 <SV = 20> <Delay = 8.75>
-ST_21 : Operation 99 [1/2] (8.75ns)   --->   "%data1_addr_req = call i1 @_ssdm_op_ReadReq.ap_bus.floatP(float* %data1_addr, i32 4) nounwind" [../myAccel.c:57]   --->   Operation 99 'readreq' 'data1_addr_req' <Predicate = (!tmp_s)> <Delay = 8.75> <Core = "PLB46M">   --->   Core 1 'PLB46M' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq'>
+ST_21 : Operation 99 [1/2] (8.75ns)   --->   "%data1_addr_req = call i1 @_ssdm_op_ReadReq.ap_bus.floatP(float* %data1_addr, i32 4) nounwind" [../myAccel.c:59]   --->   Operation 99 'readreq' 'data1_addr_req' <Predicate = (!tmp_s)> <Delay = 8.75> <Core = "PLB46M">   --->   Core 1 'PLB46M' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq'>
 
 State 22 <SV = 21> <Delay = 8.75>
-ST_22 : Operation 100 [1/1] (8.75ns)   --->   "%data1_addr_read = call float @_ssdm_op_Read.ap_bus.floatP(float* %data1_addr) nounwind" [../myAccel.c:57]   --->   Operation 100 'read' 'data1_addr_read' <Predicate = (!tmp_s)> <Delay = 8.75> <Core = "PLB46M">   --->   Core 1 'PLB46M' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq'>
+ST_22 : Operation 100 [1/1] (8.75ns)   --->   "%data1_addr_read = call float @_ssdm_op_Read.ap_bus.floatP(float* %data1_addr) nounwind" [../myAccel.c:59]   --->   Operation 100 'read' 'data1_addr_read' <Predicate = (!tmp_s)> <Delay = 8.75> <Core = "PLB46M">   --->   Core 1 'PLB46M' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq'>
 
 State 23 <SV = 22> <Delay = 8.75>
-ST_23 : Operation 101 [1/1] (8.75ns)   --->   "%data1_addr_read_1 = call float @_ssdm_op_Read.ap_bus.floatP(float* %data1_addr) nounwind" [../myAccel.c:57]   --->   Operation 101 'read' 'data1_addr_read_1' <Predicate = (!tmp_s)> <Delay = 8.75> <Core = "PLB46M">   --->   Core 1 'PLB46M' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq'>
-ST_23 : Operation 102 [4/4] (5.70ns)   --->   "%tmp_4 = fmul float %data0_read, %data1_addr_read" [../myAccel.c:62]   --->   Operation 102 'fmul' 'tmp_4' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
-ST_23 : Operation 103 [4/4] (5.70ns)   --->   "%tmp_34_1 = fmul float %data0_read_4, %data1_addr_read" [../myAccel.c:62]   --->   Operation 103 'fmul' 'tmp_34_1' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
-ST_23 : Operation 104 [4/4] (5.70ns)   --->   "%tmp_34_2 = fmul float %data0_read_8, %data1_addr_read" [../myAccel.c:62]   --->   Operation 104 'fmul' 'tmp_34_2' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
-ST_23 : Operation 105 [4/4] (5.70ns)   --->   "%tmp_34_3 = fmul float %data0_read_12, %data1_addr_read" [../myAccel.c:62]   --->   Operation 105 'fmul' 'tmp_34_3' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_23 : Operation 101 [1/1] (8.75ns)   --->   "%data1_addr_read_1 = call float @_ssdm_op_Read.ap_bus.floatP(float* %data1_addr) nounwind" [../myAccel.c:59]   --->   Operation 101 'read' 'data1_addr_read_1' <Predicate = (!tmp_s)> <Delay = 8.75> <Core = "PLB46M">   --->   Core 1 'PLB46M' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq'>
+ST_23 : Operation 102 [4/4] (5.70ns)   --->   "%tmp_4 = fmul float %data0_read, %data1_addr_read" [../myAccel.c:64]   --->   Operation 102 'fmul' 'tmp_4' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_23 : Operation 103 [4/4] (5.70ns)   --->   "%tmp_34_1 = fmul float %data0_read_4, %data1_addr_read" [../myAccel.c:64]   --->   Operation 103 'fmul' 'tmp_34_1' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_23 : Operation 104 [4/4] (5.70ns)   --->   "%tmp_34_2 = fmul float %data0_read_8, %data1_addr_read" [../myAccel.c:64]   --->   Operation 104 'fmul' 'tmp_34_2' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_23 : Operation 105 [4/4] (5.70ns)   --->   "%tmp_34_3 = fmul float %data0_read_12, %data1_addr_read" [../myAccel.c:64]   --->   Operation 105 'fmul' 'tmp_34_3' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
 
 State 24 <SV = 23> <Delay = 8.75>
-ST_24 : Operation 106 [1/1] (8.75ns)   --->   "%data1_addr_read_2 = call float @_ssdm_op_Read.ap_bus.floatP(float* %data1_addr) nounwind" [../myAccel.c:57]   --->   Operation 106 'read' 'data1_addr_read_2' <Predicate = (!tmp_s)> <Delay = 8.75> <Core = "PLB46M">   --->   Core 1 'PLB46M' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq'>
-ST_24 : Operation 107 [3/4] (5.70ns)   --->   "%tmp_4 = fmul float %data0_read, %data1_addr_read" [../myAccel.c:62]   --->   Operation 107 'fmul' 'tmp_4' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
-ST_24 : Operation 108 [4/4] (5.70ns)   --->   "%tmp_34_0_1 = fmul float %data0_read_1, %data1_addr_read_1" [../myAccel.c:62]   --->   Operation 108 'fmul' 'tmp_34_0_1' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
-ST_24 : Operation 109 [3/4] (5.70ns)   --->   "%tmp_34_1 = fmul float %data0_read_4, %data1_addr_read" [../myAccel.c:62]   --->   Operation 109 'fmul' 'tmp_34_1' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
-ST_24 : Operation 110 [4/4] (5.70ns)   --->   "%tmp_34_1_1 = fmul float %data0_read_5, %data1_addr_read_1" [../myAccel.c:62]   --->   Operation 110 'fmul' 'tmp_34_1_1' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
-ST_24 : Operation 111 [3/4] (5.70ns)   --->   "%tmp_34_2 = fmul float %data0_read_8, %data1_addr_read" [../myAccel.c:62]   --->   Operation 111 'fmul' 'tmp_34_2' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
-ST_24 : Operation 112 [4/4] (5.70ns)   --->   "%tmp_34_2_1 = fmul float %data0_read_9, %data1_addr_read_1" [../myAccel.c:62]   --->   Operation 112 'fmul' 'tmp_34_2_1' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
-ST_24 : Operation 113 [3/4] (5.70ns)   --->   "%tmp_34_3 = fmul float %data0_read_12, %data1_addr_read" [../myAccel.c:62]   --->   Operation 113 'fmul' 'tmp_34_3' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
-ST_24 : Operation 114 [4/4] (5.70ns)   --->   "%tmp_34_3_1 = fmul float %data0_read_13, %data1_addr_read_1" [../myAccel.c:62]   --->   Operation 114 'fmul' 'tmp_34_3_1' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_24 : Operation 106 [1/1] (8.75ns)   --->   "%data1_addr_read_2 = call float @_ssdm_op_Read.ap_bus.floatP(float* %data1_addr) nounwind" [../myAccel.c:59]   --->   Operation 106 'read' 'data1_addr_read_2' <Predicate = (!tmp_s)> <Delay = 8.75> <Core = "PLB46M">   --->   Core 1 'PLB46M' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq'>
+ST_24 : Operation 107 [3/4] (5.70ns)   --->   "%tmp_4 = fmul float %data0_read, %data1_addr_read" [../myAccel.c:64]   --->   Operation 107 'fmul' 'tmp_4' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_24 : Operation 108 [4/4] (5.70ns)   --->   "%tmp_34_0_1 = fmul float %data0_read_1, %data1_addr_read_1" [../myAccel.c:64]   --->   Operation 108 'fmul' 'tmp_34_0_1' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_24 : Operation 109 [3/4] (5.70ns)   --->   "%tmp_34_1 = fmul float %data0_read_4, %data1_addr_read" [../myAccel.c:64]   --->   Operation 109 'fmul' 'tmp_34_1' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_24 : Operation 110 [4/4] (5.70ns)   --->   "%tmp_34_1_1 = fmul float %data0_read_5, %data1_addr_read_1" [../myAccel.c:64]   --->   Operation 110 'fmul' 'tmp_34_1_1' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_24 : Operation 111 [3/4] (5.70ns)   --->   "%tmp_34_2 = fmul float %data0_read_8, %data1_addr_read" [../myAccel.c:64]   --->   Operation 111 'fmul' 'tmp_34_2' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_24 : Operation 112 [4/4] (5.70ns)   --->   "%tmp_34_2_1 = fmul float %data0_read_9, %data1_addr_read_1" [../myAccel.c:64]   --->   Operation 112 'fmul' 'tmp_34_2_1' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_24 : Operation 113 [3/4] (5.70ns)   --->   "%tmp_34_3 = fmul float %data0_read_12, %data1_addr_read" [../myAccel.c:64]   --->   Operation 113 'fmul' 'tmp_34_3' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_24 : Operation 114 [4/4] (5.70ns)   --->   "%tmp_34_3_1 = fmul float %data0_read_13, %data1_addr_read_1" [../myAccel.c:64]   --->   Operation 114 'fmul' 'tmp_34_3_1' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
 
 State 25 <SV = 24> <Delay = 8.75>
-ST_25 : Operation 115 [1/1] (8.75ns)   --->   "%data1_addr_read_3 = call float @_ssdm_op_Read.ap_bus.floatP(float* %data1_addr) nounwind" [../myAccel.c:57]   --->   Operation 115 'read' 'data1_addr_read_3' <Predicate = (!tmp_s)> <Delay = 8.75> <Core = "PLB46M">   --->   Core 1 'PLB46M' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq'>
-ST_25 : Operation 116 [2/4] (5.70ns)   --->   "%tmp_4 = fmul float %data0_read, %data1_addr_read" [../myAccel.c:62]   --->   Operation 116 'fmul' 'tmp_4' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
-ST_25 : Operation 117 [3/4] (5.70ns)   --->   "%tmp_34_0_1 = fmul float %data0_read_1, %data1_addr_read_1" [../myAccel.c:62]   --->   Operation 117 'fmul' 'tmp_34_0_1' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
-ST_25 : Operation 118 [4/4] (5.70ns)   --->   "%tmp_34_0_2 = fmul float %data0_read_2, %data1_addr_read_2" [../myAccel.c:62]   --->   Operation 118 'fmul' 'tmp_34_0_2' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
-ST_25 : Operation 119 [2/4] (5.70ns)   --->   "%tmp_34_1 = fmul float %data0_read_4, %data1_addr_read" [../myAccel.c:62]   --->   Operation 119 'fmul' 'tmp_34_1' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
-ST_25 : Operation 120 [3/4] (5.70ns)   --->   "%tmp_34_1_1 = fmul float %data0_read_5, %data1_addr_read_1" [../myAccel.c:62]   --->   Operation 120 'fmul' 'tmp_34_1_1' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
-ST_25 : Operation 121 [4/4] (5.70ns)   --->   "%tmp_34_1_2 = fmul float %data0_read_6, %data1_addr_read_2" [../myAccel.c:62]   --->   Operation 121 'fmul' 'tmp_34_1_2' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
-ST_25 : Operation 122 [2/4] (5.70ns)   --->   "%tmp_34_2 = fmul float %data0_read_8, %data1_addr_read" [../myAccel.c:62]   --->   Operation 122 'fmul' 'tmp_34_2' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
-ST_25 : Operation 123 [3/4] (5.70ns)   --->   "%tmp_34_2_1 = fmul float %data0_read_9, %data1_addr_read_1" [../myAccel.c:62]   --->   Operation 123 'fmul' 'tmp_34_2_1' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
-ST_25 : Operation 124 [4/4] (5.70ns)   --->   "%tmp_34_2_2 = fmul float %data0_read_10, %data1_addr_read_2" [../myAccel.c:62]   --->   Operation 124 'fmul' 'tmp_34_2_2' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
-ST_25 : Operation 125 [2/4] (5.70ns)   --->   "%tmp_34_3 = fmul float %data0_read_12, %data1_addr_read" [../myAccel.c:62]   --->   Operation 125 'fmul' 'tmp_34_3' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
-ST_25 : Operation 126 [3/4] (5.70ns)   --->   "%tmp_34_3_1 = fmul float %data0_read_13, %data1_addr_read_1" [../myAccel.c:62]   --->   Operation 126 'fmul' 'tmp_34_3_1' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
-ST_25 : Operation 127 [4/4] (5.70ns)   --->   "%tmp_34_3_2 = fmul float %data0_read_14, %data1_addr_read_2" [../myAccel.c:62]   --->   Operation 127 'fmul' 'tmp_34_3_2' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_25 : Operation 115 [1/1] (8.75ns)   --->   "%data1_addr_read_3 = call float @_ssdm_op_Read.ap_bus.floatP(float* %data1_addr) nounwind" [../myAccel.c:59]   --->   Operation 115 'read' 'data1_addr_read_3' <Predicate = (!tmp_s)> <Delay = 8.75> <Core = "PLB46M">   --->   Core 1 'PLB46M' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq'>
+ST_25 : Operation 116 [2/4] (5.70ns)   --->   "%tmp_4 = fmul float %data0_read, %data1_addr_read" [../myAccel.c:64]   --->   Operation 116 'fmul' 'tmp_4' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_25 : Operation 117 [3/4] (5.70ns)   --->   "%tmp_34_0_1 = fmul float %data0_read_1, %data1_addr_read_1" [../myAccel.c:64]   --->   Operation 117 'fmul' 'tmp_34_0_1' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_25 : Operation 118 [4/4] (5.70ns)   --->   "%tmp_34_0_2 = fmul float %data0_read_2, %data1_addr_read_2" [../myAccel.c:64]   --->   Operation 118 'fmul' 'tmp_34_0_2' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_25 : Operation 119 [2/4] (5.70ns)   --->   "%tmp_34_1 = fmul float %data0_read_4, %data1_addr_read" [../myAccel.c:64]   --->   Operation 119 'fmul' 'tmp_34_1' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_25 : Operation 120 [3/4] (5.70ns)   --->   "%tmp_34_1_1 = fmul float %data0_read_5, %data1_addr_read_1" [../myAccel.c:64]   --->   Operation 120 'fmul' 'tmp_34_1_1' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_25 : Operation 121 [4/4] (5.70ns)   --->   "%tmp_34_1_2 = fmul float %data0_read_6, %data1_addr_read_2" [../myAccel.c:64]   --->   Operation 121 'fmul' 'tmp_34_1_2' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_25 : Operation 122 [2/4] (5.70ns)   --->   "%tmp_34_2 = fmul float %data0_read_8, %data1_addr_read" [../myAccel.c:64]   --->   Operation 122 'fmul' 'tmp_34_2' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_25 : Operation 123 [3/4] (5.70ns)   --->   "%tmp_34_2_1 = fmul float %data0_read_9, %data1_addr_read_1" [../myAccel.c:64]   --->   Operation 123 'fmul' 'tmp_34_2_1' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_25 : Operation 124 [4/4] (5.70ns)   --->   "%tmp_34_2_2 = fmul float %data0_read_10, %data1_addr_read_2" [../myAccel.c:64]   --->   Operation 124 'fmul' 'tmp_34_2_2' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_25 : Operation 125 [2/4] (5.70ns)   --->   "%tmp_34_3 = fmul float %data0_read_12, %data1_addr_read" [../myAccel.c:64]   --->   Operation 125 'fmul' 'tmp_34_3' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_25 : Operation 126 [3/4] (5.70ns)   --->   "%tmp_34_3_1 = fmul float %data0_read_13, %data1_addr_read_1" [../myAccel.c:64]   --->   Operation 126 'fmul' 'tmp_34_3_1' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_25 : Operation 127 [4/4] (5.70ns)   --->   "%tmp_34_3_2 = fmul float %data0_read_14, %data1_addr_read_2" [../myAccel.c:64]   --->   Operation 127 'fmul' 'tmp_34_3_2' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
 
 State 26 <SV = 25> <Delay = 5.70>
-ST_26 : Operation 128 [1/4] (5.70ns)   --->   "%tmp_4 = fmul float %data0_read, %data1_addr_read" [../myAccel.c:62]   --->   Operation 128 'fmul' 'tmp_4' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
-ST_26 : Operation 129 [2/4] (5.70ns)   --->   "%tmp_34_0_1 = fmul float %data0_read_1, %data1_addr_read_1" [../myAccel.c:62]   --->   Operation 129 'fmul' 'tmp_34_0_1' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
-ST_26 : Operation 130 [3/4] (5.70ns)   --->   "%tmp_34_0_2 = fmul float %data0_read_2, %data1_addr_read_2" [../myAccel.c:62]   --->   Operation 130 'fmul' 'tmp_34_0_2' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
-ST_26 : Operation 131 [4/4] (5.70ns)   --->   "%tmp_34_0_3 = fmul float %data0_read_3, %data1_addr_read_3" [../myAccel.c:62]   --->   Operation 131 'fmul' 'tmp_34_0_3' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
-ST_26 : Operation 132 [1/4] (5.70ns)   --->   "%tmp_34_1 = fmul float %data0_read_4, %data1_addr_read" [../myAccel.c:62]   --->   Operation 132 'fmul' 'tmp_34_1' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
-ST_26 : Operation 133 [2/4] (5.70ns)   --->   "%tmp_34_1_1 = fmul float %data0_read_5, %data1_addr_read_1" [../myAccel.c:62]   --->   Operation 133 'fmul' 'tmp_34_1_1' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
-ST_26 : Operation 134 [3/4] (5.70ns)   --->   "%tmp_34_1_2 = fmul float %data0_read_6, %data1_addr_read_2" [../myAccel.c:62]   --->   Operation 134 'fmul' 'tmp_34_1_2' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
-ST_26 : Operation 135 [4/4] (5.70ns)   --->   "%tmp_34_1_3 = fmul float %data0_read_7, %data1_addr_read_3" [../myAccel.c:62]   --->   Operation 135 'fmul' 'tmp_34_1_3' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
-ST_26 : Operation 136 [1/4] (5.70ns)   --->   "%tmp_34_2 = fmul float %data0_read_8, %data1_addr_read" [../myAccel.c:62]   --->   Operation 136 'fmul' 'tmp_34_2' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
-ST_26 : Operation 137 [2/4] (5.70ns)   --->   "%tmp_34_2_1 = fmul float %data0_read_9, %data1_addr_read_1" [../myAccel.c:62]   --->   Operation 137 'fmul' 'tmp_34_2_1' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
-ST_26 : Operation 138 [3/4] (5.70ns)   --->   "%tmp_34_2_2 = fmul float %data0_read_10, %data1_addr_read_2" [../myAccel.c:62]   --->   Operation 138 'fmul' 'tmp_34_2_2' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
-ST_26 : Operation 139 [4/4] (5.70ns)   --->   "%tmp_34_2_3 = fmul float %data0_read_11, %data1_addr_read_3" [../myAccel.c:62]   --->   Operation 139 'fmul' 'tmp_34_2_3' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
-ST_26 : Operation 140 [1/4] (5.70ns)   --->   "%tmp_34_3 = fmul float %data0_read_12, %data1_addr_read" [../myAccel.c:62]   --->   Operation 140 'fmul' 'tmp_34_3' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
-ST_26 : Operation 141 [2/4] (5.70ns)   --->   "%tmp_34_3_1 = fmul float %data0_read_13, %data1_addr_read_1" [../myAccel.c:62]   --->   Operation 141 'fmul' 'tmp_34_3_1' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
-ST_26 : Operation 142 [3/4] (5.70ns)   --->   "%tmp_34_3_2 = fmul float %data0_read_14, %data1_addr_read_2" [../myAccel.c:62]   --->   Operation 142 'fmul' 'tmp_34_3_2' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
-ST_26 : Operation 143 [4/4] (5.70ns)   --->   "%tmp_34_3_3 = fmul float %data0_read_15, %data1_addr_read_3" [../myAccel.c:62]   --->   Operation 143 'fmul' 'tmp_34_3_3' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_26 : Operation 128 [1/4] (5.70ns)   --->   "%tmp_4 = fmul float %data0_read, %data1_addr_read" [../myAccel.c:64]   --->   Operation 128 'fmul' 'tmp_4' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_26 : Operation 129 [2/4] (5.70ns)   --->   "%tmp_34_0_1 = fmul float %data0_read_1, %data1_addr_read_1" [../myAccel.c:64]   --->   Operation 129 'fmul' 'tmp_34_0_1' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_26 : Operation 130 [3/4] (5.70ns)   --->   "%tmp_34_0_2 = fmul float %data0_read_2, %data1_addr_read_2" [../myAccel.c:64]   --->   Operation 130 'fmul' 'tmp_34_0_2' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_26 : Operation 131 [4/4] (5.70ns)   --->   "%tmp_34_0_3 = fmul float %data0_read_3, %data1_addr_read_3" [../myAccel.c:64]   --->   Operation 131 'fmul' 'tmp_34_0_3' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_26 : Operation 132 [1/4] (5.70ns)   --->   "%tmp_34_1 = fmul float %data0_read_4, %data1_addr_read" [../myAccel.c:64]   --->   Operation 132 'fmul' 'tmp_34_1' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_26 : Operation 133 [2/4] (5.70ns)   --->   "%tmp_34_1_1 = fmul float %data0_read_5, %data1_addr_read_1" [../myAccel.c:64]   --->   Operation 133 'fmul' 'tmp_34_1_1' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_26 : Operation 134 [3/4] (5.70ns)   --->   "%tmp_34_1_2 = fmul float %data0_read_6, %data1_addr_read_2" [../myAccel.c:64]   --->   Operation 134 'fmul' 'tmp_34_1_2' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_26 : Operation 135 [4/4] (5.70ns)   --->   "%tmp_34_1_3 = fmul float %data0_read_7, %data1_addr_read_3" [../myAccel.c:64]   --->   Operation 135 'fmul' 'tmp_34_1_3' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_26 : Operation 136 [1/4] (5.70ns)   --->   "%tmp_34_2 = fmul float %data0_read_8, %data1_addr_read" [../myAccel.c:64]   --->   Operation 136 'fmul' 'tmp_34_2' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_26 : Operation 137 [2/4] (5.70ns)   --->   "%tmp_34_2_1 = fmul float %data0_read_9, %data1_addr_read_1" [../myAccel.c:64]   --->   Operation 137 'fmul' 'tmp_34_2_1' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_26 : Operation 138 [3/4] (5.70ns)   --->   "%tmp_34_2_2 = fmul float %data0_read_10, %data1_addr_read_2" [../myAccel.c:64]   --->   Operation 138 'fmul' 'tmp_34_2_2' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_26 : Operation 139 [4/4] (5.70ns)   --->   "%tmp_34_2_3 = fmul float %data0_read_11, %data1_addr_read_3" [../myAccel.c:64]   --->   Operation 139 'fmul' 'tmp_34_2_3' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_26 : Operation 140 [1/4] (5.70ns)   --->   "%tmp_34_3 = fmul float %data0_read_12, %data1_addr_read" [../myAccel.c:64]   --->   Operation 140 'fmul' 'tmp_34_3' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_26 : Operation 141 [2/4] (5.70ns)   --->   "%tmp_34_3_1 = fmul float %data0_read_13, %data1_addr_read_1" [../myAccel.c:64]   --->   Operation 141 'fmul' 'tmp_34_3_1' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_26 : Operation 142 [3/4] (5.70ns)   --->   "%tmp_34_3_2 = fmul float %data0_read_14, %data1_addr_read_2" [../myAccel.c:64]   --->   Operation 142 'fmul' 'tmp_34_3_2' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_26 : Operation 143 [4/4] (5.70ns)   --->   "%tmp_34_3_3 = fmul float %data0_read_15, %data1_addr_read_3" [../myAccel.c:64]   --->   Operation 143 'fmul' 'tmp_34_3_3' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
 
 State 27 <SV = 26> <Delay = 7.25>
-ST_27 : Operation 144 [5/5] (7.25ns)   --->   "%tmp_6 = fadd float %tmp_4, 0.000000e+00" [../myAccel.c:62]   --->   Operation 144 'fadd' 'tmp_6' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
-ST_27 : Operation 145 [1/4] (5.70ns)   --->   "%tmp_34_0_1 = fmul float %data0_read_1, %data1_addr_read_1" [../myAccel.c:62]   --->   Operation 145 'fmul' 'tmp_34_0_1' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
-ST_27 : Operation 146 [2/4] (5.70ns)   --->   "%tmp_34_0_2 = fmul float %data0_read_2, %data1_addr_read_2" [../myAccel.c:62]   --->   Operation 146 'fmul' 'tmp_34_0_2' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
-ST_27 : Operation 147 [3/4] (5.70ns)   --->   "%tmp_34_0_3 = fmul float %data0_read_3, %data1_addr_read_3" [../myAccel.c:62]   --->   Operation 147 'fmul' 'tmp_34_0_3' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
-ST_27 : Operation 148 [5/5] (7.25ns)   --->   "%tmp_35_1 = fadd float %tmp_34_1, 0.000000e+00" [../myAccel.c:62]   --->   Operation 148 'fadd' 'tmp_35_1' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
-ST_27 : Operation 149 [1/4] (5.70ns)   --->   "%tmp_34_1_1 = fmul float %data0_read_5, %data1_addr_read_1" [../myAccel.c:62]   --->   Operation 149 'fmul' 'tmp_34_1_1' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
-ST_27 : Operation 150 [2/4] (5.70ns)   --->   "%tmp_34_1_2 = fmul float %data0_read_6, %data1_addr_read_2" [../myAccel.c:62]   --->   Operation 150 'fmul' 'tmp_34_1_2' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
-ST_27 : Operation 151 [3/4] (5.70ns)   --->   "%tmp_34_1_3 = fmul float %data0_read_7, %data1_addr_read_3" [../myAccel.c:62]   --->   Operation 151 'fmul' 'tmp_34_1_3' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
-ST_27 : Operation 152 [5/5] (7.25ns)   --->   "%tmp_35_2 = fadd float %tmp_34_2, 0.000000e+00" [../myAccel.c:62]   --->   Operation 152 'fadd' 'tmp_35_2' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
-ST_27 : Operation 153 [1/4] (5.70ns)   --->   "%tmp_34_2_1 = fmul float %data0_read_9, %data1_addr_read_1" [../myAccel.c:62]   --->   Operation 153 'fmul' 'tmp_34_2_1' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
-ST_27 : Operation 154 [2/4] (5.70ns)   --->   "%tmp_34_2_2 = fmul float %data0_read_10, %data1_addr_read_2" [../myAccel.c:62]   --->   Operation 154 'fmul' 'tmp_34_2_2' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
-ST_27 : Operation 155 [3/4] (5.70ns)   --->   "%tmp_34_2_3 = fmul float %data0_read_11, %data1_addr_read_3" [../myAccel.c:62]   --->   Operation 155 'fmul' 'tmp_34_2_3' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
-ST_27 : Operation 156 [5/5] (7.25ns)   --->   "%tmp_35_3 = fadd float %tmp_34_3, 0.000000e+00" [../myAccel.c:62]   --->   Operation 156 'fadd' 'tmp_35_3' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
-ST_27 : Operation 157 [1/4] (5.70ns)   --->   "%tmp_34_3_1 = fmul float %data0_read_13, %data1_addr_read_1" [../myAccel.c:62]   --->   Operation 157 'fmul' 'tmp_34_3_1' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
-ST_27 : Operation 158 [2/4] (5.70ns)   --->   "%tmp_34_3_2 = fmul float %data0_read_14, %data1_addr_read_2" [../myAccel.c:62]   --->   Operation 158 'fmul' 'tmp_34_3_2' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
-ST_27 : Operation 159 [3/4] (5.70ns)   --->   "%tmp_34_3_3 = fmul float %data0_read_15, %data1_addr_read_3" [../myAccel.c:62]   --->   Operation 159 'fmul' 'tmp_34_3_3' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_27 : Operation 144 [5/5] (7.25ns)   --->   "%tmp_6 = fadd float %tmp_4, 0.000000e+00" [../myAccel.c:64]   --->   Operation 144 'fadd' 'tmp_6' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_27 : Operation 145 [1/4] (5.70ns)   --->   "%tmp_34_0_1 = fmul float %data0_read_1, %data1_addr_read_1" [../myAccel.c:64]   --->   Operation 145 'fmul' 'tmp_34_0_1' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_27 : Operation 146 [2/4] (5.70ns)   --->   "%tmp_34_0_2 = fmul float %data0_read_2, %data1_addr_read_2" [../myAccel.c:64]   --->   Operation 146 'fmul' 'tmp_34_0_2' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_27 : Operation 147 [3/4] (5.70ns)   --->   "%tmp_34_0_3 = fmul float %data0_read_3, %data1_addr_read_3" [../myAccel.c:64]   --->   Operation 147 'fmul' 'tmp_34_0_3' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_27 : Operation 148 [5/5] (7.25ns)   --->   "%tmp_35_1 = fadd float %tmp_34_1, 0.000000e+00" [../myAccel.c:64]   --->   Operation 148 'fadd' 'tmp_35_1' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_27 : Operation 149 [1/4] (5.70ns)   --->   "%tmp_34_1_1 = fmul float %data0_read_5, %data1_addr_read_1" [../myAccel.c:64]   --->   Operation 149 'fmul' 'tmp_34_1_1' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_27 : Operation 150 [2/4] (5.70ns)   --->   "%tmp_34_1_2 = fmul float %data0_read_6, %data1_addr_read_2" [../myAccel.c:64]   --->   Operation 150 'fmul' 'tmp_34_1_2' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_27 : Operation 151 [3/4] (5.70ns)   --->   "%tmp_34_1_3 = fmul float %data0_read_7, %data1_addr_read_3" [../myAccel.c:64]   --->   Operation 151 'fmul' 'tmp_34_1_3' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_27 : Operation 152 [5/5] (7.25ns)   --->   "%tmp_35_2 = fadd float %tmp_34_2, 0.000000e+00" [../myAccel.c:64]   --->   Operation 152 'fadd' 'tmp_35_2' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_27 : Operation 153 [1/4] (5.70ns)   --->   "%tmp_34_2_1 = fmul float %data0_read_9, %data1_addr_read_1" [../myAccel.c:64]   --->   Operation 153 'fmul' 'tmp_34_2_1' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_27 : Operation 154 [2/4] (5.70ns)   --->   "%tmp_34_2_2 = fmul float %data0_read_10, %data1_addr_read_2" [../myAccel.c:64]   --->   Operation 154 'fmul' 'tmp_34_2_2' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_27 : Operation 155 [3/4] (5.70ns)   --->   "%tmp_34_2_3 = fmul float %data0_read_11, %data1_addr_read_3" [../myAccel.c:64]   --->   Operation 155 'fmul' 'tmp_34_2_3' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_27 : Operation 156 [5/5] (7.25ns)   --->   "%tmp_35_3 = fadd float %tmp_34_3, 0.000000e+00" [../myAccel.c:64]   --->   Operation 156 'fadd' 'tmp_35_3' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_27 : Operation 157 [1/4] (5.70ns)   --->   "%tmp_34_3_1 = fmul float %data0_read_13, %data1_addr_read_1" [../myAccel.c:64]   --->   Operation 157 'fmul' 'tmp_34_3_1' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_27 : Operation 158 [2/4] (5.70ns)   --->   "%tmp_34_3_2 = fmul float %data0_read_14, %data1_addr_read_2" [../myAccel.c:64]   --->   Operation 158 'fmul' 'tmp_34_3_2' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_27 : Operation 159 [3/4] (5.70ns)   --->   "%tmp_34_3_3 = fmul float %data0_read_15, %data1_addr_read_3" [../myAccel.c:64]   --->   Operation 159 'fmul' 'tmp_34_3_3' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
 
 State 28 <SV = 27> <Delay = 7.25>
-ST_28 : Operation 160 [4/5] (7.25ns)   --->   "%tmp_6 = fadd float %tmp_4, 0.000000e+00" [../myAccel.c:62]   --->   Operation 160 'fadd' 'tmp_6' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
-ST_28 : Operation 161 [1/4] (5.70ns)   --->   "%tmp_34_0_2 = fmul float %data0_read_2, %data1_addr_read_2" [../myAccel.c:62]   --->   Operation 161 'fmul' 'tmp_34_0_2' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
-ST_28 : Operation 162 [2/4] (5.70ns)   --->   "%tmp_34_0_3 = fmul float %data0_read_3, %data1_addr_read_3" [../myAccel.c:62]   --->   Operation 162 'fmul' 'tmp_34_0_3' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
-ST_28 : Operation 163 [4/5] (7.25ns)   --->   "%tmp_35_1 = fadd float %tmp_34_1, 0.000000e+00" [../myAccel.c:62]   --->   Operation 163 'fadd' 'tmp_35_1' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
-ST_28 : Operation 164 [1/4] (5.70ns)   --->   "%tmp_34_1_2 = fmul float %data0_read_6, %data1_addr_read_2" [../myAccel.c:62]   --->   Operation 164 'fmul' 'tmp_34_1_2' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
-ST_28 : Operation 165 [2/4] (5.70ns)   --->   "%tmp_34_1_3 = fmul float %data0_read_7, %data1_addr_read_3" [../myAccel.c:62]   --->   Operation 165 'fmul' 'tmp_34_1_3' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
-ST_28 : Operation 166 [4/5] (7.25ns)   --->   "%tmp_35_2 = fadd float %tmp_34_2, 0.000000e+00" [../myAccel.c:62]   --->   Operation 166 'fadd' 'tmp_35_2' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
-ST_28 : Operation 167 [1/4] (5.70ns)   --->   "%tmp_34_2_2 = fmul float %data0_read_10, %data1_addr_read_2" [../myAccel.c:62]   --->   Operation 167 'fmul' 'tmp_34_2_2' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
-ST_28 : Operation 168 [2/4] (5.70ns)   --->   "%tmp_34_2_3 = fmul float %data0_read_11, %data1_addr_read_3" [../myAccel.c:62]   --->   Operation 168 'fmul' 'tmp_34_2_3' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
-ST_28 : Operation 169 [4/5] (7.25ns)   --->   "%tmp_35_3 = fadd float %tmp_34_3, 0.000000e+00" [../myAccel.c:62]   --->   Operation 169 'fadd' 'tmp_35_3' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
-ST_28 : Operation 170 [1/4] (5.70ns)   --->   "%tmp_34_3_2 = fmul float %data0_read_14, %data1_addr_read_2" [../myAccel.c:62]   --->   Operation 170 'fmul' 'tmp_34_3_2' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
-ST_28 : Operation 171 [2/4] (5.70ns)   --->   "%tmp_34_3_3 = fmul float %data0_read_15, %data1_addr_read_3" [../myAccel.c:62]   --->   Operation 171 'fmul' 'tmp_34_3_3' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_28 : Operation 160 [4/5] (7.25ns)   --->   "%tmp_6 = fadd float %tmp_4, 0.000000e+00" [../myAccel.c:64]   --->   Operation 160 'fadd' 'tmp_6' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_28 : Operation 161 [1/4] (5.70ns)   --->   "%tmp_34_0_2 = fmul float %data0_read_2, %data1_addr_read_2" [../myAccel.c:64]   --->   Operation 161 'fmul' 'tmp_34_0_2' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_28 : Operation 162 [2/4] (5.70ns)   --->   "%tmp_34_0_3 = fmul float %data0_read_3, %data1_addr_read_3" [../myAccel.c:64]   --->   Operation 162 'fmul' 'tmp_34_0_3' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_28 : Operation 163 [4/5] (7.25ns)   --->   "%tmp_35_1 = fadd float %tmp_34_1, 0.000000e+00" [../myAccel.c:64]   --->   Operation 163 'fadd' 'tmp_35_1' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_28 : Operation 164 [1/4] (5.70ns)   --->   "%tmp_34_1_2 = fmul float %data0_read_6, %data1_addr_read_2" [../myAccel.c:64]   --->   Operation 164 'fmul' 'tmp_34_1_2' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_28 : Operation 165 [2/4] (5.70ns)   --->   "%tmp_34_1_3 = fmul float %data0_read_7, %data1_addr_read_3" [../myAccel.c:64]   --->   Operation 165 'fmul' 'tmp_34_1_3' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_28 : Operation 166 [4/5] (7.25ns)   --->   "%tmp_35_2 = fadd float %tmp_34_2, 0.000000e+00" [../myAccel.c:64]   --->   Operation 166 'fadd' 'tmp_35_2' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_28 : Operation 167 [1/4] (5.70ns)   --->   "%tmp_34_2_2 = fmul float %data0_read_10, %data1_addr_read_2" [../myAccel.c:64]   --->   Operation 167 'fmul' 'tmp_34_2_2' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_28 : Operation 168 [2/4] (5.70ns)   --->   "%tmp_34_2_3 = fmul float %data0_read_11, %data1_addr_read_3" [../myAccel.c:64]   --->   Operation 168 'fmul' 'tmp_34_2_3' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_28 : Operation 169 [4/5] (7.25ns)   --->   "%tmp_35_3 = fadd float %tmp_34_3, 0.000000e+00" [../myAccel.c:64]   --->   Operation 169 'fadd' 'tmp_35_3' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_28 : Operation 170 [1/4] (5.70ns)   --->   "%tmp_34_3_2 = fmul float %data0_read_14, %data1_addr_read_2" [../myAccel.c:64]   --->   Operation 170 'fmul' 'tmp_34_3_2' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_28 : Operation 171 [2/4] (5.70ns)   --->   "%tmp_34_3_3 = fmul float %data0_read_15, %data1_addr_read_3" [../myAccel.c:64]   --->   Operation 171 'fmul' 'tmp_34_3_3' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
 
 State 29 <SV = 28> <Delay = 7.25>
-ST_29 : Operation 172 [3/5] (7.25ns)   --->   "%tmp_6 = fadd float %tmp_4, 0.000000e+00" [../myAccel.c:62]   --->   Operation 172 'fadd' 'tmp_6' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
-ST_29 : Operation 173 [1/4] (5.70ns)   --->   "%tmp_34_0_3 = fmul float %data0_read_3, %data1_addr_read_3" [../myAccel.c:62]   --->   Operation 173 'fmul' 'tmp_34_0_3' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
-ST_29 : Operation 174 [3/5] (7.25ns)   --->   "%tmp_35_1 = fadd float %tmp_34_1, 0.000000e+00" [../myAccel.c:62]   --->   Operation 174 'fadd' 'tmp_35_1' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
-ST_29 : Operation 175 [1/4] (5.70ns)   --->   "%tmp_34_1_3 = fmul float %data0_read_7, %data1_addr_read_3" [../myAccel.c:62]   --->   Operation 175 'fmul' 'tmp_34_1_3' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
-ST_29 : Operation 176 [3/5] (7.25ns)   --->   "%tmp_35_2 = fadd float %tmp_34_2, 0.000000e+00" [../myAccel.c:62]   --->   Operation 176 'fadd' 'tmp_35_2' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
-ST_29 : Operation 177 [1/4] (5.70ns)   --->   "%tmp_34_2_3 = fmul float %data0_read_11, %data1_addr_read_3" [../myAccel.c:62]   --->   Operation 177 'fmul' 'tmp_34_2_3' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
-ST_29 : Operation 178 [3/5] (7.25ns)   --->   "%tmp_35_3 = fadd float %tmp_34_3, 0.000000e+00" [../myAccel.c:62]   --->   Operation 178 'fadd' 'tmp_35_3' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
-ST_29 : Operation 179 [1/4] (5.70ns)   --->   "%tmp_34_3_3 = fmul float %data0_read_15, %data1_addr_read_3" [../myAccel.c:62]   --->   Operation 179 'fmul' 'tmp_34_3_3' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_29 : Operation 172 [3/5] (7.25ns)   --->   "%tmp_6 = fadd float %tmp_4, 0.000000e+00" [../myAccel.c:64]   --->   Operation 172 'fadd' 'tmp_6' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_29 : Operation 173 [1/4] (5.70ns)   --->   "%tmp_34_0_3 = fmul float %data0_read_3, %data1_addr_read_3" [../myAccel.c:64]   --->   Operation 173 'fmul' 'tmp_34_0_3' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_29 : Operation 174 [3/5] (7.25ns)   --->   "%tmp_35_1 = fadd float %tmp_34_1, 0.000000e+00" [../myAccel.c:64]   --->   Operation 174 'fadd' 'tmp_35_1' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_29 : Operation 175 [1/4] (5.70ns)   --->   "%tmp_34_1_3 = fmul float %data0_read_7, %data1_addr_read_3" [../myAccel.c:64]   --->   Operation 175 'fmul' 'tmp_34_1_3' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_29 : Operation 176 [3/5] (7.25ns)   --->   "%tmp_35_2 = fadd float %tmp_34_2, 0.000000e+00" [../myAccel.c:64]   --->   Operation 176 'fadd' 'tmp_35_2' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_29 : Operation 177 [1/4] (5.70ns)   --->   "%tmp_34_2_3 = fmul float %data0_read_11, %data1_addr_read_3" [../myAccel.c:64]   --->   Operation 177 'fmul' 'tmp_34_2_3' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_29 : Operation 178 [3/5] (7.25ns)   --->   "%tmp_35_3 = fadd float %tmp_34_3, 0.000000e+00" [../myAccel.c:64]   --->   Operation 178 'fadd' 'tmp_35_3' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_29 : Operation 179 [1/4] (5.70ns)   --->   "%tmp_34_3_3 = fmul float %data0_read_15, %data1_addr_read_3" [../myAccel.c:64]   --->   Operation 179 'fmul' 'tmp_34_3_3' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
 
 State 30 <SV = 29> <Delay = 7.25>
-ST_30 : Operation 180 [2/5] (7.25ns)   --->   "%tmp_6 = fadd float %tmp_4, 0.000000e+00" [../myAccel.c:62]   --->   Operation 180 'fadd' 'tmp_6' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
-ST_30 : Operation 181 [2/5] (7.25ns)   --->   "%tmp_35_1 = fadd float %tmp_34_1, 0.000000e+00" [../myAccel.c:62]   --->   Operation 181 'fadd' 'tmp_35_1' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
-ST_30 : Operation 182 [2/5] (7.25ns)   --->   "%tmp_35_2 = fadd float %tmp_34_2, 0.000000e+00" [../myAccel.c:62]   --->   Operation 182 'fadd' 'tmp_35_2' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
-ST_30 : Operation 183 [2/5] (7.25ns)   --->   "%tmp_35_3 = fadd float %tmp_34_3, 0.000000e+00" [../myAccel.c:62]   --->   Operation 183 'fadd' 'tmp_35_3' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_30 : Operation 180 [2/5] (7.25ns)   --->   "%tmp_6 = fadd float %tmp_4, 0.000000e+00" [../myAccel.c:64]   --->   Operation 180 'fadd' 'tmp_6' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_30 : Operation 181 [2/5] (7.25ns)   --->   "%tmp_35_1 = fadd float %tmp_34_1, 0.000000e+00" [../myAccel.c:64]   --->   Operation 181 'fadd' 'tmp_35_1' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_30 : Operation 182 [2/5] (7.25ns)   --->   "%tmp_35_2 = fadd float %tmp_34_2, 0.000000e+00" [../myAccel.c:64]   --->   Operation 182 'fadd' 'tmp_35_2' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_30 : Operation 183 [2/5] (7.25ns)   --->   "%tmp_35_3 = fadd float %tmp_34_3, 0.000000e+00" [../myAccel.c:64]   --->   Operation 183 'fadd' 'tmp_35_3' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
 
 State 31 <SV = 30> <Delay = 7.25>
-ST_31 : Operation 184 [1/5] (7.25ns)   --->   "%tmp_6 = fadd float %tmp_4, 0.000000e+00" [../myAccel.c:62]   --->   Operation 184 'fadd' 'tmp_6' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
-ST_31 : Operation 185 [1/5] (7.25ns)   --->   "%tmp_35_1 = fadd float %tmp_34_1, 0.000000e+00" [../myAccel.c:62]   --->   Operation 185 'fadd' 'tmp_35_1' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
-ST_31 : Operation 186 [1/5] (7.25ns)   --->   "%tmp_35_2 = fadd float %tmp_34_2, 0.000000e+00" [../myAccel.c:62]   --->   Operation 186 'fadd' 'tmp_35_2' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
-ST_31 : Operation 187 [1/5] (7.25ns)   --->   "%tmp_35_3 = fadd float %tmp_34_3, 0.000000e+00" [../myAccel.c:62]   --->   Operation 187 'fadd' 'tmp_35_3' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_31 : Operation 184 [1/5] (7.25ns)   --->   "%tmp_6 = fadd float %tmp_4, 0.000000e+00" [../myAccel.c:64]   --->   Operation 184 'fadd' 'tmp_6' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_31 : Operation 185 [1/5] (7.25ns)   --->   "%tmp_35_1 = fadd float %tmp_34_1, 0.000000e+00" [../myAccel.c:64]   --->   Operation 185 'fadd' 'tmp_35_1' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_31 : Operation 186 [1/5] (7.25ns)   --->   "%tmp_35_2 = fadd float %tmp_34_2, 0.000000e+00" [../myAccel.c:64]   --->   Operation 186 'fadd' 'tmp_35_2' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_31 : Operation 187 [1/5] (7.25ns)   --->   "%tmp_35_3 = fadd float %tmp_34_3, 0.000000e+00" [../myAccel.c:64]   --->   Operation 187 'fadd' 'tmp_35_3' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
 
 State 32 <SV = 31> <Delay = 7.25>
-ST_32 : Operation 188 [5/5] (7.25ns)   --->   "%tmp_35_0_1 = fadd float %tmp_6, %tmp_34_0_1" [../myAccel.c:62]   --->   Operation 188 'fadd' 'tmp_35_0_1' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
-ST_32 : Operation 189 [5/5] (7.25ns)   --->   "%tmp_35_1_1 = fadd float %tmp_35_1, %tmp_34_1_1" [../myAccel.c:62]   --->   Operation 189 'fadd' 'tmp_35_1_1' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
-ST_32 : Operation 190 [5/5] (7.25ns)   --->   "%tmp_35_2_1 = fadd float %tmp_35_2, %tmp_34_2_1" [../myAccel.c:62]   --->   Operation 190 'fadd' 'tmp_35_2_1' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
-ST_32 : Operation 191 [5/5] (7.25ns)   --->   "%tmp_35_3_1 = fadd float %tmp_35_3, %tmp_34_3_1" [../myAccel.c:62]   --->   Operation 191 'fadd' 'tmp_35_3_1' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_32 : Operation 188 [5/5] (7.25ns)   --->   "%tmp_35_0_1 = fadd float %tmp_6, %tmp_34_0_1" [../myAccel.c:64]   --->   Operation 188 'fadd' 'tmp_35_0_1' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_32 : Operation 189 [5/5] (7.25ns)   --->   "%tmp_35_1_1 = fadd float %tmp_35_1, %tmp_34_1_1" [../myAccel.c:64]   --->   Operation 189 'fadd' 'tmp_35_1_1' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_32 : Operation 190 [5/5] (7.25ns)   --->   "%tmp_35_2_1 = fadd float %tmp_35_2, %tmp_34_2_1" [../myAccel.c:64]   --->   Operation 190 'fadd' 'tmp_35_2_1' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_32 : Operation 191 [5/5] (7.25ns)   --->   "%tmp_35_3_1 = fadd float %tmp_35_3, %tmp_34_3_1" [../myAccel.c:64]   --->   Operation 191 'fadd' 'tmp_35_3_1' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
 
 State 33 <SV = 32> <Delay = 7.25>
-ST_33 : Operation 192 [4/5] (7.25ns)   --->   "%tmp_35_0_1 = fadd float %tmp_6, %tmp_34_0_1" [../myAccel.c:62]   --->   Operation 192 'fadd' 'tmp_35_0_1' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
-ST_33 : Operation 193 [4/5] (7.25ns)   --->   "%tmp_35_1_1 = fadd float %tmp_35_1, %tmp_34_1_1" [../myAccel.c:62]   --->   Operation 193 'fadd' 'tmp_35_1_1' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
-ST_33 : Operation 194 [4/5] (7.25ns)   --->   "%tmp_35_2_1 = fadd float %tmp_35_2, %tmp_34_2_1" [../myAccel.c:62]   --->   Operation 194 'fadd' 'tmp_35_2_1' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
-ST_33 : Operation 195 [4/5] (7.25ns)   --->   "%tmp_35_3_1 = fadd float %tmp_35_3, %tmp_34_3_1" [../myAccel.c:62]   --->   Operation 195 'fadd' 'tmp_35_3_1' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_33 : Operation 192 [4/5] (7.25ns)   --->   "%tmp_35_0_1 = fadd float %tmp_6, %tmp_34_0_1" [../myAccel.c:64]   --->   Operation 192 'fadd' 'tmp_35_0_1' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_33 : Operation 193 [4/5] (7.25ns)   --->   "%tmp_35_1_1 = fadd float %tmp_35_1, %tmp_34_1_1" [../myAccel.c:64]   --->   Operation 193 'fadd' 'tmp_35_1_1' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_33 : Operation 194 [4/5] (7.25ns)   --->   "%tmp_35_2_1 = fadd float %tmp_35_2, %tmp_34_2_1" [../myAccel.c:64]   --->   Operation 194 'fadd' 'tmp_35_2_1' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_33 : Operation 195 [4/5] (7.25ns)   --->   "%tmp_35_3_1 = fadd float %tmp_35_3, %tmp_34_3_1" [../myAccel.c:64]   --->   Operation 195 'fadd' 'tmp_35_3_1' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
 
 State 34 <SV = 33> <Delay = 7.25>
-ST_34 : Operation 196 [3/5] (7.25ns)   --->   "%tmp_35_0_1 = fadd float %tmp_6, %tmp_34_0_1" [../myAccel.c:62]   --->   Operation 196 'fadd' 'tmp_35_0_1' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
-ST_34 : Operation 197 [3/5] (7.25ns)   --->   "%tmp_35_1_1 = fadd float %tmp_35_1, %tmp_34_1_1" [../myAccel.c:62]   --->   Operation 197 'fadd' 'tmp_35_1_1' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
-ST_34 : Operation 198 [3/5] (7.25ns)   --->   "%tmp_35_2_1 = fadd float %tmp_35_2, %tmp_34_2_1" [../myAccel.c:62]   --->   Operation 198 'fadd' 'tmp_35_2_1' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
-ST_34 : Operation 199 [3/5] (7.25ns)   --->   "%tmp_35_3_1 = fadd float %tmp_35_3, %tmp_34_3_1" [../myAccel.c:62]   --->   Operation 199 'fadd' 'tmp_35_3_1' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_34 : Operation 196 [3/5] (7.25ns)   --->   "%tmp_35_0_1 = fadd float %tmp_6, %tmp_34_0_1" [../myAccel.c:64]   --->   Operation 196 'fadd' 'tmp_35_0_1' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_34 : Operation 197 [3/5] (7.25ns)   --->   "%tmp_35_1_1 = fadd float %tmp_35_1, %tmp_34_1_1" [../myAccel.c:64]   --->   Operation 197 'fadd' 'tmp_35_1_1' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_34 : Operation 198 [3/5] (7.25ns)   --->   "%tmp_35_2_1 = fadd float %tmp_35_2, %tmp_34_2_1" [../myAccel.c:64]   --->   Operation 198 'fadd' 'tmp_35_2_1' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_34 : Operation 199 [3/5] (7.25ns)   --->   "%tmp_35_3_1 = fadd float %tmp_35_3, %tmp_34_3_1" [../myAccel.c:64]   --->   Operation 199 'fadd' 'tmp_35_3_1' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
 
 State 35 <SV = 34> <Delay = 7.25>
-ST_35 : Operation 200 [2/5] (7.25ns)   --->   "%tmp_35_0_1 = fadd float %tmp_6, %tmp_34_0_1" [../myAccel.c:62]   --->   Operation 200 'fadd' 'tmp_35_0_1' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
-ST_35 : Operation 201 [2/5] (7.25ns)   --->   "%tmp_35_1_1 = fadd float %tmp_35_1, %tmp_34_1_1" [../myAccel.c:62]   --->   Operation 201 'fadd' 'tmp_35_1_1' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
-ST_35 : Operation 202 [2/5] (7.25ns)   --->   "%tmp_35_2_1 = fadd float %tmp_35_2, %tmp_34_2_1" [../myAccel.c:62]   --->   Operation 202 'fadd' 'tmp_35_2_1' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
-ST_35 : Operation 203 [2/5] (7.25ns)   --->   "%tmp_35_3_1 = fadd float %tmp_35_3, %tmp_34_3_1" [../myAccel.c:62]   --->   Operation 203 'fadd' 'tmp_35_3_1' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_35 : Operation 200 [2/5] (7.25ns)   --->   "%tmp_35_0_1 = fadd float %tmp_6, %tmp_34_0_1" [../myAccel.c:64]   --->   Operation 200 'fadd' 'tmp_35_0_1' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_35 : Operation 201 [2/5] (7.25ns)   --->   "%tmp_35_1_1 = fadd float %tmp_35_1, %tmp_34_1_1" [../myAccel.c:64]   --->   Operation 201 'fadd' 'tmp_35_1_1' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_35 : Operation 202 [2/5] (7.25ns)   --->   "%tmp_35_2_1 = fadd float %tmp_35_2, %tmp_34_2_1" [../myAccel.c:64]   --->   Operation 202 'fadd' 'tmp_35_2_1' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_35 : Operation 203 [2/5] (7.25ns)   --->   "%tmp_35_3_1 = fadd float %tmp_35_3, %tmp_34_3_1" [../myAccel.c:64]   --->   Operation 203 'fadd' 'tmp_35_3_1' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
 
 State 36 <SV = 35> <Delay = 7.25>
-ST_36 : Operation 204 [1/5] (7.25ns)   --->   "%tmp_35_0_1 = fadd float %tmp_6, %tmp_34_0_1" [../myAccel.c:62]   --->   Operation 204 'fadd' 'tmp_35_0_1' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
-ST_36 : Operation 205 [1/5] (7.25ns)   --->   "%tmp_35_1_1 = fadd float %tmp_35_1, %tmp_34_1_1" [../myAccel.c:62]   --->   Operation 205 'fadd' 'tmp_35_1_1' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
-ST_36 : Operation 206 [1/5] (7.25ns)   --->   "%tmp_35_2_1 = fadd float %tmp_35_2, %tmp_34_2_1" [../myAccel.c:62]   --->   Operation 206 'fadd' 'tmp_35_2_1' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
-ST_36 : Operation 207 [1/5] (7.25ns)   --->   "%tmp_35_3_1 = fadd float %tmp_35_3, %tmp_34_3_1" [../myAccel.c:62]   --->   Operation 207 'fadd' 'tmp_35_3_1' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_36 : Operation 204 [1/5] (7.25ns)   --->   "%tmp_35_0_1 = fadd float %tmp_6, %tmp_34_0_1" [../myAccel.c:64]   --->   Operation 204 'fadd' 'tmp_35_0_1' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_36 : Operation 205 [1/5] (7.25ns)   --->   "%tmp_35_1_1 = fadd float %tmp_35_1, %tmp_34_1_1" [../myAccel.c:64]   --->   Operation 205 'fadd' 'tmp_35_1_1' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_36 : Operation 206 [1/5] (7.25ns)   --->   "%tmp_35_2_1 = fadd float %tmp_35_2, %tmp_34_2_1" [../myAccel.c:64]   --->   Operation 206 'fadd' 'tmp_35_2_1' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_36 : Operation 207 [1/5] (7.25ns)   --->   "%tmp_35_3_1 = fadd float %tmp_35_3, %tmp_34_3_1" [../myAccel.c:64]   --->   Operation 207 'fadd' 'tmp_35_3_1' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
 
 State 37 <SV = 36> <Delay = 7.25>
-ST_37 : Operation 208 [5/5] (7.25ns)   --->   "%tmp_35_0_2 = fadd float %tmp_35_0_1, %tmp_34_0_2" [../myAccel.c:62]   --->   Operation 208 'fadd' 'tmp_35_0_2' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
-ST_37 : Operation 209 [5/5] (7.25ns)   --->   "%tmp_35_1_2 = fadd float %tmp_35_1_1, %tmp_34_1_2" [../myAccel.c:62]   --->   Operation 209 'fadd' 'tmp_35_1_2' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
-ST_37 : Operation 210 [5/5] (7.25ns)   --->   "%tmp_35_2_2 = fadd float %tmp_35_2_1, %tmp_34_2_2" [../myAccel.c:62]   --->   Operation 210 'fadd' 'tmp_35_2_2' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
-ST_37 : Operation 211 [5/5] (7.25ns)   --->   "%tmp_35_3_2 = fadd float %tmp_35_3_1, %tmp_34_3_2" [../myAccel.c:62]   --->   Operation 211 'fadd' 'tmp_35_3_2' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_37 : Operation 208 [5/5] (7.25ns)   --->   "%tmp_35_0_2 = fadd float %tmp_35_0_1, %tmp_34_0_2" [../myAccel.c:64]   --->   Operation 208 'fadd' 'tmp_35_0_2' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_37 : Operation 209 [5/5] (7.25ns)   --->   "%tmp_35_1_2 = fadd float %tmp_35_1_1, %tmp_34_1_2" [../myAccel.c:64]   --->   Operation 209 'fadd' 'tmp_35_1_2' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_37 : Operation 210 [5/5] (7.25ns)   --->   "%tmp_35_2_2 = fadd float %tmp_35_2_1, %tmp_34_2_2" [../myAccel.c:64]   --->   Operation 210 'fadd' 'tmp_35_2_2' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_37 : Operation 211 [5/5] (7.25ns)   --->   "%tmp_35_3_2 = fadd float %tmp_35_3_1, %tmp_34_3_2" [../myAccel.c:64]   --->   Operation 211 'fadd' 'tmp_35_3_2' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
 
 State 38 <SV = 37> <Delay = 7.25>
-ST_38 : Operation 212 [4/5] (7.25ns)   --->   "%tmp_35_0_2 = fadd float %tmp_35_0_1, %tmp_34_0_2" [../myAccel.c:62]   --->   Operation 212 'fadd' 'tmp_35_0_2' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
-ST_38 : Operation 213 [4/5] (7.25ns)   --->   "%tmp_35_1_2 = fadd float %tmp_35_1_1, %tmp_34_1_2" [../myAccel.c:62]   --->   Operation 213 'fadd' 'tmp_35_1_2' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
-ST_38 : Operation 214 [4/5] (7.25ns)   --->   "%tmp_35_2_2 = fadd float %tmp_35_2_1, %tmp_34_2_2" [../myAccel.c:62]   --->   Operation 214 'fadd' 'tmp_35_2_2' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
-ST_38 : Operation 215 [4/5] (7.25ns)   --->   "%tmp_35_3_2 = fadd float %tmp_35_3_1, %tmp_34_3_2" [../myAccel.c:62]   --->   Operation 215 'fadd' 'tmp_35_3_2' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_38 : Operation 212 [4/5] (7.25ns)   --->   "%tmp_35_0_2 = fadd float %tmp_35_0_1, %tmp_34_0_2" [../myAccel.c:64]   --->   Operation 212 'fadd' 'tmp_35_0_2' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_38 : Operation 213 [4/5] (7.25ns)   --->   "%tmp_35_1_2 = fadd float %tmp_35_1_1, %tmp_34_1_2" [../myAccel.c:64]   --->   Operation 213 'fadd' 'tmp_35_1_2' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_38 : Operation 214 [4/5] (7.25ns)   --->   "%tmp_35_2_2 = fadd float %tmp_35_2_1, %tmp_34_2_2" [../myAccel.c:64]   --->   Operation 214 'fadd' 'tmp_35_2_2' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_38 : Operation 215 [4/5] (7.25ns)   --->   "%tmp_35_3_2 = fadd float %tmp_35_3_1, %tmp_34_3_2" [../myAccel.c:64]   --->   Operation 215 'fadd' 'tmp_35_3_2' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
 
 State 39 <SV = 38> <Delay = 7.25>
-ST_39 : Operation 216 [3/5] (7.25ns)   --->   "%tmp_35_0_2 = fadd float %tmp_35_0_1, %tmp_34_0_2" [../myAccel.c:62]   --->   Operation 216 'fadd' 'tmp_35_0_2' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
-ST_39 : Operation 217 [3/5] (7.25ns)   --->   "%tmp_35_1_2 = fadd float %tmp_35_1_1, %tmp_34_1_2" [../myAccel.c:62]   --->   Operation 217 'fadd' 'tmp_35_1_2' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
-ST_39 : Operation 218 [3/5] (7.25ns)   --->   "%tmp_35_2_2 = fadd float %tmp_35_2_1, %tmp_34_2_2" [../myAccel.c:62]   --->   Operation 218 'fadd' 'tmp_35_2_2' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
-ST_39 : Operation 219 [3/5] (7.25ns)   --->   "%tmp_35_3_2 = fadd float %tmp_35_3_1, %tmp_34_3_2" [../myAccel.c:62]   --->   Operation 219 'fadd' 'tmp_35_3_2' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_39 : Operation 216 [3/5] (7.25ns)   --->   "%tmp_35_0_2 = fadd float %tmp_35_0_1, %tmp_34_0_2" [../myAccel.c:64]   --->   Operation 216 'fadd' 'tmp_35_0_2' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_39 : Operation 217 [3/5] (7.25ns)   --->   "%tmp_35_1_2 = fadd float %tmp_35_1_1, %tmp_34_1_2" [../myAccel.c:64]   --->   Operation 217 'fadd' 'tmp_35_1_2' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_39 : Operation 218 [3/5] (7.25ns)   --->   "%tmp_35_2_2 = fadd float %tmp_35_2_1, %tmp_34_2_2" [../myAccel.c:64]   --->   Operation 218 'fadd' 'tmp_35_2_2' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_39 : Operation 219 [3/5] (7.25ns)   --->   "%tmp_35_3_2 = fadd float %tmp_35_3_1, %tmp_34_3_2" [../myAccel.c:64]   --->   Operation 219 'fadd' 'tmp_35_3_2' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
 
 State 40 <SV = 39> <Delay = 7.25>
-ST_40 : Operation 220 [2/5] (7.25ns)   --->   "%tmp_35_0_2 = fadd float %tmp_35_0_1, %tmp_34_0_2" [../myAccel.c:62]   --->   Operation 220 'fadd' 'tmp_35_0_2' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
-ST_40 : Operation 221 [2/5] (7.25ns)   --->   "%tmp_35_1_2 = fadd float %tmp_35_1_1, %tmp_34_1_2" [../myAccel.c:62]   --->   Operation 221 'fadd' 'tmp_35_1_2' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
-ST_40 : Operation 222 [2/5] (7.25ns)   --->   "%tmp_35_2_2 = fadd float %tmp_35_2_1, %tmp_34_2_2" [../myAccel.c:62]   --->   Operation 222 'fadd' 'tmp_35_2_2' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
-ST_40 : Operation 223 [2/5] (7.25ns)   --->   "%tmp_35_3_2 = fadd float %tmp_35_3_1, %tmp_34_3_2" [../myAccel.c:62]   --->   Operation 223 'fadd' 'tmp_35_3_2' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_40 : Operation 220 [2/5] (7.25ns)   --->   "%tmp_35_0_2 = fadd float %tmp_35_0_1, %tmp_34_0_2" [../myAccel.c:64]   --->   Operation 220 'fadd' 'tmp_35_0_2' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_40 : Operation 221 [2/5] (7.25ns)   --->   "%tmp_35_1_2 = fadd float %tmp_35_1_1, %tmp_34_1_2" [../myAccel.c:64]   --->   Operation 221 'fadd' 'tmp_35_1_2' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_40 : Operation 222 [2/5] (7.25ns)   --->   "%tmp_35_2_2 = fadd float %tmp_35_2_1, %tmp_34_2_2" [../myAccel.c:64]   --->   Operation 222 'fadd' 'tmp_35_2_2' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_40 : Operation 223 [2/5] (7.25ns)   --->   "%tmp_35_3_2 = fadd float %tmp_35_3_1, %tmp_34_3_2" [../myAccel.c:64]   --->   Operation 223 'fadd' 'tmp_35_3_2' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
 
 State 41 <SV = 40> <Delay = 7.25>
-ST_41 : Operation 224 [1/5] (7.25ns)   --->   "%tmp_35_0_2 = fadd float %tmp_35_0_1, %tmp_34_0_2" [../myAccel.c:62]   --->   Operation 224 'fadd' 'tmp_35_0_2' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
-ST_41 : Operation 225 [1/5] (7.25ns)   --->   "%tmp_35_1_2 = fadd float %tmp_35_1_1, %tmp_34_1_2" [../myAccel.c:62]   --->   Operation 225 'fadd' 'tmp_35_1_2' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
-ST_41 : Operation 226 [1/5] (7.25ns)   --->   "%tmp_35_2_2 = fadd float %tmp_35_2_1, %tmp_34_2_2" [../myAccel.c:62]   --->   Operation 226 'fadd' 'tmp_35_2_2' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
-ST_41 : Operation 227 [1/5] (7.25ns)   --->   "%tmp_35_3_2 = fadd float %tmp_35_3_1, %tmp_34_3_2" [../myAccel.c:62]   --->   Operation 227 'fadd' 'tmp_35_3_2' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_41 : Operation 224 [1/5] (7.25ns)   --->   "%tmp_35_0_2 = fadd float %tmp_35_0_1, %tmp_34_0_2" [../myAccel.c:64]   --->   Operation 224 'fadd' 'tmp_35_0_2' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_41 : Operation 225 [1/5] (7.25ns)   --->   "%tmp_35_1_2 = fadd float %tmp_35_1_1, %tmp_34_1_2" [../myAccel.c:64]   --->   Operation 225 'fadd' 'tmp_35_1_2' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_41 : Operation 226 [1/5] (7.25ns)   --->   "%tmp_35_2_2 = fadd float %tmp_35_2_1, %tmp_34_2_2" [../myAccel.c:64]   --->   Operation 226 'fadd' 'tmp_35_2_2' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_41 : Operation 227 [1/5] (7.25ns)   --->   "%tmp_35_3_2 = fadd float %tmp_35_3_1, %tmp_34_3_2" [../myAccel.c:64]   --->   Operation 227 'fadd' 'tmp_35_3_2' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
 
 State 42 <SV = 41> <Delay = 7.25>
-ST_42 : Operation 228 [5/5] (7.25ns)   --->   "%tmp_35_0_3 = fadd float %tmp_35_0_2, %tmp_34_0_3" [../myAccel.c:62]   --->   Operation 228 'fadd' 'tmp_35_0_3' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
-ST_42 : Operation 229 [5/5] (7.25ns)   --->   "%tmp_35_1_3 = fadd float %tmp_35_1_2, %tmp_34_1_3" [../myAccel.c:62]   --->   Operation 229 'fadd' 'tmp_35_1_3' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
-ST_42 : Operation 230 [5/5] (7.25ns)   --->   "%tmp_35_2_3 = fadd float %tmp_35_2_2, %tmp_34_2_3" [../myAccel.c:62]   --->   Operation 230 'fadd' 'tmp_35_2_3' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
-ST_42 : Operation 231 [5/5] (7.25ns)   --->   "%tmp_35_3_3 = fadd float %tmp_35_3_2, %tmp_34_3_3" [../myAccel.c:62]   --->   Operation 231 'fadd' 'tmp_35_3_3' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_42 : Operation 228 [5/5] (7.25ns)   --->   "%tmp_35_0_3 = fadd float %tmp_35_0_2, %tmp_34_0_3" [../myAccel.c:64]   --->   Operation 228 'fadd' 'tmp_35_0_3' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_42 : Operation 229 [5/5] (7.25ns)   --->   "%tmp_35_1_3 = fadd float %tmp_35_1_2, %tmp_34_1_3" [../myAccel.c:64]   --->   Operation 229 'fadd' 'tmp_35_1_3' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_42 : Operation 230 [5/5] (7.25ns)   --->   "%tmp_35_2_3 = fadd float %tmp_35_2_2, %tmp_34_2_3" [../myAccel.c:64]   --->   Operation 230 'fadd' 'tmp_35_2_3' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_42 : Operation 231 [5/5] (7.25ns)   --->   "%tmp_35_3_3 = fadd float %tmp_35_3_2, %tmp_34_3_3" [../myAccel.c:64]   --->   Operation 231 'fadd' 'tmp_35_3_3' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
 
 State 43 <SV = 42> <Delay = 7.25>
-ST_43 : Operation 232 [4/5] (7.25ns)   --->   "%tmp_35_0_3 = fadd float %tmp_35_0_2, %tmp_34_0_3" [../myAccel.c:62]   --->   Operation 232 'fadd' 'tmp_35_0_3' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
-ST_43 : Operation 233 [4/5] (7.25ns)   --->   "%tmp_35_1_3 = fadd float %tmp_35_1_2, %tmp_34_1_3" [../myAccel.c:62]   --->   Operation 233 'fadd' 'tmp_35_1_3' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
-ST_43 : Operation 234 [4/5] (7.25ns)   --->   "%tmp_35_2_3 = fadd float %tmp_35_2_2, %tmp_34_2_3" [../myAccel.c:62]   --->   Operation 234 'fadd' 'tmp_35_2_3' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
-ST_43 : Operation 235 [4/5] (7.25ns)   --->   "%tmp_35_3_3 = fadd float %tmp_35_3_2, %tmp_34_3_3" [../myAccel.c:62]   --->   Operation 235 'fadd' 'tmp_35_3_3' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_43 : Operation 232 [4/5] (7.25ns)   --->   "%tmp_35_0_3 = fadd float %tmp_35_0_2, %tmp_34_0_3" [../myAccel.c:64]   --->   Operation 232 'fadd' 'tmp_35_0_3' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_43 : Operation 233 [4/5] (7.25ns)   --->   "%tmp_35_1_3 = fadd float %tmp_35_1_2, %tmp_34_1_3" [../myAccel.c:64]   --->   Operation 233 'fadd' 'tmp_35_1_3' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_43 : Operation 234 [4/5] (7.25ns)   --->   "%tmp_35_2_3 = fadd float %tmp_35_2_2, %tmp_34_2_3" [../myAccel.c:64]   --->   Operation 234 'fadd' 'tmp_35_2_3' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_43 : Operation 235 [4/5] (7.25ns)   --->   "%tmp_35_3_3 = fadd float %tmp_35_3_2, %tmp_34_3_3" [../myAccel.c:64]   --->   Operation 235 'fadd' 'tmp_35_3_3' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
 
 State 44 <SV = 43> <Delay = 7.25>
-ST_44 : Operation 236 [3/5] (7.25ns)   --->   "%tmp_35_0_3 = fadd float %tmp_35_0_2, %tmp_34_0_3" [../myAccel.c:62]   --->   Operation 236 'fadd' 'tmp_35_0_3' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
-ST_44 : Operation 237 [3/5] (7.25ns)   --->   "%tmp_35_1_3 = fadd float %tmp_35_1_2, %tmp_34_1_3" [../myAccel.c:62]   --->   Operation 237 'fadd' 'tmp_35_1_3' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
-ST_44 : Operation 238 [3/5] (7.25ns)   --->   "%tmp_35_2_3 = fadd float %tmp_35_2_2, %tmp_34_2_3" [../myAccel.c:62]   --->   Operation 238 'fadd' 'tmp_35_2_3' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
-ST_44 : Operation 239 [3/5] (7.25ns)   --->   "%tmp_35_3_3 = fadd float %tmp_35_3_2, %tmp_34_3_3" [../myAccel.c:62]   --->   Operation 239 'fadd' 'tmp_35_3_3' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_44 : Operation 236 [3/5] (7.25ns)   --->   "%tmp_35_0_3 = fadd float %tmp_35_0_2, %tmp_34_0_3" [../myAccel.c:64]   --->   Operation 236 'fadd' 'tmp_35_0_3' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_44 : Operation 237 [3/5] (7.25ns)   --->   "%tmp_35_1_3 = fadd float %tmp_35_1_2, %tmp_34_1_3" [../myAccel.c:64]   --->   Operation 237 'fadd' 'tmp_35_1_3' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_44 : Operation 238 [3/5] (7.25ns)   --->   "%tmp_35_2_3 = fadd float %tmp_35_2_2, %tmp_34_2_3" [../myAccel.c:64]   --->   Operation 238 'fadd' 'tmp_35_2_3' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_44 : Operation 239 [3/5] (7.25ns)   --->   "%tmp_35_3_3 = fadd float %tmp_35_3_2, %tmp_34_3_3" [../myAccel.c:64]   --->   Operation 239 'fadd' 'tmp_35_3_3' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
 
 State 45 <SV = 44> <Delay = 7.25>
-ST_45 : Operation 240 [2/5] (7.25ns)   --->   "%tmp_35_0_3 = fadd float %tmp_35_0_2, %tmp_34_0_3" [../myAccel.c:62]   --->   Operation 240 'fadd' 'tmp_35_0_3' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
-ST_45 : Operation 241 [2/5] (7.25ns)   --->   "%tmp_35_1_3 = fadd float %tmp_35_1_2, %tmp_34_1_3" [../myAccel.c:62]   --->   Operation 241 'fadd' 'tmp_35_1_3' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
-ST_45 : Operation 242 [2/5] (7.25ns)   --->   "%tmp_35_2_3 = fadd float %tmp_35_2_2, %tmp_34_2_3" [../myAccel.c:62]   --->   Operation 242 'fadd' 'tmp_35_2_3' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
-ST_45 : Operation 243 [2/5] (7.25ns)   --->   "%tmp_35_3_3 = fadd float %tmp_35_3_2, %tmp_34_3_3" [../myAccel.c:62]   --->   Operation 243 'fadd' 'tmp_35_3_3' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_45 : Operation 240 [2/5] (7.25ns)   --->   "%tmp_35_0_3 = fadd float %tmp_35_0_2, %tmp_34_0_3" [../myAccel.c:64]   --->   Operation 240 'fadd' 'tmp_35_0_3' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_45 : Operation 241 [2/5] (7.25ns)   --->   "%tmp_35_1_3 = fadd float %tmp_35_1_2, %tmp_34_1_3" [../myAccel.c:64]   --->   Operation 241 'fadd' 'tmp_35_1_3' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_45 : Operation 242 [2/5] (7.25ns)   --->   "%tmp_35_2_3 = fadd float %tmp_35_2_2, %tmp_34_2_3" [../myAccel.c:64]   --->   Operation 242 'fadd' 'tmp_35_2_3' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_45 : Operation 243 [2/5] (7.25ns)   --->   "%tmp_35_3_3 = fadd float %tmp_35_3_2, %tmp_34_3_3" [../myAccel.c:64]   --->   Operation 243 'fadd' 'tmp_35_3_3' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
 
 State 46 <SV = 45> <Delay = 7.25>
-ST_46 : Operation 244 [1/5] (7.25ns)   --->   "%tmp_35_0_3 = fadd float %tmp_35_0_2, %tmp_34_0_3" [../myAccel.c:62]   --->   Operation 244 'fadd' 'tmp_35_0_3' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
-ST_46 : Operation 245 [1/5] (7.25ns)   --->   "%tmp_35_1_3 = fadd float %tmp_35_1_2, %tmp_34_1_3" [../myAccel.c:62]   --->   Operation 245 'fadd' 'tmp_35_1_3' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
-ST_46 : Operation 246 [1/5] (7.25ns)   --->   "%tmp_35_2_3 = fadd float %tmp_35_2_2, %tmp_34_2_3" [../myAccel.c:62]   --->   Operation 246 'fadd' 'tmp_35_2_3' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
-ST_46 : Operation 247 [1/5] (7.25ns)   --->   "%tmp_35_3_3 = fadd float %tmp_35_3_2, %tmp_34_3_3" [../myAccel.c:62]   --->   Operation 247 'fadd' 'tmp_35_3_3' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_46 : Operation 244 [1/5] (7.25ns)   --->   "%tmp_35_0_3 = fadd float %tmp_35_0_2, %tmp_34_0_3" [../myAccel.c:64]   --->   Operation 244 'fadd' 'tmp_35_0_3' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_46 : Operation 245 [1/5] (7.25ns)   --->   "%tmp_35_1_3 = fadd float %tmp_35_1_2, %tmp_34_1_3" [../myAccel.c:64]   --->   Operation 245 'fadd' 'tmp_35_1_3' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_46 : Operation 246 [1/5] (7.25ns)   --->   "%tmp_35_2_3 = fadd float %tmp_35_2_2, %tmp_34_2_3" [../myAccel.c:64]   --->   Operation 246 'fadd' 'tmp_35_2_3' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_46 : Operation 247 [1/5] (7.25ns)   --->   "%tmp_35_3_3 = fadd float %tmp_35_3_2, %tmp_34_3_3" [../myAccel.c:64]   --->   Operation 247 'fadd' 'tmp_35_3_3' <Predicate = (!tmp_s)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 104 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
 
 State 47 <SV = 46> <Delay = 6.78>
-ST_47 : Operation 248 [1/1] (6.78ns)   --->   "%tmp_10 = fcmp ole float %tmp_35_0_3, 1.000000e+02" [../myAccel.c:70]   --->   Operation 248 'fcmp' 'tmp_10' <Predicate = (!tmp_s)> <Delay = 6.78> <Core = "FCmp">   --->   Core 110 'FCmp' <Latency = 0> <II = 1> <Delay = 6.78> <FuncUnit> <Opcode : 'fcmp'> <InPorts = 2> <OutPorts = 1>
+ST_47 : Operation 248 [1/1] (6.78ns)   --->   "%tmp_10 = fcmp ole float %tmp_35_0_3, 1.000000e+02" [../myAccel.c:72]   --->   Operation 248 'fcmp' 'tmp_10' <Predicate = (!tmp_s)> <Delay = 6.78> <Core = "FCmp">   --->   Core 110 'FCmp' <Latency = 0> <II = 1> <Delay = 6.78> <FuncUnit> <Opcode : 'fcmp'> <InPorts = 2> <OutPorts = 1>
 
 State 48 <SV = 47> <Delay = 7.76>
-ST_48 : Operation 249 [1/1] (0.00ns)   --->   "%tmp_35_0_3_to_int = bitcast float %tmp_35_0_3 to i32" [../myAccel.c:70]   --->   Operation 249 'bitcast' 'tmp_35_0_3_to_int' <Predicate = (!tmp_s)> <Delay = 0.00>
-ST_48 : Operation 250 [1/1] (0.00ns)   --->   "%tmp_8 = call i8 @_ssdm_op_PartSelect.i8.i32.i32.i32(i32 %tmp_35_0_3_to_int, i32 23, i32 30)" [../myAccel.c:70]   --->   Operation 250 'partselect' 'tmp_8' <Predicate = (!tmp_s)> <Delay = 0.00>
-ST_48 : Operation 251 [1/1] (0.00ns)   --->   "%tmp_9 = trunc i32 %tmp_35_0_3_to_int to i23" [../myAccel.c:70]   --->   Operation 251 'trunc' 'tmp_9' <Predicate = (!tmp_s)> <Delay = 0.00>
-ST_48 : Operation 252 [1/1] (1.55ns)   --->   "%notlhs = icmp ne i8 %tmp_8, -1" [../myAccel.c:70]   --->   Operation 252 'icmp' 'notlhs' <Predicate = (!tmp_s)> <Delay = 1.55> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.44> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_48 : Operation 253 [1/1] (2.44ns)   --->   "%notrhs = icmp eq i23 %tmp_9, 0" [../myAccel.c:70]   --->   Operation 253 'icmp' 'notrhs' <Predicate = (!tmp_s)> <Delay = 2.44> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.44> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_48 : Operation 254 [1/1] (0.00ns) (grouped into LUT with out node tmp_27)   --->   "%tmp_3 = or i1 %notrhs, %notlhs" [../myAccel.c:70]   --->   Operation 254 'or' 'tmp_3' <Predicate = (!tmp_s)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_48 : Operation 255 [1/1] (0.00ns) (grouped into LUT with out node tmp_27)   --->   "%tmp_11 = and i1 %tmp_3, %tmp_10" [../myAccel.c:70]   --->   Operation 255 'and' 'tmp_11' <Predicate = (!tmp_s)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_48 : Operation 256 [1/1] (0.00ns)   --->   "%tmp_35_1_3_to_int = bitcast float %tmp_35_1_3 to i32" [../myAccel.c:70]   --->   Operation 256 'bitcast' 'tmp_35_1_3_to_int' <Predicate = (!tmp_s)> <Delay = 0.00>
-ST_48 : Operation 257 [1/1] (0.00ns)   --->   "%tmp_12 = call i8 @_ssdm_op_PartSelect.i8.i32.i32.i32(i32 %tmp_35_1_3_to_int, i32 23, i32 30)" [../myAccel.c:70]   --->   Operation 257 'partselect' 'tmp_12' <Predicate = (!tmp_s)> <Delay = 0.00>
-ST_48 : Operation 258 [1/1] (0.00ns)   --->   "%tmp_13 = trunc i32 %tmp_35_1_3_to_int to i23" [../myAccel.c:70]   --->   Operation 258 'trunc' 'tmp_13' <Predicate = (!tmp_s)> <Delay = 0.00>
-ST_48 : Operation 259 [1/1] (1.55ns)   --->   "%notlhs5 = icmp ne i8 %tmp_12, -1" [../myAccel.c:70]   --->   Operation 259 'icmp' 'notlhs5' <Predicate = (!tmp_s)> <Delay = 1.55> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.44> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_48 : Operation 260 [1/1] (2.44ns)   --->   "%notrhs6 = icmp eq i23 %tmp_13, 0" [../myAccel.c:70]   --->   Operation 260 'icmp' 'notrhs6' <Predicate = (!tmp_s)> <Delay = 2.44> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.44> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_48 : Operation 261 [1/1] (0.00ns) (grouped into LUT with out node tmp_27)   --->   "%tmp_14 = or i1 %notrhs6, %notlhs5" [../myAccel.c:70]   --->   Operation 261 'or' 'tmp_14' <Predicate = (!tmp_s)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_48 : Operation 262 [1/1] (6.78ns)   --->   "%tmp_15 = fcmp ole float %tmp_35_1_3, 1.000000e+02" [../myAccel.c:70]   --->   Operation 262 'fcmp' 'tmp_15' <Predicate = (!tmp_s)> <Delay = 6.78> <Core = "FCmp">   --->   Core 110 'FCmp' <Latency = 0> <II = 1> <Delay = 6.78> <FuncUnit> <Opcode : 'fcmp'> <InPorts = 2> <OutPorts = 1>
-ST_48 : Operation 263 [1/1] (0.00ns) (grouped into LUT with out node tmp_27)   --->   "%tmp_16 = and i1 %tmp_14, %tmp_15" [../myAccel.c:70]   --->   Operation 263 'and' 'tmp_16' <Predicate = (!tmp_s)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_48 : Operation 264 [1/1] (0.97ns) (out node of the LUT)   --->   "%tmp_27 = or i1 %tmp_16, %tmp_11" [../myAccel.c:79]   --->   Operation 264 'or' 'tmp_27' <Predicate = (!tmp_s)> <Delay = 0.97> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_48 : Operation 249 [1/1] (0.00ns)   --->   "%tmp_35_0_3_to_int = bitcast float %tmp_35_0_3 to i32" [../myAccel.c:72]   --->   Operation 249 'bitcast' 'tmp_35_0_3_to_int' <Predicate = (!tmp_s)> <Delay = 0.00>
+ST_48 : Operation 250 [1/1] (0.00ns)   --->   "%tmp_8 = call i8 @_ssdm_op_PartSelect.i8.i32.i32.i32(i32 %tmp_35_0_3_to_int, i32 23, i32 30)" [../myAccel.c:72]   --->   Operation 250 'partselect' 'tmp_8' <Predicate = (!tmp_s)> <Delay = 0.00>
+ST_48 : Operation 251 [1/1] (0.00ns)   --->   "%tmp_9 = trunc i32 %tmp_35_0_3_to_int to i23" [../myAccel.c:72]   --->   Operation 251 'trunc' 'tmp_9' <Predicate = (!tmp_s)> <Delay = 0.00>
+ST_48 : Operation 252 [1/1] (1.55ns)   --->   "%notlhs = icmp ne i8 %tmp_8, -1" [../myAccel.c:72]   --->   Operation 252 'icmp' 'notlhs' <Predicate = (!tmp_s)> <Delay = 1.55> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.44> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_48 : Operation 253 [1/1] (2.44ns)   --->   "%notrhs = icmp eq i23 %tmp_9, 0" [../myAccel.c:72]   --->   Operation 253 'icmp' 'notrhs' <Predicate = (!tmp_s)> <Delay = 2.44> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.44> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_48 : Operation 254 [1/1] (0.00ns) (grouped into LUT with out node tmp_27)   --->   "%tmp_3 = or i1 %notrhs, %notlhs" [../myAccel.c:72]   --->   Operation 254 'or' 'tmp_3' <Predicate = (!tmp_s)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_48 : Operation 255 [1/1] (0.00ns) (grouped into LUT with out node tmp_27)   --->   "%tmp_11 = and i1 %tmp_3, %tmp_10" [../myAccel.c:72]   --->   Operation 255 'and' 'tmp_11' <Predicate = (!tmp_s)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_48 : Operation 256 [1/1] (0.00ns)   --->   "%tmp_35_1_3_to_int = bitcast float %tmp_35_1_3 to i32" [../myAccel.c:72]   --->   Operation 256 'bitcast' 'tmp_35_1_3_to_int' <Predicate = (!tmp_s)> <Delay = 0.00>
+ST_48 : Operation 257 [1/1] (0.00ns)   --->   "%tmp_12 = call i8 @_ssdm_op_PartSelect.i8.i32.i32.i32(i32 %tmp_35_1_3_to_int, i32 23, i32 30)" [../myAccel.c:72]   --->   Operation 257 'partselect' 'tmp_12' <Predicate = (!tmp_s)> <Delay = 0.00>
+ST_48 : Operation 258 [1/1] (0.00ns)   --->   "%tmp_13 = trunc i32 %tmp_35_1_3_to_int to i23" [../myAccel.c:72]   --->   Operation 258 'trunc' 'tmp_13' <Predicate = (!tmp_s)> <Delay = 0.00>
+ST_48 : Operation 259 [1/1] (1.55ns)   --->   "%notlhs5 = icmp ne i8 %tmp_12, -1" [../myAccel.c:72]   --->   Operation 259 'icmp' 'notlhs5' <Predicate = (!tmp_s)> <Delay = 1.55> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.44> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_48 : Operation 260 [1/1] (2.44ns)   --->   "%notrhs6 = icmp eq i23 %tmp_13, 0" [../myAccel.c:72]   --->   Operation 260 'icmp' 'notrhs6' <Predicate = (!tmp_s)> <Delay = 2.44> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.44> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_48 : Operation 261 [1/1] (0.00ns) (grouped into LUT with out node tmp_27)   --->   "%tmp_14 = or i1 %notrhs6, %notlhs5" [../myAccel.c:72]   --->   Operation 261 'or' 'tmp_14' <Predicate = (!tmp_s)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_48 : Operation 262 [1/1] (6.78ns)   --->   "%tmp_15 = fcmp ole float %tmp_35_1_3, 1.000000e+02" [../myAccel.c:72]   --->   Operation 262 'fcmp' 'tmp_15' <Predicate = (!tmp_s)> <Delay = 6.78> <Core = "FCmp">   --->   Core 110 'FCmp' <Latency = 0> <II = 1> <Delay = 6.78> <FuncUnit> <Opcode : 'fcmp'> <InPorts = 2> <OutPorts = 1>
+ST_48 : Operation 263 [1/1] (0.00ns) (grouped into LUT with out node tmp_27)   --->   "%tmp_16 = and i1 %tmp_14, %tmp_15" [../myAccel.c:72]   --->   Operation 263 'and' 'tmp_16' <Predicate = (!tmp_s)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_48 : Operation 264 [1/1] (0.97ns) (out node of the LUT)   --->   "%tmp_27 = or i1 %tmp_16, %tmp_11" [../myAccel.c:81]   --->   Operation 264 'or' 'tmp_27' <Predicate = (!tmp_s)> <Delay = 0.97> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
 
 State 49 <SV = 48> <Delay = 6.78>
-ST_49 : Operation 265 [1/1] (6.78ns)   --->   "%tmp_20 = fcmp ole float %tmp_35_2_3, 1.000000e+02" [../myAccel.c:70]   --->   Operation 265 'fcmp' 'tmp_20' <Predicate = (!tmp_s)> <Delay = 6.78> <Core = "FCmp">   --->   Core 110 'FCmp' <Latency = 0> <II = 1> <Delay = 6.78> <FuncUnit> <Opcode : 'fcmp'> <InPorts = 2> <OutPorts = 1>
+ST_49 : Operation 265 [1/1] (6.78ns)   --->   "%tmp_20 = fcmp ole float %tmp_35_2_3, 1.000000e+02" [../myAccel.c:72]   --->   Operation 265 'fcmp' 'tmp_20' <Predicate = (!tmp_s)> <Delay = 6.78> <Core = "FCmp">   --->   Core 110 'FCmp' <Latency = 0> <II = 1> <Delay = 6.78> <FuncUnit> <Opcode : 'fcmp'> <InPorts = 2> <OutPorts = 1>
 
 State 50 <SV = 49> <Delay = 7.76>
-ST_50 : Operation 266 [1/1] (0.00ns)   --->   "%tmp_35_2_3_to_int = bitcast float %tmp_35_2_3 to i32" [../myAccel.c:70]   --->   Operation 266 'bitcast' 'tmp_35_2_3_to_int' <Predicate = (!tmp_s)> <Delay = 0.00>
-ST_50 : Operation 267 [1/1] (0.00ns)   --->   "%tmp_17 = call i8 @_ssdm_op_PartSelect.i8.i32.i32.i32(i32 %tmp_35_2_3_to_int, i32 23, i32 30)" [../myAccel.c:70]   --->   Operation 267 'partselect' 'tmp_17' <Predicate = (!tmp_s)> <Delay = 0.00>
-ST_50 : Operation 268 [1/1] (0.00ns)   --->   "%tmp_18 = trunc i32 %tmp_35_2_3_to_int to i23" [../myAccel.c:70]   --->   Operation 268 'trunc' 'tmp_18' <Predicate = (!tmp_s)> <Delay = 0.00>
-ST_50 : Operation 269 [1/1] (1.55ns)   --->   "%notlhs7 = icmp ne i8 %tmp_17, -1" [../myAccel.c:70]   --->   Operation 269 'icmp' 'notlhs7' <Predicate = (!tmp_s)> <Delay = 1.55> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.44> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_50 : Operation 270 [1/1] (2.44ns)   --->   "%notrhs8 = icmp eq i23 %tmp_18, 0" [../myAccel.c:70]   --->   Operation 270 'icmp' 'notrhs8' <Predicate = (!tmp_s)> <Delay = 2.44> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.44> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_50 : Operation 271 [1/1] (0.00ns) (grouped into LUT with out node tmp_28)   --->   "%tmp_19 = or i1 %notrhs8, %notlhs7" [../myAccel.c:70]   --->   Operation 271 'or' 'tmp_19' <Predicate = (!tmp_s)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_50 : Operation 272 [1/1] (0.00ns) (grouped into LUT with out node tmp_28)   --->   "%tmp_21 = and i1 %tmp_19, %tmp_20" [../myAccel.c:70]   --->   Operation 272 'and' 'tmp_21' <Predicate = (!tmp_s)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_50 : Operation 273 [1/1] (0.00ns)   --->   "%tmp_35_3_3_to_int = bitcast float %tmp_35_3_3 to i32" [../myAccel.c:70]   --->   Operation 273 'bitcast' 'tmp_35_3_3_to_int' <Predicate = (!tmp_s)> <Delay = 0.00>
-ST_50 : Operation 274 [1/1] (0.00ns)   --->   "%tmp_22 = call i8 @_ssdm_op_PartSelect.i8.i32.i32.i32(i32 %tmp_35_3_3_to_int, i32 23, i32 30)" [../myAccel.c:70]   --->   Operation 274 'partselect' 'tmp_22' <Predicate = (!tmp_s)> <Delay = 0.00>
-ST_50 : Operation 275 [1/1] (0.00ns)   --->   "%tmp_23 = trunc i32 %tmp_35_3_3_to_int to i23" [../myAccel.c:70]   --->   Operation 275 'trunc' 'tmp_23' <Predicate = (!tmp_s)> <Delay = 0.00>
-ST_50 : Operation 276 [1/1] (1.55ns)   --->   "%notlhs9 = icmp ne i8 %tmp_22, -1" [../myAccel.c:70]   --->   Operation 276 'icmp' 'notlhs9' <Predicate = (!tmp_s)> <Delay = 1.55> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.44> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_50 : Operation 277 [1/1] (2.44ns)   --->   "%notrhs1 = icmp eq i23 %tmp_23, 0" [../myAccel.c:70]   --->   Operation 277 'icmp' 'notrhs1' <Predicate = (!tmp_s)> <Delay = 2.44> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.44> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_50 : Operation 278 [1/1] (0.00ns) (grouped into LUT with out node tmp_28)   --->   "%tmp_24 = or i1 %notrhs1, %notlhs9" [../myAccel.c:70]   --->   Operation 278 'or' 'tmp_24' <Predicate = (!tmp_s)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_50 : Operation 279 [1/1] (6.78ns)   --->   "%tmp_25 = fcmp ole float %tmp_35_3_3, 1.000000e+02" [../myAccel.c:70]   --->   Operation 279 'fcmp' 'tmp_25' <Predicate = (!tmp_s)> <Delay = 6.78> <Core = "FCmp">   --->   Core 110 'FCmp' <Latency = 0> <II = 1> <Delay = 6.78> <FuncUnit> <Opcode : 'fcmp'> <InPorts = 2> <OutPorts = 1>
-ST_50 : Operation 280 [1/1] (0.00ns) (grouped into LUT with out node tmp_28)   --->   "%tmp_26 = and i1 %tmp_24, %tmp_25" [../myAccel.c:70]   --->   Operation 280 'and' 'tmp_26' <Predicate = (!tmp_s)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_50 : Operation 281 [1/1] (0.97ns) (out node of the LUT)   --->   "%tmp_28 = or i1 %tmp_26, %tmp_21" [../myAccel.c:79]   --->   Operation 281 'or' 'tmp_28' <Predicate = (!tmp_s)> <Delay = 0.97> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_50 : Operation 266 [1/1] (0.00ns)   --->   "%tmp_35_2_3_to_int = bitcast float %tmp_35_2_3 to i32" [../myAccel.c:72]   --->   Operation 266 'bitcast' 'tmp_35_2_3_to_int' <Predicate = (!tmp_s)> <Delay = 0.00>
+ST_50 : Operation 267 [1/1] (0.00ns)   --->   "%tmp_17 = call i8 @_ssdm_op_PartSelect.i8.i32.i32.i32(i32 %tmp_35_2_3_to_int, i32 23, i32 30)" [../myAccel.c:72]   --->   Operation 267 'partselect' 'tmp_17' <Predicate = (!tmp_s)> <Delay = 0.00>
+ST_50 : Operation 268 [1/1] (0.00ns)   --->   "%tmp_18 = trunc i32 %tmp_35_2_3_to_int to i23" [../myAccel.c:72]   --->   Operation 268 'trunc' 'tmp_18' <Predicate = (!tmp_s)> <Delay = 0.00>
+ST_50 : Operation 269 [1/1] (1.55ns)   --->   "%notlhs7 = icmp ne i8 %tmp_17, -1" [../myAccel.c:72]   --->   Operation 269 'icmp' 'notlhs7' <Predicate = (!tmp_s)> <Delay = 1.55> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.44> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_50 : Operation 270 [1/1] (2.44ns)   --->   "%notrhs8 = icmp eq i23 %tmp_18, 0" [../myAccel.c:72]   --->   Operation 270 'icmp' 'notrhs8' <Predicate = (!tmp_s)> <Delay = 2.44> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.44> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_50 : Operation 271 [1/1] (0.00ns) (grouped into LUT with out node tmp_28)   --->   "%tmp_19 = or i1 %notrhs8, %notlhs7" [../myAccel.c:72]   --->   Operation 271 'or' 'tmp_19' <Predicate = (!tmp_s)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_50 : Operation 272 [1/1] (0.00ns) (grouped into LUT with out node tmp_28)   --->   "%tmp_21 = and i1 %tmp_19, %tmp_20" [../myAccel.c:72]   --->   Operation 272 'and' 'tmp_21' <Predicate = (!tmp_s)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_50 : Operation 273 [1/1] (0.00ns)   --->   "%tmp_35_3_3_to_int = bitcast float %tmp_35_3_3 to i32" [../myAccel.c:72]   --->   Operation 273 'bitcast' 'tmp_35_3_3_to_int' <Predicate = (!tmp_s)> <Delay = 0.00>
+ST_50 : Operation 274 [1/1] (0.00ns)   --->   "%tmp_22 = call i8 @_ssdm_op_PartSelect.i8.i32.i32.i32(i32 %tmp_35_3_3_to_int, i32 23, i32 30)" [../myAccel.c:72]   --->   Operation 274 'partselect' 'tmp_22' <Predicate = (!tmp_s)> <Delay = 0.00>
+ST_50 : Operation 275 [1/1] (0.00ns)   --->   "%tmp_23 = trunc i32 %tmp_35_3_3_to_int to i23" [../myAccel.c:72]   --->   Operation 275 'trunc' 'tmp_23' <Predicate = (!tmp_s)> <Delay = 0.00>
+ST_50 : Operation 276 [1/1] (1.55ns)   --->   "%notlhs9 = icmp ne i8 %tmp_22, -1" [../myAccel.c:72]   --->   Operation 276 'icmp' 'notlhs9' <Predicate = (!tmp_s)> <Delay = 1.55> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.44> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_50 : Operation 277 [1/1] (2.44ns)   --->   "%notrhs1 = icmp eq i23 %tmp_23, 0" [../myAccel.c:72]   --->   Operation 277 'icmp' 'notrhs1' <Predicate = (!tmp_s)> <Delay = 2.44> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.44> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_50 : Operation 278 [1/1] (0.00ns) (grouped into LUT with out node tmp_28)   --->   "%tmp_24 = or i1 %notrhs1, %notlhs9" [../myAccel.c:72]   --->   Operation 278 'or' 'tmp_24' <Predicate = (!tmp_s)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_50 : Operation 279 [1/1] (6.78ns)   --->   "%tmp_25 = fcmp ole float %tmp_35_3_3, 1.000000e+02" [../myAccel.c:72]   --->   Operation 279 'fcmp' 'tmp_25' <Predicate = (!tmp_s)> <Delay = 6.78> <Core = "FCmp">   --->   Core 110 'FCmp' <Latency = 0> <II = 1> <Delay = 6.78> <FuncUnit> <Opcode : 'fcmp'> <InPorts = 2> <OutPorts = 1>
+ST_50 : Operation 280 [1/1] (0.00ns) (grouped into LUT with out node tmp_28)   --->   "%tmp_26 = and i1 %tmp_24, %tmp_25" [../myAccel.c:72]   --->   Operation 280 'and' 'tmp_26' <Predicate = (!tmp_s)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_50 : Operation 281 [1/1] (0.97ns) (out node of the LUT)   --->   "%tmp_28 = or i1 %tmp_26, %tmp_21" [../myAccel.c:81]   --->   Operation 281 'or' 'tmp_28' <Predicate = (!tmp_s)> <Delay = 0.97> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
 
 State 51 <SV = 50> <Delay = 6.68>
-ST_51 : Operation 282 [1/1] (0.00ns) (grouped into LUT with out node tmp_5)   --->   "%tmp_29 = or i1 %tmp_28, %tmp_27" [../myAccel.c:79]   --->   Operation 282 'or' 'tmp_29' <Predicate = (!tmp_s)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_51 : Operation 283 [1/1] (0.97ns) (out node of the LUT)   --->   "%tmp_5 = select i1 %tmp_29, float 1.000000e+00, float 0.000000e+00" [../myAccel.c:79]   --->   Operation 283 'select' 'tmp_5' <Predicate = (!tmp_s)> <Delay = 0.97> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_51 : Operation 284 [4/4] (5.70ns)   --->   "%tmp_7 = fmul float %tmp_35_0_3, %tmp_5" [../myAccel.c:79]   --->   Operation 284 'fmul' 'tmp_7' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_51 : Operation 282 [1/1] (0.00ns) (grouped into LUT with out node tmp_5)   --->   "%tmp_29 = or i1 %tmp_28, %tmp_27" [../myAccel.c:81]   --->   Operation 282 'or' 'tmp_29' <Predicate = (!tmp_s)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_51 : Operation 283 [1/1] (0.97ns) (out node of the LUT)   --->   "%tmp_5 = select i1 %tmp_29, float 1.000000e+00, float 0.000000e+00" [../myAccel.c:81]   --->   Operation 283 'select' 'tmp_5' <Predicate = (!tmp_s)> <Delay = 0.97> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_51 : Operation 284 [4/4] (5.70ns)   --->   "%tmp_7 = fmul float %tmp_35_0_3, %tmp_5" [../myAccel.c:81]   --->   Operation 284 'fmul' 'tmp_7' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
 
 State 52 <SV = 51> <Delay = 5.70>
-ST_52 : Operation 285 [3/4] (5.70ns)   --->   "%tmp_7 = fmul float %tmp_35_0_3, %tmp_5" [../myAccel.c:79]   --->   Operation 285 'fmul' 'tmp_7' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
-ST_52 : Operation 286 [4/4] (5.70ns)   --->   "%tmp_17_1 = fmul float %tmp_35_1_3, %tmp_5" [../myAccel.c:79]   --->   Operation 286 'fmul' 'tmp_17_1' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_52 : Operation 285 [3/4] (5.70ns)   --->   "%tmp_7 = fmul float %tmp_35_0_3, %tmp_5" [../myAccel.c:81]   --->   Operation 285 'fmul' 'tmp_7' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_52 : Operation 286 [4/4] (5.70ns)   --->   "%tmp_17_1 = fmul float %tmp_35_1_3, %tmp_5" [../myAccel.c:81]   --->   Operation 286 'fmul' 'tmp_17_1' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
 
 State 53 <SV = 52> <Delay = 5.70>
-ST_53 : Operation 287 [2/4] (5.70ns)   --->   "%tmp_7 = fmul float %tmp_35_0_3, %tmp_5" [../myAccel.c:79]   --->   Operation 287 'fmul' 'tmp_7' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
-ST_53 : Operation 288 [3/4] (5.70ns)   --->   "%tmp_17_1 = fmul float %tmp_35_1_3, %tmp_5" [../myAccel.c:79]   --->   Operation 288 'fmul' 'tmp_17_1' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
-ST_53 : Operation 289 [4/4] (5.70ns)   --->   "%tmp_17_2 = fmul float %tmp_35_2_3, %tmp_5" [../myAccel.c:79]   --->   Operation 289 'fmul' 'tmp_17_2' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_53 : Operation 287 [2/4] (5.70ns)   --->   "%tmp_7 = fmul float %tmp_35_0_3, %tmp_5" [../myAccel.c:81]   --->   Operation 287 'fmul' 'tmp_7' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_53 : Operation 288 [3/4] (5.70ns)   --->   "%tmp_17_1 = fmul float %tmp_35_1_3, %tmp_5" [../myAccel.c:81]   --->   Operation 288 'fmul' 'tmp_17_1' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_53 : Operation 289 [4/4] (5.70ns)   --->   "%tmp_17_2 = fmul float %tmp_35_2_3, %tmp_5" [../myAccel.c:81]   --->   Operation 289 'fmul' 'tmp_17_2' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
 
 State 54 <SV = 53> <Delay = 5.70>
-ST_54 : Operation 290 [1/4] (5.70ns)   --->   "%tmp_7 = fmul float %tmp_35_0_3, %tmp_5" [../myAccel.c:79]   --->   Operation 290 'fmul' 'tmp_7' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
-ST_54 : Operation 291 [2/4] (5.70ns)   --->   "%tmp_17_1 = fmul float %tmp_35_1_3, %tmp_5" [../myAccel.c:79]   --->   Operation 291 'fmul' 'tmp_17_1' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
-ST_54 : Operation 292 [3/4] (5.70ns)   --->   "%tmp_17_2 = fmul float %tmp_35_2_3, %tmp_5" [../myAccel.c:79]   --->   Operation 292 'fmul' 'tmp_17_2' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
-ST_54 : Operation 293 [4/4] (5.70ns)   --->   "%tmp_17_3 = fmul float %tmp_35_3_3, %tmp_5" [../myAccel.c:79]   --->   Operation 293 'fmul' 'tmp_17_3' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_54 : Operation 290 [1/4] (5.70ns)   --->   "%tmp_7 = fmul float %tmp_35_0_3, %tmp_5" [../myAccel.c:81]   --->   Operation 290 'fmul' 'tmp_7' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_54 : Operation 291 [2/4] (5.70ns)   --->   "%tmp_17_1 = fmul float %tmp_35_1_3, %tmp_5" [../myAccel.c:81]   --->   Operation 291 'fmul' 'tmp_17_1' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_54 : Operation 292 [3/4] (5.70ns)   --->   "%tmp_17_2 = fmul float %tmp_35_2_3, %tmp_5" [../myAccel.c:81]   --->   Operation 292 'fmul' 'tmp_17_2' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_54 : Operation 293 [4/4] (5.70ns)   --->   "%tmp_17_3 = fmul float %tmp_35_3_3, %tmp_5" [../myAccel.c:81]   --->   Operation 293 'fmul' 'tmp_17_3' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
 
 State 55 <SV = 54> <Delay = 8.75>
-ST_55 : Operation 294 [1/4] (5.70ns)   --->   "%tmp_17_1 = fmul float %tmp_35_1_3, %tmp_5" [../myAccel.c:79]   --->   Operation 294 'fmul' 'tmp_17_1' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
-ST_55 : Operation 295 [2/4] (5.70ns)   --->   "%tmp_17_2 = fmul float %tmp_35_2_3, %tmp_5" [../myAccel.c:79]   --->   Operation 295 'fmul' 'tmp_17_2' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
-ST_55 : Operation 296 [3/4] (5.70ns)   --->   "%tmp_17_3 = fmul float %tmp_35_3_3, %tmp_5" [../myAccel.c:79]   --->   Operation 296 'fmul' 'tmp_17_3' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
-ST_55 : Operation 297 [1/1] (8.75ns)   --->   "%data2_addr_req = call i1 @_ssdm_op_WriteReq.ap_bus.floatP(float* %data2_addr, i32 4) nounwind" [../myAccel.c:83]   --->   Operation 297 'writereq' 'data2_addr_req' <Predicate = (!tmp_s)> <Delay = 8.75> <Core = "PLB46M">   --->   Core 1 'PLB46M' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq'>
-ST_55 : Operation 298 [1/1] (8.75ns)   --->   "call void @_ssdm_op_Write.ap_bus.floatP(float* %data2_addr, float %tmp_7) nounwind" [../myAccel.c:83]   --->   Operation 298 'write' <Predicate = (!tmp_s)> <Delay = 8.75> <Core = "PLB46M">   --->   Core 1 'PLB46M' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq'>
+ST_55 : Operation 294 [1/4] (5.70ns)   --->   "%tmp_17_1 = fmul float %tmp_35_1_3, %tmp_5" [../myAccel.c:81]   --->   Operation 294 'fmul' 'tmp_17_1' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_55 : Operation 295 [2/4] (5.70ns)   --->   "%tmp_17_2 = fmul float %tmp_35_2_3, %tmp_5" [../myAccel.c:81]   --->   Operation 295 'fmul' 'tmp_17_2' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_55 : Operation 296 [3/4] (5.70ns)   --->   "%tmp_17_3 = fmul float %tmp_35_3_3, %tmp_5" [../myAccel.c:81]   --->   Operation 296 'fmul' 'tmp_17_3' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_55 : Operation 297 [1/1] (8.75ns)   --->   "%data2_addr_req = call i1 @_ssdm_op_WriteReq.ap_bus.floatP(float* %data2_addr, i32 4) nounwind" [../myAccel.c:85]   --->   Operation 297 'writereq' 'data2_addr_req' <Predicate = (!tmp_s)> <Delay = 8.75> <Core = "PLB46M">   --->   Core 1 'PLB46M' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq'>
+ST_55 : Operation 298 [1/1] (8.75ns)   --->   "call void @_ssdm_op_Write.ap_bus.floatP(float* %data2_addr, float %tmp_7) nounwind" [../myAccel.c:85]   --->   Operation 298 'write' <Predicate = (!tmp_s)> <Delay = 8.75> <Core = "PLB46M">   --->   Core 1 'PLB46M' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq'>
 
 State 56 <SV = 55> <Delay = 8.75>
-ST_56 : Operation 299 [1/4] (5.70ns)   --->   "%tmp_17_2 = fmul float %tmp_35_2_3, %tmp_5" [../myAccel.c:79]   --->   Operation 299 'fmul' 'tmp_17_2' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
-ST_56 : Operation 300 [2/4] (5.70ns)   --->   "%tmp_17_3 = fmul float %tmp_35_3_3, %tmp_5" [../myAccel.c:79]   --->   Operation 300 'fmul' 'tmp_17_3' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
-ST_56 : Operation 301 [1/1] (8.75ns)   --->   "call void @_ssdm_op_Write.ap_bus.floatP(float* %data2_addr, float %tmp_17_1) nounwind" [../myAccel.c:83]   --->   Operation 301 'write' <Predicate = (!tmp_s)> <Delay = 8.75> <Core = "PLB46M">   --->   Core 1 'PLB46M' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq'>
+ST_56 : Operation 299 [1/4] (5.70ns)   --->   "%tmp_17_2 = fmul float %tmp_35_2_3, %tmp_5" [../myAccel.c:81]   --->   Operation 299 'fmul' 'tmp_17_2' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_56 : Operation 300 [2/4] (5.70ns)   --->   "%tmp_17_3 = fmul float %tmp_35_3_3, %tmp_5" [../myAccel.c:81]   --->   Operation 300 'fmul' 'tmp_17_3' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_56 : Operation 301 [1/1] (8.75ns)   --->   "call void @_ssdm_op_Write.ap_bus.floatP(float* %data2_addr, float %tmp_17_1) nounwind" [../myAccel.c:85]   --->   Operation 301 'write' <Predicate = (!tmp_s)> <Delay = 8.75> <Core = "PLB46M">   --->   Core 1 'PLB46M' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq'>
 
 State 57 <SV = 56> <Delay = 8.75>
-ST_57 : Operation 302 [1/4] (5.70ns)   --->   "%tmp_17_3 = fmul float %tmp_35_3_3, %tmp_5" [../myAccel.c:79]   --->   Operation 302 'fmul' 'tmp_17_3' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
-ST_57 : Operation 303 [1/1] (8.75ns)   --->   "call void @_ssdm_op_Write.ap_bus.floatP(float* %data2_addr, float %tmp_17_2) nounwind" [../myAccel.c:83]   --->   Operation 303 'write' <Predicate = (!tmp_s)> <Delay = 8.75> <Core = "PLB46M">   --->   Core 1 'PLB46M' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq'>
+ST_57 : Operation 302 [1/4] (5.70ns)   --->   "%tmp_17_3 = fmul float %tmp_35_3_3, %tmp_5" [../myAccel.c:81]   --->   Operation 302 'fmul' 'tmp_17_3' <Predicate = (!tmp_s)> <Delay = 5.70> <Core = "FMul">   --->   Core 105 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_57 : Operation 303 [1/1] (8.75ns)   --->   "call void @_ssdm_op_Write.ap_bus.floatP(float* %data2_addr, float %tmp_17_2) nounwind" [../myAccel.c:85]   --->   Operation 303 'write' <Predicate = (!tmp_s)> <Delay = 8.75> <Core = "PLB46M">   --->   Core 1 'PLB46M' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq'>
 
 State 58 <SV = 57> <Delay = 8.75>
-ST_58 : Operation 304 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([9 x i8]* @p_str3) nounwind" [../myAccel.c:43]   --->   Operation 304 'specloopname' <Predicate = (!tmp_s)> <Delay = 0.00>
-ST_58 : Operation 305 [1/1] (0.00ns)   --->   "%tmp = call i32 (...)* @_ssdm_op_SpecRegionBegin([9 x i8]* @p_str3) nounwind" [../myAccel.c:43]   --->   Operation 305 'specregionbegin' 'tmp' <Predicate = (!tmp_s)> <Delay = 0.00>
-ST_58 : Operation 306 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPipeline(i32 4, i32 1, i32 1, i32 0, [1 x i8]* @p_str1) nounwind" [../myAccel.c:44]   --->   Operation 306 'specpipeline' <Predicate = (!tmp_s)> <Delay = 0.00>
-ST_58 : Operation 307 [1/1] (8.75ns)   --->   "call void @_ssdm_op_Write.ap_bus.floatP(float* %data2_addr, float %tmp_17_3) nounwind" [../myAccel.c:83]   --->   Operation 307 'write' <Predicate = (!tmp_s)> <Delay = 8.75> <Core = "PLB46M">   --->   Core 1 'PLB46M' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq'>
-ST_58 : Operation 308 [1/1] (0.00ns)   --->   "%empty_4 = call i32 (...)* @_ssdm_op_SpecRegionEnd([9 x i8]* @p_str3, i32 %tmp) nounwind" [../myAccel.c:89]   --->   Operation 308 'specregionend' 'empty_4' <Predicate = (!tmp_s)> <Delay = 0.00>
-ST_58 : Operation 309 [1/1] (0.00ns)   --->   "br label %.preheader7" [../myAccel.c:42]   --->   Operation 309 'br' <Predicate = (!tmp_s)> <Delay = 0.00>
+ST_58 : Operation 304 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([9 x i8]* @p_str3) nounwind" [../myAccel.c:45]   --->   Operation 304 'specloopname' <Predicate = (!tmp_s)> <Delay = 0.00>
+ST_58 : Operation 305 [1/1] (0.00ns)   --->   "%tmp = call i32 (...)* @_ssdm_op_SpecRegionBegin([9 x i8]* @p_str3) nounwind" [../myAccel.c:45]   --->   Operation 305 'specregionbegin' 'tmp' <Predicate = (!tmp_s)> <Delay = 0.00>
+ST_58 : Operation 306 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPipeline(i32 4, i32 1, i32 1, i32 0, [1 x i8]* @p_str1) nounwind" [../myAccel.c:46]   --->   Operation 306 'specpipeline' <Predicate = (!tmp_s)> <Delay = 0.00>
+ST_58 : Operation 307 [1/1] (8.75ns)   --->   "call void @_ssdm_op_Write.ap_bus.floatP(float* %data2_addr, float %tmp_17_3) nounwind" [../myAccel.c:85]   --->   Operation 307 'write' <Predicate = (!tmp_s)> <Delay = 8.75> <Core = "PLB46M">   --->   Core 1 'PLB46M' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq'>
+ST_58 : Operation 308 [1/1] (0.00ns)   --->   "%empty_4 = call i32 (...)* @_ssdm_op_SpecRegionEnd([9 x i8]* @p_str3, i32 %tmp) nounwind" [../myAccel.c:91]   --->   Operation 308 'specregionend' 'empty_4' <Predicate = (!tmp_s)> <Delay = 0.00>
+ST_58 : Operation 309 [1/1] (0.00ns)   --->   "br label %.preheader7" [../myAccel.c:44]   --->   Operation 309 'br' <Predicate = (!tmp_s)> <Delay = 0.00>
 
 State 59 <SV = 19> <Delay = 0.00>
-ST_59 : Operation 310 [1/1] (0.00ns)   --->   "ret void" [../myAccel.c:90]   --->   Operation 310 'ret' <Predicate = true> <Delay = 0.00>
+ST_59 : Operation 310 [1/1] (0.00ns)   --->   "ret void" [../myAccel.c:92]   --->   Operation 310 'ret' <Predicate = true> <Delay = 0.00>
 
 
 ============================================================
@@ -577,243 +577,243 @@ Target clock period: 10ns, clock uncertainty: 1.25ns.
 
  <State 1>: 8.75ns
 The critical path consists of the following:
-	bus request on port 'data0' (../myAccel.c:35) [17]  (8.75 ns)
+	bus request on port 'data0' (../myAccel.c:37) [17]  (8.75 ns)
 
  <State 2>: 8.75ns
 The critical path consists of the following:
-	bus request on port 'data0' (../myAccel.c:35) [17]  (8.75 ns)
+	bus request on port 'data0' (../myAccel.c:37) [17]  (8.75 ns)
 
  <State 3>: 8.75ns
 The critical path consists of the following:
-	bus read on port 'data0' (../myAccel.c:35) [18]  (8.75 ns)
+	bus read on port 'data0' (../myAccel.c:37) [18]  (8.75 ns)
 
  <State 4>: 8.75ns
 The critical path consists of the following:
-	bus read on port 'data0' (../myAccel.c:36) [19]  (8.75 ns)
+	bus read on port 'data0' (../myAccel.c:38) [19]  (8.75 ns)
 
  <State 5>: 8.75ns
 The critical path consists of the following:
-	bus read on port 'data0' (../myAccel.c:37) [20]  (8.75 ns)
+	bus read on port 'data0' (../myAccel.c:39) [20]  (8.75 ns)
 
  <State 6>: 8.75ns
 The critical path consists of the following:
-	bus read on port 'data0' (../myAccel.c:38) [21]  (8.75 ns)
+	bus read on port 'data0' (../myAccel.c:40) [21]  (8.75 ns)
 
  <State 7>: 8.75ns
 The critical path consists of the following:
-	bus read on port 'data0' (../myAccel.c:35) [22]  (8.75 ns)
+	bus read on port 'data0' (../myAccel.c:37) [22]  (8.75 ns)
 
  <State 8>: 8.75ns
 The critical path consists of the following:
-	bus read on port 'data0' (../myAccel.c:36) [23]  (8.75 ns)
+	bus read on port 'data0' (../myAccel.c:38) [23]  (8.75 ns)
 
  <State 9>: 8.75ns
 The critical path consists of the following:
-	bus read on port 'data0' (../myAccel.c:37) [24]  (8.75 ns)
+	bus read on port 'data0' (../myAccel.c:39) [24]  (8.75 ns)
 
  <State 10>: 8.75ns
 The critical path consists of the following:
-	bus read on port 'data0' (../myAccel.c:38) [25]  (8.75 ns)
+	bus read on port 'data0' (../myAccel.c:40) [25]  (8.75 ns)
 
  <State 11>: 8.75ns
 The critical path consists of the following:
-	bus read on port 'data0' (../myAccel.c:35) [26]  (8.75 ns)
+	bus read on port 'data0' (../myAccel.c:37) [26]  (8.75 ns)
 
  <State 12>: 8.75ns
 The critical path consists of the following:
-	bus read on port 'data0' (../myAccel.c:36) [27]  (8.75 ns)
+	bus read on port 'data0' (../myAccel.c:38) [27]  (8.75 ns)
 
  <State 13>: 8.75ns
 The critical path consists of the following:
-	bus read on port 'data0' (../myAccel.c:37) [28]  (8.75 ns)
+	bus read on port 'data0' (../myAccel.c:39) [28]  (8.75 ns)
 
  <State 14>: 8.75ns
 The critical path consists of the following:
-	bus read on port 'data0' (../myAccel.c:38) [29]  (8.75 ns)
+	bus read on port 'data0' (../myAccel.c:40) [29]  (8.75 ns)
 
  <State 15>: 8.75ns
 The critical path consists of the following:
-	bus read on port 'data0' (../myAccel.c:35) [30]  (8.75 ns)
+	bus read on port 'data0' (../myAccel.c:37) [30]  (8.75 ns)
 
  <State 16>: 8.75ns
 The critical path consists of the following:
-	bus read on port 'data0' (../myAccel.c:36) [31]  (8.75 ns)
+	bus read on port 'data0' (../myAccel.c:38) [31]  (8.75 ns)
 
  <State 17>: 8.75ns
 The critical path consists of the following:
-	bus read on port 'data0' (../myAccel.c:37) [32]  (8.75 ns)
+	bus read on port 'data0' (../myAccel.c:39) [32]  (8.75 ns)
 
  <State 18>: 8.75ns
 The critical path consists of the following:
-	bus read on port 'data0' (../myAccel.c:38) [33]  (8.75 ns)
+	bus read on port 'data0' (../myAccel.c:40) [33]  (8.75 ns)
 
  <State 19>: 2.75ns
 The critical path consists of the following:
-	'icmp' operation ('tmp_s', ../myAccel.c:42) [37]  (1.77 ns)
+	'icmp' operation ('tmp_s', ../myAccel.c:44) [37]  (1.77 ns)
 	blocking operation 0.978 ns on control path)
 
  <State 20>: 8.75ns
 The critical path consists of the following:
-	'getelementptr' operation ('data1_addr', ../myAccel.c:57) [47]  (0 ns)
-	bus request on port 'data1' (../myAccel.c:57) [48]  (8.75 ns)
+	'getelementptr' operation ('data1_addr', ../myAccel.c:59) [47]  (0 ns)
+	bus request on port 'data1' (../myAccel.c:59) [48]  (8.75 ns)
 
  <State 21>: 8.75ns
 The critical path consists of the following:
-	bus request on port 'data1' (../myAccel.c:57) [48]  (8.75 ns)
+	bus request on port 'data1' (../myAccel.c:59) [48]  (8.75 ns)
 
  <State 22>: 8.75ns
 The critical path consists of the following:
-	bus read on port 'data1' (../myAccel.c:57) [49]  (8.75 ns)
+	bus read on port 'data1' (../myAccel.c:59) [49]  (8.75 ns)
 
  <State 23>: 8.75ns
 The critical path consists of the following:
-	bus read on port 'data1' (../myAccel.c:57) [50]  (8.75 ns)
+	bus read on port 'data1' (../myAccel.c:59) [50]  (8.75 ns)
 
  <State 24>: 8.75ns
 The critical path consists of the following:
-	bus read on port 'data1' (../myAccel.c:57) [51]  (8.75 ns)
+	bus read on port 'data1' (../myAccel.c:59) [51]  (8.75 ns)
 
  <State 25>: 8.75ns
 The critical path consists of the following:
-	bus read on port 'data1' (../myAccel.c:57) [52]  (8.75 ns)
+	bus read on port 'data1' (../myAccel.c:59) [52]  (8.75 ns)
 
  <State 26>: 5.7ns
 The critical path consists of the following:
-	'fmul' operation ('tmp_4', ../myAccel.c:62) [53]  (5.7 ns)
+	'fmul' operation ('tmp_4', ../myAccel.c:64) [53]  (5.7 ns)
 
  <State 27>: 7.26ns
 The critical path consists of the following:
-	'fadd' operation ('tmp_6', ../myAccel.c:62) [54]  (7.26 ns)
+	'fadd' operation ('tmp_6', ../myAccel.c:64) [54]  (7.26 ns)
 
  <State 28>: 7.26ns
 The critical path consists of the following:
-	'fadd' operation ('tmp_6', ../myAccel.c:62) [54]  (7.26 ns)
+	'fadd' operation ('tmp_6', ../myAccel.c:64) [54]  (7.26 ns)
 
  <State 29>: 7.26ns
 The critical path consists of the following:
-	'fadd' operation ('tmp_6', ../myAccel.c:62) [54]  (7.26 ns)
+	'fadd' operation ('tmp_6', ../myAccel.c:64) [54]  (7.26 ns)
 
  <State 30>: 7.26ns
 The critical path consists of the following:
-	'fadd' operation ('tmp_6', ../myAccel.c:62) [54]  (7.26 ns)
+	'fadd' operation ('tmp_6', ../myAccel.c:64) [54]  (7.26 ns)
 
  <State 31>: 7.26ns
 The critical path consists of the following:
-	'fadd' operation ('tmp_6', ../myAccel.c:62) [54]  (7.26 ns)
+	'fadd' operation ('tmp_6', ../myAccel.c:64) [54]  (7.26 ns)
 
  <State 32>: 7.26ns
 The critical path consists of the following:
-	'fadd' operation ('tmp_35_0_1', ../myAccel.c:62) [56]  (7.26 ns)
+	'fadd' operation ('tmp_35_0_1', ../myAccel.c:64) [56]  (7.26 ns)
 
  <State 33>: 7.26ns
 The critical path consists of the following:
-	'fadd' operation ('tmp_35_0_1', ../myAccel.c:62) [56]  (7.26 ns)
+	'fadd' operation ('tmp_35_0_1', ../myAccel.c:64) [56]  (7.26 ns)
 
  <State 34>: 7.26ns
 The critical path consists of the following:
-	'fadd' operation ('tmp_35_0_1', ../myAccel.c:62) [56]  (7.26 ns)
+	'fadd' operation ('tmp_35_0_1', ../myAccel.c:64) [56]  (7.26 ns)
 
  <State 35>: 7.26ns
 The critical path consists of the following:
-	'fadd' operation ('tmp_35_0_1', ../myAccel.c:62) [56]  (7.26 ns)
+	'fadd' operation ('tmp_35_0_1', ../myAccel.c:64) [56]  (7.26 ns)
 
  <State 36>: 7.26ns
 The critical path consists of the following:
-	'fadd' operation ('tmp_35_0_1', ../myAccel.c:62) [56]  (7.26 ns)
+	'fadd' operation ('tmp_35_0_1', ../myAccel.c:64) [56]  (7.26 ns)
 
  <State 37>: 7.26ns
 The critical path consists of the following:
-	'fadd' operation ('tmp_35_0_2', ../myAccel.c:62) [58]  (7.26 ns)
+	'fadd' operation ('tmp_35_0_2', ../myAccel.c:64) [58]  (7.26 ns)
 
  <State 38>: 7.26ns
 The critical path consists of the following:
-	'fadd' operation ('tmp_35_0_2', ../myAccel.c:62) [58]  (7.26 ns)
+	'fadd' operation ('tmp_35_0_2', ../myAccel.c:64) [58]  (7.26 ns)
 
  <State 39>: 7.26ns
 The critical path consists of the following:
-	'fadd' operation ('tmp_35_0_2', ../myAccel.c:62) [58]  (7.26 ns)
+	'fadd' operation ('tmp_35_0_2', ../myAccel.c:64) [58]  (7.26 ns)
 
  <State 40>: 7.26ns
 The critical path consists of the following:
-	'fadd' operation ('tmp_35_0_2', ../myAccel.c:62) [58]  (7.26 ns)
+	'fadd' operation ('tmp_35_0_2', ../myAccel.c:64) [58]  (7.26 ns)
 
  <State 41>: 7.26ns
 The critical path consists of the following:
-	'fadd' operation ('tmp_35_0_2', ../myAccel.c:62) [58]  (7.26 ns)
+	'fadd' operation ('tmp_35_0_2', ../myAccel.c:64) [58]  (7.26 ns)
 
  <State 42>: 7.26ns
 The critical path consists of the following:
-	'fadd' operation ('tmp_35_0_3', ../myAccel.c:62) [60]  (7.26 ns)
+	'fadd' operation ('tmp_35_0_3', ../myAccel.c:64) [60]  (7.26 ns)
 
  <State 43>: 7.26ns
 The critical path consists of the following:
-	'fadd' operation ('tmp_35_0_3', ../myAccel.c:62) [60]  (7.26 ns)
+	'fadd' operation ('tmp_35_0_3', ../myAccel.c:64) [60]  (7.26 ns)
 
  <State 44>: 7.26ns
 The critical path consists of the following:
-	'fadd' operation ('tmp_35_0_3', ../myAccel.c:62) [60]  (7.26 ns)
+	'fadd' operation ('tmp_35_0_3', ../myAccel.c:64) [60]  (7.26 ns)
 
  <State 45>: 7.26ns
 The critical path consists of the following:
-	'fadd' operation ('tmp_35_0_3', ../myAccel.c:62) [60]  (7.26 ns)
+	'fadd' operation ('tmp_35_0_3', ../myAccel.c:64) [60]  (7.26 ns)
 
  <State 46>: 7.26ns
 The critical path consists of the following:
-	'fadd' operation ('tmp_35_0_3', ../myAccel.c:62) [60]  (7.26 ns)
+	'fadd' operation ('tmp_35_0_3', ../myAccel.c:64) [60]  (7.26 ns)
 
  <State 47>: 6.79ns
 The critical path consists of the following:
-	'fcmp' operation ('tmp_10', ../myAccel.c:70) [67]  (6.79 ns)
+	'fcmp' operation ('tmp_10', ../myAccel.c:72) [67]  (6.79 ns)
 
  <State 48>: 7.77ns
 The critical path consists of the following:
-	'fcmp' operation ('tmp_15', ../myAccel.c:70) [83]  (6.79 ns)
-	'and' operation ('tmp_16', ../myAccel.c:70) [84]  (0 ns)
-	'or' operation ('tmp_27', ../myAccel.c:79) [117]  (0.978 ns)
+	'fcmp' operation ('tmp_15', ../myAccel.c:72) [83]  (6.79 ns)
+	'and' operation ('tmp_16', ../myAccel.c:72) [84]  (0 ns)
+	'or' operation ('tmp_27', ../myAccel.c:81) [117]  (0.978 ns)
 
  <State 49>: 6.79ns
 The critical path consists of the following:
-	'fcmp' operation ('tmp_20', ../myAccel.c:70) [99]  (6.79 ns)
+	'fcmp' operation ('tmp_20', ../myAccel.c:72) [99]  (6.79 ns)
 
  <State 50>: 7.77ns
 The critical path consists of the following:
-	'fcmp' operation ('tmp_25', ../myAccel.c:70) [115]  (6.79 ns)
-	'and' operation ('tmp_26', ../myAccel.c:70) [116]  (0 ns)
-	'or' operation ('tmp_28', ../myAccel.c:79) [118]  (0.978 ns)
+	'fcmp' operation ('tmp_25', ../myAccel.c:72) [115]  (6.79 ns)
+	'and' operation ('tmp_26', ../myAccel.c:72) [116]  (0 ns)
+	'or' operation ('tmp_28', ../myAccel.c:81) [118]  (0.978 ns)
 
  <State 51>: 6.68ns
 The critical path consists of the following:
-	'or' operation ('tmp_29', ../myAccel.c:79) [119]  (0 ns)
-	'select' operation ('tmp_5', ../myAccel.c:79) [120]  (0.978 ns)
-	'fmul' operation ('tmp_7', ../myAccel.c:79) [121]  (5.7 ns)
+	'or' operation ('tmp_29', ../myAccel.c:81) [119]  (0 ns)
+	'select' operation ('tmp_5', ../myAccel.c:81) [120]  (0.978 ns)
+	'fmul' operation ('tmp_7', ../myAccel.c:81) [121]  (5.7 ns)
 
  <State 52>: 5.7ns
 The critical path consists of the following:
-	'fmul' operation ('tmp_7', ../myAccel.c:79) [121]  (5.7 ns)
+	'fmul' operation ('tmp_7', ../myAccel.c:81) [121]  (5.7 ns)
 
  <State 53>: 5.7ns
 The critical path consists of the following:
-	'fmul' operation ('tmp_7', ../myAccel.c:79) [121]  (5.7 ns)
+	'fmul' operation ('tmp_7', ../myAccel.c:81) [121]  (5.7 ns)
 
  <State 54>: 5.7ns
 The critical path consists of the following:
-	'fmul' operation ('tmp_7', ../myAccel.c:79) [121]  (5.7 ns)
+	'fmul' operation ('tmp_7', ../myAccel.c:81) [121]  (5.7 ns)
 
  <State 55>: 8.75ns
 The critical path consists of the following:
-	bus request on port 'data2' (../myAccel.c:83) [126]  (8.75 ns)
+	bus request on port 'data2' (../myAccel.c:85) [126]  (8.75 ns)
 
  <State 56>: 8.75ns
 The critical path consists of the following:
-	bus write on port 'data2' (../myAccel.c:83) [128]  (8.75 ns)
+	bus write on port 'data2' (../myAccel.c:85) [128]  (8.75 ns)
 
  <State 57>: 8.75ns
 The critical path consists of the following:
-	bus write on port 'data2' (../myAccel.c:83) [129]  (8.75 ns)
+	bus write on port 'data2' (../myAccel.c:85) [129]  (8.75 ns)
 
  <State 58>: 8.75ns
 The critical path consists of the following:
-	bus write on port 'data2' (../myAccel.c:83) [130]  (8.75 ns)
+	bus write on port 'data2' (../myAccel.c:85) [130]  (8.75 ns)
 
  <State 59>: 0ns
 The critical path consists of the following:

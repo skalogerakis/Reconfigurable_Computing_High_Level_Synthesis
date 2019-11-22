@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'myFuncAccel'" level="0">
-<item name = "Date">Thu Nov 21 15:55:35 2019
+<item name = "Date">Thu Nov 21 17:04:47 2019
 </item>
 <item name = "Version">2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)</item>
 <item name = "Project">algHLS</item>
@@ -88,7 +88,7 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="i_1_fu_183_p2">+, 0, 0, 14, 10, 1</column>
+<column name="i_fu_183_p2">+, 0, 0, 14, 10, 1</column>
 <column name="ap_block_state22_pp0_stage3_iter0">and, 0, 0, 2, 1, 1</column>
 <column name="ap_block_state24_pp0_stage1_iter1">and, 0, 0, 2, 1, 1</column>
 <column name="ap_block_state55_pp0_stage0_iter9">and, 0, 0, 2, 1, 1</column>
@@ -124,7 +124,7 @@
 <keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
 <column name="ap_NS_fsm">113, 24, 1, 24</column>
 <column name="ap_enable_reg_pp0_iter9">9, 2, 1, 2</column>
-<column name="ap_phi_mux_i_phi_fu_120_p4">9, 2, 10, 20</column>
+<column name="ap_phi_mux_i_1_phi_fu_120_p4">9, 2, 10, 20</column>
 <column name="grp_fu_127_p0">27, 5, 32, 160</column>
 <column name="grp_fu_127_p1">27, 5, 32, 160</column>
 <column name="grp_fu_132_p0">27, 5, 32, 160</column>
@@ -144,7 +144,7 @@
 <column name="grp_fu_163_p0">27, 5, 32, 160</column>
 <column name="grp_fu_163_p1">15, 3, 32, 96</column>
 <column name="grp_fu_167_p0">27, 5, 32, 160</column>
-<column name="i_reg_116">9, 2, 10, 20</column>
+<column name="i_1_reg_116">9, 2, 10, 20</column>
 </table>
 </item>
 <item name = "Register"><table name="" hasTotal="1">
@@ -181,8 +181,8 @@
 <column name="data1_addr_read_3_reg_529">32, 0, 32, 0</column>
 <column name="data1_addr_read_reg_505">32, 0, 32, 0</column>
 <column name="data2_addr_reg_500">10, 0, 32, 22</column>
-<column name="i_1_reg_484">10, 0, 10, 0</column>
-<column name="i_reg_116">10, 0, 10, 0</column>
+<column name="i_1_reg_116">10, 0, 10, 0</column>
+<column name="i_reg_484">10, 0, 10, 0</column>
 <column name="reg_172">32, 0, 32, 0</column>
 <column name="tmp_10_reg_705">1, 0, 1, 0</column>
 <column name="tmp_1_reg_489">10, 0, 12, 2</column>

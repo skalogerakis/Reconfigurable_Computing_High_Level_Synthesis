@@ -9,8 +9,8 @@
 module AESL_autobus_data2 #(
 	parameter DATA_WIDTH = 32'd32,
 	parameter ADDR_WIDTH = 32'd32,
-	parameter DEPTH = 32'd16000,
-	parameter FIFO_rsp_DEPTH = 32'd16000,
+	parameter DEPTH = 32'd4000,
+	parameter FIFO_rsp_DEPTH = 32'd4000,
 	parameter FIFO_req_DEPTH = 32'd32,
 	parameter mem_page_num = 32'd3) (
 	input clk,

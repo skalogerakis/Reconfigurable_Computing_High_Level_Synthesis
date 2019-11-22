@@ -1,78 +1,40 @@
 INFO: [HLS 200-10] Running '/tools/Xilinx/Vivado/2018.3/bin/unwrapped/lnx64.o/vivado_hls'
-INFO: [HLS 200-10] For user 'root' on host 'skl' (Linux_x86_64 version 5.0.0-36-generic) on Thu Nov 21 15:55:27 EET 2019
+INFO: [HLS 200-10] For user 'root' on host 'skl' (Linux_x86_64 version 5.0.0-36-generic) on Fri Nov 22 03:13:37 EET 2019
 INFO: [HLS 200-10] On os Ubuntu 18.04.3 LTS
 INFO: [HLS 200-10] In directory '/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/vHLS'
 INFO: [HLS 200-10] Opening project '/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/vHLS/algHLS'.
-INFO: [HLS 200-10] Adding design file '../myLib.h' to the project
-INFO: [HLS 200-10] Adding design file '../myAccel.c' to the project
-INFO: [HLS 200-10] Adding test bench file '../main.c' to the project
-INFO: [HLS 200-10] Opening solution '/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/vHLS/algHLS/Optimazation_4'.
+INFO: [HLS 200-10] Opening solution '/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/vHLS/algHLS/Optimazation_5'.
 INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
 INFO: [HLS 200-10] Setting target device to 'xc7z020clg484-1'
-INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
-INFO: [HLS 200-10] Analyzing design file '../myAccel.c' ... 
-INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 444.914 ; gain = 0.098 ; free physical = 1377 ; free virtual = 6152
-INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 444.914 ; gain = 0.098 ; free physical = 1377 ; free virtual = 6152
-INFO: [HLS 200-10] Starting code transformations ...
-INFO: [XFORM 203-501] Unrolling loop 'copyLoop' (../myAccel.c:33) in function 'myFuncAccel': changing partial unrolling into complete unrolling since the unrolling factor (=4) is no less than the loop trip count (=4).
-INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 444.914 ; gain = 0.098 ; free physical = 1383 ; free virtual = 6150
-INFO: [HLS 200-10] Checking synthesizability ...
-INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 444.914 ; gain = 0.098 ; free physical = 1383 ; free virtual = 6150
-INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'sizeLoop' (../myAccel.c:43) in function 'myFuncAccel' for pipelining.
-INFO: [XFORM 203-501] Unrolling loop 'copyLoop' (../myAccel.c:33) in function 'myFuncAccel': changing partial unrolling into complete unrolling since the unrolling factor (=4) is no less than the loop trip count (=4).
-INFO: [HLS 200-489] Unrolling loop 'copyLoop' (../myAccel.c:33) in function 'myFuncAccel' completely with a factor of 4.
-INFO: [HLS 200-489] Unrolling loop 'initLoop' (../myAccel.c:46) in function 'myFuncAccel' completely with a factor of 4.
-INFO: [HLS 200-489] Unrolling loop 'valueAsn' (../myAccel.c:54) in function 'myFuncAccel' completely with a factor of 4.
-INFO: [HLS 200-489] Unrolling loop 'Loop-2.2.1' (../myAccel.c:56) in function 'myFuncAccel' completely with a factor of 4.
-INFO: [HLS 200-489] Unrolling loop 'Loop-2.2.2' (../myAccel.c:61) in function 'myFuncAccel' completely with a factor of 4.
-INFO: [HLS 200-489] Unrolling loop 'zeroAsn' (../myAccel.c:78) in function 'myFuncAccel' completely with a factor of 4.
-INFO: [HLS 200-489] Unrolling loop 'Loop-2.3.1' (../myAccel.c:81) in function 'myFuncAccel' completely with a factor of 4.
-INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 572.816 ; gain = 128.000 ; free physical = 1363 ; free virtual = 6130
-INFO: [XFORM 203-811] Inferring bus burst read of length 16 on port 'data0' (../myAccel.c:35:2).
-INFO: [XFORM 203-811] Inferring bus burst read of length 4 on port 'data1' (../myAccel.c:57:7).
-INFO: [XFORM 203-811] Inferring bus burst write of length 4 on port 'data2' (../myAccel.c:83:7).
-INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 572.816 ; gain = 128.000 ; free physical = 1370 ; free virtual = 6137
-INFO: [HLS 200-10] Starting hardware synthesis ...
-INFO: [HLS 200-10] Synthesizing 'myFuncAccel' ...
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'myFuncAccel' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [SCHED 204-61] Pipelining loop 'sizeLoop'.
-INFO: [SCHED 204-61] Pipelining result : Target II = 4, Final II = 4, Depth = 40.
-INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 6.91 seconds; current allocated memory: 63.903 MB.
-INFO: [BIND 205-100] Starting micro-architecture generation ...
-INFO: [BIND 205-101] Performing variable lifetime analysis.
-INFO: [BIND 205-101] Exploring resource sharing.
-INFO: [BIND 205-101] Binding ...
-INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.28 seconds; current allocated memory: 64.855 MB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'myFuncAccel' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [RTGEN 206-500] Setting interface mode on port 'myFuncAccel/size' to 'ap_none'.
-INFO: [RTGEN 206-500] Setting interface mode on port 'myFuncAccel/dim' to 'ap_none'.
-INFO: [RTGEN 206-500] Setting interface mode on port 'myFuncAccel/threshold' to 'ap_none'.
-INFO: [RTGEN 206-500] Setting interface mode on port 'myFuncAccel/data0' to 'ap_bus'.
-INFO: [RTGEN 206-500] Setting interface mode on port 'myFuncAccel/data1' to 'ap_bus'.
-INFO: [RTGEN 206-500] Setting interface mode on port 'myFuncAccel/data2' to 'ap_bus'.
-INFO: [RTGEN 206-500] Setting interface mode on function 'myFuncAccel' to 'ap_ctrl_hs'.
-WARNING: [RTGEN 206-101] Port 'myFuncAccel/size' has no fanin or fanout and is left dangling.
-               Please use C simulation to confirm this function argument can be read from or written to.
-WARNING: [RTGEN 206-101] Port 'myFuncAccel/dim' has no fanin or fanout and is left dangling.
-               Please use C simulation to confirm this function argument can be read from or written to.
-WARNING: [RTGEN 206-101] Port 'myFuncAccel/threshold' has no fanin or fanout and is left dangling.
-               Please use C simulation to confirm this function argument can be read from or written to.
-WARNING: [RTGEN 206-101] Setting dangling out port 'myFuncAccel/data0_dataout' to 0.
-WARNING: [RTGEN 206-101] Setting dangling out port 'myFuncAccel/data1_dataout' to 0.
-INFO: [RTGEN 206-100] Generating core module 'myFuncAccel_fadd_32ns_32ns_32_5_full_dsp_1': 4 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'myFuncAccel_fcmp_32ns_32ns_1_1_1': 1 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'myFuncAccel_fmul_32ns_32ns_32_4_max_dsp_1': 5 instance(s).
-INFO: [RTGEN 206-100] Finished creating RTL model for 'myFuncAccel'.
-INFO: [HLS 200-111]  Elapsed time: 0.3 seconds; current allocated memory: 66.411 MB.
-INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 572.816 ; gain = 128.000 ; free physical = 1367 ; free virtual = 6123
-INFO: [SYSC 207-301] Generating SystemC RTL for myFuncAccel.
-INFO: [VHDL 208-304] Generating VHDL RTL for myFuncAccel.
-INFO: [VLOG 209-307] Generating Verilog RTL for myFuncAccel.
-INFO: [HLS 200-112] Total elapsed time: 9.28 seconds; peak allocated memory: 66.411 MB.
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+   Compiling(apcc) ../../../../../main.c in debug mode
+INFO: [HLS 200-10] Running '/tools/Xilinx/Vivado/2018.3/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'root' on host 'skl' (Linux_x86_64 version 5.0.0-36-generic) on Fri Nov 22 03:13:39 EET 2019
+INFO: [HLS 200-10] On os Ubuntu 18.04.3 LTS
+INFO: [HLS 200-10] In directory '/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/vHLS/algHLS/Optimazation_5/csim/build'
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_root/246601574385219273224
+INFO: [APCC 202-1] APCC is done.
+   Compiling(apcc) ../../../../../myAccel.c in debug mode
+INFO: [HLS 200-10] Running '/tools/Xilinx/Vivado/2018.3/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'root' on host 'skl' (Linux_x86_64 version 5.0.0-36-generic) on Fri Nov 22 03:13:45 EET 2019
+INFO: [HLS 200-10] On os Ubuntu 18.04.3 LTS
+INFO: [HLS 200-10] In directory '/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/vHLS/algHLS/Optimazation_5/csim/build'
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_root/247271574385225967690
+INFO: [APCC 202-1] APCC is done.
+   Generating csim.exe
+Seed 1000
+Size 1000
+Dimension 4
+Threshold 100.000000
+
+Executing myFunc...
+Reference Code execution time: 0.000502
+
+Executing myFuncAccel...
+Hardware execution time: 0.000321
+
+SUCCESS
+
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************

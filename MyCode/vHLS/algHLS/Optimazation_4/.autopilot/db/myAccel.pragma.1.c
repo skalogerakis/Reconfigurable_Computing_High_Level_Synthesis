@@ -2215,7 +2215,7 @@ _ssdm_op_SpecInterface(data0, "ap_bus", 0, 0, "", 0, 16, "", "", "", 0, 0, 0, 0,
 _ssdm_op_SpecInterface(data1, "ap_bus", 0, 0, "", 0, 4000, "", "", "", 0, 0, 0, 0, "", "");
 _ssdm_op_SpecInterface(data2, "ap_bus", 0, 0, "", 0, 4000, "", "", "", 0, 0, 0, 0, "", "");
 
- unsigned int z, i, k, l,r;
+ unsigned int i, k, l,r;
  size = 1000;
  dim = 4;
  threshold = 100;
@@ -2224,12 +2224,14 @@ _ssdm_op_SpecInterface(data2, "ap_bus", 0, 0, "", 0, 4000, "", "", "", 0, 0, 0, 
  float tempArrData1[dim];
  float tempArrData2[dim];
 
-copyLoop: for ( z = 0 ; z < dim ; z++){
+
+
+copyLoop: for ( i = 0 ; i < dim ; i++){
 _ssdm_Unroll(1, 0, 4, "");
- cache[z*dim] = data0[z*dim];
-    cache[z*dim+1] = data0[z*dim+1];
-    cache[z*dim+2] = data0[z*dim+2];
-    cache[z*dim+3] = data0[z*dim+3];
+ cache[i*dim] = data0[i*dim];
+    cache[i*dim+1] = data0[i*dim+1];
+    cache[i*dim+2] = data0[i*dim+2];
+    cache[i*dim+3] = data0[i*dim+3];
 
    }
 sizeLoop:

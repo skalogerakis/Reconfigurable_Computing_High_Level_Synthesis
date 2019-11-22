@@ -1,0 +1,264 @@
+
+
+================================================================
+== Vivado HLS Report for 'myFuncAccel'
+================================================================
+* Date:           Fri Nov 22 03:13:04 2019
+
+* Version:        2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)
+* Project:        algHLS
+* Solution:       Optimazation_5
+* Product family: zynq
+* Target device:  xc7z020clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|     8.750|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +------+------+------+------+----------+
+    |   Latency   |   Interval  | Pipeline |
+    |  min |  max |  min |  max |   Type   |
+    +------+------+------+------+----------+
+    |  4055|  4055|  4038|  4038| dataflow |
+    +------+------+------+------+----------+
+
+    + Detail: 
+        * Instance: 
+        +-------------------------+----------------------+------+------+------+------+---------+
+        |                         |                      |   Latency   |   Interval  | Pipeline|
+        |         Instance        |        Module        |  min |  max |  min |  max |   Type  |
+        +-------------------------+----------------------+------+------+------+------+---------+
+        |Loop_sizeLoop_proc_U0    |Loop_sizeLoop_proc    |  4037|  4037|  4037|  4037|   none  |
+        |Block_codeRepl50_pro_U0  |Block_codeRepl50_pro  |    17|    17|    17|    17|   none  |
+        +-------------------------+----------------------+------+------+------+------+---------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+-------+
+|       Name      | BRAM_18K| DSP48E|   FF   |  LUT  |
++-----------------+---------+-------+--------+-------+
+|DSP              |        -|      -|       -|      -|
+|Expression       |        -|      -|       0|     98|
+|FIFO             |        0|      -|      80|    704|
+|Instance         |        0|     23|    4985|   4984|
+|Memory           |        -|      -|       -|      -|
+|Multiplexer      |        -|      -|       -|    180|
+|Register         |        -|      -|      22|      -|
++-----------------+---------+-------+--------+-------+
+|Total            |        0|     23|    5087|   5966|
++-----------------+---------+-------+--------+-------+
+|Available        |      280|    220|  106400|  53200|
++-----------------+---------+-------+--------+-------+
+|Utilization (%)  |        0|     10|       4|     11|
++-----------------+---------+-------+--------+-------+
+
++ Detail: 
+    * Instance: 
+    +-------------------------+----------------------+---------+-------+------+------+
+    |         Instance        |        Module        | BRAM_18K| DSP48E|  FF  |  LUT |
+    +-------------------------+----------------------+---------+-------+------+------+
+    |Block_codeRepl50_pro_U0  |Block_codeRepl50_pro  |        0|      0|  1011|   248|
+    |Loop_sizeLoop_proc_U0    |Loop_sizeLoop_proc    |        0|     23|  3974|  4736|
+    +-------------------------+----------------------+---------+-------+------+------+
+    |Total                    |                      |        0|     23|  4985|  4984|
+    +-------------------------+----------------------+---------+-------+------+------+
+
+    * DSP48: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    +------------------------+---------+---+----+------+-----+---------+
+    |          Name          | BRAM_18K| FF| LUT| Depth| Bits| Size:D*B|
+    +------------------------+---------+---+----+------+-----+---------+
+    |data0_load_10_loc_ch_U  |        0|  5|  44|     2|   32|       64|
+    |data0_load_11_loc_ch_U  |        0|  5|  44|     2|   32|       64|
+    |data0_load_12_loc_ch_U  |        0|  5|  44|     2|   32|       64|
+    |data0_load_13_loc_ch_U  |        0|  5|  44|     2|   32|       64|
+    |data0_load_14_loc_ch_U  |        0|  5|  44|     2|   32|       64|
+    |data0_load_15_loc_ch_U  |        0|  5|  44|     2|   32|       64|
+    |data0_load_1_loc_cha_U  |        0|  5|  44|     2|   32|       64|
+    |data0_load_2_loc_cha_U  |        0|  5|  44|     2|   32|       64|
+    |data0_load_3_loc_cha_U  |        0|  5|  44|     2|   32|       64|
+    |data0_load_4_loc_cha_U  |        0|  5|  44|     2|   32|       64|
+    |data0_load_5_loc_cha_U  |        0|  5|  44|     2|   32|       64|
+    |data0_load_6_loc_cha_U  |        0|  5|  44|     2|   32|       64|
+    |data0_load_7_loc_cha_U  |        0|  5|  44|     2|   32|       64|
+    |data0_load_8_loc_cha_U  |        0|  5|  44|     2|   32|       64|
+    |data0_load_9_loc_cha_U  |        0|  5|  44|     2|   32|       64|
+    |data0_load_loc_chann_U  |        0|  5|  44|     2|   32|       64|
+    +------------------------+---------+---+----+------+-----+---------+
+    |Total                   |        0| 80| 704|    32|  512|     1024|
+    +------------------------+---------+---+----+------+-----+---------+
+
+    * Expression: 
+    +--------------------------------------------+----------+-------+---+----+------------+------------+
+    |                Variable Name               | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +--------------------------------------------+----------+-------+---+----+------------+------------+
+    |Block_codeRepl50_pro_U0_ap_ready_count      |     +    |      0|  0|  10|           2|           1|
+    |Loop_sizeLoop_proc_U0_ap_ready_count        |     +    |      0|  0|  10|           2|           1|
+    |Block_codeRepl50_pro_U0_ap_continue         |    and   |      0|  0|   2|           1|           1|
+    |Block_codeRepl50_pro_U0_ap_start            |    and   |      0|  0|   2|           1|           1|
+    |Loop_sizeLoop_proc_U0_ap_start              |    and   |      0|  0|   2|           1|           1|
+    |ap_channel_done_data0_load_10_loc_ch        |    and   |      0|  0|   2|           1|           1|
+    |ap_channel_done_data0_load_11_loc_ch        |    and   |      0|  0|   2|           1|           1|
+    |ap_channel_done_data0_load_12_loc_ch        |    and   |      0|  0|   2|           1|           1|
+    |ap_channel_done_data0_load_13_loc_ch        |    and   |      0|  0|   2|           1|           1|
+    |ap_channel_done_data0_load_14_loc_ch        |    and   |      0|  0|   2|           1|           1|
+    |ap_channel_done_data0_load_15_loc_ch        |    and   |      0|  0|   2|           1|           1|
+    |ap_channel_done_data0_load_1_loc_cha        |    and   |      0|  0|   2|           1|           1|
+    |ap_channel_done_data0_load_2_loc_cha        |    and   |      0|  0|   2|           1|           1|
+    |ap_channel_done_data0_load_3_loc_cha        |    and   |      0|  0|   2|           1|           1|
+    |ap_channel_done_data0_load_4_loc_cha        |    and   |      0|  0|   2|           1|           1|
+    |ap_channel_done_data0_load_5_loc_cha        |    and   |      0|  0|   2|           1|           1|
+    |ap_channel_done_data0_load_6_loc_cha        |    and   |      0|  0|   2|           1|           1|
+    |ap_channel_done_data0_load_7_loc_cha        |    and   |      0|  0|   2|           1|           1|
+    |ap_channel_done_data0_load_8_loc_cha        |    and   |      0|  0|   2|           1|           1|
+    |ap_channel_done_data0_load_9_loc_cha        |    and   |      0|  0|   2|           1|           1|
+    |ap_channel_done_data0_load_loc_chann        |    and   |      0|  0|   2|           1|           1|
+    |ap_idle                                     |    and   |      0|  0|   2|           1|           1|
+    |ap_sync_ready                               |    and   |      0|  0|   2|           1|           1|
+    |ap_sync_Block_codeRepl50_pro_U0_ap_ready    |    or    |      0|  0|   2|           1|           1|
+    |ap_sync_Loop_sizeLoop_proc_U0_ap_ready      |    or    |      0|  0|   2|           1|           1|
+    |ap_sync_channel_write_data0_load_10_loc_ch  |    or    |      0|  0|   2|           1|           1|
+    |ap_sync_channel_write_data0_load_11_loc_ch  |    or    |      0|  0|   2|           1|           1|
+    |ap_sync_channel_write_data0_load_12_loc_ch  |    or    |      0|  0|   2|           1|           1|
+    |ap_sync_channel_write_data0_load_13_loc_ch  |    or    |      0|  0|   2|           1|           1|
+    |ap_sync_channel_write_data0_load_14_loc_ch  |    or    |      0|  0|   2|           1|           1|
+    |ap_sync_channel_write_data0_load_15_loc_ch  |    or    |      0|  0|   2|           1|           1|
+    |ap_sync_channel_write_data0_load_1_loc_cha  |    or    |      0|  0|   2|           1|           1|
+    |ap_sync_channel_write_data0_load_2_loc_cha  |    or    |      0|  0|   2|           1|           1|
+    |ap_sync_channel_write_data0_load_3_loc_cha  |    or    |      0|  0|   2|           1|           1|
+    |ap_sync_channel_write_data0_load_4_loc_cha  |    or    |      0|  0|   2|           1|           1|
+    |ap_sync_channel_write_data0_load_5_loc_cha  |    or    |      0|  0|   2|           1|           1|
+    |ap_sync_channel_write_data0_load_6_loc_cha  |    or    |      0|  0|   2|           1|           1|
+    |ap_sync_channel_write_data0_load_7_loc_cha  |    or    |      0|  0|   2|           1|           1|
+    |ap_sync_channel_write_data0_load_8_loc_cha  |    or    |      0|  0|   2|           1|           1|
+    |ap_sync_channel_write_data0_load_9_loc_cha  |    or    |      0|  0|   2|           1|           1|
+    |ap_sync_channel_write_data0_load_loc_chann  |    or    |      0|  0|   2|           1|           1|
+    +--------------------------------------------+----------+-------+---+----+------------+------------+
+    |Total                                       |          |      0|  0|  98|          43|          41|
+    +--------------------------------------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    +------------------------------------------------+----+-----------+-----+-----------+
+    |                      Name                      | LUT| Input Size| Bits| Total Bits|
+    +------------------------------------------------+----+-----------+-----+-----------+
+    |Block_codeRepl50_pro_U0_ap_ready_count          |   9|          2|    2|          4|
+    |Loop_sizeLoop_proc_U0_ap_ready_count            |   9|          2|    2|          4|
+    |ap_sync_reg_Block_codeRepl50_pro_U0_ap_ready    |   9|          2|    1|          2|
+    |ap_sync_reg_Loop_sizeLoop_proc_U0_ap_ready      |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_data0_load_10_loc_ch  |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_data0_load_11_loc_ch  |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_data0_load_12_loc_ch  |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_data0_load_13_loc_ch  |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_data0_load_14_loc_ch  |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_data0_load_15_loc_ch  |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_data0_load_1_loc_cha  |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_data0_load_2_loc_cha  |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_data0_load_3_loc_cha  |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_data0_load_4_loc_cha  |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_data0_load_5_loc_cha  |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_data0_load_6_loc_cha  |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_data0_load_7_loc_cha  |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_data0_load_8_loc_cha  |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_data0_load_9_loc_cha  |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_data0_load_loc_chann  |   9|          2|    1|          2|
+    +------------------------------------------------+----+-----------+-----+-----------+
+    |Total                                           | 180|         40|   22|         44|
+    +------------------------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +------------------------------------------------+---+----+-----+-----------+
+    |                      Name                      | FF| LUT| Bits| Const Bits|
+    +------------------------------------------------+---+----+-----+-----------+
+    |Block_codeRepl50_pro_U0_ap_ready_count          |  2|   0|    2|          0|
+    |Loop_sizeLoop_proc_U0_ap_ready_count            |  2|   0|    2|          0|
+    |ap_sync_reg_Block_codeRepl50_pro_U0_ap_ready    |  1|   0|    1|          0|
+    |ap_sync_reg_Loop_sizeLoop_proc_U0_ap_ready      |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_data0_load_10_loc_ch  |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_data0_load_11_loc_ch  |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_data0_load_12_loc_ch  |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_data0_load_13_loc_ch  |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_data0_load_14_loc_ch  |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_data0_load_15_loc_ch  |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_data0_load_1_loc_cha  |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_data0_load_2_loc_cha  |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_data0_load_3_loc_cha  |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_data0_load_4_loc_cha  |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_data0_load_5_loc_cha  |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_data0_load_6_loc_cha  |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_data0_load_7_loc_cha  |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_data0_load_8_loc_cha  |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_data0_load_9_loc_cha  |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_data0_load_loc_chann  |  1|   0|    1|          0|
+    +------------------------------------------------+---+----+-----+-----------+
+    |Total                                           | 22|   0|   22|          0|
+    +------------------------------------------------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-------------------+-----+-----+------------+--------------+--------------+
+|     RTL Ports     | Dir | Bits|  Protocol  | Source Object|    C Type    |
++-------------------+-----+-----+------------+--------------+--------------+
+|size               |  in |   32|   ap_none  |     size     |    scalar    |
+|dim                |  in |   32|   ap_none  |      dim     |    scalar    |
+|threshold          |  in |   32|   ap_none  |   threshold  |    scalar    |
+|ap_clk             |  in |    1| ap_ctrl_hs |  myFuncAccel | return value |
+|ap_rst             |  in |    1| ap_ctrl_hs |  myFuncAccel | return value |
+|ap_start           |  in |    1| ap_ctrl_hs |  myFuncAccel | return value |
+|ap_done            | out |    1| ap_ctrl_hs |  myFuncAccel | return value |
+|ap_ready           | out |    1| ap_ctrl_hs |  myFuncAccel | return value |
+|ap_idle            | out |    1| ap_ctrl_hs |  myFuncAccel | return value |
+|data0_req_din      | out |    1|   ap_bus   |     data0    |    pointer   |
+|data0_req_full_n   |  in |    1|   ap_bus   |     data0    |    pointer   |
+|data0_req_write    | out |    1|   ap_bus   |     data0    |    pointer   |
+|data0_rsp_empty_n  |  in |    1|   ap_bus   |     data0    |    pointer   |
+|data0_rsp_read     | out |    1|   ap_bus   |     data0    |    pointer   |
+|data0_address      | out |   32|   ap_bus   |     data0    |    pointer   |
+|data0_datain       |  in |   32|   ap_bus   |     data0    |    pointer   |
+|data0_dataout      | out |   32|   ap_bus   |     data0    |    pointer   |
+|data0_size         | out |   32|   ap_bus   |     data0    |    pointer   |
+|data1_req_din      | out |    1|   ap_bus   |     data1    |    pointer   |
+|data1_req_full_n   |  in |    1|   ap_bus   |     data1    |    pointer   |
+|data1_req_write    | out |    1|   ap_bus   |     data1    |    pointer   |
+|data1_rsp_empty_n  |  in |    1|   ap_bus   |     data1    |    pointer   |
+|data1_rsp_read     | out |    1|   ap_bus   |     data1    |    pointer   |
+|data1_address      | out |   32|   ap_bus   |     data1    |    pointer   |
+|data1_datain       |  in |   32|   ap_bus   |     data1    |    pointer   |
+|data1_dataout      | out |   32|   ap_bus   |     data1    |    pointer   |
+|data1_size         | out |   32|   ap_bus   |     data1    |    pointer   |
+|data2_req_din      | out |    1|   ap_bus   |     data2    |    pointer   |
+|data2_req_full_n   |  in |    1|   ap_bus   |     data2    |    pointer   |
+|data2_req_write    | out |    1|   ap_bus   |     data2    |    pointer   |
+|data2_rsp_empty_n  |  in |    1|   ap_bus   |     data2    |    pointer   |
+|data2_rsp_read     | out |    1|   ap_bus   |     data2    |    pointer   |
+|data2_address      | out |   32|   ap_bus   |     data2    |    pointer   |
+|data2_datain       |  in |   32|   ap_bus   |     data2    |    pointer   |
+|data2_dataout      | out |   32|   ap_bus   |     data2    |    pointer   |
+|data2_size         | out |   32|   ap_bus   |     data2    |    pointer   |
++-------------------+-----+-----+------------+--------------+--------------+
+

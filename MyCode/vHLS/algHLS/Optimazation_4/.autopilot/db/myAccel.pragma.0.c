@@ -2215,7 +2215,7 @@ void myFuncAccel (unsigned int size, unsigned int dim, dataType_t threshold, dat
 #pragma HLS INTERFACE ap_bus depth=4000 port=&data1
 #pragma HLS INTERFACE ap_bus depth=4000 port=&data2
 
- unsigned int z, i, k, l,r;
+ unsigned int i, k, l,r;
  size = 1000;
  dim = 4;
  threshold = 100;
@@ -2224,12 +2224,14 @@ void myFuncAccel (unsigned int size, unsigned int dim, dataType_t threshold, dat
  float tempArrData1[dim];
  float tempArrData2[dim];
 
-copyLoop: for ( z = 0 ; z < dim ; z++){
+
+
+copyLoop: for ( i = 0 ; i < dim ; i++){
 #pragma HLS unroll factor=4
- cache[z*dim] = data0[z*dim];
-    cache[z*dim+1] = data0[z*dim+1];
-    cache[z*dim+2] = data0[z*dim+2];
-    cache[z*dim+3] = data0[z*dim+3];
+ cache[i*dim] = data0[i*dim];
+    cache[i*dim+1] = data0[i*dim+1];
+    cache[i*dim+2] = data0[i*dim+2];
+    cache[i*dim+3] = data0[i*dim+3];
 
    }
 sizeLoop:

@@ -14,5 +14,5 @@ create_clock -period 10 -name default
 #source "./algHLS/Optimazation_4/directives.tcl"
 csim_design -argv {1000 1000 4 100} -clean
 csynth_design
-cosim_design -argv {1000 1000 16 100}
+cosim_design -argv {1000 1000 4 100}
 export_design -format ip_catalog

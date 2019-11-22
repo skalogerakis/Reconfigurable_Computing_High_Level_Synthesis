@@ -864,10 +864,10 @@
 
 <Node id="36" bw="10" op_0_bw="10" op_1_bw="0">
 <![CDATA[
-.preheader7:0  %i = phi i10 [ %i_1, %.preheader6.preheader ], [ 0, %.preheader7.preheader ]
+.preheader7:0  %i_1 = phi i10 [ %i, %.preheader6.preheader ], [ 0, %.preheader7.preheader ]
 
 ]]></Node>
-<StgValue><ssdm name="i"/></StgValue>
+<StgValue><ssdm name="i_1"/></StgValue>
 </operation>
 
 <operation id="90" st_id="19" stage="1" lat="1">
@@ -879,7 +879,7 @@
 
 <Node id="37" bw="1" op_0_bw="10" op_1_bw="10">
 <![CDATA[
-.preheader7:1  %tmp_s = icmp eq i10 %i, -24
+.preheader7:1  %tmp_s = icmp eq i10 %i_1, -24
 
 ]]></Node>
 <StgValue><ssdm name="tmp_s"/></StgValue>
@@ -909,10 +909,10 @@
 
 <Node id="39" bw="10" op_0_bw="10" op_1_bw="10">
 <![CDATA[
-.preheader7:3  %i_1 = add i10 %i, 1
+.preheader7:3  %i = add i10 %i_1, 1
 
 ]]></Node>
-<StgValue><ssdm name="i_1"/></StgValue>
+<StgValue><ssdm name="i"/></StgValue>
 </operation>
 
 <operation id="93" st_id="19" stage="1" lat="1">
@@ -940,7 +940,7 @@
 
 <Node id="45" bw="12" op_0_bw="12" op_1_bw="10" op_2_bw="2">
 <![CDATA[
-.preheader6.preheader:3  %tmp_1 = call i12 @_ssdm_op_BitConcatenate.i12.i10.i2(i10 %i, i2 0)
+.preheader6.preheader:3  %tmp_1 = call i12 @_ssdm_op_BitConcatenate.i12.i10.i2(i10 %i_1, i2 0)
 
 ]]></Node>
 <StgValue><ssdm name="tmp_1"/></StgValue>
