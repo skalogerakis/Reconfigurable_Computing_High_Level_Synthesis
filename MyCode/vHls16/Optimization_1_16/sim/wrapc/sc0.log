@@ -1,0 +1,26 @@
+   Build using "/tools/Xilinx/Vivado/2018.3/tps/lnx64/gcc-6.2.0/bin/g++"
+   Compiling apatb_myFuncAccel.cpp
+   Compiling (apcc) myAccel16.c_pre.c.tb.c
+INFO: [HLS 200-10] Running '/tools/Xilinx/Vivado/2018.3/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'root' on host 'skl' (Linux_x86_64 version 5.0.0-36-generic) on Sat Nov 23 03:38:11 EET 2019
+INFO: [HLS 200-10] On os Ubuntu 18.04.3 LTS
+INFO: [HLS 200-10] In directory '/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/vHls16/Optimization_1_16/sim/wrapc'
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_root/58831574473091190808
+INFO: [APCC 202-1] APCC is done.
+   Compiling (apcc) main.c_pre.c.tb.c
+INFO: [HLS 200-10] Running '/tools/Xilinx/Vivado/2018.3/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'root' on host 'skl' (Linux_x86_64 version 5.0.0-36-generic) on Sat Nov 23 03:38:16 EET 2019
+INFO: [HLS 200-10] On os Ubuntu 18.04.3 LTS
+INFO: [HLS 200-10] In directory '/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/vHls16/Optimization_1_16/sim/wrapc'
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+In file included from /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/main.c:1:
+/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/main.c:72:63: warning: comparison of unsigned expression >= 0 is always true [-Wtautological-compare]
+ ((void) sizeof ((seed>=0) ? 1 : 0), __extension__ ({ if (seed>=0) ; else __assert_fail ("seed>=0", "/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/main.c", 72, __extension__ __PRETTY_FUNCTION__); }));
+                                                          ~~~~^ ~
+1 warning generated.
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_root/60381574473096121749
+INFO: [APCC 202-1] APCC is done.
+   Generating cosim.tv.exe

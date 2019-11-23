@@ -37,16 +37,6 @@
 			<location>/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/vHLS/algHLS/.apc/.tb</location>
 		</link>
 		<link>
-			<name>.reference/ap_cint.h</name>
-			<type>1</type>
-			<location>/tools/Xilinx/Vivado/2018.3/include/ap_cint.h</location>
-		</link>
-		<link>
-			<name>.reference/ap_int.h</name>
-			<type>1</type>
-			<location>/tools/Xilinx/Vivado/2018.3/include/ap_int.h</location>
-		</link>
-		<link>
 			<name>InitCode/constraints</name>
 			<type>2</type>
 			<location>/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/vHLS/algHLS/InitCode/.tcls</location>

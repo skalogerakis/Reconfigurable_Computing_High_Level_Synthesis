@@ -1,6 +1,6 @@
 INFO: [HLS 200-10] Running '/tools/Xilinx/Vivado/2018.3/bin/unwrapped/lnx64.o/apcc'
-INFO: [HLS 200-10] For user 'root' on host 'skl' (Linux_x86_64 version 5.0.0-36-generic) on Fri Nov 22 03:13:45 EET 2019
+INFO: [HLS 200-10] For user 'root' on host 'skl' (Linux_x86_64 version 5.0.0-36-generic) on Sat Nov 23 03:20:04 EET 2019
 INFO: [HLS 200-10] On os Ubuntu 18.04.3 LTS
 INFO: [HLS 200-10] In directory '/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/vHLS/algHLS/Optimazation_5/csim/build'
-INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_root/247271574385225967690
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_root/36261574472004641841
 INFO: [APCC 202-1] APCC is done.

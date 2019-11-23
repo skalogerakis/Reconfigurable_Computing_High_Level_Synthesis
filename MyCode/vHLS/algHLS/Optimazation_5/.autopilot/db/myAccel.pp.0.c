@@ -6360,7 +6360,7 @@ typedef float dataType_t;
 void myFunc (unsigned int size, unsigned int dim, dataType_t threshold, dataType_t * data0, dataType_t * data1, dataType_t * data2);
 void myFuncAccel (unsigned int size, unsigned int dim, dataType_t threshold, dataType_t * data0, dataType_t * data1, dataType_t * data2);
 # 3 "../myAccel.c" 2
-# 19 "../myAccel.c"
+# 15 "../myAccel.c"
 void myFuncAccel (unsigned int size, unsigned int dim, dataType_t threshold, dataType_t * data0, dataType_t * data1, dataType_t * data2)
 {
 
@@ -6368,7 +6368,7 @@ void myFuncAccel (unsigned int size, unsigned int dim, dataType_t threshold, dat
 #pragma HLS INTERFACE ap_bus depth=4000 port=&data1
 #pragma HLS INTERFACE ap_bus depth=4000 port=&data2
 
-#pragma HLS dataflow
+
 
 
 
@@ -6387,7 +6387,7 @@ void myFuncAccel (unsigned int size, unsigned int dim, dataType_t threshold, dat
 
 
 
-
+#pragma HLS dataflow
 
 copyLoop: for ( i = 0 ; i < dim ; i++){
 
@@ -6401,9 +6401,11 @@ copyLoop: for ( i = 0 ; i < dim ; i++){
    }
 
 sizeLoop:
+
   for ( i = 0 ; i < size ; i ++ )
   {
 #pragma HLS pipeline II=4
+
 
 initLoop: for ( k = 0 ; k < dim ; k ++ )
    {
@@ -6441,6 +6443,7 @@ valueAsn: for ( k = 0 ; k < dim ; k ++ )
 
 zeroAsn: for ( l = 0 ;l < dim ; l ++ )
    {
+
     tempArrData2[l] *= r;
     if(l == dim - 1){
      for ( k = 0 ;k < dim ; k ++ )

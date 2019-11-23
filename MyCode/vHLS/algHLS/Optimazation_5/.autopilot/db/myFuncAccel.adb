@@ -821,7 +821,7 @@
               <name/>
               <fileName>../myAccel.c</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>110</lineNumber>
+              <lineNumber>109</lineNumber>
               <contextFuncName>myFuncAccel</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -836,7 +836,7 @@
                         <first>../myAccel.c</first>
                         <second>myFuncAccel</second>
                       </first>
-                      <second>110</second>
+                      <second>109</second>
                     </item>
                   </second>
                 </item>

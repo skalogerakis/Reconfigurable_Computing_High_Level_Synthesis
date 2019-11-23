@@ -6360,7 +6360,7 @@ typedef float dataType_t;
 void myFunc (unsigned int size, unsigned int dim, dataType_t threshold, dataType_t * data0, dataType_t * data1, dataType_t * data2);
 void myFuncAccel (unsigned int size, unsigned int dim, dataType_t threshold, dataType_t * data0, dataType_t * data1, dataType_t * data2);
 # 3 "../myAccel.c" 2
-# 19 "../myAccel.c"
+# 15 "../myAccel.c"
 void myFuncAccel (unsigned int size, unsigned int dim, dataType_t threshold, dataType_t * data0, dataType_t * data1, dataType_t * data2)
 {
 
@@ -6368,7 +6368,7 @@ _ssdm_op_SpecInterface(data0, "ap_bus", 0, 0, "", 0, 16, "", "", "", 0, 0, 0, 0,
 _ssdm_op_SpecInterface(data1, "ap_bus", 0, 0, "", 0, 4000, "", "", "", 0, 0, 0, 0, "", "");
 _ssdm_op_SpecInterface(data2, "ap_bus", 0, 0, "", 0, 4000, "", "", "", 0, 0, 0, 0, "", "");
 
-_ssdm_op_SpecDataflowPipeline(-1, 0, "");
+
 
 
 
@@ -6387,7 +6387,7 @@ _ssdm_op_SpecDataflowPipeline(-1, 0, "");
 
 
 
-
+_ssdm_op_SpecDataflowPipeline(-1, 0, "");
 
 copyLoop: for ( i = 0 ; i < dim ; i++){
 
@@ -6401,9 +6401,11 @@ _ssdm_Unroll(1, 4, 4, "");
    }
 
 sizeLoop:
+
   for ( i = 0 ; i < size ; i ++ )
   {
 _ssdm_op_SpecPipeline(4, 1, 1, 0, "");
+
 
 initLoop: for ( k = 0 ; k < dim ; k ++ )
    {
@@ -6441,6 +6443,7 @@ valueAsn: for ( k = 0 ; k < dim ; k ++ )
 
 zeroAsn: for ( l = 0 ;l < dim ; l ++ )
    {
+
     tempArrData2[l] *= r;
     if(l == dim - 1){
      for ( k = 0 ;k < dim ; k ++ )

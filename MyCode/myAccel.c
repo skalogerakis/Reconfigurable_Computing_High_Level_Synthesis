@@ -1,11 +1,6 @@
 
 #include "myLib.h"
 
-/*
- *Two different functions with different implementations. Create different files for both accelerators and
- *created different metrics to test them at the same time. The final accelerator that will be decided after using HLS
- *and see the performance trade-offs in each case.
- */
 
 /*
  * InitCode Solution: Our initial code without core changes
@@ -14,6 +9,7 @@
  * Optimization 3 Solution: Single cache solution hardcoded. Fewer resources
  * Optimization 4 Solution: Single cache solution for-loop implementation. More resources, easier to generalize
  * Optimization 5 Solution: Start playing with bit-width. Arbitrary types used. Still cannot see performance improvement.Return on previous version. C does not support fixed point values??
+ * Milestone 2 Sent: Added a few extra buffers between memory reads and writes. Every step until Optimization 4 was implemented. Optimization 5 made matters worse(Code is in comments)
  */
 
 void myFuncAccel (unsigned int size, unsigned int dim, dataType_t threshold, dataType_t * data0, dataType_t * data1, dataType_t * data2)
@@ -56,9 +52,11 @@ copyLoop: for ( i = 0 ; i < dim ; i++){
 			}
 
 sizeLoop:
+
 		for ( i = 0 ; i < size ; i ++ )
 		{
 #pragma HLS pipeline II=4
+
 
 initLoop:	for ( k = 0 ; k < dim ; k ++ )
 			{
@@ -81,7 +79,7 @@ valueAsn:	for ( k = 0 ; k < dim ; k ++ )
 					tempVal =(cache[k*dim+l]*tempArrData1[l]);
 					tempArrData2[k]+=tempVal;
 				}
-
+//				Hardcoded version demands fewer resources but we approached the problem as above
 //				tempArrData2[k]=(cache[k*dim]*tempArrData1[0])+
 //												(cache[k*dim+1]*tempArrData1[1])+
 //												(cache[k*dim+2]*tempArrData1[2])+
@@ -96,6 +94,7 @@ valueAsn:	for ( k = 0 ; k < dim ; k ++ )
 
 zeroAsn:	for ( l = 0 ;l < dim ; l ++ )
 			{
+				//Clever way to get rid of existing if statement.With a flag and a product
 				tempArrData2[l] *= r;
 				if(l == dim - 1){
 					for ( k = 0 ;k < dim ; k ++ )

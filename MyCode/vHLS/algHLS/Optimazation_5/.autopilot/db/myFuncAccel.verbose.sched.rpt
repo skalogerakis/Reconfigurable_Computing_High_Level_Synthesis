@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'myFuncAccel'
 ================================================================
-* Date:           Fri Nov 22 03:13:03 2019
+* Date:           Sat Nov 23 03:20:27 2019
 
 * Version:        2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)
 * Project:        algHLS
@@ -103,7 +103,7 @@ ST_2 : Operation 21 [1/1] (0.00ns)   --->   "%data0_load_15_loc_ch = extractvalu
 ST_2 : Operation 22 [2/2] (0.00ns)   --->   "call fastcc void @Loop_sizeLoop_proc(float* %data1, float %data0_load_loc_chann, float %data0_load_1_loc_cha, float %data0_load_2_loc_cha, float %data0_load_3_loc_cha, float %data0_load_4_loc_cha, float %data0_load_5_loc_cha, float %data0_load_6_loc_cha, float %data0_load_7_loc_cha, float %data0_load_8_loc_cha, float %data0_load_9_loc_cha, float %data0_load_10_loc_ch, float %data0_load_11_loc_ch, float %data0_load_12_loc_ch, float %data0_load_13_loc_ch, float %data0_load_14_loc_ch, float %data0_load_15_loc_ch, float* %data2) nounwind"   --->   Operation 22 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
 State 3 <SV = 2> <Delay = 0.00>
-ST_3 : Operation 23 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecDataflowPipeline(i32 -1, i32 0, [1 x i8]* @p_str1) nounwind" [../myAccel.c:26]   --->   Operation 23 'specdataflowpipeline' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 23 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecDataflowPipeline(i32 -1, i32 0, [1 x i8]* @p_str1) nounwind" [../myAccel.c:41]   --->   Operation 23 'specdataflowpipeline' <Predicate = true> <Delay = 0.00>
 ST_3 : Operation 24 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32 %size) nounwind, !map !7"   --->   Operation 24 'specbitsmap' <Predicate = true> <Delay = 0.00>
 ST_3 : Operation 25 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32 %dim) nounwind, !map !13"   --->   Operation 25 'specbitsmap' <Predicate = true> <Delay = 0.00>
 ST_3 : Operation 26 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(float %threshold) nounwind, !map !17"   --->   Operation 26 'specbitsmap' <Predicate = true> <Delay = 0.00>
@@ -111,11 +111,11 @@ ST_3 : Operation 27 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBits
 ST_3 : Operation 28 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(float* %data1) nounwind, !map !27"   --->   Operation 28 'specbitsmap' <Predicate = true> <Delay = 0.00>
 ST_3 : Operation 29 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(float* %data2) nounwind, !map !33"   --->   Operation 29 'specbitsmap' <Predicate = true> <Delay = 0.00>
 ST_3 : Operation 30 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecTopModule([12 x i8]* @myFuncAccel_str) nounwind"   --->   Operation 30 'spectopmodule' <Predicate = true> <Delay = 0.00>
-ST_3 : Operation 31 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* %data0, [7 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 16, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [../myAccel.c:22]   --->   Operation 31 'specinterface' <Predicate = true> <Delay = 0.00>
-ST_3 : Operation 32 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* %data1, [7 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 4000, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [../myAccel.c:23]   --->   Operation 32 'specinterface' <Predicate = true> <Delay = 0.00>
-ST_3 : Operation 33 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* %data2, [7 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 4000, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [../myAccel.c:24]   --->   Operation 33 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 31 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* %data0, [7 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 16, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [../myAccel.c:18]   --->   Operation 31 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 32 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* %data1, [7 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 4000, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [../myAccel.c:19]   --->   Operation 32 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 33 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* %data2, [7 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 4000, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [../myAccel.c:20]   --->   Operation 33 'specinterface' <Predicate = true> <Delay = 0.00>
 ST_3 : Operation 34 [1/2] (0.00ns)   --->   "call fastcc void @Loop_sizeLoop_proc(float* %data1, float %data0_load_loc_chann, float %data0_load_1_loc_cha, float %data0_load_2_loc_cha, float %data0_load_3_loc_cha, float %data0_load_4_loc_cha, float %data0_load_5_loc_cha, float %data0_load_6_loc_cha, float %data0_load_7_loc_cha, float %data0_load_8_loc_cha, float %data0_load_9_loc_cha, float %data0_load_10_loc_ch, float %data0_load_11_loc_ch, float %data0_load_12_loc_ch, float %data0_load_13_loc_ch, float %data0_load_14_loc_ch, float %data0_load_15_loc_ch, float* %data2) nounwind"   --->   Operation 34 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
-ST_3 : Operation 35 [1/1] (0.00ns)   --->   "ret void" [../myAccel.c:110]   --->   Operation 35 'ret' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 35 [1/1] (0.00ns)   --->   "ret void" [../myAccel.c:109]   --->   Operation 35 'ret' <Predicate = true> <Delay = 0.00>
 
 
 ============================================================
