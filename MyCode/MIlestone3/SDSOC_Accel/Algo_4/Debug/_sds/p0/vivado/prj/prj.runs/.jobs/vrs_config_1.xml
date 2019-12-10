@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="zed_ps7_0_synth_1" LaunchDir="/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/zed_ps7_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="zed_auto_pc_3_synth_1" LaunchDir="/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/zed_auto_pc_3_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="zed_s00_data_fifo_3_synth_1" LaunchDir="/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/zed_s00_data_fifo_3_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="zed_auto_pc_2_synth_1" LaunchDir="/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/zed_auto_pc_2_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="zed_s00_data_fifo_2_synth_1" LaunchDir="/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/zed_s00_data_fifo_2_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="zed_s00_data_fifo_1_synth_1" LaunchDir="/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/zed_s00_data_fifo_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="zed_s00_data_fifo_2_synth_1"/>
+	</Run>
+	<Run Id="zed_auto_pc_1_synth_1" LaunchDir="/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/zed_auto_pc_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="zed_auto_pc_2_synth_1"/>
+	</Run>
+	<Run Id="zed_myFuncAccel_1_0_synth_1" LaunchDir="/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/zed_myFuncAccel_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="zed_ps7_0_synth_1"/>
+		<Parent Id="zed_auto_pc_3_synth_1"/>
+		<Parent Id="zed_s00_data_fifo_3_synth_1"/>
+		<Parent Id="zed_auto_pc_2_synth_1"/>
+		<Parent Id="zed_s00_data_fifo_2_synth_1"/>
+		<Parent Id="zed_s00_data_fifo_1_synth_1"/>
+		<Parent Id="zed_auto_pc_1_synth_1"/>
+		<Parent Id="zed_myFuncAccel_1_0_synth_1"/>
+	</Run>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+

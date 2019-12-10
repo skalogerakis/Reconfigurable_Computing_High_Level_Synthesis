@@ -1,0 +1,229 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'myFuncAccel'" level="0">
+<item name = "Date">Wed Dec 11 00:55:34 2019
+</item>
+<item name = "Version">2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)</item>
+<item name = "Project">myFuncAccel</item>
+<item name = "Solution">solution</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z020clg484-1</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing (ns)">
+<section name = "" level="1">
+<item name = "Target clock period (ns)">10.00</item>
+<item name = "Clock uncertainty (ns)">2.70</item>
+<item name = "Estimated clock period (ns)">7.256</item>
+</section>
+</item>
+<item name = "Latency (clock cycles)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">, min, max, min, max, Type</keys>
+<column name="">?, ?, ?, ?, dataflow</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="7">Instance, Module, min, max, min, max, Type</keys>
+<column name="Loop_sizeLoop_proc_U0">Loop_sizeLoop_proc, ?, ?, ?, ?, none</column>
+<column name="Block_codeRepl49_pro_U0">Block_codeRepl49_pro, 15, 15, 15, 15, none</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="5">Name, BRAM_18K, DSP48E, FF, LUT</keys>
+<column name="DSP">-, -, -, -</column>
+<column name="Expression">-, -, 0, 98</column>
+<column name="FIFO">0, -, 90, 792</column>
+<column name="Instance">0, 23, 5109, 5108</column>
+<column name="Memory">-, -, -, -</column>
+<column name="Multiplexer">-, -, -, 180</column>
+<column name="Register">-, -, 22, -</column>
+<specialColumn name="Available">280, 220, 106400, 53200</specialColumn>
+<specialColumn name="Utilization (%)">0, 10, 4, 11</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="6">Instance, Module, BRAM_18K, DSP48E, FF, LUT</keys>
+<column name="Block_codeRepl49_pro_U0">Block_codeRepl49_pro, 0, 0, 1009, 269</column>
+<column name="Loop_sizeLoop_proc_U0">Loop_sizeLoop_proc, 0, 23, 4100, 4839</column>
+</table>
+</item>
+<item name = "DSP48"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="9">Memory, Module, BRAM_18K, FF, LUT, Words, Bits, Banks, W*Bits*Banks</keys>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="7">Name, BRAM_18K, FF, LUT, Depth, Bits, Size:D*B</keys>
+<column name="data0_load_10_loc_ch_U">0, 5, 44, 2, 32, 64</column>
+<column name="data0_load_11_loc_ch_U">0, 5, 44, 2, 32, 64</column>
+<column name="data0_load_12_loc_ch_U">0, 5, 44, 2, 32, 64</column>
+<column name="data0_load_13_loc_ch_U">0, 5, 44, 2, 32, 64</column>
+<column name="data0_load_14_loc_ch_U">0, 5, 44, 2, 32, 64</column>
+<column name="data0_load_15_loc_ch_U">0, 5, 44, 2, 32, 64</column>
+<column name="data0_load_1_loc_cha_U">0, 5, 44, 2, 32, 64</column>
+<column name="data0_load_2_loc_cha_U">0, 5, 44, 2, 32, 64</column>
+<column name="data0_load_3_loc_cha_U">0, 5, 44, 2, 32, 64</column>
+<column name="data0_load_4_loc_cha_U">0, 5, 44, 2, 32, 64</column>
+<column name="data0_load_5_loc_cha_U">0, 5, 44, 2, 32, 64</column>
+<column name="data0_load_6_loc_cha_U">0, 5, 44, 2, 32, 64</column>
+<column name="data0_load_7_loc_cha_U">0, 5, 44, 2, 32, 64</column>
+<column name="data0_load_8_loc_cha_U">0, 5, 44, 2, 32, 64</column>
+<column name="data0_load_9_loc_cha_U">0, 5, 44, 2, 32, 64</column>
+<column name="data0_load_loc_chann_U">0, 5, 44, 2, 32, 64</column>
+<column name="size_c_U">0, 5, 44, 2, 32, 64</column>
+<column name="threshold_c_U">0, 5, 44, 2, 32, 64</column>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="Block_codeRepl49_pro_U0_ap_ready_count">+, 0, 0, 10, 2, 1</column>
+<column name="Loop_sizeLoop_proc_U0_ap_ready_count">+, 0, 0, 10, 2, 1</column>
+<column name="Block_codeRepl49_pro_U0_ap_continue">and, 0, 0, 2, 1, 1</column>
+<column name="Block_codeRepl49_pro_U0_ap_start">and, 0, 0, 2, 1, 1</column>
+<column name="Loop_sizeLoop_proc_U0_ap_start">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_data0_load_10_loc_ch">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_data0_load_11_loc_ch">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_data0_load_12_loc_ch">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_data0_load_13_loc_ch">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_data0_load_14_loc_ch">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_data0_load_15_loc_ch">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_data0_load_1_loc_cha">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_data0_load_2_loc_cha">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_data0_load_3_loc_cha">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_data0_load_4_loc_cha">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_data0_load_5_loc_cha">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_data0_load_6_loc_cha">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_data0_load_7_loc_cha">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_data0_load_8_loc_cha">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_data0_load_9_loc_cha">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_data0_load_loc_chann">and, 0, 0, 2, 1, 1</column>
+<column name="ap_idle">and, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_ready">and, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_Block_codeRepl49_pro_U0_ap_ready">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_Loop_sizeLoop_proc_U0_ap_ready">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_data0_load_10_loc_ch">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_data0_load_11_loc_ch">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_data0_load_12_loc_ch">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_data0_load_13_loc_ch">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_data0_load_14_loc_ch">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_data0_load_15_loc_ch">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_data0_load_1_loc_cha">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_data0_load_2_loc_cha">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_data0_load_3_loc_cha">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_data0_load_4_loc_cha">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_data0_load_5_loc_cha">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_data0_load_6_loc_cha">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_data0_load_7_loc_cha">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_data0_load_8_loc_cha">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_data0_load_9_loc_cha">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_data0_load_loc_chann">or, 0, 0, 2, 1, 1</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="Block_codeRepl49_pro_U0_ap_ready_count">9, 2, 2, 4</column>
+<column name="Loop_sizeLoop_proc_U0_ap_ready_count">9, 2, 2, 4</column>
+<column name="ap_sync_reg_Block_codeRepl49_pro_U0_ap_ready">9, 2, 1, 2</column>
+<column name="ap_sync_reg_Loop_sizeLoop_proc_U0_ap_ready">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_data0_load_10_loc_ch">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_data0_load_11_loc_ch">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_data0_load_12_loc_ch">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_data0_load_13_loc_ch">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_data0_load_14_loc_ch">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_data0_load_15_loc_ch">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_data0_load_1_loc_cha">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_data0_load_2_loc_cha">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_data0_load_3_loc_cha">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_data0_load_4_loc_cha">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_data0_load_5_loc_cha">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_data0_load_6_loc_cha">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_data0_load_7_loc_cha">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_data0_load_8_loc_cha">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_data0_load_9_loc_cha">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_data0_load_loc_chann">9, 2, 1, 2</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="Block_codeRepl49_pro_U0_ap_ready_count">2, 0, 2, 0</column>
+<column name="Loop_sizeLoop_proc_U0_ap_ready_count">2, 0, 2, 0</column>
+<column name="ap_sync_reg_Block_codeRepl49_pro_U0_ap_ready">1, 0, 1, 0</column>
+<column name="ap_sync_reg_Loop_sizeLoop_proc_U0_ap_ready">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_data0_load_10_loc_ch">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_data0_load_11_loc_ch">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_data0_load_12_loc_ch">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_data0_load_13_loc_ch">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_data0_load_14_loc_ch">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_data0_load_15_loc_ch">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_data0_load_1_loc_cha">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_data0_load_2_loc_cha">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_data0_load_3_loc_cha">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_data0_load_4_loc_cha">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_data0_load_5_loc_cha">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_data0_load_6_loc_cha">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_data0_load_7_loc_cha">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_data0_load_8_loc_cha">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_data0_load_9_loc_cha">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_data0_load_loc_chann">1, 0, 1, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="size">in, 32, ap_none, size, scalar</column>
+<column name="dim">in, 32, ap_none, dim, scalar</column>
+<column name="threshold">in, 32, ap_none, threshold, scalar</column>
+<column name="data0_dout">in, 32, ap_fifo, data0, pointer</column>
+<column name="data0_empty_n">in, 1, ap_fifo, data0, pointer</column>
+<column name="data0_read">out, 1, ap_fifo, data0, pointer</column>
+<column name="data1_dout">in, 32, ap_fifo, data1, pointer</column>
+<column name="data1_empty_n">in, 1, ap_fifo, data1, pointer</column>
+<column name="data1_read">out, 1, ap_fifo, data1, pointer</column>
+<column name="data2_din">out, 32, ap_fifo, data2, pointer</column>
+<column name="data2_full_n">in, 1, ap_fifo, data2, pointer</column>
+<column name="data2_write">out, 1, ap_fifo, data2, pointer</column>
+<column name="ap_clk">in, 1, ap_ctrl_hs, myFuncAccel, return value</column>
+<column name="ap_rst_n">in, 1, ap_ctrl_hs, myFuncAccel, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, myFuncAccel, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, myFuncAccel, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, myFuncAccel, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, myFuncAccel, return value</column>
+</table>
+</item>
+</section>
+
+<section name = "Critical Path" level="0">
+<item name = "Max Delay">3.63</item>
+<item name = "Critical Path Table"><table name="Critical Path Table" hasTotal="0">
+<keys size="15">Name, Operator, Delay, Accumulated Delay, Store Source, Resource, Core, Interface, Type, Port, Array, Scope, Pointer, Callee, Phi Node</keys>
+<column name="'threshold', /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c:30">read, 0.00, 0.00, -, -, -, wire, read, &apos;threshold&apos;, -, -, -, -, -</column>
+<column name="'call_ret', /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c:30">call, 3.63, 3.63, -, -, -, -, -, -, -, -, -, Block_codeRepl49_pro, -</column>
+</table>
+</item>
+</section>
+</profile>

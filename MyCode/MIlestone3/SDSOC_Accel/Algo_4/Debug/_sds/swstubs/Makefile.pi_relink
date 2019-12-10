@@ -1,0 +1,18 @@
+ADDRESS_MAP:=/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/.cf_work/address_map.xml
+
+OUTPUT:=Algo_4.elf
+
+.PHONY: relink clean
+
+relink: portinfo.o
+	arm-linux-gnueabihf-ar crs libxlnk_stub.a portinfo.o /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/swstubs/cf_stub.o
+	arm-linux-gnueabihf-g++ -L./    /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/swstubs/myAccel.o /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/swstubs/main.o     -L/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/swstubs -Wl,--start-group  -Wl,--end-group -Wl,--start-group    -lpthread -L /toolsViv/Xilinx/SDx/2018.3/target/aarch32-linux/lib -lsds_lib -lxlnk_stub  -Wl,--end-group -o Algo_4.elf
+	arm-linux-gnueabihf-objcopy -R .xdinfo -R .xddata -R .xdasm -R .xdfcnmap -R .xdhlscore -R .xdif -R .xdparams -R .xdcore -R .xdrepo -R .xdsdata -R .xdpp -R .xdrtlx Algo_4.elf
+	rm libxlnk_stub.a portinfo.o portinfo.h portinfo.c
+
+portinfo.o: ${ADDRESS_MAP} 
+	/toolsViv/Xilinx/SDx/2018.3/bin/cf2sw -i /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/.llvm/apsys_0.xml -r /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/.cdb/xd_ip_db.xml -a ${ADDRESS_MAP} -pollMode 0 -mc 
+	arm-linux-gnueabihf-gcc       -I /toolsViv/Xilinx/SDx/2018.3/target/aarch32-linux/include  -D HLS_NO_XIL_FPO_LIB  -I /toolsViv/Xilinx/Vivado/2018.3/include -c portinfo.c
+
+clean:
+	rm -f portinfo.o portinfo.h portinfo.c ${OUTPUT} libxlnk_stub.a

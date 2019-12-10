@@ -1,0 +1,18 @@
+digraph defuse_graph {
+v0 [label = "v0:DEF:(  %43 = call i8* @sds_alloc(i32 %42), !dbg !90)\nby SW(17)@95" ,style=filled];
+v1 [label = "v1:DEF:(  %67 = call i8* @sds_alloc(i32 %66), !dbg !134)\nby SW(22)@108" ,style=filled];
+v2 [label = "v2:USE:(  %43 = call i8* @sds_alloc(i32 %42), !dbg !90)\nby SW(28)@133" ,style=filled];
+v3 [label = "v3:USE:(  %67 = call i8* @sds_alloc(i32 %66), !dbg !134)\nby SW(28)@133" ,style=filled];
+v4 [label = "v4:USE:(  %16 = call i32 @atoi(i8* %15) #7, !dbg !48)\nby HW(myFuncAccel)@165" ,style=filled];
+v5 [label = "v5:USE:(  %23 = call i32 @atoi(i8* %22) #7, !dbg !60)\nby HW(myFuncAccel)@165" ,style=filled];
+v6 [label = "v6:USE:(  %31 = fptrunc double %30 to float, !dbg !73)\nby HW(myFuncAccel)@165" ,style=filled];
+v7 [label = "v7:USE:(  %43 = call i8* @sds_alloc(i32 %42), !dbg !90)\nby HW(myFuncAccel)@165" ,style=filled];
+v8 [label = "v8:USE:(  %67 = call i8* @sds_alloc(i32 %66), !dbg !134)\nby HW(myFuncAccel)@165" ,style=filled];
+v9 [label = "v9:DEF:(  %121 = call i8* @sds_alloc(i32 %120), !dbg !225)\nby HW(myFuncAccel)@165" ,style=filled];
+v10 [label = "v10:USE:(  %121 = call i8* @sds_alloc(i32 %120), !dbg !225)\nby SW(40)@175" ,style=filled];
+v9 -> v10;
+v1 -> v3;
+v0 -> v2;
+v1 -> v8;
+v0 -> v7;
+}

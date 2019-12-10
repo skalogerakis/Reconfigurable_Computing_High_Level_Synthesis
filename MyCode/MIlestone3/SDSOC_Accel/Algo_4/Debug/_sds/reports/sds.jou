@@ -1,0 +1,97 @@
+(c) Copyright 2012-2018 Xilinx, Inc. All Rights Reserved.
+#-----------------------------------------------------------
+# Tool version  : sds++ 2018.3 SW Build 2405991 on Thu Dec  6 23:37:15 MST 2018
+# Start time    : Wed Dec 11 00:56:01 EET 2019
+# Command line  : sds++ --remote_ip_cache /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/ip_cache -o Algo_4.elf ./src/main.o ./src/myAccel.o -dmclkid 2 -sds-sys-config linux -sds-proc linux -sds-pf zed
+# Log file      : /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/reports/sds.log
+# Journal file  : /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/reports/sds.jou
+# Report file   : /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/reports/sds.rpt
+#-----------------------------------------------------------
+
+#-----------------------------------------------------------
+# This file contains undocumented internal commands and is
+# provided for diagnostic purposes. To reproduce the results
+# of this run, please run the sds++ command line above again.
+#-----------------------------------------------------------
+
+# Analyzing object files
+arm-linux-gnueabihf-objcopy -O binary --set-section-flags .xdinfo=alloc --only-section=.xdinfo /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/src/main.o /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/.data/xdinfo.xml
+arm-linux-gnueabihf-objcopy -O binary --set-section-flags .xddata=alloc --only-section=.xddata /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/src/main.o /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/.data/xddata.xml
+arm-linux-gnueabihf-objcopy -O binary --set-section-flags .xdsdata=alloc --only-section=.xdsdata /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/src/main.o /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/.data/main.o.xml
+arm-linux-gnueabihf-objcopy -O binary --set-section-flags .xdinfo=alloc --only-section=.xdinfo /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/src/myAccel.o /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/.data/xdinfo.xml
+arm-linux-gnueabihf-objcopy -O binary --set-section-flags .xdrtlx=alloc --only-section=.xdrtlx /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/src/myAccel.o /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/.rtlx/myAccel.rtlx
+arm-linux-gnueabihf-objcopy -O binary --set-section-flags .xddata=alloc --only-section=.xddata /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/src/myAccel.o /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/.data/myFuncAccel.xml
+arm-linux-gnueabihf-objcopy -O binary --set-section-flags .xdpp=alloc --only-section=.xdpp /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/src/myAccel.o /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/.pp/myAccel.i
+arm-linux-gnueabihf-objcopy -O binary --set-section-flags .xdfcnmap=alloc --only-section=.xdfcnmap /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/src/myAccel.o /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/.cdb/myFuncAccel.myFuncAccel.fcnmap.xml
+arm-linux-gnueabihf-objcopy -O binary --set-section-flags .xdhlscore=alloc --only-section=.xdhlscore /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/src/myAccel.o /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/iprepo/repo/xilinx_com_hls_myFuncAccel_1_0/xilinx_com_hls_myFuncAccel_1_0.zip
+/usr/bin/unzip -u -o /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/iprepo/repo/xilinx_com_hls_myFuncAccel_1_0/xilinx_com_hls_myFuncAccel_1_0.zip -d /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/iprepo/repo/xilinx_com_hls_myFuncAccel_1_0
+arm-linux-gnueabihf-objcopy -O binary --set-section-flags .xdif=alloc --only-section=.xdif /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/src/myAccel.o /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/.cdb/myFuncAccel_if.xml
+/toolsViv/Xilinx/SDx/2018.3/bin/build_xd_ip_db -ip_search 0  -sds-pf /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/.Xil/zed.hpfm  -ip /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/iprepo/repo/xilinx_com_hls_myFuncAccel_1_0  -o /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/.cdb/xd_ip_db.xml  
+# Generating data motion network
+/toolsViv/Xilinx/SDx/2018.3/bin/llvm-link -o /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/.llvm/sds_all.o /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/.llvm/./src/main.s /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/.llvm/./src/myAccel.s
+cd /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/.llvm
+cd /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/.llvm
+/toolsViv/Xilinx/SDx/2018.3/bin/XidanePass  --dmclkid 2  --repo /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/.cdb/xd_ip_db.xml  --dmdb /toolsViv/Xilinx/SDx/2018.3/data/DM.db   -os linux -processor cortex-a9 -partition 0  
+cd /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug
+cd /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug
+# Creating block diagram (BD)
+cd /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/.xsd
+/toolsViv/Xilinx/SDx/2018.3/bin/sdx_link  -cf-system /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/.llvm/apsys_0.xml  -cf-db  /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/.cdb/xd_ip_db.xml  -xpfm /toolsViv/Xilinx/SDx/2018.3/platforms/zed/zed.xpfm   -multi-clks -trace-buffer 1024 -os linux -quiet
+cd /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug
+cd _sds/p0/.cf_work
+/toolsViv/Xilinx/SDx/2018.3/bin/cf2sw  -i /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/.llvm/apsys_0.xml  -r /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/.cdb/xd_ip_db.xml  -pollMode 0 -mc
+cd /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug
+# Rewrite caller functions
+cd /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/swstubs
+arm-linux-gnueabihf-objcopy -O binary --set-section-flags .xdinfo=alloc --only-section=.xdinfo /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/src/main.o /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/.data/xdinfo.xml
+arm-linux-gnueabihf-objcopy -O binary --set-section-flags .xddata=alloc --only-section=.xddata /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/src/main.o /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/.data/xddata.xml
+arm-linux-gnueabihf-objcopy -O binary --set-section-flags .xdsdata=alloc --only-section=.xdsdata /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/src/main.o /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/.data/main.o.xml
+/toolsViv/Xilinx/SDx/2018.3/bin/caller_rewrite  -rewrite /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/.llvm/caller0.cfrewrite  -o /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/swstubs/main.c  /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/swstubs/unix_main.c  --  -c  -I/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src -I/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src -Wall -O0 -g -fmessage-length=0 -MMD -MP -D __SDSCC__  -target arm-linux-gnueabihf -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -O0 -g -w      -I /toolsViv/Xilinx/SDx/2018.3/target/aarch32-linux/include  -D HLS_NO_XIL_FPO_LIB  -I /toolsViv/Xilinx/Vivado/2018.3/include   -I/toolsViv/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-linux-gnueabi/lib/gcc/arm-linux-gnueabihf/7.3.1/include -I/toolsViv/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-linux-gnueabi/lib/gcc/arm-linux-gnueabihf/7.3.1/include-fixed -I/toolsViv/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-linux-gnueabi/arm-linux-gnueabihf/include -I/toolsViv/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-linux-gnueabi/arm-linux-gnueabihf/libc/usr/include
+# Compile caller rewrite file /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/swstubs/main.c
+arm-linux-gnueabihf-gcc  -c /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/swstubs/main.c  -I/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src -I/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src -Wall -O0 -g -fmessage-length=0 -MMD -MP -D __SDSCC__        -I /toolsViv/Xilinx/SDx/2018.3/target/aarch32-linux/include  -D HLS_NO_XIL_FPO_LIB  -I /toolsViv/Xilinx/Vivado/2018.3/include  -o /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/swstubs/main.o
+cd /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug
+# Prepare hardware access API functions
+cd /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug
+# Create accelerator stub functions
+cd /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/swstubs
+/toolsViv/Xilinx/SDx/2018.3/bin/stub_gen  -func "myFuncAccel" -stub /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/.llvm/myFuncAccel.cfrewrite  -o /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/swstubs/myAccel.c  /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/swstubs/unix_myAccel.c  --  -c  -I/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src -I/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src -Wall -O0 -g -fmessage-length=0 -MMD -MP -D __SDSCC__  -target arm-linux-gnueabihf -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -O0 -g -w      -I /toolsViv/Xilinx/SDx/2018.3/target/aarch32-linux/include  -D HLS_NO_XIL_FPO_LIB  -I /toolsViv/Xilinx/Vivado/2018.3/include   -I/toolsViv/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-linux-gnueabi/lib/gcc/arm-linux-gnueabihf/7.3.1/include -I/toolsViv/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-linux-gnueabi/lib/gcc/arm-linux-gnueabihf/7.3.1/include-fixed -I/toolsViv/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-linux-gnueabi/arm-linux-gnueabihf/include -I/toolsViv/Xilinx/SDK/2018.3/gnu/aarch32/lin/gcc-arm-linux-gnueabi/arm-linux-gnueabihf/libc/usr/include
+cd /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug
+cd /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/swstubs
+# Compile hardware access API functions
+arm-linux-gnueabihf-gcc         -I /toolsViv/Xilinx/SDx/2018.3/target/aarch32-linux/include  -D HLS_NO_XIL_FPO_LIB  -I /toolsViv/Xilinx/Vivado/2018.3/include -c  /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/swstubs/portinfo.c
+arm-linux-gnueabihf-g++        -I /toolsViv/Xilinx/SDx/2018.3/target/aarch32-linux/include  -D HLS_NO_XIL_FPO_LIB  -I /toolsViv/Xilinx/Vivado/2018.3/include -c  /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/swstubs/cf_stub.c
+arm-linux-gnueabihf-ar crs /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/swstubs/libxlnk_stub.a /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/swstubs/portinfo.o /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/swstubs/cf_stub.o
+cd /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug
+cd /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/swstubs
+# Compile accelerator stub functions
+arm-linux-gnueabihf-gcc -c myAccel.c  -I/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src -I/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src -Wall -O0 -g -fmessage-length=0 -MMD -MP -D __SDSCC__        -I /toolsViv/Xilinx/SDx/2018.3/target/aarch32-linux/include  -D HLS_NO_XIL_FPO_LIB  -I /toolsViv/Xilinx/Vivado/2018.3/include -o myAccel.o
+cd /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug
+cd /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/swstubs
+arm-linux-gnueabihf-ar crs /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/swstubs/libAlgo_4.a /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/swstubs/portinfo.o /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/swstubs/cf_stub.o /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/swstubs/myAccel.o
+cd /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug
+# Preliminary link application ELF
+arm-linux-gnueabihf-g++    /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/swstubs/myAccel.o /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/swstubs/main.o      -L/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/swstubs -Wl,--start-group  -Wl,--end-group -Wl,--start-group    -lpthread -L/toolsViv/Xilinx/SDx/2018.3/target/aarch32-linux/lib -lsds_lib -lxlnk_stub  -Wl,--end-group -o /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/swstubs/Algo_4.elf 
+arm-linux-gnueabihf-objcopy -R .xdinfo -R .xddata -R .xdasm -R .xdfcnmap -R .xdhlscore -R .xdif -R .xdparams -R .xdcore -R .xdrepo -R .xdsdata -R .xdpp -R .xdrtlx /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/swstubs/Algo_4.elf
+cd /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug
+# Enable generation of hardware programming files
+# Enable generation of boot files
+# Calling VPL
+/toolsViv/Xilinx/SDx/2018.3/bin/vpl   --iprepo /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/iprepo/repo  --iprepo /toolsViv/Xilinx/SDx/2018.3/data/ip/xilinx  --platform /toolsViv/Xilinx/SDx/2018.3/platforms/zed/zed.xpfm  --temp_dir /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0  --output_dir /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vpl  --input_file /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/.xsd/top.bd.tcl  --target hw   --save_temps  --kernels myFuncAccel:adapter --webtalk_flag SDSoC  --remote_ip_cache /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/ip_cache --xp "param:compiler.deleteDefaultReportConfigs=false" 
+cd _sds/p0/.cf_work
+/toolsViv/Xilinx/SDx/2018.3/bin/cf2sw  -i /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/.llvm/apsys_0.xml  -r /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/.cdb/xd_ip_db.xml  -a address_map.xml  -pollMode 0 -mc
+cd /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug
+# Software tracing enabled
+cd /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/swstubs
+# Compile hardware access API functions
+arm-linux-gnueabihf-gcc         -I /toolsViv/Xilinx/SDx/2018.3/target/aarch32-linux/include  -D HLS_NO_XIL_FPO_LIB  -I /toolsViv/Xilinx/Vivado/2018.3/include -c  /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/swstubs/portinfo.c
+arm-linux-gnueabihf-g++        -I /toolsViv/Xilinx/SDx/2018.3/target/aarch32-linux/include  -D HLS_NO_XIL_FPO_LIB  -I /toolsViv/Xilinx/Vivado/2018.3/include -c  /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/swstubs/cf_stub.c
+arm-linux-gnueabihf-ar crs /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/swstubs/libxlnk_stub.a /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/swstubs/portinfo.o /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/swstubs/cf_stub.o
+cd /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug
+cd /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/swstubs
+arm-linux-gnueabihf-ar crs /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/swstubs/libAlgo_4.a /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/swstubs/portinfo.o /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/swstubs/cf_stub.o /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/swstubs/myAccel.o
+cd /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug
+# Link application ELF file
+arm-linux-gnueabihf-g++    /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/swstubs/myAccel.o /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/swstubs/main.o      -L/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/swstubs -Wl,--start-group  -Wl,--end-group -Wl,--start-group    -lpthread -L/toolsViv/Xilinx/SDx/2018.3/target/aarch32-linux/lib -lsds_lib -lxlnk_stub  -Wl,--end-group -o /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/swstubs/Algo_4.elf 
+arm-linux-gnueabihf-objcopy -R .xdinfo -R .xddata -R .xdasm -R .xdfcnmap -R .xdhlscore -R .xdif -R .xdparams -R .xdcore -R .xdrepo -R .xdsdata -R .xdpp -R .xdrtlx /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/swstubs/Algo_4.elf
+# All user specified timing constraints are met.
+# sds++ completed at Wed Dec 11 01:10:40 EET 2019

@@ -1,0 +1,237 @@
+bb0
+|SW(45)@0\n  %3 = alloca %struct.timespec, align 4
+|SW(46)@0\n  %4 = alloca %struct.timespec, align 4
+|SW(47)@0\n  %5 = alloca %struct.timespec, align 4
+|SW(48)@0\n  %6 = alloca %struct.timespec, align 4
+|SW(49)@59\n  call void @llvm.dbg.value(metadata i32 %0, i64 0, metadata !216, metadata !26), !dbg !217
+|SW(50)@59\n  call void @llvm.dbg.value(metadata i8** %1, i64 0, metadata !218, metadata !26), !dbg !219
+|SW(51)@65\n  %7 = getelementptr inbounds i8*, i8** %1, i32 1, !dbg !34
+|SW(52)@65\n  %8 = load i8*, i8** %7, align 4, !dbg !34
+|SW(2)@65\n  %9 = call i32 @atoi(i8* %8) #7, !dbg !35
+|SW(53)@65\n  call void @llvm.dbg.value(metadata i32 %9, i64 0, metadata !222, metadata !26), !dbg !223
+|SW(54)@66\n  %10 = icmp uge i32 %9, 0, !dbg !38
+|SW(55)@66\n  br i1 %10, label %11, label %12, !dbg !41
+bb1
+|SW(56)@66\n  br label %13, !dbg !42
+bb2
+|SW(3)@66\n  call void @__assert_fail(i8* getelementptr inbounds ([8 x i8], [8 x i8]* @.str.2, i32 0, i32 0), i8* getelementptr inbounds ([88 x i8], [88 x i8]* @.str.3, i32 0, i32 0), i32 66, i8* getelementptr inbounds ([23 x i8], [23 x i8]* @__PRETTY_FUNCTION__.main, i32 0, i32 0)) #8, !dbg !44
+|SW(57)@66\n  unreachable, !dbg !44
+bb3
+|SW(4)@68\n  call void @srand(i32 %9) #6, !dbg !46
+|SW(58)@70\n  %14 = getelementptr inbounds i8*, i8** %1, i32 2, !dbg !47
+|SW(59)@70\n  %15 = load i8*, i8** %14, align 4, !dbg !47
+|SW(5)@70\n  %16 = call i32 @atoi(i8* %15) #7, !dbg !48
+|SW(60)@70\n  call void @llvm.dbg.value(metadata i32 %16, i64 0, metadata !235, metadata !26), !dbg !236
+|SW(61)@71\n  %17 = icmp uge i32 %16, 1, !dbg !51
+|SW(62)@71\n  br i1 %17, label %18, label %19, !dbg !54
+bb4
+|SW(63)@71\n  br label %20, !dbg !55
+bb5
+|SW(6)@71\n  call void @__assert_fail(i8* getelementptr inbounds ([8 x i8], [8 x i8]* @.str.4, i32 0, i32 0), i8* getelementptr inbounds ([88 x i8], [88 x i8]* @.str.3, i32 0, i32 0), i32 71, i8* getelementptr inbounds ([23 x i8], [23 x i8]* @__PRETTY_FUNCTION__.main, i32 0, i32 0)) #8, !dbg !57
+|SW(64)@71\n  unreachable, !dbg !57
+bb6
+|SW(65)@73\n  %21 = getelementptr inbounds i8*, i8** %1, i32 3, !dbg !59
+|SW(66)@73\n  %22 = load i8*, i8** %21, align 4, !dbg !59
+|SW(7)@73\n  %23 = call i32 @atoi(i8* %22) #7, !dbg !60
+|SW(67)@73\n  call void @llvm.dbg.value(metadata i32 %23, i64 0, metadata !247, metadata !26), !dbg !248
+|SW(68)@74\n  %24 = icmp uge i32 %23, 2, !dbg !63
+|SW(69)@74\n  br i1 %24, label %25, label %26, !dbg !66
+bb7
+|SW(70)@74\n  br label %27, !dbg !67
+bb8
+|SW(8)@74\n  call void @__assert_fail(i8* getelementptr inbounds ([7 x i8], [7 x i8]* @.str.5, i32 0, i32 0), i8* getelementptr inbounds ([88 x i8], [88 x i8]* @.str.3, i32 0, i32 0), i32 74, i8* getelementptr inbounds ([23 x i8], [23 x i8]* @__PRETTY_FUNCTION__.main, i32 0, i32 0)) #8, !dbg !69
+|SW(71)@74\n  unreachable, !dbg !69
+bb9
+|SW(72)@76\n  %28 = getelementptr inbounds i8*, i8** %1, i32 4, !dbg !71
+|SW(73)@76\n  %29 = load i8*, i8** %28, align 4, !dbg !71
+|SW(9)@76\n  %30 = call double @atof(i8* %29) #7, !dbg !72
+|SW(74)@76\n  %31 = fptrunc double %30 to float, !dbg !73
+|SW(75)@76\n  call void @llvm.dbg.value(metadata float %31, i64 0, metadata !260, metadata !26), !dbg !261
+|SW(76)@77\n  %32 = fpext float %31 to double, !dbg !76
+|SW(77)@77\n  %33 = fcmp oge double %32, 0.000000e+00, !dbg !76
+|SW(78)@77\n  br i1 %33, label %34, label %35, !dbg !79
+bb10
+|SW(79)@77\n  br label %36, !dbg !80
+bb11
+|SW(10)@77\n  call void @__assert_fail(i8* getelementptr inbounds ([15 x i8], [15 x i8]* @.str.6, i32 0, i32 0), i8* getelementptr inbounds ([88 x i8], [88 x i8]* @.str.3, i32 0, i32 0), i32 77, i8* getelementptr inbounds ([23 x i8], [23 x i8]* @__PRETTY_FUNCTION__.main, i32 0, i32 0)) #8, !dbg !82
+|SW(80)@77\n  unreachable, !dbg !82
+bb12
+|SW(81)@79\n  %37 = fpext float %31 to double, !dbg !84
+|SW(11)@79\n  %38 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([44 x i8], [44 x i8]* @.str.7, i32 0, i32 0), i32 %9, i32 %16, i32 %23, double %37), !dbg !85
+|SW(82)@80\n  %39 = load %struct._IO_FILE*, %struct._IO_FILE** @stdout, align 4, !dbg !86
+|SW(12)@80\n  %40 = call i32 @fflush(%struct._IO_FILE* %39), !dbg !87
+|SW(83)@86\n  %41 = mul i32 4, %23, !dbg !88
+|SW(84)@86\n  %42 = mul i32 %41, %23, !dbg !89
+|SW(13)@86\n  %43 = call i8* @sds_alloc(i32 %42), !dbg !90
+|SW(85)@86\n  %44 = bitcast i8* %43 to float*, !dbg !91
+|SW(86)@86\n  call void @llvm.dbg.value(metadata float* %44, i64 0, metadata !278, metadata !26), !dbg !279
+|SW(87)@89\n  %45 = icmp ne float* %44, null, !dbg !94
+|SW(88)@89\n  br i1 %45, label %46, label %47, !dbg !97
+bb13
+|SW(89)@89\n  br label %48, !dbg !98
+bb14
+|SW(14)@89\n  call void @__assert_fail(i8* getelementptr inbounds ([12 x i8], [12 x i8]* @.str.8, i32 0, i32 0), i8* getelementptr inbounds ([88 x i8], [88 x i8]* @.str.3, i32 0, i32 0), i32 89, i8* getelementptr inbounds ([23 x i8], [23 x i8]* @__PRETTY_FUNCTION__.main, i32 0, i32 0)) #8, !dbg !100
+|SW(90)@89\n  unreachable, !dbg !100
+bb15
+|SW(91)@62\n  call void @llvm.dbg.value(metadata i32 0, i64 0, metadata !288, metadata !26), !dbg !289
+|SW(92)@91\n  br label %49, !dbg !104
+bb16
+|SW(93)@0\n  %.0 = phi i32 [ 0, %48 ], [ %63, %62 ]
+|SW(94)@91\n  %50 = mul i32 %23, %23, !dbg !106
+|SW(95)@91\n  %51 = icmp ult i32 %.0, %50, !dbg !109
+|SW(96)@91\n  br i1 %51, label %52, label %64, !dbg !110
+bb17
+|SW(15)@93\n  %53 = call i32 @rand() #6, !dbg !111
+|SW(97)@93\n  %54 = srem i32 %53, 10, !dbg !113
+|SW(98)@93\n  %55 = sitofp i32 %54 to float, !dbg !114
+|SW(99)@93\n  call void @llvm.dbg.value(metadata float %55, i64 0, metadata !301, metadata !26), !dbg !302
+|SW(16)@94\n  %56 = call i32 @rand() #6, !dbg !117
+|SW(100)@94\n  %57 = srem i32 %56, 10, !dbg !118
+|SW(101)@94\n  %58 = sitofp i32 %57 to float, !dbg !119
+|SW(102)@94\n  %59 = fdiv float %58, 1.000000e+01, !dbg !120
+|SW(103)@94\n  call void @llvm.dbg.value(metadata float %59, i64 0, metadata !307, metadata !26), !dbg !308
+|SW(104)@95\n  %60 = fadd float %55, %59, !dbg !123
+|SW(105)@95\n  %61 = getelementptr inbounds float, float* %44, i32 %.0, !dbg !124
+|SW(17)@95\n  store float %60, float* %61, align 4, !dbg !125
+|SW(106)@96\n  br label %62, !dbg !126
+bb18
+|SW(107)@91\n  %63 = add i32 %.0, 1, !dbg !127
+|SW(108)@62\n  call void @llvm.dbg.value(metadata i32 %63, i64 0, metadata !288, metadata !26), !dbg !289
+|SW(109)@91\n  br label %49, !dbg !129, !llvm.loop !130
+bb19
+|SW(110)@99\n  %65 = mul i32 4, %23, !dbg !132
+|SW(111)@99\n  %66 = mul i32 %65, %16, !dbg !133
+|SW(18)@99\n  %67 = call i8* @sds_alloc(i32 %66), !dbg !134
+|SW(112)@99\n  %68 = bitcast i8* %67 to float*, !dbg !135
+|SW(113)@99\n  call void @llvm.dbg.value(metadata float* %68, i64 0, metadata !322, metadata !26), !dbg !323
+|SW(114)@102\n  %69 = icmp ne float* %68, null, !dbg !138
+|SW(115)@102\n  br i1 %69, label %70, label %71, !dbg !141
+bb20
+|SW(116)@102\n  br label %72, !dbg !142
+bb21
+|SW(19)@102\n  call void @__assert_fail(i8* getelementptr inbounds ([12 x i8], [12 x i8]* @.str.9, i32 0, i32 0), i8* getelementptr inbounds ([88 x i8], [88 x i8]* @.str.3, i32 0, i32 0), i32 102, i8* getelementptr inbounds ([23 x i8], [23 x i8]* @__PRETTY_FUNCTION__.main, i32 0, i32 0)) #8, !dbg !144
+|SW(117)@102\n  unreachable, !dbg !144
+bb22
+|SW(118)@62\n  call void @llvm.dbg.value(metadata i32 0, i64 0, metadata !288, metadata !26), !dbg !289
+|SW(119)@104\n  br label %73, !dbg !146
+bb23
+|SW(120)@0\n  %.1 = phi i32 [ 0, %72 ], [ %87, %86 ]
+|SW(121)@104\n  %74 = mul i32 %23, %16, !dbg !148
+|SW(122)@104\n  %75 = icmp ult i32 %.1, %74, !dbg !151
+|SW(123)@104\n  br i1 %75, label %76, label %88, !dbg !152
+bb24
+|SW(20)@106\n  %77 = call i32 @rand() #6, !dbg !153
+|SW(124)@106\n  %78 = srem i32 %77, 10, !dbg !155
+|SW(125)@106\n  %79 = sitofp i32 %78 to float, !dbg !156
+|SW(126)@106\n  call void @llvm.dbg.value(metadata float %79, i64 0, metadata !343, metadata !26), !dbg !344
+|SW(21)@107\n  %80 = call i32 @rand() #6, !dbg !159
+|SW(127)@107\n  %81 = srem i32 %80, 10, !dbg !160
+|SW(128)@107\n  %82 = sitofp i32 %81 to float, !dbg !161
+|SW(129)@107\n  %83 = fdiv float %82, 1.000000e+01, !dbg !162
+|SW(130)@107\n  call void @llvm.dbg.value(metadata float %83, i64 0, metadata !349, metadata !26), !dbg !350
+|SW(131)@108\n  %84 = fadd float %79, %83, !dbg !165
+|SW(132)@108\n  %85 = getelementptr inbounds float, float* %68, i32 %.1, !dbg !166
+|SW(22)@108\n  store float %84, float* %85, align 4, !dbg !167
+|SW(133)@109\n  br label %86, !dbg !168
+bb25
+|SW(134)@104\n  %87 = add i32 %.1, 1, !dbg !169
+|SW(135)@62\n  call void @llvm.dbg.value(metadata i32 %87, i64 0, metadata !288, metadata !26), !dbg !289
+|SW(136)@104\n  br label %73, !dbg !171, !llvm.loop !172
+bb26
+|SW(137)@115\n  %89 = mul i32 4, %23, !dbg !174
+|SW(138)@115\n  %90 = mul i32 %89, %16, !dbg !175
+|SW(23)@115\n  %91 = call i8* @sds_alloc(i32 %90), !dbg !176
+|SW(139)@115\n  %92 = bitcast i8* %91 to float*, !dbg !177
+|SW(140)@115\n  call void @llvm.dbg.value(metadata float* %92, i64 0, metadata !364, metadata !26), !dbg !365
+|SW(141)@118\n  %93 = icmp ne float* %92, null, !dbg !180
+|SW(142)@118\n  br i1 %93, label %94, label %95, !dbg !183
+bb27
+|SW(143)@118\n  br label %96, !dbg !184
+bb28
+|SW(24)@118\n  call void @__assert_fail(i8* getelementptr inbounds ([12 x i8], [12 x i8]* @.str.10, i32 0, i32 0), i8* getelementptr inbounds ([88 x i8], [88 x i8]* @.str.3, i32 0, i32 0), i32 118, i8* getelementptr inbounds ([23 x i8], [23 x i8]* @__PRETTY_FUNCTION__.main, i32 0, i32 0)) #8, !dbg !186
+|SW(144)@118\n  unreachable, !dbg !186
+bb29
+|SW(25)@121\n  %97 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([21 x i8], [21 x i8]* @.str.11, i32 0, i32 0)), !dbg !188
+|SW(145)@122\n  %98 = load %struct._IO_FILE*, %struct._IO_FILE** @stdout, align 4, !dbg !189
+|SW(26)@122\n  %99 = call i32 @fflush(%struct._IO_FILE* %98), !dbg !190
+|SW(146)@125\n  call void @llvm.dbg.value(metadata double 0.000000e+00, i64 0, metadata !377, metadata !26), !dbg !379
+|SW(147)@126\n  call void @llvm.dbg.declare(metadata %struct.timespec* %3, metadata !380, metadata !26), !dbg !390
+|SW(148)@127\n  call void @llvm.dbg.declare(metadata %struct.timespec* %4, metadata !391, metadata !26), !dbg !392
+|SW(27)@129\n  %100 = call i32 @clock_gettime(i32 0, %struct.timespec* %3) #6, !dbg !207
+|SW(28)@133\n  call void @myFunc(i32 %16, i32 %23, float %31, float* %44, float* %68, float* %92), !dbg !208
+|SW(29)@138\n  %101 = call i32 @clock_gettime(i32 0, %struct.timespec* %4) #6, !dbg !209
+|SW(149)@139\n  %102 = getelementptr inbounds %struct.timespec, %struct.timespec* %4, i32 0, i32 0, !dbg !210
+|SW(150)@139\n  %103 = load i32, i32* %102, align 4, !dbg !210
+|SW(151)@139\n  %104 = getelementptr inbounds %struct.timespec, %struct.timespec* %3, i32 0, i32 0, !dbg !211
+|SW(152)@139\n  %105 = load i32, i32* %104, align 4, !dbg !211
+|SW(153)@139\n  %106 = sub nsw i32 %103, %105, !dbg !212
+|SW(154)@139\n  %107 = sitofp i32 %106 to double, !dbg !213
+|SW(155)@139\n  %108 = getelementptr inbounds %struct.timespec, %struct.timespec* %4, i32 0, i32 1, !dbg !214
+|SW(156)@139\n  %109 = load i32, i32* %108, align 4, !dbg !214
+|SW(157)@139\n  %110 = getelementptr inbounds %struct.timespec, %struct.timespec* %3, i32 0, i32 1, !dbg !215
+|SW(158)@139\n  %111 = load i32, i32* %110, align 4, !dbg !215
+|SW(159)@139\n  %112 = sub nsw i32 %109, %111, !dbg !216
+|SW(160)@139\n  %113 = sitofp i32 %112 to double, !dbg !217
+|SW(161)@139\n  %114 = fdiv double %113, 1.000000e+09, !dbg !218
+|SW(162)@139\n  %115 = fadd double %107, %114, !dbg !219
+|SW(163)@125\n  call void @llvm.dbg.value(metadata double %115, i64 0, metadata !377, metadata !26), !dbg !379
+|SW(30)@141\n  %116 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([36 x i8], [36 x i8]* @.str.12, i32 0, i32 0), double %115), !dbg !220
+|SW(164)@142\n  %117 = load %struct._IO_FILE*, %struct._IO_FILE** @stdout, align 4, !dbg !221
+|SW(31)@142\n  %118 = call i32 @fflush(%struct._IO_FILE* %117), !dbg !222
+|SW(165)@147\n  %119 = mul i32 4, %23, !dbg !223
+|SW(166)@147\n  %120 = mul i32 %119, %16, !dbg !224
+|SW(32)@147\n  %121 = call i8* @sds_alloc(i32 %120), !dbg !225
+|SW(167)@147\n  %122 = bitcast i8* %121 to float*, !dbg !226
+|SW(168)@147\n  call void @llvm.dbg.value(metadata float* %122, i64 0, metadata !413, metadata !26), !dbg !414
+|SW(169)@152\n  %123 = icmp ne float* %122, null, !dbg !229
+|SW(170)@152\n  br i1 %123, label %124, label %125, !dbg !232
+bb30
+|SW(171)@152\n  br label %126, !dbg !233
+bb31
+|SW(33)@152\n  call void @__assert_fail(i8* getelementptr inbounds ([15 x i8], [15 x i8]* @.str.13, i32 0, i32 0), i8* getelementptr inbounds ([88 x i8], [88 x i8]* @.str.3, i32 0, i32 0), i32 152, i8* getelementptr inbounds ([23 x i8], [23 x i8]* @__PRETTY_FUNCTION__.main, i32 0, i32 0)) #8, !dbg !235
+|SW(172)@152\n  unreachable, !dbg !235
+bb32
+|SW(34)@154\n  %127 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([26 x i8], [26 x i8]* @.str.14, i32 0, i32 0)), !dbg !237
+|SW(173)@155\n  %128 = load %struct._IO_FILE*, %struct._IO_FILE** @stdout, align 4, !dbg !238
+|SW(35)@155\n  %129 = call i32 @fflush(%struct._IO_FILE* %128), !dbg !239
+|SW(174)@158\n  call void @llvm.dbg.value(metadata double 0.000000e+00, i64 0, metadata !426, metadata !26), !dbg !427
+|SW(175)@159\n  call void @llvm.dbg.declare(metadata %struct.timespec* %5, metadata !428, metadata !26), !dbg !429
+|SW(176)@160\n  call void @llvm.dbg.declare(metadata %struct.timespec* %6, metadata !430, metadata !26), !dbg !431
+|SW(36)@162\n  %130 = call i32 @clock_gettime(i32 0, %struct.timespec* %5) #6, !dbg !246
+|XFER(IN)\nsize @165\nSCALAR\n
+|XFER(IN)\ndim @165\nSCALAR\n
+|XFER(IN)\nthreshold @165\nSCALAR\n
+|XFER(IN)\ndata0 @165\nARRAY\n
+|XFER(IN)\ndata1 @165\nARRAY\n
+|call 'myFuncAccel' in 'main.c' @165 (async_id:-1) (resource id:-1)\n
+|XFER(OUT)\ndata2 @165\nARRAY\n
+|cf_wait(): \nXFER(IN)\ndim @165\nSCALAR\nXFER(IN)\nsize @165\nSCALAR\nXFER(IN)\ndata0 @165\nARRAY\nXFER(IN)\ndata1 @165\nARRAY\nXFER(IN)\nthreshold @165\nSCALAR\nXFER(OUT)\ndata2 @165\nARRAY\n\n
+|SW(37)@168\n  %131 = call i32 @clock_gettime(i32 0, %struct.timespec* %6) #6, !dbg !248
+|SW(177)@169\n  %132 = getelementptr inbounds %struct.timespec, %struct.timespec* %6, i32 0, i32 0, !dbg !249
+|SW(178)@169\n  %133 = load i32, i32* %132, align 4, !dbg !249
+|SW(179)@169\n  %134 = getelementptr inbounds %struct.timespec, %struct.timespec* %5, i32 0, i32 0, !dbg !250
+|SW(180)@169\n  %135 = load i32, i32* %134, align 4, !dbg !250
+|SW(181)@169\n  %136 = sub nsw i32 %133, %135, !dbg !251
+|SW(182)@169\n  %137 = sitofp i32 %136 to double, !dbg !252
+|SW(183)@169\n  %138 = getelementptr inbounds %struct.timespec, %struct.timespec* %6, i32 0, i32 1, !dbg !253
+|SW(184)@169\n  %139 = load i32, i32* %138, align 4, !dbg !253
+|SW(185)@169\n  %140 = getelementptr inbounds %struct.timespec, %struct.timespec* %5, i32 0, i32 1, !dbg !254
+|SW(186)@169\n  %141 = load i32, i32* %140, align 4, !dbg !254
+|SW(187)@169\n  %142 = sub nsw i32 %139, %141, !dbg !255
+|SW(188)@169\n  %143 = sitofp i32 %142 to double, !dbg !256
+|SW(189)@169\n  %144 = fdiv double %143, 1.000000e+09, !dbg !257
+|SW(190)@169\n  %145 = fadd double %137, %144, !dbg !258
+|SW(191)@158\n  call void @llvm.dbg.value(metadata double %145, i64 0, metadata !426, metadata !26), !dbg !427
+|SW(38)@171\n  %146 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([30 x i8], [30 x i8]* @.str.15, i32 0, i32 0), double %145), !dbg !259
+|SW(192)@172\n  %147 = load %struct._IO_FILE*, %struct._IO_FILE** @stdout, align 4, !dbg !260
+|SW(39)@172\n  %148 = call i32 @fflush(%struct._IO_FILE* %147), !dbg !261
+|SW(40)@175\n  call void @validityChecker(i32 %16, i32 %23, float* %92, float* %122), !dbg !262
+|SW(193)@178\n  %149 = bitcast float* %44 to i8*, !dbg !263
+|SW(41)@178\n  call void @sds_free(i8* %149), !dbg !264
+|SW(194)@179\n  %150 = bitcast float* %68 to i8*, !dbg !265
+|SW(42)@179\n  call void @sds_free(i8* %150), !dbg !266
+|SW(195)@180\n  %151 = bitcast float* %92 to i8*, !dbg !267
+|SW(43)@180\n  call void @sds_free(i8* %151), !dbg !268
+|SW(196)@181\n  %152 = bitcast float* %122 to i8*, !dbg !269
+|SW(44)@181\n  call void @sds_free(i8* %152), !dbg !270
+|SW(197)@184\n  ret i32 0, !dbg !271

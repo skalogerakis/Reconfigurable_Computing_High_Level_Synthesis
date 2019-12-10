@@ -1,0 +1,12 @@
+/* /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/.boot/boot.bif */
+/* Command to create bitstream .bin file:       */
+/*   bootgen -image <bif_file> -split bin -w    */
+/* Command to create BOOT.BIN file:             */
+/*   bootgen  -image <bif_file> -w -o i BOOT.BIN */
+/* linux */
+the_ROM_image:
+{
+  [bootloader]/toolsViv/Xilinx/SDx/2018.3/platforms/zed/sw/linux/boot/fsbl.elf
+  /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/Algo_4.elf.bit
+  /toolsViv/Xilinx/SDx/2018.3/platforms/zed/sw/linux/boot/u-boot.elf
+}

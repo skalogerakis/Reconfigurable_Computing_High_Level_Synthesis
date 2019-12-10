@@ -1,0 +1,34 @@
+digraph dm_graph {
+v0 [label = "v0:main" ,style=filled];
+v1 [label = "v1:XFER(IN)\nsize @165\nSCALAR\n" ,style=filled,fillcolor = green];
+v2 [label = "v2:XFER(IN)\ndim @165\nSCALAR\n" ,style=filled,fillcolor = green];
+v3 [label = "v3:XFER(IN)\nthreshold @165\nSCALAR\n" ,style=filled,fillcolor = green];
+v4 [label = "v4:XFER(IN)\ndata0 @165\nARRAY\n" ,style=filled,fillcolor = green];
+v5 [label = "v5:XFER(IN)\ndata1 @165\nARRAY\n" ,style=filled,fillcolor = green];
+v6 [label = "v6:call 'myFuncAccel' in 'main.c' @165 (async_id:-1) (resource id:-1)\n" ,style=filled,fillcolor = red];
+v7 [label = "v7:XFER(OUT)\ndata2 @165\nARRAY\n" ,style=filled,fillcolor = yellow];
+v8 [label = "v8:cf_wait(): \nXFER(IN)\ndim @165\nSCALAR\nXFER(IN)\nsize @165\nSCALAR\nXFER(IN)\ndata0 @165\nARRAY\nXFER(IN)\ndata1 @165\nARRAY\nXFER(IN)\nthreshold @165\nSCALAR\nXFER(OUT)\ndata2 @165\nARRAY\n\n" ,style=filled,fillcolor = cyan];
+subgraph cluster0 {
+v1;
+v2;
+v3;
+v4;
+v5;
+v6;
+v7;
+v8;
+label = "call 'myFuncAccel' in 'main.c' @165 (async_id:-1) (resource id:-1)\n";
+}
+v1 -> v6 [label = "RAW/0"];
+v2 -> v6 [label = "RAW/0"];
+v3 -> v6 [label = "RAW/0"];
+v4 -> v6 [label = "RAW/0"];
+v5 -> v6 [label = "RAW/0"];
+v6 -> v7 [label = "RAW/0"];
+v7 -> v8 [label = "SEQ", style = dotted];
+v0 -> v1 [label = "SEQ", style = dotted];
+v0 -> v2 [label = "SEQ", style = dotted];
+v0 -> v3 [label = "SEQ", style = dotted];
+v0 -> v4 [label = "SEQ", style = dotted];
+v0 -> v5 [label = "SEQ", style = dotted];
+}

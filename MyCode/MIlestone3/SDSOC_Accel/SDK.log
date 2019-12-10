@@ -1,0 +1,36 @@
+23:46:31 INFO  : Launching XSCT server: xsct -n -sdx -interactive /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/temp_xsdb_launch_script.tcl
+23:46:33 INFO  : Registering command handlers for SDx TCF services
+23:46:33 INFO  : Registering command handlers for SDK TCF services
+23:46:39 INFO  : XSCT server has started successfully.
+23:46:39 INFO  : Successfully done setting XSCT server connection channel  
+23:46:39 INFO  : plnx-install-location is set to ''
+23:46:40 INFO  : Successfully done setting SDK workspace  
+23:46:40 INFO  : Successfully done query RDI_DATADIR 
+23:46:41 INFO  : Validating SDSoC License...
+23:46:45 INFO  : License available for SDSoC
+23:46:45 INFO  : Validating SDAccel License...
+23:46:45 INFO  : License available for SDAccel
+00:13:52 WARN  : Internal browser is not available to display the HTML report. It will be opened in an external browser
+00:13:55 WARN  : Internal browser is not available to display the HTML report. It will be opened in an external browser
+00:13:57 WARN  : Internal browser is not available to display the HTML report. It will be opened in an external browser
+00:13:59 WARN  : Internal browser is not available to display the HTML report. It will be opened in an external browser
+00:14:02 WARN  : Internal browser is not available to display the HTML report. It will be opened in an external browser
+00:14:05 WARN  : Internal browser is not available to display the HTML report. It will be opened in an external browser
+00:14:19 WARN  : Internal browser is not available to display the HTML report. It will be opened in an external browser
+00:14:22 WARN  : Internal browser is not available to display the HTML report. It will be opened in an external browser
+00:28:10 WARN  : Internal browser is not available to display the HTML report. It will be opened in an external browser
+00:28:11 WARN  : Internal browser is not available to display the HTML report. It will be opened in an external browser
+00:28:13 WARN  : Internal browser is not available to display the HTML report. It will be opened in an external browser
+00:28:20 WARN  : Internal browser is not available to display the HTML report. It will be opened in an external browser
+00:28:20 WARN  : Internal browser is not available to display the HTML report. It will be opened in an external browser
+00:29:54 WARN  : Internal browser is not available to display the HTML report. It will be opened in an external browser
+00:29:55 WARN  : Internal browser is not available to display the HTML report. It will be opened in an external browser
+00:29:55 WARN  : Internal browser is not available to display the HTML report. It will be opened in an external browser
+00:29:55 WARN  : Internal browser is not available to display the HTML report. It will be opened in an external browser
+00:29:59 WARN  : Internal browser is not available to display the HTML report. It will be opened in an external browser
+00:31:07 WARN  : Internal browser is not available to display the HTML report. It will be opened in an external browser
+00:31:08 WARN  : Internal browser is not available to display the HTML report. It will be opened in an external browser
+00:31:08 WARN  : Internal browser is not available to display the HTML report. It will be opened in an external browser
+01:10:44 WARN  : Internal browser is not available to display the HTML report. It will be opened in an external browser
+01:10:44 WARN  : Internal browser is not available to display the HTML report. It will be opened in an external browser
+01:10:45 WARN  : Internal browser is not available to display the HTML report. It will be opened in an external browser

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xd:data xmlns:xd="http://www.xilinx.com/xd">
+  <xd:accel name="myFuncAccel" platform="zed" compiler="gcc" srcfile="myAccel.c" srcpath="/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src" flags="-I/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src -I/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src -Wall -O0 -g -fmessage-length=0 -MMD -MP -D __SDSCC__" is_debug="1" clk_id="2" ip_requires_adapter="1" ip_is_rtl="0" ip_has_repo="0" ip_has_debugxrf="0" ip_is_pfunc="0" ip_is_rtl_template="0" vlnv="" is_opencl="0" asmfile="myAccel.s" esc_original_name="myFuncAccel" template_source_file="NA"/>
+</xd:data>

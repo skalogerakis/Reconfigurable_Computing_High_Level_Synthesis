@@ -1,0 +1,31 @@
+#ifdef __cplusplus
+extern "C" {
+#endif
+void p_0_myFuncAccel_1_noasync(unsigned int size, unsigned int dim, dataType_t threshold, dataType_t * data0, dataType_t * data1, dataType_t * data2);
+#ifdef __cplusplus
+}
+#endif
+void p_0_myFuncAccel_1_noasync(unsigned int size, unsigned int dim, dataType_t threshold, dataType_t * data0, dataType_t * data1, dataType_t * data2)
+{
+  int start_seq[1];
+  start_seq[0] = 0;
+  cf_request_handle_t p_0_hwinst_myFuncAccel_1_cmd;
+  cf_send_i(&(p_0_hwinst_myFuncAccel_1.cmd_myFuncAccel), start_seq, 1 * sizeof(int), &p_0_hwinst_myFuncAccel_1_cmd);
+  cf_wait(p_0_hwinst_myFuncAccel_1_cmd);
+
+  cf_send_i(&(p_0_hwinst_myFuncAccel_1.size), &size, 4, &p_0_request_0);
+  cf_send_i(&(p_0_hwinst_myFuncAccel_1.dim), &dim, 4, &p_0_request_1);
+  cf_send_i(&(p_0_hwinst_myFuncAccel_1.threshold), &threshold, 4, &p_0_request_2);
+  cf_send_i(&(p_0_hwinst_myFuncAccel_1.data0), data0, (dim*dim) * 4, &p_0_request_3);
+  cf_send_i(&(p_0_hwinst_myFuncAccel_1.data1), data1, (dim*size) * 4, &p_0_request_4);
+
+  cf_receive_i(&(p_0_hwinst_myFuncAccel_1.data2), data2, (dim*size) * 4, &p_0_myFuncAccel_1_noasync_num_data2, &p_0_request_5);
+
+  cf_wait(p_0_request_0);
+  cf_wait(p_0_request_1);
+  cf_wait(p_0_request_2);
+  cf_wait(p_0_request_3);
+  cf_wait(p_0_request_4);
+  cf_wait(p_0_request_5);
+}
+

@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<cf:model cf:cpu="cortex_a9" cf:partition="0" cf:prefix="p_0_" cf:name="top" xd:type="design" xmlns:xd="http://www.xilinx.com/xd" xmlns:cf="http://www.xilinx.com/connections">
+  <cf:block cf:name="hwblk_myFuncAccel">
+    <cf:port cf:name="cmd_myFuncAccel" cf:portType="stream" cf:direction="in"/>
+    <cf:port cf:name="size" cf:portType="stream" cf:direction="in"/>
+    <cf:port cf:name="dim" cf:portType="stream" cf:direction="in"/>
+    <cf:port cf:name="threshold" cf:portType="stream" cf:direction="in"/>
+    <cf:port cf:name="data0" cf:portType="stream" cf:direction="in"/>
+    <cf:port cf:name="data1" cf:portType="stream" cf:direction="in"/>
+    <cf:port cf:name="data2" cf:portType="stream" cf:direction="out"/>
+  </cf:block>
+  <cf:block cf:name="swblk_myFuncAccel">
+    <cf:port cf:name="cmd_myFuncAccel" cf:portType="stream" cf:direction="out"/>
+    <cf:port cf:name="size" cf:portType="stream" cf:direction="out"/>
+    <cf:port cf:name="dim" cf:portType="stream" cf:direction="out"/>
+    <cf:port cf:name="threshold" cf:portType="stream" cf:direction="out"/>
+    <cf:port cf:name="data0" cf:portType="stream" cf:direction="out"/>
+    <cf:port cf:name="data1" cf:portType="stream" cf:direction="out"/>
+    <cf:port cf:name="data2" cf:portType="stream" cf:direction="in"/>
+  </cf:block>
+  <cf:comp cf:name="zed" xd:componentRef="zed" xd:clockId="2"/>
+  <cf:comp cf:name="dm_0" xd:componentRef="axi_dma"/>
+  <cf:comp cf:name="dm_1" xd:componentRef="axi_dma"/>
+  <cf:comp cf:name="dm_2" xd:componentRef="axi_dma"/>
+  <cf:comp cf:name="myFuncAccel_1" xd:componentRef="myFuncAccel" xd:clockId="2"/>
+  <cf:instance cf:name="hwinst_myFuncAccel_1" cf:blockName="hwblk_myFuncAccel" cf:compName="myFuncAccel_1">
+    <cf:portMap cf:blockPort="cmd_myFuncAccel" cf:compPort="ap_ctrl" xd:register="0x8"/>
+    <cf:portMap cf:blockPort="size" cf:compPort="size" xd:paddedWidth="32" xd:register="0xC"/>
+    <cf:portMap cf:blockPort="dim" cf:compPort="dim" xd:paddedWidth="32" xd:register="0x10"/>
+    <cf:portMap cf:blockPort="threshold" cf:compPort="threshold" xd:paddedWidth="32" xd:register="0x14"/>
+    <cf:portMap cf:blockPort="data0" cf:compPort="data0" xd:paddedWidth="32"/>
+    <cf:portMap cf:blockPort="data1" cf:compPort="data1" xd:paddedWidth="32"/>
+    <cf:portMap cf:blockPort="data2" cf:compPort="data2" xd:paddedWidth="32"/>
+  </cf:instance>
+  <cf:instance cf:name="swinst_myFuncAccel_1" cf:blockName="swblk_myFuncAccel" cf:compName="zed">
+    <cf:portMap cf:blockPort="cmd_myFuncAccel" cf:compPort="ps7_M_AXI_GP0"/>
+    <cf:portMap cf:blockPort="size" cf:compPort="ps7_M_AXI_GP0"/>
+    <cf:portMap cf:blockPort="dim" cf:compPort="ps7_M_AXI_GP0"/>
+    <cf:portMap cf:blockPort="threshold" cf:compPort="ps7_M_AXI_GP0"/>
+    <cf:portMap cf:blockPort="data0" cf:compPort="ps7_S_AXI_HP1" cf:sptag="AFI"/>
+    <cf:portMap cf:blockPort="data1" cf:compPort="ps7_S_AXI_HP0" cf:sptag="AFI"/>
+    <cf:portMap cf:blockPort="data2" cf:compPort="ps7_S_AXI_HP2" cf:sptag="AFI"/>
+  </cf:instance>
+  <cf:connection cf:srcInst="swinst_myFuncAccel_1" cf:srcPort="cmd_myFuncAccel" cf:dstInst="hwinst_myFuncAccel_1" cf:dstPort="cmd_myFuncAccel">
+    <cf:dataMover cf:compName="zed" cf:softwareLib="axi_lite"/>
+  </cf:connection>
+  <cf:connection cf:srcInst="swinst_myFuncAccel_1" cf:srcPort="size" cf:dstInst="hwinst_myFuncAccel_1" cf:dstPort="size">
+    <cf:dataMover cf:compName="zed" cf:softwareLib="axi_lite"/>
+  </cf:connection>
+  <cf:connection cf:srcInst="swinst_myFuncAccel_1" cf:srcPort="dim" cf:dstInst="hwinst_myFuncAccel_1" cf:dstPort="dim">
+    <cf:dataMover cf:compName="zed" cf:softwareLib="axi_lite"/>
+  </cf:connection>
+  <cf:connection cf:srcInst="swinst_myFuncAccel_1" cf:srcPort="threshold" cf:dstInst="hwinst_myFuncAccel_1" cf:dstPort="threshold">
+    <cf:dataMover cf:compName="zed" cf:softwareLib="axi_lite"/>
+  </cf:connection>
+  <cf:connection cf:srcInst="swinst_myFuncAccel_1" cf:srcPort="data0" cf:dstInst="hwinst_myFuncAccel_1" cf:dstPort="data0">
+    <cf:dataMover cf:compName="dm_0" cf:softwareLib="axi_dma_simple"/>
+  </cf:connection>
+  <cf:connection cf:srcInst="swinst_myFuncAccel_1" cf:srcPort="data1" cf:dstInst="hwinst_myFuncAccel_1" cf:dstPort="data1">
+    <cf:dataMover cf:compName="dm_1" cf:softwareLib="axi_dma_simple"/>
+  </cf:connection>
+  <cf:connection cf:srcInst="hwinst_myFuncAccel_1" cf:srcPort="data2" cf:dstInst="swinst_myFuncAccel_1" cf:dstPort="data2">
+    <cf:dataMover cf:compName="dm_2" cf:softwareLib="axi_dma_simple"/>
+  </cf:connection>
+</cf:model>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xd:repository xmlns:xd="http://www.xilinx.com/xd">
+  <xd:component xd:vendor="xilinx.com" xd:library="xd" xd:name="myFuncAccel_if" xd:version="1.0" xd:componentRef="adapter_v3_0" xd:adapteeCompRef="myFuncAccel" xd:type="accelerator">
+    <xd:busInterface xd:name="S_AXI" xd:busTypeRef="aximm" xd:mode="slave" xd:clockRef="s_axi_aclk" xd:resetRef="s_axi_aresetn" xd:dataWidth="32">
+       <xd:reg xd:name="ap_ctrl" xd:offset="0x8" xd:dataWidth="4"/>
+       <xd:reg xd:name="size" xd:offset="0xC" xd:dataWidth="32"/>
+       <xd:reg xd:name="dim" xd:offset="0x10" xd:dataWidth="32"/>
+       <xd:reg xd:name="threshold" xd:offset="0x14" xd:dataWidth="32"/>
+    </xd:busInterface>
+    <xd:busInterface xd:name="s_axi_aclk" xd:busTypeRef="clock" xd:mode="slave" xd:library="signal" xd:direction="in" xd:port="s_axi_aclk"/>
+    <xd:busInterface xd:name="acc_aclk" xd:busTypeRef="clock" xd:mode="slave" xd:library="signal" xd:direction="in" xd:port="acc_aclk"/>
+    <xd:busInterface xd:name="s_axi_aresetn" xd:busTypeRef="reset" xd:mode="slave" xd:library="signal" xd:direction="in" xd:port="s_axi_aresetn"/>
+    <xd:busInterface xd:name="acc_aresetn" xd:busTypeRef="reset" xd:mode="slave" xd:library="signal" xd:direction="in" xd:port="acc_aresetn"/>
+    <xd:busInterface xd:name="S_AXIS_FIFO_0" xd:busTypeRef="axis" xd:portInterfaceType="fifo" xd:direction="in" xd:mode="master" xd:hasTlast="true" xd:clockRef="s_axis_fifo_0_aclk" xd:resetRef="s_axis_fifo0_aresetn" xd:dataWidth="32" xd:hlsname="data0"/>
+    <xd:busInterface xd:name="S_axis_fifo_0_aclk" xd:busTypeRef="clock" xd:mode="slave" xd:library="signal" xd:direction="in" xd:port="S_axis_fifo_0_aclk"/>
+    <xd:busInterface xd:name="S_axis_fifo_0_aresetn" xd:busTypeRef="reset" xd:mode="slave" xd:library="signal" xd:direction="in" xd:port="S_axis_fifo_0_aresetn"/>
+    <xd:busInterface xd:name="S_AXIS_FIFO_1" xd:busTypeRef="axis" xd:portInterfaceType="fifo" xd:direction="in" xd:mode="master" xd:hasTlast="true" xd:clockRef="s_axis_fifo_1_aclk" xd:resetRef="s_axis_fifo1_aresetn" xd:dataWidth="32" xd:hlsname="data1"/>
+    <xd:busInterface xd:name="S_axis_fifo_1_aclk" xd:busTypeRef="clock" xd:mode="slave" xd:library="signal" xd:direction="in" xd:port="S_axis_fifo_1_aclk"/>
+    <xd:busInterface xd:name="S_axis_fifo_1_aresetn" xd:busTypeRef="reset" xd:mode="slave" xd:library="signal" xd:direction="in" xd:port="S_axis_fifo_1_aresetn"/>
+    <xd:busInterface xd:name="M_AXIS_FIFO_0" xd:busTypeRef="axis" xd:portInterfaceType="fifo" xd:direction="out" xd:mode="master" xd:hasTlast="true" xd:clockRef="m_axis_fifo_0_aclk" xd:resetRef="m_axis_fifo0_aresetn" xd:dataWidth="32" xd:hlsname="data2"/>
+    <xd:busInterface xd:name="M_axis_fifo_0_aclk" xd:busTypeRef="clock" xd:mode="slave" xd:library="signal" xd:direction="in" xd:port="M_axis_fifo_0_aclk"/>
+    <xd:busInterface xd:name="M_axis_fifo_0_aresetn" xd:busTypeRef="reset" xd:mode="slave" xd:library="signal" xd:direction="in" xd:port="M_axis_fifo_0_aresetn"/>
+  </xd:component>
+</xd:repository>

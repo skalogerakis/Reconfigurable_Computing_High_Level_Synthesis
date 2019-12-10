@@ -1,0 +1,203 @@
+
+
+================================================================
+== Vivado HLS Report for 'Block_codeRepl49_pro'
+================================================================
+* Date:           Wed Dec 11 00:55:32 2019
+
+* Version:        2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)
+* Project:        myFuncAccel
+* Solution:       solution
+* Product family: zynq
+* Target device:  xc7z020clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|     3.634|        2.70|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |   15|   15|   15|   15|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+-------+
+|       Name      | BRAM_18K| DSP48E|   FF   |  LUT  |
++-----------------+---------+-------+--------+-------+
+|DSP              |        -|      -|       -|      -|
+|Expression       |        -|      -|       0|      4|
+|FIFO             |        -|      -|       -|      -|
+|Instance         |        -|      -|       -|      -|
+|Memory           |        -|      -|       -|      -|
+|Multiplexer      |        -|      -|       -|    265|
+|Register         |        -|      -|    1009|      -|
++-----------------+---------+-------+--------+-------+
+|Total            |        0|      0|    1009|    269|
++-----------------+---------+-------+--------+-------+
+|Available        |      280|    220|  106400|  53200|
++-----------------+---------+-------+--------+-------+
+|Utilization (%)  |        0|      0|   ~0   |   ~0  |
++-----------------+---------+-------+--------+-------+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP48: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +------------------+----------+-------+---+----+------------+------------+
+    |   Variable Name  | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +------------------+----------+-------+---+----+------------+------------+
+    |ap_block_state1   |    or    |      0|  0|   2|           1|           1|
+    |ap_block_state16  |    or    |      0|  0|   2|           1|           1|
+    +------------------+----------+-------+---+----+------------+------------+
+    |Total             |          |      0|  0|   4|           2|           2|
+    +------------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    +---------------------+----+-----------+-----+-----------+
+    |         Name        | LUT| Input Size| Bits| Total Bits|
+    +---------------------+----+-----------+-----+-----------+
+    |ap_NS_fsm            |  85|         17|    1|         17|
+    |ap_done              |   9|          2|    1|          2|
+    |ap_return_0          |   9|          2|   32|         64|
+    |ap_return_1          |   9|          2|   32|         64|
+    |ap_return_10         |   9|          2|   32|         64|
+    |ap_return_11         |   9|          2|   32|         64|
+    |ap_return_12         |   9|          2|   32|         64|
+    |ap_return_13         |   9|          2|   32|         64|
+    |ap_return_14         |   9|          2|   32|         64|
+    |ap_return_15         |   9|          2|   32|         64|
+    |ap_return_2          |   9|          2|   32|         64|
+    |ap_return_3          |   9|          2|   32|         64|
+    |ap_return_4          |   9|          2|   32|         64|
+    |ap_return_5          |   9|          2|   32|         64|
+    |ap_return_6          |   9|          2|   32|         64|
+    |ap_return_7          |   9|          2|   32|         64|
+    |ap_return_8          |   9|          2|   32|         64|
+    |ap_return_9          |   9|          2|   32|         64|
+    |data0_blk_n          |   9|          2|    1|          2|
+    |size_out_blk_n       |   9|          2|    1|          2|
+    |threshold_out_blk_n  |   9|          2|    1|          2|
+    +---------------------+----+-----------+-----+-----------+
+    |Total                | 265|         57|  517|       1049|
+    +---------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-----------------------+----+----+-----+-----------+
+    |          Name         | FF | LUT| Bits| Const Bits|
+    +-----------------------+----+----+-----+-----------+
+    |ap_CS_fsm              |  16|   0|   16|          0|
+    |ap_done_reg            |   1|   0|    1|          0|
+    |ap_return_0_preg       |  32|   0|   32|          0|
+    |ap_return_10_preg      |  32|   0|   32|          0|
+    |ap_return_11_preg      |  32|   0|   32|          0|
+    |ap_return_12_preg      |  32|   0|   32|          0|
+    |ap_return_13_preg      |  32|   0|   32|          0|
+    |ap_return_14_preg      |  32|   0|   32|          0|
+    |ap_return_15_preg      |  32|   0|   32|          0|
+    |ap_return_1_preg       |  32|   0|   32|          0|
+    |ap_return_2_preg       |  32|   0|   32|          0|
+    |ap_return_3_preg       |  32|   0|   32|          0|
+    |ap_return_4_preg       |  32|   0|   32|          0|
+    |ap_return_5_preg       |  32|   0|   32|          0|
+    |ap_return_6_preg       |  32|   0|   32|          0|
+    |ap_return_7_preg       |  32|   0|   32|          0|
+    |ap_return_8_preg       |  32|   0|   32|          0|
+    |ap_return_9_preg       |  32|   0|   32|          0|
+    |data0_read_10_reg_223  |  32|   0|   32|          0|
+    |data0_read_11_reg_228  |  32|   0|   32|          0|
+    |data0_read_12_reg_233  |  32|   0|   32|          0|
+    |data0_read_13_reg_238  |  32|   0|   32|          0|
+    |data0_read_14_reg_243  |  32|   0|   32|          0|
+    |data0_read_1_reg_178   |  32|   0|   32|          0|
+    |data0_read_2_reg_183   |  32|   0|   32|          0|
+    |data0_read_3_reg_188   |  32|   0|   32|          0|
+    |data0_read_4_reg_193   |  32|   0|   32|          0|
+    |data0_read_5_reg_198   |  32|   0|   32|          0|
+    |data0_read_6_reg_203   |  32|   0|   32|          0|
+    |data0_read_7_reg_208   |  32|   0|   32|          0|
+    |data0_read_8_reg_213   |  32|   0|   32|          0|
+    |data0_read_9_reg_218   |  32|   0|   32|          0|
+    |data0_read_reg_173     |  32|   0|   32|          0|
+    +-----------------------+----+----+-----+-----------+
+    |Total                  |1009|   0| 1009|          0|
+    +-----------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++----------------------+-----+-----+------------+----------------------+--------------+
+|       RTL Ports      | Dir | Bits|  Protocol  |     Source Object    |    C Type    |
++----------------------+-----+-----+------------+----------------------+--------------+
+|ap_clk                |  in |    1| ap_ctrl_hs | Block_codeRepl49_pro | return value |
+|ap_rst                |  in |    1| ap_ctrl_hs | Block_codeRepl49_pro | return value |
+|ap_start              |  in |    1| ap_ctrl_hs | Block_codeRepl49_pro | return value |
+|ap_done               | out |    1| ap_ctrl_hs | Block_codeRepl49_pro | return value |
+|ap_continue           |  in |    1| ap_ctrl_hs | Block_codeRepl49_pro | return value |
+|ap_idle               | out |    1| ap_ctrl_hs | Block_codeRepl49_pro | return value |
+|ap_ready              | out |    1| ap_ctrl_hs | Block_codeRepl49_pro | return value |
+|ap_return_0           | out |   32| ap_ctrl_hs | Block_codeRepl49_pro | return value |
+|ap_return_1           | out |   32| ap_ctrl_hs | Block_codeRepl49_pro | return value |
+|ap_return_2           | out |   32| ap_ctrl_hs | Block_codeRepl49_pro | return value |
+|ap_return_3           | out |   32| ap_ctrl_hs | Block_codeRepl49_pro | return value |
+|ap_return_4           | out |   32| ap_ctrl_hs | Block_codeRepl49_pro | return value |
+|ap_return_5           | out |   32| ap_ctrl_hs | Block_codeRepl49_pro | return value |
+|ap_return_6           | out |   32| ap_ctrl_hs | Block_codeRepl49_pro | return value |
+|ap_return_7           | out |   32| ap_ctrl_hs | Block_codeRepl49_pro | return value |
+|ap_return_8           | out |   32| ap_ctrl_hs | Block_codeRepl49_pro | return value |
+|ap_return_9           | out |   32| ap_ctrl_hs | Block_codeRepl49_pro | return value |
+|ap_return_10          | out |   32| ap_ctrl_hs | Block_codeRepl49_pro | return value |
+|ap_return_11          | out |   32| ap_ctrl_hs | Block_codeRepl49_pro | return value |
+|ap_return_12          | out |   32| ap_ctrl_hs | Block_codeRepl49_pro | return value |
+|ap_return_13          | out |   32| ap_ctrl_hs | Block_codeRepl49_pro | return value |
+|ap_return_14          | out |   32| ap_ctrl_hs | Block_codeRepl49_pro | return value |
+|ap_return_15          | out |   32| ap_ctrl_hs | Block_codeRepl49_pro | return value |
+|data0_dout            |  in |   32|   ap_fifo  |         data0        |    pointer   |
+|data0_empty_n         |  in |    1|   ap_fifo  |         data0        |    pointer   |
+|data0_read            | out |    1|   ap_fifo  |         data0        |    pointer   |
+|size                  |  in |   32|   ap_none  |         size         |    scalar    |
+|threshold             |  in |   32|   ap_none  |       threshold      |    scalar    |
+|size_out_din          | out |   32|   ap_fifo  |       size_out       |    pointer   |
+|size_out_full_n       |  in |    1|   ap_fifo  |       size_out       |    pointer   |
+|size_out_write        | out |    1|   ap_fifo  |       size_out       |    pointer   |
+|threshold_out_din     | out |   32|   ap_fifo  |     threshold_out    |    pointer   |
+|threshold_out_full_n  |  in |    1|   ap_fifo  |     threshold_out    |    pointer   |
+|threshold_out_write   | out |    1|   ap_fifo  |     threshold_out    |    pointer   |
++----------------------+-----+-----+------------+----------------------+--------------+
+

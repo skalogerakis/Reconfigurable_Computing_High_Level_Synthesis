@@ -1,0 +1,397 @@
+(c) Copyright 2012-2018 Xilinx, Inc. All Rights Reserved.
+#-----------------------------------------------------------
+# Tool version  : sds++ 2018.3 SW Build 2405991 on Thu Dec  6 23:37:15 MST 2018
+# Start time    : Wed Dec 11 00:56:01 EET 2019
+# Command line  : sds++ --remote_ip_cache /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/ip_cache -o Algo_4.elf ./src/main.o ./src/myAccel.o -dmclkid 2 -sds-sys-config linux -sds-proc linux -sds-pf zed
+# Log file      : /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/reports/sds.log
+# Journal file  : /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/reports/sds.jou
+# Report file   : /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/reports/sds.rpt
+#-----------------------------------------------------------
+
+-------------------
+Design Timing Check
+-------------------
+
+  Partition 0
+  Vivado Log     : /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/vivado.log
+  Timing Summary : /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/impl_1/zed_wrapper_timing_summary_routed.rpt
+
+  All user specified timing constraints are met.
+
+Timing Summary Report
+
+Timer Settings
+--------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+  Ignore I/O Paths                           :  No
+  Timing Early Launch at Borrowing Latches   :  false
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+
+check_timing report
+
+Table of Contents
+1. checking no_clock
+2. checking constant_clock
+3. checking pulse_width_clock
+4. checking unconstrained_internal_endpoints
+5. checking no_input_delay
+6. checking no_output_delay
+7. checking multiple_clock
+8. checking generated_clocks
+9. checking loops
+10. checking partial_input_delay
+11. checking partial_output_delay
+12. checking latch_loops
+
+1. checking no_clock
+ There are 0 register/latch pins with no clock.
+
+
+2. checking constant_clock
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints
+ There are 0 pins that are not constrained for maximum delay.
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay
+ There are 0 input ports with no input delay specified.
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay
+ There are 0 ports with no output delay specified.
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops
+ There are 0 combinational latch loops in the design through latch input
+
+
+
+Design Timing Summary
+---------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+      1.530        0.000                      0                38259        0.008        0.000                      0                38259        3.000        0.000                       0                 15626  
+
+
+All user specified timing constraints are met.
+
+
+Clock Summary
+-------------
+
+Clock                         Waveform(ns)       Period(ns)      Frequency(MHz)
+-----                         ------------       ----------      --------------
+clk_fpga_0                    {0.000 5.000}      10.000          100.000         
+zed_i/clk_wiz_0/inst/clk_in1  {0.000 5.000}      10.000          100.000         
+  clk_out1_zed_clk_wiz_0_0    {0.000 5.000}      10.000          100.000         
+  clkfbout_zed_clk_wiz_0_0    {0.000 5.000}      10.000          100.000         
+
+
+-------------------
+Data Motion Network
+-------------------
+
+Data motion network report generated in /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/reports
+HTML file : /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/reports/data_motion.html
+
+-------------------
+Design Utilization
+-------------------
+
+  Partition 0
+  Utilization Summary : /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/impl_1/zed_wrapper_utilization_placed.rpt
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Slice Logic
+1.1 Summary of Registers by Type
+2. Slice Logic Distribution
+3. Memory
+4. DSP
+5. IO and GT Specific
+6. Clocking
+7. Specific Feature
+8. Primitives
+9. Black Boxes
+10. Instantiated Netlists
+
+1. Slice Logic
+--------------
+
++----------------------------+-------+-------+-----------+-------+
+|          Site Type         |  Used | Fixed | Available | Util% |
++----------------------------+-------+-------+-----------+-------+
+| Slice LUTs                 |  9012 |     0 |     53200 | 16.94 |
+|   LUT as Logic             |  8531 |     0 |     53200 | 16.04 |
+|   LUT as Memory            |   481 |     0 |     17400 |  2.76 |
+|     LUT as Distributed RAM |   190 |     0 |           |       |
+|     LUT as Shift Register  |   291 |     0 |           |       |
+| Slice Registers            | 14735 |     0 |    106400 | 13.85 |
+|   Register as Flip Flop    | 14735 |     0 |    106400 | 13.85 |
+|   Register as Latch        |     0 |     0 |    106400 |  0.00 |
+| F7 Muxes                   |   102 |     0 |     26600 |  0.38 |
+| F8 Muxes                   |     1 |     0 |     13300 | <0.01 |
++----------------------------+-------+-------+-----------+-------+
+
+
+1.1 Summary of Registers by Type
+--------------------------------
+
++-------+--------------+-------------+--------------+
+| Total | Clock Enable | Synchronous | Asynchronous |
++-------+--------------+-------------+--------------+
+| 0     |            _ |           - |            - |
+| 0     |            _ |           - |          Set |
+| 0     |            _ |           - |        Reset |
+| 0     |            _ |         Set |            - |
+| 0     |            _ |       Reset |            - |
+| 0     |          Yes |           - |            - |
+| 110   |          Yes |           - |          Set |
+| 173   |          Yes |           - |        Reset |
+| 258   |          Yes |         Set |            - |
+| 14194 |          Yes |       Reset |            - |
++-------+--------------+-------------+--------------+
+
+
+2. Slice Logic Distribution
+---------------------------
+
++--------------------------------------------+-------+-------+-----------+-------+
+|                  Site Type                 |  Used | Fixed | Available | Util% |
++--------------------------------------------+-------+-------+-----------+-------+
+| Slice                                      |  4453 |     0 |     13300 | 33.48 |
+|   SLICEL                                   |  3062 |     0 |           |       |
+|   SLICEM                                   |  1391 |     0 |           |       |
+| LUT as Logic                               |  8531 |     0 |     53200 | 16.04 |
+|   using O5 output only                     |     0 |       |           |       |
+|   using O6 output only                     |  6724 |       |           |       |
+|   using O5 and O6                          |  1807 |       |           |       |
+| LUT as Memory                              |   481 |     0 |     17400 |  2.76 |
+|   LUT as Distributed RAM                   |   190 |     0 |           |       |
+|     using O5 output only                   |     0 |       |           |       |
+|     using O6 output only                   |     6 |       |           |       |
+|     using O5 and O6                        |   184 |       |           |       |
+|   LUT as Shift Register                    |   291 |     0 |           |       |
+|     using O5 output only                   |     4 |       |           |       |
+|     using O6 output only                   |   103 |       |           |       |
+|     using O5 and O6                        |   184 |       |           |       |
+| Slice Registers                            | 14735 |     0 |    106400 | 13.85 |
+|   Register driven from within the Slice    |  6374 |       |           |       |
+|   Register driven from outside the Slice   |  8361 |       |           |       |
+|     LUT in front of the register is unused |  6652 |       |           |       |
+|     LUT in front of the register is used   |  1709 |       |           |       |
+| Unique Control Sets                        |   493 |       |     13300 |  3.71 |
++--------------------------------------------+-------+-------+-----------+-------+
+* Note: Available Control Sets calculated as Slice Registers / 8, Review the Control Sets Report for more information regarding control sets.
+
+
+3. Memory
+---------
+
++-------------------+------+-------+-----------+-------+
+|     Site Type     | Used | Fixed | Available | Util% |
++-------------------+------+-------+-----------+-------+
+| Block RAM Tile    |   11 |     0 |       140 |  7.86 |
+|   RAMB36/FIFO*    |    9 |     0 |       140 |  6.43 |
+|     RAMB36E1 only |    9 |       |           |       |
+|   RAMB18          |    4 |     0 |       280 |  1.43 |
+|     RAMB18E1 only |    4 |       |           |       |
++-------------------+------+-------+-----------+-------+
+* Note: Each Block RAM Tile only has one FIFO logic available and therefore can accommodate only one FIFO36E1 or one FIFO18E1. However, if a FIFO18E1 occupies a Block RAM Tile, that tile can still accommodate a RAMB18E1
+
+
+4. DSP
+------
+
++----------------+------+-------+-----------+-------+
+|    Site Type   | Used | Fixed | Available | Util% |
++----------------+------+-------+-----------+-------+
+| DSPs           |   23 |     0 |       220 | 10.45 |
+|   DSP48E1 only |   23 |       |           |       |
++----------------+------+-------+-----------+-------+
+
+
+5. IO and GT Specific
+---------------------
+
++-----------------------------+------+-------+-----------+--------+
+|          Site Type          | Used | Fixed | Available |  Util% |
++-----------------------------+------+-------+-----------+--------+
+| Bonded IOB                  |    0 |     0 |       200 |   0.00 |
+| Bonded IPADs                |    0 |     0 |         2 |   0.00 |
+| Bonded IOPADs               |  130 |   130 |       130 | 100.00 |
+| PHY_CONTROL                 |    0 |     0 |         4 |   0.00 |
+| PHASER_REF                  |    0 |     0 |         4 |   0.00 |
+| OUT_FIFO                    |    0 |     0 |        16 |   0.00 |
+| IN_FIFO                     |    0 |     0 |        16 |   0.00 |
+| IDELAYCTRL                  |    0 |     0 |         4 |   0.00 |
+| IBUFDS                      |    0 |     0 |       192 |   0.00 |
+| PHASER_OUT/PHASER_OUT_PHY   |    0 |     0 |        16 |   0.00 |
+| PHASER_IN/PHASER_IN_PHY     |    0 |     0 |        16 |   0.00 |
+| IDELAYE2/IDELAYE2_FINEDELAY |    0 |     0 |       200 |   0.00 |
+| ILOGIC                      |    0 |     0 |       200 |   0.00 |
+| OLOGIC                      |    0 |     0 |       200 |   0.00 |
++-----------------------------+------+-------+-----------+--------+
+
+
+6. Clocking
+-----------
+
++------------+------+-------+-----------+-------+
+|  Site Type | Used | Fixed | Available | Util% |
++------------+------+-------+-----------+-------+
+| BUFGCTRL   |    3 |     0 |        32 |  9.38 |
+| BUFIO      |    0 |     0 |        16 |  0.00 |
+| MMCME2_ADV |    1 |     0 |         4 | 25.00 |
+| PLLE2_ADV  |    0 |     0 |         4 |  0.00 |
+| BUFMRCE    |    0 |     0 |         8 |  0.00 |
+| BUFHCE     |    0 |     0 |        72 |  0.00 |
+| BUFR       |    0 |     0 |        16 |  0.00 |
++------------+------+-------+-----------+-------+
+
+
+7. Specific Feature
+-------------------
+
++-------------+------+-------+-----------+-------+
+|  Site Type  | Used | Fixed | Available | Util% |
++-------------+------+-------+-----------+-------+
+| BSCANE2     |    0 |     0 |         4 |  0.00 |
+| CAPTUREE2   |    0 |     0 |         1 |  0.00 |
+| DNA_PORT    |    0 |     0 |         1 |  0.00 |
+| EFUSE_USR   |    0 |     0 |         1 |  0.00 |
+| FRAME_ECCE2 |    0 |     0 |         1 |  0.00 |
+| ICAPE2      |    0 |     0 |         2 |  0.00 |
+| STARTUPE2   |    0 |     0 |         1 |  0.00 |
+| XADC        |    0 |     0 |         1 |  0.00 |
++-------------+------+-------+-----------+-------+
+
+
+8. Primitives
+-------------
+
++------------+-------+----------------------+
+|  Ref Name  |  Used |  Functional Category |
++------------+-------+----------------------+
+| FDRE       | 14194 |         Flop & Latch |
+| LUT3       |  3151 |                  LUT |
+| LUT6       |  2719 |                  LUT |
+| LUT4       |  1750 |                  LUT |
+| LUT5       |  1597 |                  LUT |
+| LUT2       |   923 |                  LUT |
+| SRL16E     |   428 |   Distributed Memory |
+| CARRY4     |   336 |           CarryLogic |
+| RAMD32     |   282 |   Distributed Memory |
+| FDSE       |   258 |         Flop & Latch |
+| LUT1       |   198 |                  LUT |
+| FDCE       |   173 |         Flop & Latch |
+| BIBUF      |   130 |                   IO |
+| FDPE       |   110 |         Flop & Latch |
+| MUXF7      |   102 |                MuxFx |
+| RAMS32     |    92 |   Distributed Memory |
+| SRLC32E    |    47 |   Distributed Memory |
+| DSP48E1    |    23 |     Block Arithmetic |
+| RAMB36E1   |     9 |         Block Memory |
+| RAMB18E1   |     4 |         Block Memory |
+| BUFG       |     3 |                Clock |
+| PS7        |     1 | Specialized Resource |
+| MUXF8      |     1 |                MuxFx |
+| MMCME2_ADV |     1 |                Clock |
++------------+-------+----------------------+
+
+
+9. Black Boxes
+--------------
+
++----------+------+
+| Ref Name | Used |
++----------+------+
+
+
+10. Instantiated Netlists
+-------------------------
+
++--------------------------+------+
+|         Ref Name         | Used |
++--------------------------+------+
+| zed_xbar_0               |    1 |
+| zed_s00_regslice_3       |    1 |
+| zed_s00_regslice_2       |    1 |
+| zed_s00_regslice_1       |    1 |
+| zed_s00_regslice_0       |    1 |
+| zed_s00_data_fifo_3      |    1 |
+| zed_s00_data_fifo_2      |    1 |
+| zed_s00_data_fifo_1      |    1 |
+| zed_s00_data_fifo_0      |    1 |
+| zed_ps7_0                |    1 |
+| zed_proc_sys_reset_0_0   |    1 |
+| zed_myFuncAccel_1_if_0   |    1 |
+| zed_myFuncAccel_1_0      |    1 |
+| zed_m03_regslice_0       |    1 |
+| zed_m02_regslice_0       |    1 |
+| zed_m01_regslice_0       |    1 |
+| zed_m00_regslice_0       |    1 |
+| zed_dm_2_0               |    1 |
+| zed_dm_1_0               |    1 |
+| zed_dm_0_0               |    1 |
+| zed_clk_wiz_0_0          |    1 |
+| zed_axis_dwc_dm_2_rx_0_0 |    1 |
+| zed_axis_dwc_dm_1_tx_0_0 |    1 |
+| zed_axis_dwc_dm_0_tx_0_0 |    1 |
+| zed_auto_pc_3            |    1 |
+| zed_auto_pc_2            |    1 |
+| zed_auto_pc_1            |    1 |
+| zed_auto_pc_0            |    1 |
++--------------------------+------+
+
+

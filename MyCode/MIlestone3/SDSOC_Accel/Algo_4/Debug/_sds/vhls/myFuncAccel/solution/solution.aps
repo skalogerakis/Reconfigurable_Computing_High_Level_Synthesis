@@ -1,0 +1,31 @@
+<AutoPilot:solution xmlns:AutoPilot="com.autoesl.autopilot.solution">
+    <name>
+        <value string="solution"/>
+    </name>
+    <project>
+        <value string="myFuncAccel"/>
+    </project>
+    <targetInfo>
+        <TargetInfo value="xc7z020:clg484:-1"/>
+    </targetInfo>
+    <libraryList>
+        <library value="xilinx/zynq/zynq" name="DefaultPlatform"/>
+        <library value="xilinx/zynq/zynq_fpv6" name="DefaultPlatform"/>
+    </libraryList>
+    <config>
+        <config_sdx target="sds" optimization_level="0"/>
+        <config_export vivado_phys_opt="none" ipname="myFuncAccel"/>
+        <config_bind effort="medium"/>
+        <config_schedule effort="medium" relax_ii_for_timing="0"/>
+        <config_rtl auto_prefix="1" reset_level="low" prefix="a0_"/>
+        <config_compile blackbox=""/>
+        <schedule model="myFuncAccel"/>
+    </config>
+    <clockList>
+        <clock default="false" name="default" uncertainty="27%" period="10.000000"/>
+    </clockList>
+    <ExportDesign askAgain="true" evaluate="false" rtl="verilog" formatName="ipcatalog">
+        <Format formatName="ipcatalog"/>
+    </ExportDesign>
+</AutoPilot:solution>
+

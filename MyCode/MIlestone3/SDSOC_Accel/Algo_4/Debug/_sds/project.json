@@ -1,0 +1,8 @@
+{
+  "project" : {
+    "id" : "0",
+    "xpfmFile" : "/toolsViv/Xilinx/SDx/2018.3/platforms/zed/zed.xpfm",
+    "sysConfig" : "linux",
+    "accelerators" : "myFuncAccel"
+  }
+}

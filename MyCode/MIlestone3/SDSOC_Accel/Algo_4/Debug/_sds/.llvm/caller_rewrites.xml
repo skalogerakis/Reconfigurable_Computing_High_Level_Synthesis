@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<xd:XidanePass xd:num_rewrites="1" xmlns:xd="http://www.xilinx.com/xd">
+  <xd:caller xd:no="0" xd:file="/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/main.c" xd:rewrite="caller0.cfrewrite"/>
+</xd:XidanePass>

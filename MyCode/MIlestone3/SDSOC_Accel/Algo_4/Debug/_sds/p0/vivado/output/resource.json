@@ -1,0 +1,42 @@
+{
+    "Used Resources": [
+        {
+            "ip_instance": "zed_myFuncAccel_1_0",
+            "resources": [
+                {
+                    "LUT": "3280"
+                },
+                {
+                    "LUTAsLogic": "3151"
+                },
+                {
+                    "LUTMem": "129"
+                },
+                {
+                    "REG": "5669"
+                },
+                {
+                    "F7MUX": "0"
+                },
+                {
+                    "F8MUX": "0"
+                },
+                {
+                    "BRAM": "0"
+                },
+                {
+                    "DSP": "23"
+                },
+                {
+                    "GLOBAL_CLOCK_BUFFERS": "0"
+                },
+                {
+                    "MMCM": "0"
+                },
+                {
+                    "PLL": "0"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root VersionMajor="1" VersionMinor="0">
+  <Emulations>
+    <Emulation Name="">
+      <Files>
+        <File Type="PROP_JSON" Name="prop.json"/>
+        <File Type="USER_PROP_JSON" Name=""/>
+      </Files>
+    </Emulation>
+  </Emulations>
+</Root>

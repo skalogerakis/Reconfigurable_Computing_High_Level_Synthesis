@@ -1,0 +1,14 @@
+{
+	"file":	"/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/main.c",
+	"callers":	[{
+			"call":	"myFuncAccel",
+			"line":	165,
+			"col":	2,
+			"repl":	"p_0_myFuncAccel_1_noasync"
+		}],
+	"parents":	[{
+			"function":	"main",
+			"proto":	"#ifdef __cplusplus\nextern \"C\" {\n#endif\nvoid p_0_myFuncAccel_1_noasync(unsigned int size, unsigned int dim, dataType_t threshold, dataType_t * data0, dataType_t * data1, dataType_t * data2);\n#ifdef __cplusplus\n}\n#endif\n"
+		}],
+	"waits":	[]
+}
