@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'Loop_sizeLoop_proc'
 ================================================================
-* Date:           Sat Nov 23 03:20:28 2019
+* Date:           Tue Dec 10 03:01:28 2019
 
 * Version:        2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)
 * Project:        algHLS
@@ -29,7 +29,7 @@
     |   Latency   |   Interval  | Pipeline|
     |  min |  max |  min |  max |   Type  |
     +------+------+------+------+---------+
-    |  4037|  4037|  4037|  4037|   none  |
+    |  4033|  4033|  4033|  4033|   none  |
     +------+------+------+------+---------+
 
     + Detail: 
@@ -41,7 +41,7 @@
         |            |   Latency   | Iteration|  Initiation Interval  | Trip |          |
         |  Loop Name |  min |  max |  Latency |  achieved |   target  | Count| Pipelined|
         +------------+------+------+----------+-----------+-----------+------+----------+
-        |- sizeLoop  |  4035|  4035|        40|          4|          4|  1000|    yes   |
+        |- sizeLoop  |  4031|  4031|        40|          4|          4|   999|    yes   |
         +------------+------+------+----------+-----------+-----------+------+----------+
 
 
@@ -449,8 +449,8 @@ ST_1 : Operation 61 [1/1] (1.76ns)   --->   "br label %.preheader7.i"   --->   O
 
 State 2 <SV = 1> <Delay = 2.74>
 ST_2 : Operation 62 [1/1] (0.00ns)   --->   "%i_1_i = phi i10 [ %i, %.preheader6.preheader.i ], [ 0, %entry ]"   --->   Operation 62 'phi' 'i_1_i' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 63 [1/1] (1.77ns)   --->   "%tmp_i = icmp eq i10 %i_1_i, -24" [../myAccel.c:56]   --->   Operation 63 'icmp' 'tmp_i' <Predicate = true> <Delay = 1.77> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.77> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 64 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 1000, i64 1000, i64 1000) nounwind"   --->   Operation 64 'speclooptripcount' 'empty' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 63 [1/1] (1.77ns)   --->   "%tmp_i = icmp eq i10 %i_1_i, -25" [../myAccel.c:56]   --->   Operation 63 'icmp' 'tmp_i' <Predicate = true> <Delay = 1.77> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.77> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 64 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 999, i64 999, i64 999) nounwind"   --->   Operation 64 'speclooptripcount' 'empty' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 65 [1/1] (1.73ns)   --->   "%i = add i10 %i_1_i, 1" [../myAccel.c:56]   --->   Operation 65 'add' 'i' <Predicate = true> <Delay = 1.73> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_2 : Operation 66 [1/1] (0.00ns)   --->   "br i1 %tmp_i, label %Loop_sizeLoop_proc.exit, label %.preheader6.preheader.i" [../myAccel.c:56]   --->   Operation 66 'br' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 67 [1/1] (0.00ns)   --->   "%tmp_1_i = call i12 @_ssdm_op_BitConcatenate.i12.i10.i2(i10 %i_1_i, i2 0)" [../myAccel.c:74]   --->   Operation 67 'bitconcatenate' 'tmp_1_i' <Predicate = (!tmp_i)> <Delay = 0.00>

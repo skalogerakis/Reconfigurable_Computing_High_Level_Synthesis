@@ -347,7 +347,7 @@ struct Loop_sizeLoop_proc : public sc_module {
     static const sc_lv<1> ap_const_lv1_1;
     static const sc_lv<10> ap_const_lv10_0;
     static const sc_lv<32> ap_const_lv32_42C80000;
-    static const sc_lv<10> ap_const_lv10_3E8;
+    static const sc_lv<10> ap_const_lv10_3E7;
     static const sc_lv<10> ap_const_lv10_1;
     static const sc_lv<2> ap_const_lv2_0;
     static const sc_lv<32> ap_const_lv32_17;

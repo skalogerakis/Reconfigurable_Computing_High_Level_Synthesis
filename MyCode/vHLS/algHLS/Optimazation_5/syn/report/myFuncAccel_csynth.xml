@@ -21,12 +21,12 @@
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
-<Best-caseLatency>4055</Best-caseLatency>
-<Average-caseLatency>4055</Average-caseLatency>
-<Worst-caseLatency>4055</Worst-caseLatency>
-<DataflowPipelineThroughput>4038</DataflowPipelineThroughput>
-<Interval-min>4038</Interval-min>
-<Interval-max>4038</Interval-max>
+<Best-caseLatency>4051</Best-caseLatency>
+<Average-caseLatency>4051</Average-caseLatency>
+<Worst-caseLatency>4051</Worst-caseLatency>
+<DataflowPipelineThroughput>4034</DataflowPipelineThroughput>
+<Interval-min>4034</Interval-min>
+<Interval-max>4034</Interval-max>
 </SummaryOfOverallLatency>
 </PerformanceEstimates>
 

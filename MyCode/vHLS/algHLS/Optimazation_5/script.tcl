@@ -5,8 +5,8 @@
 ############################################################
 open_project algHLS
 set_top myFuncAccel
-add_files ../myAccel.c
 add_files ../myLib.h
+add_files ../myAccel.c
 add_files -tb ../main.c -cflags "-Wno-unknown-pragmas"
 open_solution "Optimazation_5"
 set_part {xc7z020clg484-1}

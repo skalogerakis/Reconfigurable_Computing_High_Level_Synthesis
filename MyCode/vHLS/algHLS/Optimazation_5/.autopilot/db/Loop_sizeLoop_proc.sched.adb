@@ -5655,7 +5655,7 @@
 					<bitwidth>10</bitwidth>
 				</Value>
 				<const_type>0</const_type>
-				<content>1000</content>
+				<content>999</content>
 			</item>
 			<item class_id_reference="16" object_id="_130">
 				<Value>
@@ -7551,8 +7551,8 @@
 			<mDepth>-1</mDepth>
 			<mMinTripCount>-1</mMinTripCount>
 			<mMaxTripCount>-1</mMaxTripCount>
-			<mMinLatency>4037</mMinLatency>
-			<mMaxLatency>4037</mMaxLatency>
+			<mMinLatency>4033</mMinLatency>
+			<mMaxLatency>4033</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>
@@ -7594,10 +7594,10 @@
 			</basic_blocks>
 			<mII>4</mII>
 			<mDepth>40</mDepth>
-			<mMinTripCount>1000</mMinTripCount>
-			<mMaxTripCount>1000</mMaxTripCount>
-			<mMinLatency>4035</mMinLatency>
-			<mMaxLatency>4035</mMaxLatency>
+			<mMinTripCount>999</mMinTripCount>
+			<mMaxTripCount>999</mMaxTripCount>
+			<mMinLatency>4031</mMinLatency>
+			<mMaxLatency>4031</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>

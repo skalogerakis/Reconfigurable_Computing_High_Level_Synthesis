@@ -27,9 +27,9 @@ void myFuncAccel (unsigned int size, unsigned int dim, dataType_t threshold, dat
 //	uint3 k,l;
 	unsigned int i, k ,l ,r;
 
-	size = 1000;
-	dim = 4;
-	threshold = 100;
+	 size = 1000;
+	 dim = 4;
+	 threshold = 100;
 
 	dataType_t tempVal;
 	dataType_t cache[dim*dim];

@@ -31,7 +31,7 @@ const sc_lv<32> Loop_sizeLoop_proc::ap_const_lv32_3 = "11";
 const sc_lv<1> Loop_sizeLoop_proc::ap_const_lv1_1 = "1";
 const sc_lv<10> Loop_sizeLoop_proc::ap_const_lv10_0 = "0000000000";
 const sc_lv<32> Loop_sizeLoop_proc::ap_const_lv32_42C80000 = "1000010110010000000000000000000";
-const sc_lv<10> Loop_sizeLoop_proc::ap_const_lv10_3E8 = "1111101000";
+const sc_lv<10> Loop_sizeLoop_proc::ap_const_lv10_3E7 = "1111100111";
 const sc_lv<10> Loop_sizeLoop_proc::ap_const_lv10_1 = "1";
 const sc_lv<2> Loop_sizeLoop_proc::ap_const_lv2_0 = "00";
 const sc_lv<32> Loop_sizeLoop_proc::ap_const_lv32_17 = "10111";
@@ -2807,7 +2807,7 @@ void Loop_sizeLoop_proc::thread_tmp_fu_316_p4() {
 }
 
 void Loop_sizeLoop_proc::thread_tmp_i_fu_277_p2() {
-    tmp_i_fu_277_p2 = (!ap_phi_mux_i_1_i_phi_fu_220_p4.read().is_01() || !ap_const_lv10_3E8.is_01())? sc_lv<1>(): sc_lv<1>(ap_phi_mux_i_1_i_phi_fu_220_p4.read() == ap_const_lv10_3E8);
+    tmp_i_fu_277_p2 = (!ap_phi_mux_i_1_i_phi_fu_220_p4.read().is_01() || !ap_const_lv10_3E7.is_01())? sc_lv<1>(): sc_lv<1>(ap_phi_mux_i_1_i_phi_fu_220_p4.read() == ap_const_lv10_3E7);
 }
 
 void Loop_sizeLoop_proc::thread_tmp_s_fu_403_p4() {

@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'myFuncAccel'
 ================================================================
-* Date:           Sat Nov 23 03:20:29 2019
+* Date:           Tue Dec 10 03:01:29 2019
 
 * Version:        2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)
 * Project:        algHLS
@@ -29,7 +29,7 @@
     |   Latency   |   Interval  | Pipeline |
     |  min |  max |  min |  max |   Type   |
     +------+------+------+------+----------+
-    |  4055|  4055|  4038|  4038| dataflow |
+    |  4051|  4051|  4034|  4034| dataflow |
     +------+------+------+------+----------+
 
     + Detail: 
@@ -38,7 +38,7 @@
         |                         |                      |   Latency   |   Interval  | Pipeline|
         |         Instance        |        Module        |  min |  max |  min |  max |   Type  |
         +-------------------------+----------------------+------+------+------+------+---------+
-        |Loop_sizeLoop_proc_U0    |Loop_sizeLoop_proc    |  4037|  4037|  4037|  4037|   none  |
+        |Loop_sizeLoop_proc_U0    |Loop_sizeLoop_proc    |  4033|  4033|  4033|  4033|   none  |
         |Block_codeRepl50_pro_U0  |Block_codeRepl50_pro  |    17|    17|    17|    17|   none  |
         +-------------------------+----------------------+------+------+------+------+---------+
 

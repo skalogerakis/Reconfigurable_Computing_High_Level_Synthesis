@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'myFuncAccel'" level="0">
-<item name = "Date">Sat Nov 23 03:20:28 2019
+<item name = "Date">Tue Dec 10 03:01:27 2019
 </item>
 <item name = "Version">2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)</item>
 <item name = "Project">algHLS</item>
@@ -24,14 +24,14 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="6">, min, max, min, max, Type</keys>
-<column name="">4055, 4055, 4038, 4038, dataflow</column>
+<column name="">4051, 4051, 4034, 4034, dataflow</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="7">Instance, Module, min, max, min, max, Type</keys>
-<column name="grp_Loop_sizeLoop_proc_fu_38">Loop_sizeLoop_proc, 4037, 4037, 4037, 4037, none</column>
+<column name="grp_Loop_sizeLoop_proc_fu_38">Loop_sizeLoop_proc, 4033, 4033, 4033, 4033, none</column>
 <column name="grp_Block_codeRepl50_pro_fu_62">Block_codeRepl50_pro, 17, 17, 17, 17, none</column>
 </table>
 </item>

@@ -75,7 +75,7 @@ architecture behav of Loop_sizeLoop_proc is
     constant ap_const_lv1_1 : STD_LOGIC_VECTOR (0 downto 0) := "1";
     constant ap_const_lv10_0 : STD_LOGIC_VECTOR (9 downto 0) := "0000000000";
     constant ap_const_lv32_42C80000 : STD_LOGIC_VECTOR (31 downto 0) := "01000010110010000000000000000000";
-    constant ap_const_lv10_3E8 : STD_LOGIC_VECTOR (9 downto 0) := "1111101000";
+    constant ap_const_lv10_3E7 : STD_LOGIC_VECTOR (9 downto 0) := "1111100111";
     constant ap_const_lv10_1 : STD_LOGIC_VECTOR (9 downto 0) := "0000000001";
     constant ap_const_lv2_0 : STD_LOGIC_VECTOR (1 downto 0) := "00";
     constant ap_const_lv32_17 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000010111";
@@ -1800,6 +1800,6 @@ begin
     tmp_7_fu_382_p2 <= (notrhs1_fu_376_p2 or notlhs1_fu_370_p2);
     tmp_9_fu_388_p2 <= (tmp_7_fu_382_p2 and grp_fu_267_p2);
     tmp_fu_316_p4 <= tmp_34_0_3_i_to_int_fu_313_p1(30 downto 23);
-    tmp_i_fu_277_p2 <= "1" when (ap_phi_mux_i_1_i_phi_fu_220_p4 = ap_const_lv10_3E8) else "0";
+    tmp_i_fu_277_p2 <= "1" when (ap_phi_mux_i_1_i_phi_fu_220_p4 = ap_const_lv10_3E7) else "0";
     tmp_s_fu_403_p4 <= tmp_34_2_3_i_to_int_fu_400_p1(30 downto 23);
 end behav;

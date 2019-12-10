@@ -21,16 +21,16 @@
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
-<Best-caseLatency>4037</Best-caseLatency>
-<Average-caseLatency>4037</Average-caseLatency>
-<Worst-caseLatency>4037</Worst-caseLatency>
-<Interval-min>4037</Interval-min>
-<Interval-max>4037</Interval-max>
+<Best-caseLatency>4033</Best-caseLatency>
+<Average-caseLatency>4033</Average-caseLatency>
+<Worst-caseLatency>4033</Worst-caseLatency>
+<Interval-min>4033</Interval-min>
+<Interval-max>4033</Interval-max>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
 <sizeLoop>
-<TripCount>1000</TripCount>
-<Latency>4035</Latency>
+<TripCount>999</TripCount>
+<Latency>4031</Latency>
 <PipelineII>4</PipelineII>
 <PipelineDepth>40</PipelineDepth>
 </sizeLoop>

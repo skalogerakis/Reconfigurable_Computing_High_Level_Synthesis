@@ -20,7 +20,7 @@
     "ClockPeriod": "10",
     "IsCombLogic": "0",
     "II": "x",
-    "Latency": "4055",
+    "Latency": "4051",
     "Uncertainty": "1.25"
   },
   "Xdc": {"OocClocks": ["create_clock -name ap_clk -period 10.000 [get_ports ap_clk]"]},
@@ -596,10 +596,10 @@
       },
       "Loop_sizeLoop_proc": {
         "Latency": {
-          "LatencyBest": "4037",
-          "LatencyAvg": "4037",
-          "LatencyWorst": "4037",
-          "PipelineII": "4037",
+          "LatencyBest": "4033",
+          "LatencyAvg": "4033",
+          "LatencyWorst": "4033",
+          "PipelineII": "4033",
           "PipelineDepth": "",
           "PipelineType": "none"
         },
@@ -610,8 +610,8 @@
         },
         "Loops": [{
             "Name": "sizeLoop",
-            "TripCount": "1000",
-            "Latency": "4035",
+            "TripCount": "999",
+            "Latency": "4031",
             "PipelineII": "4",
             "PipelineDepth": "40"
           }],
@@ -624,10 +624,10 @@
       },
       "myFuncAccel": {
         "Latency": {
-          "LatencyBest": "4055",
-          "LatencyAvg": "4055",
-          "LatencyWorst": "4055",
-          "PipelineII": "4038",
+          "LatencyBest": "4051",
+          "LatencyAvg": "4051",
+          "LatencyWorst": "4051",
+          "PipelineII": "4034",
           "PipelineDepth": "",
           "PipelineType": "dataflow"
         },
@@ -655,7 +655,7 @@
   },
   "GenData": {
     "DataVersion": "0.1",
-    "Time": "2019-11-23 03:20:30 EET",
+    "Time": "2019-12-10 03:01:31 EET",
     "ToolName": "vivado_hls",
     "ToolVersion": "2018.3"
   }

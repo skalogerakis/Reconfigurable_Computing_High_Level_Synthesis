@@ -1625,7 +1625,7 @@ assign tmp_9_fu_388_p2 = (tmp_7_fu_382_p2 & grp_fu_267_p2);
 
 assign tmp_fu_316_p4 = {{tmp_34_0_3_i_to_int_fu_313_p1[30:23]}};
 
-assign tmp_i_fu_277_p2 = ((ap_phi_mux_i_1_i_phi_fu_220_p4 == 10'd1000) ? 1'b1 : 1'b0);
+assign tmp_i_fu_277_p2 = ((ap_phi_mux_i_1_i_phi_fu_220_p4 == 10'd999) ? 1'b1 : 1'b0);
 
 assign tmp_s_fu_403_p4 = {{tmp_34_2_3_i_to_int_fu_400_p1[30:23]}};
 

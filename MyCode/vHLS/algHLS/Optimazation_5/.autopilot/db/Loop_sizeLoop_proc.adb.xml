@@ -576,7 +576,7 @@ entry:18  br label %.preheader7.i
 
 <Node id="40" bw="1" op_0_bw="10" op_1_bw="10">
 <![CDATA[
-.preheader7.i:1  %tmp_i = icmp eq i10 %i_1_i, -24
+.preheader7.i:1  %tmp_i = icmp eq i10 %i_1_i, -25
 
 ]]></Node>
 <StgValue><ssdm name="tmp_i"/></StgValue>
@@ -591,7 +591,7 @@ entry:18  br label %.preheader7.i
 
 <Node id="41" bw="32" op_0_bw="32" op_1_bw="64" op_2_bw="64" op_3_bw="64">
 <![CDATA[
-.preheader7.i:2  %empty = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 1000, i64 1000, i64 1000) nounwind
+.preheader7.i:2  %empty = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 999, i64 999, i64 999) nounwind
 
 ]]></Node>
 <StgValue><ssdm name="empty"/></StgValue>
