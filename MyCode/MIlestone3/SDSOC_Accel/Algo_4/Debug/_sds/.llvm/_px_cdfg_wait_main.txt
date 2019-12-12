@@ -205,7 +205,7 @@ bb32
 |XFER(IN)\ndata1 @165\nARRAY\n
 |call 'myFuncAccel' in 'main.c' @165 (async_id:-1) (resource id:-1)\n
 |XFER(OUT)\ndata2 @165\nARRAY\n
-|cf_wait(): \nXFER(IN)\ndim @165\nSCALAR\nXFER(IN)\nsize @165\nSCALAR\nXFER(IN)\ndata0 @165\nARRAY\nXFER(IN)\ndata1 @165\nARRAY\nXFER(IN)\nthreshold @165\nSCALAR\nXFER(OUT)\ndata2 @165\nARRAY\n\n
+|cf_wait(): \nXFER(IN)\nsize @165\nSCALAR\nXFER(IN)\ndata1 @165\nARRAY\nXFER(IN)\ndata0 @165\nARRAY\nXFER(IN)\ndim @165\nSCALAR\nXFER(IN)\nthreshold @165\nSCALAR\nXFER(OUT)\ndata2 @165\nARRAY\n\n
 |SW(37)@168\n  %131 = call i32 @clock_gettime(i32 0, %struct.timespec* %6) #6, !dbg !248
 |SW(177)@169\n  %132 = getelementptr inbounds %struct.timespec, %struct.timespec* %6, i32 0, i32 0, !dbg !249
 |SW(178)@169\n  %133 = load i32, i32* %132, align 4, !dbg !249

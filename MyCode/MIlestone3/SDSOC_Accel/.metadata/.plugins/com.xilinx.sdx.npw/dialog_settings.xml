@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="/toolsViv/Xilinx/SDx/2018.3/platforms/zed/zed.xpfm" key="sdx.platform"/>
+	<item value="linux" key="sdx.domain"/>
+	<item value="/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel" key="sdx.project.location"/>
+	<item value="1" key="sdx.device.count"/>
+	<item value="false" key="sdx.is.shared.library"/>
+	<item value="false" key="sdx.is.system.root"/>
+	<item value="C/C++" key="sdx.runtime"/>
+	<item value="Algo_4" key="sdx.project.name"/>
+	<item value="linux" key="sdx.os"/>
+	<item value="linux" key="sdx.system.configuration"/>
+</section>

@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'myFuncAccel'" level="0">
-<item name = "Date">Wed Dec 11 00:55:34 2019
+<item name = "Date">Thu Dec 12 23:27:48 2019
 </item>
 <item name = "Version">2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)</item>
 <item name = "Project">myFuncAccel</item>
@@ -221,8 +221,8 @@
 <item name = "Max Delay">3.63</item>
 <item name = "Critical Path Table"><table name="Critical Path Table" hasTotal="0">
 <keys size="15">Name, Operator, Delay, Accumulated Delay, Store Source, Resource, Core, Interface, Type, Port, Array, Scope, Pointer, Callee, Phi Node</keys>
-<column name="'threshold', /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c:30">read, 0.00, 0.00, -, -, -, wire, read, &apos;threshold&apos;, -, -, -, -, -</column>
-<column name="'call_ret', /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c:30">call, 3.63, 3.63, -, -, -, -, -, -, -, -, -, Block_codeRepl49_pro, -</column>
+<column name="'threshold', /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c:29">read, 0.00, 0.00, -, -, -, wire, read, &apos;threshold&apos;, -, -, -, -, -</column>
+<column name="'call_ret', /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c:29">call, 3.63, 3.63, -, -, -, -, -, -, -, -, -, Block_codeRepl49_pro, -</column>
 </table>
 </item>
 </section>

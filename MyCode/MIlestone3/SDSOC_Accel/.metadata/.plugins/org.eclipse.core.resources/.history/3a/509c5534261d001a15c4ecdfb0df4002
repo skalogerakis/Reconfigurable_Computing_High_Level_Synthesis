@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdsproject:SDSProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdsproject="http://www.xilinx.com/sdsproject" name="Algo_4" location="/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4" platform="/toolsViv/Xilinx/SDx/2018.3/platforms/zed/zed.xpfm" platformUID="xilinx.com:zed:zed:1.0" systemProject="Algo_4_system" sysConfig="linux" runtime="C/C++" cpu="linux" cpuInstance="" os="linux" ConfigType="Debug">
+  <configuration name="Debug" id="com.xilinx.sdsoc.managedbuild.project.debug.1677543578">
+    <configBuildOptions xsi:type="sdsproject:Option" insertapm="false" gensdcard="true" dmclkid="2" enableHwSwTrace="false" traceApplication="false">
+      <accelerator name="myFuncAccel" filepath="src/myAccel.c" clkid="2" location="/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c">
+        <args name="size"/>
+        <args name="dim"/>
+        <args name="threshold"/>
+        <args name="data0"/>
+        <args name="data1"/>
+        <args name="data2"/>
+      </accelerator>
+    </configBuildOptions>
+    <lastBuildOptions xsi:type="sdsproject:Option" insertapm="false" gensdcard="true" dmclkid="2" enableHwSwTrace="false" traceApplication="false">
+      <accelerator name="myFuncAccel" filepath="src/myAccel.c" clkid="2" location="/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c">
+        <args name="size"/>
+        <args name="dim"/>
+        <args name="threshold"/>
+        <args name="data0"/>
+        <args name="data1"/>
+        <args name="data2"/>
+      </accelerator>
+    </lastBuildOptions>
+  </configuration>
+  <configuration name="Release" id="com.xilinx.sdsoc.managedbuild.project.release.1006435276" dirty="true">
+    <configBuildOptions xsi:type="sdsproject:Option" insertapm="false" gensdcard="true" dmclkid="2" enableHwSwTrace="false" traceApplication="false"/>
+  </configuration>
+</sdsproject:SDSProject>

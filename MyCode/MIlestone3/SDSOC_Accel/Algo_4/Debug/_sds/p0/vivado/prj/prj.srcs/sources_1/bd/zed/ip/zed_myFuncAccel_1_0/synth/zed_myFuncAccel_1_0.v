@@ -48,11 +48,11 @@
 
 
 // IP VLNV: xilinx.com:hls:myFuncAccel:1.0
-// IP Revision: 1912110055
+// IP Revision: 1912122327
 
 (* X_CORE_INFO = "a0_myFuncAccel,Vivado 2018.3" *)
 (* CHECK_LICENSE_TYPE = "zed_myFuncAccel_1_0,a0_myFuncAccel,{}" *)
-(* CORE_GENERATION_INFO = "zed_myFuncAccel_1_0,a0_myFuncAccel,{x_ipProduct=Vivado 2018.3,x_ipVendor=xilinx.com,x_ipLibrary=hls,x_ipName=myFuncAccel,x_ipVersion=1.0,x_ipCoreRevision=1912110055,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED}" *)
+(* CORE_GENERATION_INFO = "zed_myFuncAccel_1_0,a0_myFuncAccel,{x_ipProduct=Vivado 2018.3,x_ipVendor=xilinx.com,x_ipLibrary=hls,x_ipName=myFuncAccel,x_ipVersion=1.0,x_ipCoreRevision=1912122327,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED}" *)
 (* IP_DEFINITION_SOURCE = "HLS" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module zed_myFuncAccel_1_0 (

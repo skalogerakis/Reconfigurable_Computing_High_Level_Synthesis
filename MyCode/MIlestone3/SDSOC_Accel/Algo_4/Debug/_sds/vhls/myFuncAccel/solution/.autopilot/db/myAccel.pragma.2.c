@@ -2339,7 +2339,6 @@ void myFuncAccel (unsigned int size, unsigned int dim, dataType_t threshold, dat
 # 21 "/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c"
 #pragma SDS data mem_attribute(data0:PHYSICAL_CONTIGUOUS, data1:PHYSICAL_CONTIGUOUS, data2:PHYSICAL_CONTIGUOUS)
 #pragma SDS data access_pattern(data0:SEQUENTIAL, data1:SEQUENTIAL, data2:SEQUENTIAL)
-#pragma SDS data sys_port(data0:AFI, data1:AFI, data2:AFI)
 #pragma SDS data data_mover(data0:AXIDMA_SIMPLE, data1:AXIDMA_SIMPLE, data2:AXIDMA_SIMPLE)
 
 #pragma SDS data copy(data0[0:dim*dim])
@@ -2349,16 +2348,16 @@ void myFuncAccel (unsigned int size, unsigned int dim, dataType_t threshold, dat
 void myFuncAccel (unsigned int size, unsigned int dim, dataType_t threshold, dataType_t * data0, dataType_t * data1, dataType_t * data2)
 {
 _ssdm_op_SpecInterface(data0, "ap_fifo", 0, 0, "", 0, 0, "", "", "", 0, 0, 0, 0, "", "");
-# 31 "/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c"
+# 30 "/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c"
 
 _ssdm_op_SpecInterface(data1, "ap_fifo", 0, 0, "", 0, 0, "", "", "", 0, 0, 0, 0, "", "");
-# 31 "/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c"
+# 30 "/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c"
 
 _ssdm_op_SpecInterface(data2, "ap_fifo", 0, 0, "", 0, 0, "", "", "", 0, 0, 0, 0, "", "");
-# 31 "/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c"
+# 30 "/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c"
 
 _ssdm_op_SpecLatency(1, 65535, "");
-# 31 "/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c"
+# 30 "/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c"
 
 
 

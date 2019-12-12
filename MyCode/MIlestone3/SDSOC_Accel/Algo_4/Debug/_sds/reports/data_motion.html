@@ -72,10 +72,9 @@
 <li>length:(dim*dim)</li>
 <li>mem_attribute:PHYSICAL_CONTIGUOUS</li>
 <li>data_mover:AXIDMA_SIMPLE</li>
-<li>sys_port:AFI</li>
 </ul>
 </td>
-<td>ps7_S_AXI_HP1:AXIDMA_SIMPLE</td>
+<td>ps7_S_AXI_ACP:AXIDMA_SIMPLE</td>
 </tr>
 <td></td>
 <td>data1</td>
@@ -86,10 +85,9 @@
 <li>length:(dim*size)</li>
 <li>mem_attribute:PHYSICAL_CONTIGUOUS</li>
 <li>data_mover:AXIDMA_SIMPLE</li>
-<li>sys_port:AFI</li>
 </ul>
 </td>
-<td>ps7_S_AXI_HP0:AXIDMA_SIMPLE</td>
+<td>ps7_S_AXI_ACP:AXIDMA_SIMPLE</td>
 </tr>
 <td></td>
 <td>data2</td>
@@ -100,10 +98,9 @@
 <li>length:(dim*size)</li>
 <li>mem_attribute:PHYSICAL_CONTIGUOUS</li>
 <li>data_mover:AXIDMA_SIMPLE</li>
-<li>sys_port:AFI</li>
 </ul>
 </td>
-<td>ps7_S_AXI_HP2:AXIDMA_SIMPLE</td>
+<td>ps7_S_AXI_ACP:AXIDMA_SIMPLE</td>
 </tr>
 </table>
 
@@ -148,24 +145,24 @@
 <td>data0</td>
 <td>(dim*dim) * 4</td>
 <td>PHYSICAL_CONTIGUOUS</td>
-<td>10105708</td>
-<td>13983052</td>
+<td>1594</td>
+<td>13983010</td>
 </tr>
 <td></td>
 <td></td>
 <td>data1</td>
 <td>(dim*size) * 4</td>
 <td>PHYSICAL_CONTIGUOUS</td>
-<td>10105708</td>
-<td>13983052</td>
+<td>1594</td>
+<td>13983010</td>
 </tr>
 <td></td>
 <td></td>
 <td>data2</td>
 <td>(dim*size) * 4</td>
 <td>PHYSICAL_CONTIGUOUS</td>
-<td>10105708</td>
-<td>13983052</td>
+<td>1594</td>
+<td>13983010</td>
 </tr>
 </table>
 </body>
@@ -174,17 +171,17 @@
 		<arg name="size" ipPort="size" direction="IN" size="4" pragma="" connectionIpPort="ps7_M_AXI_GP0" connectionDm="AXILITE"\>
 		<arg name="dim" ipPort="dim" direction="IN" size="4" pragma="" connectionIpPort="ps7_M_AXI_GP0" connectionDm="AXILITE"\>
 		<arg name="threshold" ipPort="threshold" direction="IN" size="4" pragma="" connectionIpPort="ps7_M_AXI_GP0" connectionDm="AXILITE"\>
-		<arg name="data0" ipPort="data0" direction="IN" size="(size)*4" pragma="" connectionIpPort="ps7_S_AXI_HP1" connectionDm="AXIDMA_SIMPLE"\>
-		<arg name="data1" ipPort="data1" direction="IN" size="(size)*4" pragma="" connectionIpPort="ps7_S_AXI_HP0" connectionDm="AXIDMA_SIMPLE"\>
-		<arg name="data2" ipPort="data2" direction="OUT" size="(size)*4" pragma="" connectionIpPort="ps7_S_AXI_HP2" connectionDm="AXIDMA_SIMPLE"\>
+		<arg name="data0" ipPort="data0" direction="IN" size="(size)*4" pragma="" connectionIpPort="ps7_S_AXI_ACP" connectionDm="AXIDMA_SIMPLE"\>
+		<arg name="data1" ipPort="data1" direction="IN" size="(size)*4" pragma="" connectionIpPort="ps7_S_AXI_ACP" connectionDm="AXIDMA_SIMPLE"\>
+		<arg name="data2" ipPort="data2" direction="OUT" size="(size)*4" pragma="" connectionIpPort="ps7_S_AXI_ACP" connectionDm="AXIDMA_SIMPLE"\>
 	</accel>
 	<call accel="myFuncAccel_1" site="main.c:165:2">
 		<arg ipPort="size" size="4" memType="paged" setup="0" transfer="13"/>
 		<arg ipPort="dim" size="4" memType="paged" setup="0" transfer="13"/>
 		<arg ipPort="threshold" size="4" memType="paged" setup="0" transfer="13"/>
-		<arg ipPort="data0" size="(dim*dim) * 4" memType="PHYSICAL_CONTIGUOUS" setup="10105708" transfer="13983052"/>
-		<arg ipPort="data1" size="(dim*size) * 4" memType="PHYSICAL_CONTIGUOUS" setup="10105708" transfer="13983052"/>
-		<arg ipPort="data2" size="(dim*size) * 4" memType="PHYSICAL_CONTIGUOUS" setup="10105708" transfer="13983052"/>
+		<arg ipPort="data0" size="(dim*dim) * 4" memType="PHYSICAL_CONTIGUOUS" setup="1594" transfer="13983010"/>
+		<arg ipPort="data1" size="(dim*size) * 4" memType="PHYSICAL_CONTIGUOUS" setup="1594" transfer="13983010"/>
+		<arg ipPort="data2" size="(dim*size) * 4" memType="PHYSICAL_CONTIGUOUS" setup="1594" transfer="13983010"/>
 	</call>
 </dmn>
 </html>

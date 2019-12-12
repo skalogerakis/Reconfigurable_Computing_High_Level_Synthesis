@@ -1,0 +1,84 @@
+#-----------------------------------------------------------
+# Webtalk v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# 
+# Start of session at: Wed Dec 11 03:33:21 2019
+# Process ID: 17690
+# Current directory: /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/webtalk
+# Command line: wbtcv -mode batch -source sdx_webtalk.tcl
+# Log file: /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/webtalk/webtalk.log
+# Journal file: /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/webtalk/webtalk.jou
+#-----------------------------------------------------------
+source sdx_webtalk.tcl
+# webtalk_init -webtalk_dir /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/webtalk
+# webtalk_register_client -client project
+# webtalk_add_data -client project -key date_generated -value "2019-12-11 03:33:19" -context "software_version_and_target_device"
+# webtalk_add_data -client project -key product_version -value "SDx v2018.3" -context "software_version_and_target_device"
+# webtalk_add_data -client project -key build_version -value "2018.3" -context "software_version_and_target_device"
+# webtalk_add_data -client project -key os_platform -value "amd64" -context "software_version_and_target_device"
+# webtalk_add_data -client project -key registration_id -value "174111662_177799855_210698244_043" -context "software_version_and_target_device"
+# webtalk_add_data -client project -key tool_flow -value "SDx" -context "software_version_and_target_device"
+# webtalk_add_data -client project -key beta -value "false" -context "software_version_and_target_device"
+# webtalk_add_data -client project -key route_design -value "NA" -context "software_version_and_target_device"
+# webtalk_add_data -client project -key target_family -value "NA" -context "software_version_and_target_device"
+# webtalk_add_data -client project -key target_device -value "NA" -context "software_version_and_target_device"
+# webtalk_add_data -client project -key target_package -value "NA" -context "software_version_and_target_device"
+# webtalk_add_data -client project -key target_speed -value "NA" -context "software_version_and_target_device"
+# webtalk_add_data -client project -key random_id -value "6ks6etdsk538tqbiuthcptaos9" -context "software_version_and_target_device"
+# webtalk_add_data -client project -key project_id -value "2018.3_4" -context "software_version_and_target_device"
+# webtalk_add_data -client project -key project_iteration -value "4" -context "software_version_and_target_device"
+# webtalk_add_data -client project -key os_name -value "Ubuntu" -context "user_environment"
+# webtalk_add_data -client project -key os_release -value "Ubuntu 18.04.3 LTS" -context "user_environment"
+# webtalk_add_data -client project -key cpu_name -value "Intel(R) Core(TM) i5-7200U CPU @ 2.50GHz" -context "user_environment"
+# webtalk_add_data -client project -key cpu_speed -value "3100.032 MHz" -context "user_environment"
+# webtalk_add_data -client project -key total_processors -value "1" -context "user_environment"
+# webtalk_add_data -client project -key system_ram -value "8,123 GB" -context "user_environment"
+# webtalk_register_client -client sdx
+# webtalk_add_data -client sdx -key uid -value "1576014476000" -context "sdx\\\\application/1576014476000"
+# webtalk_add_data -client sdx -key project_type -value "sdsoc" -context "sdx\\\\application/1576014476000"
+# webtalk_add_data -client sdx -key os -value "linux" -context "sdx\\\\application/1576014476000"
+# webtalk_add_data -client sdx -key processor -value "cortex-a9" -context "sdx\\\\application/1576014476000"
+# webtalk_add_data -client sdx -key runtime -value "C/C++" -context "sdx\\\\application/1576014476000"
+# webtalk_add_data -client sdx -key template -value "empty" -context "sdx\\\\application/1576014476000"
+# webtalk_add_data -client sdx -key platform -value "zed" -context "sdx\\\\application/1576014476000"
+# webtalk_add_data -client sdx -key platform_type -value "extensible" -context "sdx\\\\application/1576014476000"
+# webtalk_add_data -client sdx -key application_type -value "application" -context "sdx\\\\application/1576014476000"
+# webtalk_add_data -client sdx -key platform_source -value "platform" -context "sdx\\\\application/1576014476000"
+# webtalk_add_data -client sdx -key device_family -value "zynq" -context "sdx\\\\application/1576014476000"
+# webtalk_add_data -client sdx -key fpga -value "xc7z020" -context "sdx\\\\application/1576014476000"
+# webtalk_add_data -client sdx -key sdsoc_accel_count -value "1" -context "sdx\\\\application/1576014476000"
+# webtalk_add_data -client sdx -key sdsoc_lib_accel_count -value "0" -context "sdx\\\\application/1576014476000"
+# webtalk_add_data -client sdx -key uid -value "1576014476000" -context "sdx\\\\build/1576015992203"
+# webtalk_add_data -client sdx -key sdx_build_duration -value "20m:13s.399ms" -context "sdx\\\\build/1576015992203"
+# webtalk_add_data -client sdx -key sdsoc_build_type -value "default" -context "sdx\\\\build/1576015992203"
+# webtalk_add_data -client sdx -key uid -value "1576014476000" -context "sdx\\\\build/1576016885254"
+# webtalk_add_data -client sdx -key sdx_build_duration -value "13m:32s.131ms" -context "sdx\\\\build/1576016885254"
+# webtalk_add_data -client sdx -key sdsoc_build_type -value "default" -context "sdx\\\\build/1576016885254"
+# webtalk_add_data -client sdx -key uid -value "1576014476000" -context "sdx\\\\build/1576019440597"
+# webtalk_add_data -client sdx -key sdx_build_duration -value "15m:25s.544ms" -context "sdx\\\\build/1576019440597"
+# webtalk_add_data -client sdx -key sdsoc_build_type -value "default" -context "sdx\\\\build/1576019440597"
+# webtalk_add_data -client sdx -key uid -value "NA" -context "sdx\\\\tool/1576027999107"
+# webtalk_add_data -client sdx -key RecordType -value "ToolUsage" -context "sdx\\\\tool/1576027999107"
+# webtalk_add_data -client sdx -key BOOTGEN_count -value "0" -context "sdx\\\\tool/1576027999107"
+# webtalk_add_data -client sdx -key FLASH_count -value "0" -context "sdx\\\\tool/1576027999107"
+# webtalk_add_data -client sdx -key MOVE_APP_TO_SYSTEM_count -value "0" -context "sdx\\\\tool/1576027999107"
+# webtalk_add_data -client sdx -key SDX_EXPORT_count -value "0" -context "sdx\\\\tool/1576027999107"
+# webtalk_add_data -client sdx -key SDX_IMPORT_count -value "0" -context "sdx\\\\tool/1576027999107"
+# webtalk_add_data -client sdx -key SDX_BUILD_count -value "3" -context "sdx\\\\tool/1576027999107"
+# webtalk_add_data -client sdx -key SDX_NO_OP_BUILD_count -value "3" -context "sdx\\\\tool/1576027999107"
+# webtalk_add_data -client sdx -key TCF_APP_DEBUG_count -value "0" -context "sdx\\\\tool/1576027999107"
+# webtalk_add_data -client sdx -key TCF_SYSTEM_DEBUG_count -value "0" -context "sdx\\\\tool/1576027999107"
+# webtalk_add_data -client sdx -key GDB_DEBUG_count -value "0" -context "sdx\\\\tool/1576027999107"
+# webtalk_add_data -client sdx -key QEMU_DEBUG_count -value "0" -context "sdx\\\\tool/1576027999107"
+# webtalk_add_data -client sdx -key ESTIMATION_DEBUG_count -value "0" -context "sdx\\\\tool/1576027999107"
+# webtalk_add_data -client sdx -key SDSOC_TRACE_count -value "0" -context "sdx\\\\tool/1576027999107"
+# webtalk_add_data -client sdx -key PERFORMANCE_ANALYSIS_count -value "0" -context "sdx\\\\tool/1576027999107"
+# webtalk_add_data -client sdx -key SPM_ANALYSIS_count -value "0" -context "sdx\\\\tool/1576027999107"
+# webtalk_add_data -client sdx -key CROSS_TRIGGER_count -value "0" -context "sdx\\\\tool/1576027999107"
+# webtalk_add_data -client sdx -key TCF_PROFILER_count -value "0" -context "sdx\\\\tool/1576027999107"
+# webtalk_add_data -client sdx -key APPLICATION_PLATFORM_CHANGE_count -value "0" -context "sdx\\\\tool/1576027999107"
+# webtalk_add_data -client sdx -key APPLICATION_SYS_CONFIG_CHANGE_count -value "0" -context "sdx\\\\tool/1576027999107"
+# webtalk_add_data -client sdx -key SYSTEM_PLATFORM_CHANGE_count -value "0" -context "sdx\\\\tool/1576027999107"
+# webtalk_transmit -clientid 2536668866 -regid "174111662_177799855_210698244_043" -xml /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/webtalk/usage_statistics_ext_sdx.xml -html /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/webtalk/usage_statistics_ext_sdx.html -wdm /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/webtalk/sdx_webtalk.wdm -intro "<H3>SDx Usage Report</H3><BR>"
+# webtalk_terminate
+INFO: [Common 17-206] Exiting Webtalk at Wed Dec 11 03:33:21 2019...

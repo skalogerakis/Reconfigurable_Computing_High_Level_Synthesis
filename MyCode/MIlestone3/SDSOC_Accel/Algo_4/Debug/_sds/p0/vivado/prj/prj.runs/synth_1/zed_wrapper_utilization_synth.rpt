@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
-| Date         : Wed Dec 11 01:05:56 2019
+| Date         : Thu Dec 12 23:35:09 2019
 | Host         : skl running 64-bit Ubuntu 18.04.3 LTS
 | Command      : report_utilization -file zed_wrapper_utilization_synth.rpt -pb zed_wrapper_utilization_synth.pb
 | Design       : zed_wrapper
@@ -175,13 +175,14 @@ Table of Contents
 +--------------------------+------+
 |         Ref Name         | Used |
 +--------------------------+------+
+| zed_xbar_1               |    1 |
 | zed_xbar_0               |    1 |
-| zed_s00_regslice_3       |    1 |
-| zed_s00_regslice_2       |    1 |
+| zed_s02_regslice_0       |    1 |
+| zed_s02_data_fifo_0      |    1 |
+| zed_s01_regslice_0       |    1 |
+| zed_s01_data_fifo_0      |    1 |
 | zed_s00_regslice_1       |    1 |
 | zed_s00_regslice_0       |    1 |
-| zed_s00_data_fifo_3      |    1 |
-| zed_s00_data_fifo_2      |    1 |
 | zed_s00_data_fifo_1      |    1 |
 | zed_s00_data_fifo_0      |    1 |
 | zed_ps7_0                |    1 |
@@ -196,7 +197,9 @@ Table of Contents
 | zed_m03_regslice_0       |    1 |
 | zed_m02_regslice_0       |    1 |
 | zed_m01_regslice_0       |    1 |
+| zed_m00_regslice_1       |    1 |
 | zed_m00_regslice_0       |    1 |
+| zed_m00_data_fifo_0      |    1 |
 | zed_dm_2_0               |    1 |
 | zed_dm_1_0               |    1 |
 | zed_dm_0_0               |    1 |
@@ -204,8 +207,6 @@ Table of Contents
 | zed_axis_dwc_dm_2_rx_0_0 |    1 |
 | zed_axis_dwc_dm_1_tx_0_0 |    1 |
 | zed_axis_dwc_dm_0_tx_0_0 |    1 |
-| zed_auto_pc_3            |    1 |
-| zed_auto_pc_2            |    1 |
 | zed_auto_pc_1            |    1 |
 | zed_auto_pc_0            |    1 |
 +--------------------------+------+

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7z020clg484-1" LaunchTime="1576019158">
+<GenRun Id="impl_1" LaunchPart="xc7z020clg484-1" LaunchTime="1576186512">
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <File Type="BG-DRC" Name="zed_wrapper.drc"/>
   <File Type="BG-BGN" Name="zed_wrapper.bgn"/>
@@ -195,12 +195,5 @@
     <Step Id="post_route_phys_opt_design" PostStepTclHook="$PPRDIR/../scripts/_full_post_route_phys_opt_post.tcl"/>
     <Step Id="write_bitstream"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="zed_auto_pc_1"/>
-  <BlockFileSet Type="BlockSrcs" Name="zed_auto_pc_3"/>
-  <BlockFileSet Type="BlockSrcs" Name="zed_ps7_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="zed_s00_data_fifo_1"/>
-  <BlockFileSet Type="BlockSrcs" Name="zed_s00_data_fifo_3"/>
-  <BlockFileSet Type="BlockSrcs" Name="zed_auto_pc_2"/>
   <BlockFileSet Type="BlockSrcs" Name="zed_myFuncAccel_1_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="zed_s00_data_fifo_2"/>
 </GenRun>

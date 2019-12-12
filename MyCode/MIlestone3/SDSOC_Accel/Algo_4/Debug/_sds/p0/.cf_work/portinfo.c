@@ -11,25 +11,11 @@
 #include "axi_lite_dm.h"
 #include "sysport_info.h"
 
-sysport_info_t _sds_sysportp_0_ps7_S_AXI_HP0 = {
-  .name = "ps7_S_AXI_HP0",
+sysport_info_t _sds_sysportp_0_ps7_S_AXI_ACP = {
+  .name = "ps7_S_AXI_ACP",
   .id = 1,
   .address_space = 0,
-  .cmd_type = sysport_commands_type_non_coherent,
-};
-
-sysport_info_t _sds_sysportp_0_ps7_S_AXI_HP1 = {
-  .name = "ps7_S_AXI_HP1",
-  .id = 2,
-  .address_space = 0,
-  .cmd_type = sysport_commands_type_non_coherent,
-};
-
-sysport_info_t _sds_sysportp_0_ps7_S_AXI_HP2 = {
-  .name = "ps7_S_AXI_HP2",
-  .id = 3,
-  .address_space = 0,
-  .cmd_type = sysport_commands_type_non_coherent,
+  .cmd_type = sysport_commands_type_no_action,
 };
 
 accel_info_t _sds_p_0_myFuncAccel_1 = {
@@ -47,7 +33,7 @@ axi_dma_simple_info_t p_0_dm_0 = {
   .device_id = 0,
   .dir = XLNK_DMA_TO_DEV,
   .irq = -1,
-  .data_sysport = &_sds_sysportp_0_ps7_S_AXI_HP1,
+  .data_sysport = &_sds_sysportp_0_ps7_S_AXI_ACP,
   .data_width = 64,
 };
 
@@ -58,7 +44,7 @@ axi_dma_simple_info_t p_0_dm_1 = {
   .device_id = 1,
   .dir = XLNK_DMA_TO_DEV,
   .irq = -1,
-  .data_sysport = &_sds_sysportp_0_ps7_S_AXI_HP0,
+  .data_sysport = &_sds_sysportp_0_ps7_S_AXI_ACP,
   .data_width = 64,
 };
 
@@ -69,7 +55,7 @@ axi_dma_simple_info_t p_0_dm_2 = {
   .device_id = 2,
   .dir = XLNK_DMA_FROM_DEV,
   .irq = -1,
-  .data_sysport = &_sds_sysportp_0_ps7_S_AXI_HP2,
+  .data_sysport = &_sds_sysportp_0_ps7_S_AXI_ACP,
   .data_width = 64,
 };
 
@@ -151,9 +137,7 @@ extern void pfm_hook_init(void);
 extern void pfm_hook_shutdown(void);
 void p_0_init_pl(void)
 {
-  sysport_open(&_sds_sysportp_0_ps7_S_AXI_HP0);
-  sysport_open(&_sds_sysportp_0_ps7_S_AXI_HP1);
-  sysport_open(&_sds_sysportp_0_ps7_S_AXI_HP2);
+  sysport_open(&_sds_sysportp_0_ps7_S_AXI_ACP);
   axi_dma_simple_open(&p_0_dm_0);
   axi_dma_simple_open(&p_0_dm_1);
   axi_dma_simple_open(&p_0_dm_2);
@@ -182,9 +166,7 @@ void p_0_shutdown_pl()
   axi_lite_close(&p_0_hwinst_myFuncAccel_1_size_info);
   axi_lite_close(&p_0_hwinst_myFuncAccel_1_dim_info);
   axi_lite_close(&p_0_hwinst_myFuncAccel_1_threshold_info);
-  sysport_close(&_sds_sysportp_0_ps7_S_AXI_HP0);
-  sysport_close(&_sds_sysportp_0_ps7_S_AXI_HP1);
-  sysport_close(&_sds_sysportp_0_ps7_S_AXI_HP2);
+  sysport_close(&_sds_sysportp_0_ps7_S_AXI_ACP);
 }
 
 

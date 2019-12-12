@@ -47,7 +47,7 @@
 -- DO NOT MODIFY THIS FILE.
 
 -- IP VLNV: xilinx.com:hls:myFuncAccel:1.0
--- IP Revision: 1912110055
+-- IP Revision: 1912122327
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;

@@ -16,19 +16,18 @@ INFO: [IP_Flow 19-1700] Loaded user IP repository '/toolsViv/Xilinx/SDx/2018.3/d
 INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/.local/dsa/ipcache'.
 INFO: [IP_Flow 19-1700] Loaded user IP repository '/toolsViv/Xilinx/SDx/2018.3/data/ip'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/toolsViv/Xilinx/Vivado/2018.3/data/ip'.
-update_ip_catalog: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1460.457 ; gain = 113.008 ; free physical = 775 ; free virtual = 3869
 Command: synth_design -top zed_myFuncAccel_1_0 -part xc7z020clg484-1 -mode out_of_context
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 2563 
+INFO: Helper process launched with PID 20275 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 1477.457 ; gain = 16.895 ; free physical = 587 ; free virtual = 3693
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 1478.004 ; gain = 16.895 ; free physical = 163 ; free virtual = 4189
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'zed_myFuncAccel_1_0' [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/ip/zed_myFuncAccel_1_0/synth/zed_myFuncAccel_1_0.v:58]
-INFO: [Synth 8-6157] synthesizing module 'a0_myFuncAccel' [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/ipshared/f3a8/hdl/verilog/a0_myFuncAccel.v:12]
-INFO: [Synth 8-6157] synthesizing module 'a0_Block_codeRepl49_pro' [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/ipshared/f3a8/hdl/verilog/a0_Block_codeRepl49_pro.v:10]
+INFO: [Synth 8-6157] synthesizing module 'a0_myFuncAccel' [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/ipshared/0a54/hdl/verilog/a0_myFuncAccel.v:12]
+INFO: [Synth 8-6157] synthesizing module 'a0_Block_codeRepl49_pro' [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/ipshared/0a54/hdl/verilog/a0_Block_codeRepl49_pro.v:10]
 	Parameter ap_ST_fsm_state1 bound to: 16'b0000000000000001 
 	Parameter ap_ST_fsm_state2 bound to: 16'b0000000000000010 
 	Parameter ap_ST_fsm_state3 bound to: 16'b0000000000000100 
@@ -45,23 +44,23 @@ INFO: [Synth 8-6157] synthesizing module 'a0_Block_codeRepl49_pro' [/home/skalog
 	Parameter ap_ST_fsm_state14 bound to: 16'b0010000000000000 
 	Parameter ap_ST_fsm_state15 bound to: 16'b0100000000000000 
 	Parameter ap_ST_fsm_state16 bound to: 16'b1000000000000000 
-INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/ipshared/f3a8/hdl/verilog/a0_Block_codeRepl49_pro.v:123]
-INFO: [Synth 8-6155] done synthesizing module 'a0_Block_codeRepl49_pro' (1#1) [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/ipshared/f3a8/hdl/verilog/a0_Block_codeRepl49_pro.v:10]
-INFO: [Synth 8-6157] synthesizing module 'a0_Loop_sizeLoop_proc' [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/ipshared/f3a8/hdl/verilog/a0_Loop_sizeLoop_proc.v:10]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/ipshared/0a54/hdl/verilog/a0_Block_codeRepl49_pro.v:123]
+INFO: [Synth 8-6155] done synthesizing module 'a0_Block_codeRepl49_pro' (1#1) [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/ipshared/0a54/hdl/verilog/a0_Block_codeRepl49_pro.v:10]
+INFO: [Synth 8-6157] synthesizing module 'a0_Loop_sizeLoop_proc' [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/ipshared/0a54/hdl/verilog/a0_Loop_sizeLoop_proc.v:10]
 	Parameter ap_ST_fsm_state1 bound to: 6'b000001 
 	Parameter ap_ST_fsm_pp0_stage0 bound to: 6'b000010 
 	Parameter ap_ST_fsm_pp0_stage1 bound to: 6'b000100 
 	Parameter ap_ST_fsm_pp0_stage2 bound to: 6'b001000 
 	Parameter ap_ST_fsm_pp0_stage3 bound to: 6'b010000 
 	Parameter ap_ST_fsm_state40 bound to: 6'b100000 
-INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/ipshared/f3a8/hdl/verilog/a0_Loop_sizeLoop_proc.v:100]
-INFO: [Synth 8-6157] synthesizing module 'a0_myFuncAccel_fadd_32ns_32ns_32_5_full_dsp_1' [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/ipshared/f3a8/hdl/verilog/a0_myFuncAccel_fadd_32ns_32ns_32_5_full_dsp_1.v:11]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/ipshared/0a54/hdl/verilog/a0_Loop_sizeLoop_proc.v:100]
+INFO: [Synth 8-6157] synthesizing module 'a0_myFuncAccel_fadd_32ns_32ns_32_5_full_dsp_1' [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/ipshared/0a54/hdl/verilog/a0_myFuncAccel_fadd_32ns_32ns_32_5_full_dsp_1.v:11]
 	Parameter ID bound to: 1 - type: integer 
 	Parameter NUM_STAGE bound to: 5 - type: integer 
 	Parameter din0_WIDTH bound to: 32 - type: integer 
 	Parameter din1_WIDTH bound to: 32 - type: integer 
 	Parameter dout_WIDTH bound to: 32 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'a0_myFuncAccel_ap_fadd_3_full_dsp_32' [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/ipshared/f3a8/hdl/ip/a0_myFuncAccel_ap_fadd_3_full_dsp_32.vhd:72]
+INFO: [Synth 8-638] synthesizing module 'a0_myFuncAccel_ap_fadd_3_full_dsp_32' [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/ipshared/0a54/hdl/ip/a0_myFuncAccel_ap_fadd_3_full_dsp_32.vhd:72]
 	Parameter C_XDEVICEFAMILY bound to: artix7 - type: string 
 	Parameter C_HAS_ADD bound to: 1 - type: integer 
 	Parameter C_HAS_SUBTRACT bound to: 0 - type: integer 
@@ -132,16 +131,16 @@ INFO: [Synth 8-638] synthesizing module 'a0_myFuncAccel_ap_fadd_3_full_dsp_32' [
 	Parameter C_RESULT_TDATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_RESULT_TUSER_WIDTH bound to: 1 - type: integer 
 	Parameter C_FIXED_DATA_UNSIGNED bound to: 0 - type: integer 
-INFO: [Synth 8-3491] module 'floating_point_v7_1_7' declared at '/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/ipshared/c63e/hdl/floating_point_v7_1_vh_rfs.vhd:91615' bound to instance 'U0' of component 'floating_point_v7_1_7' [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/ipshared/f3a8/hdl/ip/a0_myFuncAccel_ap_fadd_3_full_dsp_32.vhd:204]
-INFO: [Synth 8-256] done synthesizing module 'a0_myFuncAccel_ap_fadd_3_full_dsp_32' (19#1) [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/ipshared/f3a8/hdl/ip/a0_myFuncAccel_ap_fadd_3_full_dsp_32.vhd:72]
-INFO: [Synth 8-6155] done synthesizing module 'a0_myFuncAccel_fadd_32ns_32ns_32_5_full_dsp_1' (20#1) [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/ipshared/f3a8/hdl/verilog/a0_myFuncAccel_fadd_32ns_32ns_32_5_full_dsp_1.v:11]
-INFO: [Synth 8-6157] synthesizing module 'a0_myFuncAccel_fmul_32ns_32ns_32_4_max_dsp_1' [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/ipshared/f3a8/hdl/verilog/a0_myFuncAccel_fmul_32ns_32ns_32_4_max_dsp_1.v:11]
+INFO: [Synth 8-3491] module 'floating_point_v7_1_7' declared at '/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/ipshared/c63e/hdl/floating_point_v7_1_vh_rfs.vhd:91615' bound to instance 'U0' of component 'floating_point_v7_1_7' [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/ipshared/0a54/hdl/ip/a0_myFuncAccel_ap_fadd_3_full_dsp_32.vhd:204]
+INFO: [Synth 8-256] done synthesizing module 'a0_myFuncAccel_ap_fadd_3_full_dsp_32' (19#1) [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/ipshared/0a54/hdl/ip/a0_myFuncAccel_ap_fadd_3_full_dsp_32.vhd:72]
+INFO: [Synth 8-6155] done synthesizing module 'a0_myFuncAccel_fadd_32ns_32ns_32_5_full_dsp_1' (20#1) [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/ipshared/0a54/hdl/verilog/a0_myFuncAccel_fadd_32ns_32ns_32_5_full_dsp_1.v:11]
+INFO: [Synth 8-6157] synthesizing module 'a0_myFuncAccel_fmul_32ns_32ns_32_4_max_dsp_1' [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/ipshared/0a54/hdl/verilog/a0_myFuncAccel_fmul_32ns_32ns_32_4_max_dsp_1.v:11]
 	Parameter ID bound to: 1 - type: integer 
 	Parameter NUM_STAGE bound to: 4 - type: integer 
 	Parameter din0_WIDTH bound to: 32 - type: integer 
 	Parameter din1_WIDTH bound to: 32 - type: integer 
 	Parameter dout_WIDTH bound to: 32 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'a0_myFuncAccel_ap_fmul_2_max_dsp_32' [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/ipshared/f3a8/hdl/ip/a0_myFuncAccel_ap_fmul_2_max_dsp_32.vhd:72]
+INFO: [Synth 8-638] synthesizing module 'a0_myFuncAccel_ap_fmul_2_max_dsp_32' [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/ipshared/0a54/hdl/ip/a0_myFuncAccel_ap_fmul_2_max_dsp_32.vhd:72]
 	Parameter C_XDEVICEFAMILY bound to: artix7 - type: string 
 	Parameter C_HAS_ADD bound to: 0 - type: integer 
 	Parameter C_HAS_SUBTRACT bound to: 0 - type: integer 
@@ -212,10 +211,10 @@ INFO: [Synth 8-638] synthesizing module 'a0_myFuncAccel_ap_fmul_2_max_dsp_32' [/
 	Parameter C_RESULT_TDATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_RESULT_TUSER_WIDTH bound to: 1 - type: integer 
 	Parameter C_FIXED_DATA_UNSIGNED bound to: 0 - type: integer 
-INFO: [Synth 8-3491] module 'floating_point_v7_1_7' declared at '/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/ipshared/c63e/hdl/floating_point_v7_1_vh_rfs.vhd:91615' bound to instance 'U0' of component 'floating_point_v7_1_7' [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/ipshared/f3a8/hdl/ip/a0_myFuncAccel_ap_fmul_2_max_dsp_32.vhd:204]
-INFO: [Synth 8-256] done synthesizing module 'a0_myFuncAccel_ap_fmul_2_max_dsp_32' (28#1) [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/ipshared/f3a8/hdl/ip/a0_myFuncAccel_ap_fmul_2_max_dsp_32.vhd:72]
-INFO: [Synth 8-6155] done synthesizing module 'a0_myFuncAccel_fmul_32ns_32ns_32_4_max_dsp_1' (29#1) [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/ipshared/f3a8/hdl/verilog/a0_myFuncAccel_fmul_32ns_32ns_32_4_max_dsp_1.v:11]
-INFO: [Synth 8-6157] synthesizing module 'a0_myFuncAccel_fcmp_32ns_32ns_1_1_1' [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/ipshared/f3a8/hdl/verilog/a0_myFuncAccel_fcmp_32ns_32ns_1_1_1.v:11]
+INFO: [Synth 8-3491] module 'floating_point_v7_1_7' declared at '/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/ipshared/c63e/hdl/floating_point_v7_1_vh_rfs.vhd:91615' bound to instance 'U0' of component 'floating_point_v7_1_7' [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/ipshared/0a54/hdl/ip/a0_myFuncAccel_ap_fmul_2_max_dsp_32.vhd:204]
+INFO: [Synth 8-256] done synthesizing module 'a0_myFuncAccel_ap_fmul_2_max_dsp_32' (28#1) [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/ipshared/0a54/hdl/ip/a0_myFuncAccel_ap_fmul_2_max_dsp_32.vhd:72]
+INFO: [Synth 8-6155] done synthesizing module 'a0_myFuncAccel_fmul_32ns_32ns_32_4_max_dsp_1' (29#1) [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/ipshared/0a54/hdl/verilog/a0_myFuncAccel_fmul_32ns_32ns_32_4_max_dsp_1.v:11]
+INFO: [Synth 8-6157] synthesizing module 'a0_myFuncAccel_fcmp_32ns_32ns_1_1_1' [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/ipshared/0a54/hdl/verilog/a0_myFuncAccel_fcmp_32ns_32ns_1_1_1.v:11]
 	Parameter ID bound to: 1 - type: integer 
 	Parameter NUM_STAGE bound to: 1 - type: integer 
 	Parameter din0_WIDTH bound to: 32 - type: integer 
@@ -235,7 +234,7 @@ INFO: [Synth 8-6157] synthesizing module 'a0_myFuncAccel_fcmp_32ns_32ns_1_1_1' [
 	Parameter OP_LE bound to: 8'b00011100 
 	Parameter OP_NE bound to: 8'b00101100 
 	Parameter OP_UO bound to: 8'b00000100 
-INFO: [Synth 8-638] synthesizing module 'a0_myFuncAccel_ap_fcmp_0_no_dsp_32' [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/ipshared/f3a8/hdl/ip/a0_myFuncAccel_ap_fcmp_0_no_dsp_32.vhd:72]
+INFO: [Synth 8-638] synthesizing module 'a0_myFuncAccel_ap_fcmp_0_no_dsp_32' [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/ipshared/0a54/hdl/ip/a0_myFuncAccel_ap_fcmp_0_no_dsp_32.vhd:72]
 	Parameter C_XDEVICEFAMILY bound to: artix7 - type: string 
 	Parameter C_HAS_ADD bound to: 0 - type: integer 
 	Parameter C_HAS_SUBTRACT bound to: 0 - type: integer 
@@ -306,25 +305,25 @@ INFO: [Synth 8-638] synthesizing module 'a0_myFuncAccel_ap_fcmp_0_no_dsp_32' [/h
 	Parameter C_RESULT_TDATA_WIDTH bound to: 8 - type: integer 
 	Parameter C_RESULT_TUSER_WIDTH bound to: 1 - type: integer 
 	Parameter C_FIXED_DATA_UNSIGNED bound to: 0 - type: integer 
-INFO: [Synth 8-3491] module 'floating_point_v7_1_7' declared at '/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/ipshared/c63e/hdl/floating_point_v7_1_vh_rfs.vhd:91615' bound to instance 'U0' of component 'floating_point_v7_1_7' [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/ipshared/f3a8/hdl/ip/a0_myFuncAccel_ap_fcmp_0_no_dsp_32.vhd:202]
-INFO: [Synth 8-256] done synthesizing module 'a0_myFuncAccel_ap_fcmp_0_no_dsp_32' (33#1) [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/ipshared/f3a8/hdl/ip/a0_myFuncAccel_ap_fcmp_0_no_dsp_32.vhd:72]
-INFO: [Synth 8-6155] done synthesizing module 'a0_myFuncAccel_fcmp_32ns_32ns_1_1_1' (34#1) [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/ipshared/f3a8/hdl/verilog/a0_myFuncAccel_fcmp_32ns_32ns_1_1_1.v:11]
-WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/ipshared/f3a8/hdl/verilog/a0_Loop_sizeLoop_proc.v:1658]
-INFO: [Synth 8-6155] done synthesizing module 'a0_Loop_sizeLoop_proc' (35#1) [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/ipshared/f3a8/hdl/verilog/a0_Loop_sizeLoop_proc.v:10]
-INFO: [Synth 8-6157] synthesizing module 'a0_fifo_w32_d2_A' [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/ipshared/f3a8/hdl/verilog/a0_fifo_w32_d2_A.v:45]
+INFO: [Synth 8-3491] module 'floating_point_v7_1_7' declared at '/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/ipshared/c63e/hdl/floating_point_v7_1_vh_rfs.vhd:91615' bound to instance 'U0' of component 'floating_point_v7_1_7' [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/ipshared/0a54/hdl/ip/a0_myFuncAccel_ap_fcmp_0_no_dsp_32.vhd:202]
+INFO: [Synth 8-256] done synthesizing module 'a0_myFuncAccel_ap_fcmp_0_no_dsp_32' (33#1) [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/ipshared/0a54/hdl/ip/a0_myFuncAccel_ap_fcmp_0_no_dsp_32.vhd:72]
+INFO: [Synth 8-6155] done synthesizing module 'a0_myFuncAccel_fcmp_32ns_32ns_1_1_1' (34#1) [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/ipshared/0a54/hdl/verilog/a0_myFuncAccel_fcmp_32ns_32ns_1_1_1.v:11]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/ipshared/0a54/hdl/verilog/a0_Loop_sizeLoop_proc.v:1658]
+INFO: [Synth 8-6155] done synthesizing module 'a0_Loop_sizeLoop_proc' (35#1) [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/ipshared/0a54/hdl/verilog/a0_Loop_sizeLoop_proc.v:10]
+INFO: [Synth 8-6157] synthesizing module 'a0_fifo_w32_d2_A' [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/ipshared/0a54/hdl/verilog/a0_fifo_w32_d2_A.v:45]
 	Parameter MEM_STYLE bound to: shiftreg - type: string 
 	Parameter DATA_WIDTH bound to: 32 - type: integer 
 	Parameter ADDR_WIDTH bound to: 1 - type: integer 
 	Parameter DEPTH bound to: 2'b10 
-INFO: [Synth 8-6157] synthesizing module 'a0_fifo_w32_d2_A_shiftReg' [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/ipshared/f3a8/hdl/verilog/a0_fifo_w32_d2_A.v:11]
+INFO: [Synth 8-6157] synthesizing module 'a0_fifo_w32_d2_A_shiftReg' [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/ipshared/0a54/hdl/verilog/a0_fifo_w32_d2_A.v:11]
 	Parameter DATA_WIDTH bound to: 32 - type: integer 
 	Parameter ADDR_WIDTH bound to: 1 - type: integer 
 	Parameter DEPTH bound to: 2'b10 
-INFO: [Synth 8-6155] done synthesizing module 'a0_fifo_w32_d2_A_shiftReg' (36#1) [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/ipshared/f3a8/hdl/verilog/a0_fifo_w32_d2_A.v:11]
-INFO: [Synth 8-6155] done synthesizing module 'a0_fifo_w32_d2_A' (37#1) [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/ipshared/f3a8/hdl/verilog/a0_fifo_w32_d2_A.v:45]
-WARNING: [Synth 8-6014] Unused sequential element Block_codeRepl49_pro_U0_ap_ready_count_reg was removed.  [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/ipshared/f3a8/hdl/verilog/a0_myFuncAccel.v:757]
-WARNING: [Synth 8-6014] Unused sequential element Loop_sizeLoop_proc_U0_ap_ready_count_reg was removed.  [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/ipshared/f3a8/hdl/verilog/a0_myFuncAccel.v:765]
-INFO: [Synth 8-6155] done synthesizing module 'a0_myFuncAccel' (38#1) [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/ipshared/f3a8/hdl/verilog/a0_myFuncAccel.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'a0_fifo_w32_d2_A_shiftReg' (36#1) [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/ipshared/0a54/hdl/verilog/a0_fifo_w32_d2_A.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'a0_fifo_w32_d2_A' (37#1) [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/ipshared/0a54/hdl/verilog/a0_fifo_w32_d2_A.v:45]
+WARNING: [Synth 8-6014] Unused sequential element Block_codeRepl49_pro_U0_ap_ready_count_reg was removed.  [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/ipshared/0a54/hdl/verilog/a0_myFuncAccel.v:757]
+WARNING: [Synth 8-6014] Unused sequential element Loop_sizeLoop_proc_U0_ap_ready_count_reg was removed.  [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/ipshared/0a54/hdl/verilog/a0_myFuncAccel.v:765]
+INFO: [Synth 8-6155] done synthesizing module 'a0_myFuncAccel' (38#1) [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/ipshared/0a54/hdl/verilog/a0_myFuncAccel.v:12]
 INFO: [Synth 8-6155] done synthesizing module 'zed_myFuncAccel_1_0' (39#1) [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/ip/zed_myFuncAccel_1_0/synth/zed_myFuncAccel_1_0.v:58]
 WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized9 has unconnected port CLK
 WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized9 has unconnected port CE
@@ -428,7 +427,7 @@ WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized29 has unconne
 WARNING: [Synth 8-3331] design xbip_pipe_v3_0_5_viv__parameterized72 has unconnected port CLK
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:16 ; elapsed = 00:00:24 . Memory (MB): peak = 1596.207 ; gain = 135.645 ; free physical = 526 ; free virtual = 3641
+Finished RTL Elaboration : Time (s): cpu = 00:00:13 ; elapsed = 00:00:20 . Memory (MB): peak = 1595.754 ; gain = 134.645 ; free physical = 304 ; free virtual = 4156
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -441,10 +440,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:17 ; elapsed = 00:00:25 . Memory (MB): peak = 1596.207 ; gain = 135.645 ; free physical = 528 ; free virtual = 3645
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:21 . Memory (MB): peak = 1595.754 ; gain = 134.645 ; free physical = 306 ; free virtual = 4159
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:25 . Memory (MB): peak = 1596.207 ; gain = 135.645 ; free physical = 528 ; free virtual = 3645
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:21 . Memory (MB): peak = 1595.754 ; gain = 134.645 ; free physical = 306 ; free virtual = 4159
 ---------------------------------------------------------------------------------
 INFO: [Netlist 29-17] Analyzing 509 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -459,29 +458,29 @@ Parsing XDC File [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSO
 Finished Parsing XDC File [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/zed_myFuncAccel_1_0_synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1878.383 ; gain = 0.000 ; free physical = 191 ; free virtual = 3308
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1878.695 ; gain = 0.000 ; free physical = 123 ; free virtual = 3809
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 12 instances were transformed.
   FDE => FDRE: 12 instances
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1879.383 ; gain = 0.000 ; free physical = 196 ; free virtual = 3312
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.16 ; elapsed = 00:00:00.16 . Memory (MB): peak = 1879.383 ; gain = 1.000 ; free physical = 196 ; free virtual = 3312
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 1879.695 ; gain = 0.000 ; free physical = 121 ; free virtual = 3807
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.21 ; elapsed = 00:00:00.21 . Memory (MB): peak = 1879.695 ; gain = 1.000 ; free physical = 132 ; free virtual = 3806
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:27 ; elapsed = 00:00:38 . Memory (MB): peak = 1879.383 ; gain = 418.820 ; free physical = 257 ; free virtual = 3378
+Finished Constraint Validation : Time (s): cpu = 00:00:26 ; elapsed = 00:00:37 . Memory (MB): peak = 1879.695 ; gain = 418.586 ; free physical = 233 ; free virtual = 3912
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:27 ; elapsed = 00:00:38 . Memory (MB): peak = 1879.383 ; gain = 418.820 ; free physical = 257 ; free virtual = 3378
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:26 ; elapsed = 00:00:37 . Memory (MB): peak = 1879.695 ; gain = 418.586 ; free physical = 233 ; free virtual = 3913
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 Applied set_property DONT_TOUCH = true for inst. (constraint file  /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/zed_myFuncAccel_1_0_synth_1/dont_touch.xdc, line 9).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:38 . Memory (MB): peak = 1879.383 ; gain = 418.820 ; free physical = 257 ; free virtual = 3378
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:37 . Memory (MB): peak = 1879.695 ; gain = 418.586 ; free physical = 235 ; free virtual = 3915
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
 INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
@@ -502,7 +501,7 @@ INFO: [Synth 8-5546] ROM "flow_sig" won't be mapped to RAM because it is too spa
 INFO: [Synth 8-5546] ROM "flow_sig" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5544] ROM "state_int_up" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5546] ROM "op_tdata" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-4471] merging register 'threshold_read_reg_628_reg[31:0]' into 'threshold_load_to_in_reg_633_reg[31:0]' [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/ipshared/f3a8/hdl/verilog/a0_Loop_sizeLoop_proc.v:525]
+INFO: [Synth 8-4471] merging register 'threshold_read_reg_628_reg[31:0]' into 'threshold_load_to_in_reg_633_reg[31:0]' [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/ipshared/0a54/hdl/verilog/a0_Loop_sizeLoop_proc.v:525]
 INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
 INFO: [Synth 8-5546] ROM "notrhs6_fu_504_p2" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "notrhs1_fu_303_p2" won't be mapped to RAM because it is too sparse
@@ -511,7 +510,7 @@ INFO: [Synth 8-5546] ROM "notrhs_fu_363_p2" won't be mapped to RAM because it is
 INFO: [Synth 8-5546] ROM "notrhs2_fu_408_p2" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5544] ROM "internal_empty_n" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:31 ; elapsed = 00:00:42 . Memory (MB): peak = 1879.383 ; gain = 418.820 ; free physical = 303 ; free virtual = 3439
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:29 ; elapsed = 00:00:41 . Memory (MB): peak = 1879.695 ; gain = 418.586 ; free physical = 230 ; free virtual = 3918
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-223] decloning instance 'a0_myFuncAccel_fadd_32ns_32ns_32_5_full_dsp_1:/a0_myFuncAccel_ap_fadd_3_full_dsp_32_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'a0_myFuncAccel_fadd_32ns_32ns_32_5_full_dsp_1:/a0_myFuncAccel_ap_fadd_3_full_dsp_32_u/U0/i_synth/DELAY_ACCUM_OVERFLOW'
 INFO: [Synth 8-223] decloning instance 'a0_myFuncAccel_fadd_32ns_32ns_32_5_full_dsp_1:/a0_myFuncAccel_ap_fadd_3_full_dsp_32_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'a0_myFuncAccel_fadd_32ns_32ns_32_5_full_dsp_1:/a0_myFuncAccel_ap_fadd_3_full_dsp_32_u/U0/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
@@ -754,7 +753,7 @@ INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E
 INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_7_viv.
 INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_7_viv.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:44 ; elapsed = 00:00:57 . Memory (MB): peak = 1879.383 ; gain = 418.820 ; free physical = 248 ; free virtual = 3388
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:46 ; elapsed = 00:01:00 . Memory (MB): peak = 1879.695 ; gain = 418.586 ; free physical = 185 ; free virtual = 3823
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -766,13 +765,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:54 ; elapsed = 00:01:07 . Memory (MB): peak = 1909.383 ; gain = 448.820 ; free physical = 121 ; free virtual = 3152
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:59 ; elapsed = 00:01:14 . Memory (MB): peak = 1908.695 ; gain = 447.586 ; free physical = 176 ; free virtual = 3849
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:57 ; elapsed = 00:01:11 . Memory (MB): peak = 1942.414 ; gain = 481.852 ; free physical = 147 ; free virtual = 3173
+Finished Timing Optimization : Time (s): cpu = 00:01:04 ; elapsed = 00:01:19 . Memory (MB): peak = 1941.727 ; gain = 480.617 ; free physical = 178 ; free virtual = 3823
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -784,7 +783,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:03 ; elapsed = 00:01:17 . Memory (MB): peak = 1953.711 ; gain = 493.148 ; free physical = 163 ; free virtual = 3189
+Finished Technology Mapping : Time (s): cpu = 00:01:10 ; elapsed = 00:01:25 . Memory (MB): peak = 1953.023 ; gain = 491.914 ; free physical = 171 ; free virtual = 3819
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -808,7 +807,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:05 ; elapsed = 00:01:19 . Memory (MB): peak = 1953.711 ; gain = 493.148 ; free physical = 137 ; free virtual = 3103
+Finished IO Insertion : Time (s): cpu = 00:01:13 ; elapsed = 00:01:28 . Memory (MB): peak = 1953.023 ; gain = 491.914 ; free physical = 176 ; free virtual = 3818
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -821,7 +820,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:05 ; elapsed = 00:01:19 . Memory (MB): peak = 1953.711 ; gain = 493.148 ; free physical = 134 ; free virtual = 3100
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:13 ; elapsed = 00:01:28 . Memory (MB): peak = 1953.023 ; gain = 491.914 ; free physical = 176 ; free virtual = 3818
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -833,25 +832,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:07 ; elapsed = 00:01:20 . Memory (MB): peak = 1953.711 ; gain = 493.148 ; free physical = 220 ; free virtual = 3119
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:14 ; elapsed = 00:01:30 . Memory (MB): peak = 1953.023 ; gain = 491.914 ; free physical = 176 ; free virtual = 3820
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:07 ; elapsed = 00:01:20 . Memory (MB): peak = 1953.711 ; gain = 493.148 ; free physical = 215 ; free virtual = 3115
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:14 ; elapsed = 00:01:30 . Memory (MB): peak = 1953.023 ; gain = 491.914 ; free physical = 176 ; free virtual = 3820
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:07 ; elapsed = 00:01:21 . Memory (MB): peak = 1953.711 ; gain = 493.148 ; free physical = 200 ; free virtual = 3102
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:15 ; elapsed = 00:01:31 . Memory (MB): peak = 1953.023 ; gain = 491.914 ; free physical = 174 ; free virtual = 3819
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:07 ; elapsed = 00:01:21 . Memory (MB): peak = 1953.711 ; gain = 493.148 ; free physical = 200 ; free virtual = 3102
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:15 ; elapsed = 00:01:31 . Memory (MB): peak = 1953.023 ; gain = 491.914 ; free physical = 174 ; free virtual = 3819
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -887,17 +886,17 @@ Report Cell Usage:
 |18    |FDSE      |    38|
 +------+----------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:07 ; elapsed = 00:01:21 . Memory (MB): peak = 1953.711 ; gain = 493.148 ; free physical = 200 ; free virtual = 3102
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:15 ; elapsed = 00:01:31 . Memory (MB): peak = 1953.023 ; gain = 491.914 ; free physical = 174 ; free virtual = 3819
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 188 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:01:00 ; elapsed = 00:01:11 . Memory (MB): peak = 1953.711 ; gain = 209.973 ; free physical = 276 ; free virtual = 3175
-Synthesis Optimization Complete : Time (s): cpu = 00:01:07 ; elapsed = 00:01:21 . Memory (MB): peak = 1953.719 ; gain = 493.148 ; free physical = 276 ; free virtual = 3175
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:07 ; elapsed = 00:01:19 . Memory (MB): peak = 1953.023 ; gain = 207.973 ; free physical = 248 ; free virtual = 3894
+Synthesis Optimization Complete : Time (s): cpu = 00:01:16 ; elapsed = 00:01:31 . Memory (MB): peak = 1953.031 ; gain = 491.914 ; free physical = 248 ; free virtual = 3894
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 516 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1953.719 ; gain = 0.000 ; free physical = 219 ; free virtual = 3118
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 1953.031 ; gain = 0.000 ; free physical = 171 ; free virtual = 3819
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 107 instances were transformed.
   (MUXCY,XORCY) => CARRY4: 95 instances
@@ -906,19 +905,19 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 INFO: [Common 17-83] Releasing license: Synthesis
 285 Infos, 104 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:12 ; elapsed = 00:01:24 . Memory (MB): peak = 1953.719 ; gain = 493.262 ; free physical = 298 ; free virtual = 3197
+synth_design: Time (s): cpu = 00:01:21 ; elapsed = 00:01:36 . Memory (MB): peak = 1953.031 ; gain = 492.027 ; free physical = 246 ; free virtual = 3900
 INFO: [Common 17-600] The following parameters have non-default value.
 general.maxThreads
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1953.719 ; gain = 0.000 ; free physical = 301 ; free virtual = 3200
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1953.031 ; gain = 0.000 ; free physical = 247 ; free virtual = 3900
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint '/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/zed_myFuncAccel_1_0_synth_1/zed_myFuncAccel_1_0.dcp' has been generated.
-write_checkpoint: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1953.719 ; gain = 0.000 ; free physical = 255 ; free virtual = 3152
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP zed_myFuncAccel_1_0, cache-ID = 1f1e9a1c689bc054
+write_checkpoint: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1953.031 ; gain = 0.000 ; free physical = 253 ; free virtual = 3905
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP zed_myFuncAccel_1_0, cache-ID = e4e2496759d6fe2f
 INFO: [Coretcl 2-1174] Renamed 491 cell refs.
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1953.719 ; gain = 0.000 ; free physical = 213 ; free virtual = 3107
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 1953.031 ; gain = 0.000 ; free physical = 243 ; free virtual = 3906
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint '/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/zed_myFuncAccel_1_0_synth_1/zed_myFuncAccel_1_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file zed_myFuncAccel_1_0_utilization_synth.rpt -pb zed_myFuncAccel_1_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Wed Dec 11 01:04:50 2019...
+INFO: [Common 17-206] Exiting Vivado at Thu Dec 12 23:34:06 2019...

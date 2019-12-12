@@ -2,10 +2,10 @@
 <Root MajorVersion="0" MinorVersion="36">
   <CompositeFile CompositeFileTopName="zed" CanBeSetAsTop="false" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
-    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1576018738"/>
-    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1576018738"/>
-    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1576018738"/>
-    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1576018738"/>
+    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1576186293"/>
+    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1576186293"/>
+    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1576186293"/>
+    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1576186293"/>
     <FileCollection Name="SOURCES" Type="SOURCES">
       <File Name="synth/zed.v" Type="Verilog">
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
@@ -146,24 +146,16 @@
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip/zed_axi_ic_ps7_S_AXI_HP1_0/zed_axi_ic_ps7_S_AXI_HP1_0.xci" Type="IP">
-        <Instance HierarchyPath="axi_ic_ps7_S_AXI_HP1"/>
-        <Properties IsEditable="false" IsVisible="false" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+      <File Name="ip/zed_xbar_1/zed_xbar_1.xci" Type="IP">
+        <Instance HierarchyPath="axi_ic_ps7_S_AXI_ACP/xbar"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip/zed_axi_ic_ps7_S_AXI_HP0_0/zed_axi_ic_ps7_S_AXI_HP0_0.xci" Type="IP">
-        <Instance HierarchyPath="axi_ic_ps7_S_AXI_HP0"/>
-        <Properties IsEditable="false" IsVisible="false" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SYNTHESIS"/>
-        <UsedIn Val="IMPLEMENTATION"/>
-        <UsedIn Val="SIMULATION"/>
-      </File>
-      <File Name="ip/zed_axi_ic_ps7_S_AXI_HP2_0/zed_axi_ic_ps7_S_AXI_HP2_0.xci" Type="IP">
-        <Instance HierarchyPath="axi_ic_ps7_S_AXI_HP2"/>
+      <File Name="ip/zed_axi_ic_ps7_S_AXI_ACP_0/zed_axi_ic_ps7_S_AXI_ACP_0.xci" Type="IP">
+        <Instance HierarchyPath="axi_ic_ps7_S_AXI_ACP"/>
         <Properties IsEditable="false" IsVisible="false" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
@@ -196,6 +188,14 @@
       </File>
       <File Name="ip/zed_sds_irq_const_0/zed_sds_irq_const_0.xci" Type="IP">
         <Instance HierarchyPath="sds_irq_const"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/zed_axcache_0xE_0/zed_axcache_0xE_0.xci" Type="IP">
+        <Instance HierarchyPath="axcache_0xE"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
@@ -259,7 +259,7 @@
         <UsedIn Val="SIMULATION"/>
       </File>
       <File Name="ip/zed_s00_regslice_1/zed_s00_regslice_1.xci" Type="IP">
-        <Instance HierarchyPath="axi_ic_ps7_S_AXI_HP1/s00_couplers/s00_regslice"/>
+        <Instance HierarchyPath="axi_ic_ps7_S_AXI_ACP/s00_couplers/s00_regslice"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
@@ -267,7 +267,55 @@
         <UsedIn Val="SIMULATION"/>
       </File>
       <File Name="ip/zed_s00_data_fifo_1/zed_s00_data_fifo_1.xci" Type="IP">
-        <Instance HierarchyPath="axi_ic_ps7_S_AXI_HP1/s00_couplers/s00_data_fifo"/>
+        <Instance HierarchyPath="axi_ic_ps7_S_AXI_ACP/s00_couplers/s00_data_fifo"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/zed_s01_regslice_0/zed_s01_regslice_0.xci" Type="IP">
+        <Instance HierarchyPath="axi_ic_ps7_S_AXI_ACP/s01_couplers/s01_regslice"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/zed_s01_data_fifo_0/zed_s01_data_fifo_0.xci" Type="IP">
+        <Instance HierarchyPath="axi_ic_ps7_S_AXI_ACP/s01_couplers/s01_data_fifo"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/zed_s02_regslice_0/zed_s02_regslice_0.xci" Type="IP">
+        <Instance HierarchyPath="axi_ic_ps7_S_AXI_ACP/s02_couplers/s02_regslice"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/zed_s02_data_fifo_0/zed_s02_data_fifo_0.xci" Type="IP">
+        <Instance HierarchyPath="axi_ic_ps7_S_AXI_ACP/s02_couplers/s02_data_fifo"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/zed_m00_data_fifo_0/zed_m00_data_fifo_0.xci" Type="IP">
+        <Instance HierarchyPath="axi_ic_ps7_S_AXI_ACP/m00_couplers/m00_data_fifo"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/zed_m00_regslice_1/zed_m00_regslice_1.xci" Type="IP">
+        <Instance HierarchyPath="axi_ic_ps7_S_AXI_ACP/m00_couplers/m00_regslice"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
@@ -275,55 +323,7 @@
         <UsedIn Val="SIMULATION"/>
       </File>
       <File Name="ip/zed_auto_pc_1/zed_auto_pc_1.xci" Type="IP">
-        <Instance HierarchyPath="axi_ic_ps7_S_AXI_HP1/s00_couplers/auto_pc"/>
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SYNTHESIS"/>
-        <UsedIn Val="IMPLEMENTATION"/>
-        <UsedIn Val="SIMULATION"/>
-      </File>
-      <File Name="ip/zed_s00_regslice_2/zed_s00_regslice_2.xci" Type="IP">
-        <Instance HierarchyPath="axi_ic_ps7_S_AXI_HP0/s00_couplers/s00_regslice"/>
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SYNTHESIS"/>
-        <UsedIn Val="IMPLEMENTATION"/>
-        <UsedIn Val="SIMULATION"/>
-      </File>
-      <File Name="ip/zed_s00_data_fifo_2/zed_s00_data_fifo_2.xci" Type="IP">
-        <Instance HierarchyPath="axi_ic_ps7_S_AXI_HP0/s00_couplers/s00_data_fifo"/>
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SYNTHESIS"/>
-        <UsedIn Val="IMPLEMENTATION"/>
-        <UsedIn Val="SIMULATION"/>
-      </File>
-      <File Name="ip/zed_auto_pc_2/zed_auto_pc_2.xci" Type="IP">
-        <Instance HierarchyPath="axi_ic_ps7_S_AXI_HP0/s00_couplers/auto_pc"/>
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SYNTHESIS"/>
-        <UsedIn Val="IMPLEMENTATION"/>
-        <UsedIn Val="SIMULATION"/>
-      </File>
-      <File Name="ip/zed_s00_regslice_3/zed_s00_regslice_3.xci" Type="IP">
-        <Instance HierarchyPath="axi_ic_ps7_S_AXI_HP2/s00_couplers/s00_regslice"/>
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SYNTHESIS"/>
-        <UsedIn Val="IMPLEMENTATION"/>
-        <UsedIn Val="SIMULATION"/>
-      </File>
-      <File Name="ip/zed_s00_data_fifo_3/zed_s00_data_fifo_3.xci" Type="IP">
-        <Instance HierarchyPath="axi_ic_ps7_S_AXI_HP2/s00_couplers/s00_data_fifo"/>
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SYNTHESIS"/>
-        <UsedIn Val="IMPLEMENTATION"/>
-        <UsedIn Val="SIMULATION"/>
-      </File>
-      <File Name="ip/zed_auto_pc_3/zed_auto_pc_3.xci" Type="IP">
-        <Instance HierarchyPath="axi_ic_ps7_S_AXI_HP2/s00_couplers/auto_pc"/>
+        <Instance HierarchyPath="axi_ic_ps7_S_AXI_ACP/m00_couplers/auto_pc"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>

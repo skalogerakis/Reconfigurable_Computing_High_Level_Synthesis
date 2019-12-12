@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'Loop_sizeLoop_proc'" level="0">
-<item name = "Date">Wed Dec 11 00:55:31 2019
+<item name = "Date">Thu Dec 12 23:27:46 2019
 </item>
 <item name = "Version">2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)</item>
 <item name = "Project">myFuncAccel</item>

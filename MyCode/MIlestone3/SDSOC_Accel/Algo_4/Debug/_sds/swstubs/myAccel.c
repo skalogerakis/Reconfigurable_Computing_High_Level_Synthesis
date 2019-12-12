@@ -20,7 +20,6 @@
 
 #pragma SDS data mem_attribute(data0:PHYSICAL_CONTIGUOUS, data1:PHYSICAL_CONTIGUOUS, data2:PHYSICAL_CONTIGUOUS)
 #pragma SDS data access_pattern(data0:SEQUENTIAL, data1:SEQUENTIAL, data2:SEQUENTIAL)
-#pragma SDS data sys_port(data0:AFI, data1:AFI, data2:AFI)
 #pragma SDS data data_mover(data0:AXIDMA_SIMPLE, data1:AXIDMA_SIMPLE, data2:AXIDMA_SIMPLE)
 
 #pragma SDS data copy(data0[0:dim*dim])

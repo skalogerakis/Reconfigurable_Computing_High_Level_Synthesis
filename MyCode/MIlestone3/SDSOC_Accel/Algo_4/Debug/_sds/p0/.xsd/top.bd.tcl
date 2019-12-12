@@ -11,9 +11,8 @@ set ps7 [get_bd_cell /ps7]
     
 set_property -dict [ list \
   CONFIG.PCW_USE_M_AXI_GP0 1 \
-  CONFIG.PCW_USE_S_AXI_HP0 1 \
-  CONFIG.PCW_USE_S_AXI_HP1 1 \
-  CONFIG.PCW_USE_S_AXI_HP2 1 \
+  CONFIG.PCW_USE_S_AXI_ACP 1 \
+  CONFIG.PCW_USE_DEFAULT_ACP_USER_VAL 1 \
   ] $ps7
 set xlconcat_0 [get_bd_cell /xlconcat_0]
     
@@ -124,49 +123,23 @@ set_property -dict [ list \
   ] $axi_ic_ps7_M_AXI_GP0
 
 #---------------------------
-# Instantiating axi_ic_ps7_S_AXI_HP1
+# Instantiating axi_ic_ps7_S_AXI_ACP
 #---------------------------
-set axi_ic_ps7_S_AXI_HP1 [create_bd_cell -type ip -vlnv xilinx.com:ip:axi_interconnect:2.1 axi_ic_ps7_S_AXI_HP1]
+set axi_ic_ps7_S_AXI_ACP [create_bd_cell -type ip -vlnv xilinx.com:ip:axi_interconnect:2.1 axi_ic_ps7_S_AXI_ACP]
   
 set_property -dict [ list \
   CONFIG.NUM_MI {1} \
-  CONFIG.NUM_SI {1} \
+  CONFIG.NUM_SI {3} \
   CONFIG.STRATEGY {2} \
   CONFIG.M00_HAS_REGSLICE {1} \
   CONFIG.M00_HAS_DATA_FIFO {2} \
   CONFIG.S00_HAS_REGSLICE {1} \
   CONFIG.S00_HAS_DATA_FIFO {2} \
-  ] $axi_ic_ps7_S_AXI_HP1
-
-#---------------------------
-# Instantiating axi_ic_ps7_S_AXI_HP0
-#---------------------------
-set axi_ic_ps7_S_AXI_HP0 [create_bd_cell -type ip -vlnv xilinx.com:ip:axi_interconnect:2.1 axi_ic_ps7_S_AXI_HP0]
-  
-set_property -dict [ list \
-  CONFIG.NUM_MI {1} \
-  CONFIG.NUM_SI {1} \
-  CONFIG.STRATEGY {2} \
-  CONFIG.M00_HAS_REGSLICE {1} \
-  CONFIG.M00_HAS_DATA_FIFO {2} \
-  CONFIG.S00_HAS_REGSLICE {1} \
-  CONFIG.S00_HAS_DATA_FIFO {2} \
-  ] $axi_ic_ps7_S_AXI_HP0
-
-#---------------------------
-# Instantiating axi_ic_ps7_S_AXI_HP2
-#---------------------------
-set axi_ic_ps7_S_AXI_HP2 [create_bd_cell -type ip -vlnv xilinx.com:ip:axi_interconnect:2.1 axi_ic_ps7_S_AXI_HP2]
-  
-set_property -dict [ list \
-  CONFIG.NUM_MI {1} \
-  CONFIG.NUM_SI {1} \
-  CONFIG.STRATEGY {2} \
-  CONFIG.M00_HAS_REGSLICE {1} \
-  CONFIG.M00_HAS_DATA_FIFO {2} \
-  CONFIG.S00_HAS_REGSLICE {1} \
-  CONFIG.S00_HAS_DATA_FIFO {2} \
-  ] $axi_ic_ps7_S_AXI_HP2
+  CONFIG.S01_HAS_REGSLICE {1} \
+  CONFIG.S01_HAS_DATA_FIFO {2} \
+  CONFIG.S02_HAS_REGSLICE {1} \
+  CONFIG.S02_HAS_DATA_FIFO {2} \
+  ] $axi_ic_ps7_S_AXI_ACP
 
 #---------------------------
 # Instantiating axis_dwc_dm_0_tx_0
@@ -209,6 +182,16 @@ set_property -dict [ list \
   ] $sds_irq_const
 
 #---------------------------
+# Instantiating axcache_0xE
+#---------------------------
+set axcache_0xE [create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 axcache_0xE]
+  
+set_property -dict [ list \
+  CONFIG.CONST_WIDTH {4} \
+  CONFIG.CONST_VAL {14} \
+  ] $axcache_0xE
+
+#---------------------------
 # Connectivity
 #---------------------------
 connect_bd_net  \
@@ -234,9 +217,7 @@ connect_bd_net  \
 connect_bd_net  \
   [get_bd_pins -auto_enable /clk_wiz_0/clk_out1] \
   [get_bd_pins -auto_enable /ps7/M_AXI_GP0_ACLK] \
-  [get_bd_pins -auto_enable /ps7/S_AXI_HP1_ACLK] \
-  [get_bd_pins -auto_enable /ps7/S_AXI_HP0_ACLK] \
-  [get_bd_pins -auto_enable /ps7/S_AXI_HP2_ACLK] \
+  [get_bd_pins -auto_enable /ps7/S_AXI_ACP_ACLK] \
   [get_bd_pins -auto_enable /dm_0/s_axi_lite_aclk] \
   [get_bd_pins -auto_enable /dm_0/m_axi_mm2s_aclk] \
   [get_bd_pins -auto_enable /dm_1/s_axi_lite_aclk] \
@@ -254,18 +235,14 @@ connect_bd_net  \
   [get_bd_pins -auto_enable /axi_ic_ps7_M_AXI_GP0/M02_ACLK] \
   [get_bd_pins -auto_enable /axi_ic_ps7_M_AXI_GP0/M03_ACLK] \
   [get_bd_pins -auto_enable /axi_ic_ps7_M_AXI_GP0/ACLK] \
-  [get_bd_pins -auto_enable /axi_ic_ps7_S_AXI_HP1/S00_ACLK] \
-  [get_bd_pins -auto_enable /axi_ic_ps7_S_AXI_HP0/S00_ACLK] \
-  [get_bd_pins -auto_enable /axi_ic_ps7_S_AXI_HP2/S00_ACLK] \
+  [get_bd_pins -auto_enable /axi_ic_ps7_S_AXI_ACP/S00_ACLK] \
+  [get_bd_pins -auto_enable /axi_ic_ps7_S_AXI_ACP/S01_ACLK] \
+  [get_bd_pins -auto_enable /axi_ic_ps7_S_AXI_ACP/S02_ACLK] \
   [get_bd_pins -auto_enable /axis_dwc_dm_0_tx_0/aclk] \
   [get_bd_pins -auto_enable /axis_dwc_dm_1_tx_0/aclk] \
   [get_bd_pins -auto_enable /axis_dwc_dm_2_rx_0/aclk] \
-  [get_bd_pins -auto_enable /axi_ic_ps7_S_AXI_HP1/ACLK] \
-  [get_bd_pins -auto_enable /axi_ic_ps7_S_AXI_HP1/M00_ACLK] \
-  [get_bd_pins -auto_enable /axi_ic_ps7_S_AXI_HP0/ACLK] \
-  [get_bd_pins -auto_enable /axi_ic_ps7_S_AXI_HP0/M00_ACLK] \
-  [get_bd_pins -auto_enable /axi_ic_ps7_S_AXI_HP2/ACLK] \
-  [get_bd_pins -auto_enable /axi_ic_ps7_S_AXI_HP2/M00_ACLK] \
+  [get_bd_pins -auto_enable /axi_ic_ps7_S_AXI_ACP/ACLK] \
+  [get_bd_pins -auto_enable /axi_ic_ps7_S_AXI_ACP/M00_ACLK] \
 
 connect_bd_net  \
   [get_bd_pins -auto_enable /proc_sys_reset_0/interconnect_aresetn] \
@@ -275,15 +252,11 @@ connect_bd_net  \
   [get_bd_pins -auto_enable /axi_ic_ps7_M_AXI_GP0/M02_ARESETN] \
   [get_bd_pins -auto_enable /axi_ic_ps7_M_AXI_GP0/M03_ARESETN] \
   [get_bd_pins -auto_enable /axi_ic_ps7_M_AXI_GP0/ARESETN] \
-  [get_bd_pins -auto_enable /axi_ic_ps7_S_AXI_HP1/M00_ARESETN] \
-  [get_bd_pins -auto_enable /axi_ic_ps7_S_AXI_HP1/S00_ARESETN] \
-  [get_bd_pins -auto_enable /axi_ic_ps7_S_AXI_HP0/M00_ARESETN] \
-  [get_bd_pins -auto_enable /axi_ic_ps7_S_AXI_HP0/S00_ARESETN] \
-  [get_bd_pins -auto_enable /axi_ic_ps7_S_AXI_HP2/M00_ARESETN] \
-  [get_bd_pins -auto_enable /axi_ic_ps7_S_AXI_HP2/S00_ARESETN] \
-  [get_bd_pins -auto_enable /axi_ic_ps7_S_AXI_HP1/ARESETN] \
-  [get_bd_pins -auto_enable /axi_ic_ps7_S_AXI_HP0/ARESETN] \
-  [get_bd_pins -auto_enable /axi_ic_ps7_S_AXI_HP2/ARESETN] \
+  [get_bd_pins -auto_enable /axi_ic_ps7_S_AXI_ACP/M00_ARESETN] \
+  [get_bd_pins -auto_enable /axi_ic_ps7_S_AXI_ACP/S00_ARESETN] \
+  [get_bd_pins -auto_enable /axi_ic_ps7_S_AXI_ACP/S01_ARESETN] \
+  [get_bd_pins -auto_enable /axi_ic_ps7_S_AXI_ACP/S02_ARESETN] \
+  [get_bd_pins -auto_enable /axi_ic_ps7_S_AXI_ACP/ARESETN] \
 
 connect_bd_net  \
   [get_bd_pins -auto_enable /proc_sys_reset_0/peripheral_aresetn] \
@@ -321,6 +294,12 @@ connect_bd_net  \
   [get_bd_pins -auto_enable /xlconcat_0/In14] \
   [get_bd_pins -auto_enable /xlconcat_0/In15] \
 
+connect_bd_net  \
+  [get_bd_pins -auto_enable /axcache_0xE/dout] \
+  [get_bd_pins -auto_enable /axi_ic_ps7_S_AXI_ACP/S00_AXI_arcache] \
+  [get_bd_pins -auto_enable /axi_ic_ps7_S_AXI_ACP/S01_AXI_arcache] \
+  [get_bd_pins -auto_enable /axi_ic_ps7_S_AXI_ACP/S02_AXI_awcache] \
+
 connect_bd_intf_net \
   [get_bd_intf_pins -auto_enable /myFuncAccel_1/data0] \
   [get_bd_intf_pins -auto_enable /myFuncAccel_1_if/AP_FIFO_IARG_0] \
@@ -342,16 +321,8 @@ connect_bd_intf_net \
   [get_bd_intf_pins -auto_enable /axi_ic_ps7_M_AXI_GP0/S00_AXI] \
 
 connect_bd_intf_net \
-  [get_bd_intf_pins -auto_enable /axi_ic_ps7_S_AXI_HP1/M00_AXI] \
-  [get_bd_intf_pins -auto_enable /ps7/S_AXI_HP1] \
-
-connect_bd_intf_net \
-  [get_bd_intf_pins -auto_enable /axi_ic_ps7_S_AXI_HP0/M00_AXI] \
-  [get_bd_intf_pins -auto_enable /ps7/S_AXI_HP0] \
-
-connect_bd_intf_net \
-  [get_bd_intf_pins -auto_enable /axi_ic_ps7_S_AXI_HP2/M00_AXI] \
-  [get_bd_intf_pins -auto_enable /ps7/S_AXI_HP2] \
+  [get_bd_intf_pins -auto_enable /axi_ic_ps7_S_AXI_ACP/M00_AXI] \
+  [get_bd_intf_pins -auto_enable /ps7/S_AXI_ACP] \
 
 connect_bd_intf_net \
   [get_bd_intf_pins -auto_enable /axi_ic_ps7_M_AXI_GP0/M00_AXI] \
@@ -363,7 +334,7 @@ connect_bd_intf_net \
 
 connect_bd_intf_net \
   [get_bd_intf_pins -auto_enable /dm_0/M_AXI_MM2S] \
-  [get_bd_intf_pins -auto_enable /axi_ic_ps7_S_AXI_HP1/S00_AXI] \
+  [get_bd_intf_pins -auto_enable /axi_ic_ps7_S_AXI_ACP/S00_AXI] \
 
 connect_bd_intf_net \
   [get_bd_intf_pins -auto_enable /dm_0/M_AXIS_MM2S] \
@@ -379,7 +350,7 @@ connect_bd_intf_net \
 
 connect_bd_intf_net \
   [get_bd_intf_pins -auto_enable /dm_1/M_AXI_MM2S] \
-  [get_bd_intf_pins -auto_enable /axi_ic_ps7_S_AXI_HP0/S00_AXI] \
+  [get_bd_intf_pins -auto_enable /axi_ic_ps7_S_AXI_ACP/S01_AXI] \
 
 connect_bd_intf_net \
   [get_bd_intf_pins -auto_enable /dm_1/M_AXIS_MM2S] \
@@ -395,7 +366,7 @@ connect_bd_intf_net \
 
 connect_bd_intf_net \
   [get_bd_intf_pins -auto_enable /dm_2/M_AXI_S2MM] \
-  [get_bd_intf_pins -auto_enable /axi_ic_ps7_S_AXI_HP2/S00_AXI] \
+  [get_bd_intf_pins -auto_enable /axi_ic_ps7_S_AXI_ACP/S02_AXI] \
 
 connect_bd_intf_net \
   [get_bd_intf_pins -auto_enable /myFuncAccel_1_if/M_AXIS_FIFO_0] \

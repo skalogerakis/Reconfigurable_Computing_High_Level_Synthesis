@@ -2,10 +2,10 @@
 {
     "EntryID": "1",
     "Type": "CmdStep",
-    "DateTimestamp": "2019-Dec-11 00:56:20.096000",
-    "TimestampMillis": "3380096",
+    "DateTimestamp": "2019-Dec-12 23:28:24.862000",
+    "TimestampMillis": "84504862",
     "Payload": {
-        "CmdStepID": "63f4ba44-5822-464b-bd8e-f1aa709a274b",
+        "CmdStepID": "6a23773f-bb63-4e4a-81dc-dc3b6c286e94",
         "Command": "vpl",
         "LogFile": "\/home\/skalogerakis\/TUC_Projects\/TUC_HLS\/MyCode\/MIlestone3\/SDSOC_Accel\/Algo_4\/Debug\/_sds\/p0\/p0.steps.log",
         "CommandLine": "\/toolsViv\/Xilinx\/SDx\/2018.3\/bin\/unwrapped\/lnx64.o\/vpl --iprepo \/home\/skalogerakis\/TUC_Projects\/TUC_HLS\/MyCode\/MIlestone3\/SDSOC_Accel\/Algo_4\/Debug\/_sds\/iprepo\/repo --iprepo \/toolsViv\/Xilinx\/SDx\/2018.3\/data\/ip\/xilinx --platform \/toolsViv\/Xilinx\/SDx\/2018.3\/platforms\/zed\/zed.xpfm --temp_dir \/home\/skalogerakis\/TUC_Projects\/TUC_HLS\/MyCode\/MIlestone3\/SDSOC_Accel\/Algo_4\/Debug\/_sds\/p0 --output_dir \/home\/skalogerakis\/TUC_Projects\/TUC_HLS\/MyCode\/MIlestone3\/SDSOC_Accel\/Algo_4\/Debug\/_sds\/p0\/vpl --input_file \/home\/skalogerakis\/TUC_Projects\/TUC_HLS\/MyCode\/MIlestone3\/SDSOC_Accel\/Algo_4\/Debug\/_sds\/p0\/.xsd\/top.bd.tcl --target hw --save_temps --kernels myFuncAccel:adapter --webtalk_flag SDSoC --remote_ip_cache \/home\/skalogerakis\/TUC_Projects\/TUC_HLS\/MyCode\/MIlestone3\/SDSOC_Accel\/ip_cache --xp param:compiler.deleteDefaultReportConfigs=false ",
@@ -17,10 +17,10 @@
 {
     "EntryID": "2",
     "Type": "Status",
-    "DateTimestamp": "2019-Dec-11 00:56:20.097000",
-    "TimestampMillis": "3380097",
+    "DateTimestamp": "2019-Dec-12 23:28:24.862000",
+    "TimestampMillis": "84504862",
     "Payload": {
-        "CmdStepID": "63f4ba44-5822-464b-bd8e-f1aa709a274b",
+        "CmdStepID": "6a23773f-bb63-4e4a-81dc-dc3b6c286e94",
         "Status": "Start"
     }
 }
@@ -29,10 +29,10 @@
 {
     "EntryID": "3",
     "Type": "SubCmdStep",
-    "DateTimestamp": "2019-Dec-11 00:56:20.748000",
-    "TimestampMillis": "3380748",
+    "DateTimestamp": "2019-Dec-12 23:28:25.701000",
+    "TimestampMillis": "84505701",
     "Payload": {
-        "CmdStepID": "ea8baa05-9b02-46fe-a9b7-5d531b128aa8",
+        "CmdStepID": "9f05ec24-f2fd-4527-8fff-c3259d0e973a",
         "Command": "vivado",
         "LogFile": "$LOGDIR\/..\/vivado\/vivado.log",
         "TransactionLogFile": "",
@@ -53,10 +53,10 @@
 {
     "EntryID": "4",
     "Type": "Status",
-    "DateTimestamp": "2019-Dec-11 00:56:20.748000",
-    "TimestampMillis": "3380748",
+    "DateTimestamp": "2019-Dec-12 23:28:25.701000",
+    "TimestampMillis": "84505701",
     "Payload": {
-        "CmdStepID": "ea8baa05-9b02-46fe-a9b7-5d531b128aa8",
+        "CmdStepID": "9f05ec24-f2fd-4527-8fff-c3259d0e973a",
         "Status": "Start"
     }
 }
@@ -65,10 +65,10 @@
 {
     "EntryID": "5",
     "Type": "Status",
-    "DateTimestamp": "2019-Dec-11 01:10:34.980000",
-    "TimestampMillis": "4234980",
+    "DateTimestamp": "2019-Dec-12 23:41:30.118000",
+    "TimestampMillis": "85290118",
     "Payload": {
-        "CmdStepID": "ea8baa05-9b02-46fe-a9b7-5d531b128aa8",
+        "CmdStepID": "9f05ec24-f2fd-4527-8fff-c3259d0e973a",
         "Status": "Passed"
     }
 }
@@ -77,8 +77,8 @@
 {
     "EntryID": "6",
     "Type": "Report",
-    "DateTimestamp": "2019-Dec-11 01:10:35.053000",
-    "TimestampMillis": "4235053",
+    "DateTimestamp": "2019-Dec-12 23:41:30.153000",
+    "TimestampMillis": "85290153",
     "Payload": {
         "File": "$LOGDIR\/..\/vivado\/prj\/prj.runs\/synth_1\/zed_wrapper_utilization_synth.rpt",
         "Type": "TEXT",
@@ -91,106 +91,8 @@
 {
     "EntryID": "7",
     "Type": "Report",
-    "DateTimestamp": "2019-Dec-11 01:10:35.053000",
-    "TimestampMillis": "4235053",
-    "Payload": {
-        "File": "$LOGDIR\/..\/vivado\/prj\/prj.runs\/zed_ps7_0_synth_1\/zed_ps7_0_utilization_synth.rpt",
-        "Type": "TEXT",
-        "ReportType": "GLOBAL_REPORT_UTILIZATION",
-        "KernelName": ""
-    }
-}
-</ENTRY>
-<ENTRY>
-{
-    "EntryID": "8",
-    "Type": "Report",
-    "DateTimestamp": "2019-Dec-11 01:10:35.053000",
-    "TimestampMillis": "4235053",
-    "Payload": {
-        "File": "$LOGDIR\/..\/vivado\/prj\/prj.runs\/zed_auto_pc_3_synth_1\/zed_auto_pc_3_utilization_synth.rpt",
-        "Type": "TEXT",
-        "ReportType": "GLOBAL_REPORT_UTILIZATION",
-        "KernelName": ""
-    }
-}
-</ENTRY>
-<ENTRY>
-{
-    "EntryID": "9",
-    "Type": "Report",
-    "DateTimestamp": "2019-Dec-11 01:10:35.053000",
-    "TimestampMillis": "4235053",
-    "Payload": {
-        "File": "$LOGDIR\/..\/vivado\/prj\/prj.runs\/zed_s00_data_fifo_3_synth_1\/zed_s00_data_fifo_3_utilization_synth.rpt",
-        "Type": "TEXT",
-        "ReportType": "GLOBAL_REPORT_UTILIZATION",
-        "KernelName": ""
-    }
-}
-</ENTRY>
-<ENTRY>
-{
-    "EntryID": "10",
-    "Type": "Report",
-    "DateTimestamp": "2019-Dec-11 01:10:35.053000",
-    "TimestampMillis": "4235053",
-    "Payload": {
-        "File": "$LOGDIR\/..\/vivado\/prj\/prj.runs\/zed_auto_pc_2_synth_1\/zed_auto_pc_2_utilization_synth.rpt",
-        "Type": "TEXT",
-        "ReportType": "GLOBAL_REPORT_UTILIZATION",
-        "KernelName": ""
-    }
-}
-</ENTRY>
-<ENTRY>
-{
-    "EntryID": "11",
-    "Type": "Report",
-    "DateTimestamp": "2019-Dec-11 01:10:35.053000",
-    "TimestampMillis": "4235053",
-    "Payload": {
-        "File": "$LOGDIR\/..\/vivado\/prj\/prj.runs\/zed_s00_data_fifo_2_synth_1\/zed_s00_data_fifo_2_utilization_synth.rpt",
-        "Type": "TEXT",
-        "ReportType": "GLOBAL_REPORT_UTILIZATION",
-        "KernelName": ""
-    }
-}
-</ENTRY>
-<ENTRY>
-{
-    "EntryID": "12",
-    "Type": "Report",
-    "DateTimestamp": "2019-Dec-11 01:10:35.053000",
-    "TimestampMillis": "4235053",
-    "Payload": {
-        "File": "$LOGDIR\/..\/vivado\/prj\/prj.runs\/zed_s00_data_fifo_1_synth_1\/zed_s00_data_fifo_1_utilization_synth.rpt",
-        "Type": "TEXT",
-        "ReportType": "GLOBAL_REPORT_UTILIZATION",
-        "KernelName": ""
-    }
-}
-</ENTRY>
-<ENTRY>
-{
-    "EntryID": "13",
-    "Type": "Report",
-    "DateTimestamp": "2019-Dec-11 01:10:35.053000",
-    "TimestampMillis": "4235053",
-    "Payload": {
-        "File": "$LOGDIR\/..\/vivado\/prj\/prj.runs\/zed_auto_pc_1_synth_1\/zed_auto_pc_1_utilization_synth.rpt",
-        "Type": "TEXT",
-        "ReportType": "GLOBAL_REPORT_UTILIZATION",
-        "KernelName": ""
-    }
-}
-</ENTRY>
-<ENTRY>
-{
-    "EntryID": "14",
-    "Type": "Report",
-    "DateTimestamp": "2019-Dec-11 01:10:35.053000",
-    "TimestampMillis": "4235053",
+    "DateTimestamp": "2019-Dec-12 23:41:30.153000",
+    "TimestampMillis": "85290153",
     "Payload": {
         "File": "$LOGDIR\/..\/vivado\/prj\/prj.runs\/zed_myFuncAccel_1_0_synth_1\/zed_myFuncAccel_1_0_utilization_synth.rpt",
         "Type": "TEXT",
@@ -201,10 +103,10 @@
 </ENTRY>
 <ENTRY>
 {
-    "EntryID": "15",
+    "EntryID": "8",
     "Type": "Report",
-    "DateTimestamp": "2019-Dec-11 01:10:35.053000",
-    "TimestampMillis": "4235053",
+    "DateTimestamp": "2019-Dec-12 23:41:30.153000",
+    "TimestampMillis": "85290153",
     "Payload": {
         "File": "$LOGDIR\/..\/vivado\/prj\/prj.runs\/impl_1\/zed_wrapper_drc_opted.rpt",
         "Type": "TEXT",
@@ -215,10 +117,10 @@
 </ENTRY>
 <ENTRY>
 {
-    "EntryID": "16",
+    "EntryID": "9",
     "Type": "Report",
-    "DateTimestamp": "2019-Dec-11 01:10:35.054000",
-    "TimestampMillis": "4235054",
+    "DateTimestamp": "2019-Dec-12 23:41:30.153000",
+    "TimestampMillis": "85290153",
     "Payload": {
         "File": "$LOGDIR\/..\/vivado\/prj\/prj.runs\/impl_1\/zed_wrapper_io_placed.rpt",
         "Type": "TEXT",
@@ -229,10 +131,10 @@
 </ENTRY>
 <ENTRY>
 {
-    "EntryID": "17",
+    "EntryID": "10",
     "Type": "Report",
-    "DateTimestamp": "2019-Dec-11 01:10:35.054000",
-    "TimestampMillis": "4235054",
+    "DateTimestamp": "2019-Dec-12 23:41:30.153000",
+    "TimestampMillis": "85290153",
     "Payload": {
         "File": "$LOGDIR\/..\/vivado\/prj\/prj.runs\/impl_1\/zed_wrapper_utilization_placed.rpt",
         "Type": "TEXT",
@@ -243,10 +145,10 @@
 </ENTRY>
 <ENTRY>
 {
-    "EntryID": "18",
+    "EntryID": "11",
     "Type": "Report",
-    "DateTimestamp": "2019-Dec-11 01:10:35.054000",
-    "TimestampMillis": "4235054",
+    "DateTimestamp": "2019-Dec-12 23:41:30.154000",
+    "TimestampMillis": "85290154",
     "Payload": {
         "File": "$LOGDIR\/..\/vivado\/prj\/prj.runs\/impl_1\/zed_wrapper_utilization_placed.rpt",
         "Type": "TEXT",
@@ -257,10 +159,10 @@
 </ENTRY>
 <ENTRY>
 {
-    "EntryID": "19",
+    "EntryID": "12",
     "Type": "Report",
-    "DateTimestamp": "2019-Dec-11 01:10:35.054000",
-    "TimestampMillis": "4235054",
+    "DateTimestamp": "2019-Dec-12 23:41:30.154000",
+    "TimestampMillis": "85290154",
     "Payload": {
         "File": "$LOGDIR\/..\/vivado\/prj\/prj.runs\/impl_1\/zed_wrapper_control_sets_placed.rpt",
         "Type": "TEXT",
@@ -271,10 +173,10 @@
 </ENTRY>
 <ENTRY>
 {
-    "EntryID": "20",
+    "EntryID": "13",
     "Type": "Report",
-    "DateTimestamp": "2019-Dec-11 01:10:35.054000",
-    "TimestampMillis": "4235054",
+    "DateTimestamp": "2019-Dec-12 23:41:30.154000",
+    "TimestampMillis": "85290154",
     "Payload": {
         "File": "$LOGDIR\/..\/vivado\/prj\/prj.runs\/impl_1\/zed_wrapper_drc_routed.rpt",
         "Type": "TEXT",
@@ -285,10 +187,10 @@
 </ENTRY>
 <ENTRY>
 {
-    "EntryID": "21",
+    "EntryID": "14",
     "Type": "Report",
-    "DateTimestamp": "2019-Dec-11 01:10:35.054000",
-    "TimestampMillis": "4235054",
+    "DateTimestamp": "2019-Dec-12 23:41:30.154000",
+    "TimestampMillis": "85290154",
     "Payload": {
         "File": "$LOGDIR\/..\/vivado\/prj\/prj.runs\/impl_1\/zed_wrapper_methodology_drc_routed.rpt",
         "Type": "TEXT",
@@ -299,10 +201,10 @@
 </ENTRY>
 <ENTRY>
 {
-    "EntryID": "22",
+    "EntryID": "15",
     "Type": "Report",
-    "DateTimestamp": "2019-Dec-11 01:10:35.054000",
-    "TimestampMillis": "4235054",
+    "DateTimestamp": "2019-Dec-12 23:41:30.154000",
+    "TimestampMillis": "85290154",
     "Payload": {
         "File": "$LOGDIR\/..\/vivado\/prj\/prj.runs\/impl_1\/zed_wrapper_power_routed.rpt",
         "Type": "TEXT",
@@ -313,10 +215,10 @@
 </ENTRY>
 <ENTRY>
 {
-    "EntryID": "23",
+    "EntryID": "16",
     "Type": "Report",
-    "DateTimestamp": "2019-Dec-11 01:10:35.054000",
-    "TimestampMillis": "4235054",
+    "DateTimestamp": "2019-Dec-12 23:41:30.154000",
+    "TimestampMillis": "85290154",
     "Payload": {
         "File": "$LOGDIR\/..\/vivado\/prj\/prj.runs\/impl_1\/zed_wrapper_route_status.rpt",
         "Type": "TEXT",
@@ -327,10 +229,10 @@
 </ENTRY>
 <ENTRY>
 {
-    "EntryID": "24",
+    "EntryID": "17",
     "Type": "Report",
-    "DateTimestamp": "2019-Dec-11 01:10:35.054000",
-    "TimestampMillis": "4235054",
+    "DateTimestamp": "2019-Dec-12 23:41:30.154000",
+    "TimestampMillis": "85290154",
     "Payload": {
         "File": "$LOGDIR\/..\/vivado\/prj\/prj.runs\/impl_1\/zed_wrapper_timing_summary_routed.rpt",
         "Type": "TEXT",
@@ -341,10 +243,10 @@
 </ENTRY>
 <ENTRY>
 {
-    "EntryID": "25",
+    "EntryID": "18",
     "Type": "Report",
-    "DateTimestamp": "2019-Dec-11 01:10:35.054000",
-    "TimestampMillis": "4235054",
+    "DateTimestamp": "2019-Dec-12 23:41:30.154000",
+    "TimestampMillis": "85290154",
     "Payload": {
         "File": "$LOGDIR\/..\/vivado\/prj\/prj.runs\/impl_1\/zed_wrapper_incremental_reuse_routed.rpt",
         "Type": "TEXT",
@@ -355,10 +257,10 @@
 </ENTRY>
 <ENTRY>
 {
-    "EntryID": "26",
+    "EntryID": "19",
     "Type": "Report",
-    "DateTimestamp": "2019-Dec-11 01:10:35.054000",
-    "TimestampMillis": "4235054",
+    "DateTimestamp": "2019-Dec-12 23:41:30.154000",
+    "TimestampMillis": "85290154",
     "Payload": {
         "File": "$LOGDIR\/..\/vivado\/prj\/prj.runs\/impl_1\/zed_wrapper_clock_utilization_routed.rpt",
         "Type": "TEXT",
@@ -369,10 +271,10 @@
 </ENTRY>
 <ENTRY>
 {
-    "EntryID": "27",
+    "EntryID": "20",
     "Type": "Report",
-    "DateTimestamp": "2019-Dec-11 01:10:35.054000",
-    "TimestampMillis": "4235054",
+    "DateTimestamp": "2019-Dec-12 23:41:30.155000",
+    "TimestampMillis": "85290155",
     "Payload": {
         "File": "$LOGDIR\/..\/vivado\/prj\/prj.runs\/impl_1\/zed_wrapper_clock_utilization_routed.rpt",
         "Type": "TEXT",
@@ -383,10 +285,10 @@
 </ENTRY>
 <ENTRY>
 {
-    "EntryID": "28",
+    "EntryID": "21",
     "Type": "Report",
-    "DateTimestamp": "2019-Dec-11 01:10:35.055000",
-    "TimestampMillis": "4235055",
+    "DateTimestamp": "2019-Dec-12 23:41:30.155000",
+    "TimestampMillis": "85290155",
     "Payload": {
         "File": "$LOGDIR\/..\/vivado\/prj\/prj.runs\/impl_1\/zed_wrapper_bus_skew_routed.rpt",
         "Type": "TEXT",
@@ -397,12 +299,12 @@
 </ENTRY>
 <ENTRY>
 {
-    "EntryID": "29",
+    "EntryID": "22",
     "Type": "Status",
-    "DateTimestamp": "2019-Dec-11 01:10:35.197000",
-    "TimestampMillis": "4235197",
+    "DateTimestamp": "2019-Dec-12 23:41:30.291000",
+    "TimestampMillis": "85290291",
     "Payload": {
-        "CmdStepID": "63f4ba44-5822-464b-bd8e-f1aa709a274b",
+        "CmdStepID": "6a23773f-bb63-4e4a-81dc-dc3b6c286e94",
         "Status": "Passed"
     }
 }

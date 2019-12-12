@@ -6,7 +6,7 @@
 
 source /toolsViv/Xilinx/Vivado/2018.3/scripts/vivado_hls/hls.tcl -notrace
 INFO: [HLS 200-10] Running '/toolsViv/Xilinx/Vivado/2018.3/bin/unwrapped/lnx64.o/vivado_hls'
-INFO: [HLS 200-10] For user 'root' on host 'skl' (Linux_x86_64 version 5.0.0-37-generic) on Wed Dec 11 00:55:22 EET 2019
+INFO: [HLS 200-10] For user 'root' on host 'skl' (Linux_x86_64 version 5.0.0-37-generic) on Thu Dec 12 23:27:38 EET 2019
 INFO: [HLS 200-10] On os Ubuntu 18.04.3 LTS
 INFO: [HLS 200-10] In directory '/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/vhls'
 INFO: [HLS 200-10] Creating and opening project '/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/vhls/myFuncAccel'.
@@ -24,31 +24,31 @@ INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_rtl -auto
 INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty 27%
 INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 2.7ns.
 INFO: [HLS 200-10] Analyzing design file '/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c' ... 
-WARNING: [HLS 214-114] Since the only kind of statements allowed in a dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region: /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c:35:2
+WARNING: [HLS 214-114] Since the only kind of statements allowed in a dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region: /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c:34:2
 WARNING: [HLS 200-471] Dataflow form checks found 1 issue(s) in file /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c
-INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 452.828 ; gain = 8.004 ; free physical = 2162 ; free virtual = 5440
-INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 452.828 ; gain = 8.004 ; free physical = 2162 ; free virtual = 5440
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 452.824 ; gain = 8.004 ; free physical = 248 ; free virtual = 5278
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 452.824 ; gain = 8.004 ; free physical = 248 ; free virtual = 5278
 INFO: [HLS 200-10] Starting code transformations ...
-INFO: [XFORM 203-501] Unrolling loop 'copyLoop' (/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c:43) in function 'myFuncAccel': changing partial unrolling into complete unrolling since the unrolling factor (=4) is no less than the loop trip count (=4).
-INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 452.828 ; gain = 8.004 ; free physical = 2150 ; free virtual = 5437
+INFO: [XFORM 203-501] Unrolling loop 'copyLoop' (/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c:42) in function 'myFuncAccel': changing partial unrolling into complete unrolling since the unrolling factor (=4) is no less than the loop trip count (=4).
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 452.824 ; gain = 8.004 ; free physical = 248 ; free virtual = 5278
 INFO: [HLS 200-10] Checking synthesizability ...
-INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 452.828 ; gain = 8.004 ; free physical = 2150 ; free virtual = 5438
-INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'sizeLoop' (/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c:55) in function 'myFuncAccel' for pipelining.
-INFO: [XFORM 203-501] Unrolling loop 'copyLoop' (/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c:43) in function 'myFuncAccel': changing partial unrolling into complete unrolling since the unrolling factor (=4) is no less than the loop trip count (=4).
-INFO: [HLS 200-489] Unrolling loop 'copyLoop' (/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c:43) in function 'myFuncAccel' completely with a factor of 4.
-INFO: [HLS 200-489] Unrolling loop 'initLoop' (/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c:60) in function 'myFuncAccel' completely with a factor of 4.
-INFO: [HLS 200-489] Unrolling loop 'valueAsn' (/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c:67) in function 'myFuncAccel' completely with a factor of 4.
-INFO: [HLS 200-489] Unrolling loop 'Loop-2.2.1' (/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c:70) in function 'myFuncAccel' completely with a factor of 4.
-INFO: [HLS 200-489] Unrolling loop 'Loop-2.2.2' (/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c:76) in function 'myFuncAccel' completely with a factor of 4.
-INFO: [HLS 200-489] Unrolling loop 'zeroAsn' (/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c:89) in function 'myFuncAccel' completely with a factor of 4.
-INFO: [HLS 200-489] Unrolling loop 'Loop-2.3.1' (/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c:92) in function 'myFuncAccel' completely with a factor of 4.
-INFO: [XFORM 203-721] Changing loop 'Loop_sizeLoop_proc' (/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c:55) to a process function for dataflow in function 'myFuncAccel'.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 452.824 ; gain = 8.004 ; free physical = 248 ; free virtual = 5278
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'sizeLoop' (/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c:54) in function 'myFuncAccel' for pipelining.
+INFO: [XFORM 203-501] Unrolling loop 'copyLoop' (/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c:42) in function 'myFuncAccel': changing partial unrolling into complete unrolling since the unrolling factor (=4) is no less than the loop trip count (=4).
+INFO: [HLS 200-489] Unrolling loop 'copyLoop' (/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c:42) in function 'myFuncAccel' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'initLoop' (/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c:59) in function 'myFuncAccel' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'valueAsn' (/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c:66) in function 'myFuncAccel' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2.2.1' (/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c:69) in function 'myFuncAccel' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2.2.2' (/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c:75) in function 'myFuncAccel' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'zeroAsn' (/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c:88) in function 'myFuncAccel' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2.3.1' (/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c:91) in function 'myFuncAccel' completely with a factor of 4.
+INFO: [XFORM 203-721] Changing loop 'Loop_sizeLoop_proc' (/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c:54) to a process function for dataflow in function 'myFuncAccel'.
 INFO: [XFORM 203-712] Applying dataflow to function 'myFuncAccel', detected/extracted 2 process function(s): 
 	 'Block_codeRepl49_proc14'
 	 'Loop_sizeLoop_proc'.
-INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 580.828 ; gain = 136.004 ; free physical = 2132 ; free virtual = 5418
-WARNING: [XFORM 203-631] Renaming function 'Block_codeRepl49_proc14' to 'Block_codeRepl49_pro' (/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c:46:5)
-INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 580.828 ; gain = 136.004 ; free physical = 2118 ; free virtual = 5409
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 580.824 ; gain = 136.004 ; free physical = 228 ; free virtual = 5258
+WARNING: [XFORM 203-631] Renaming function 'Block_codeRepl49_proc14' to 'Block_codeRepl49_pro' (/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c:45:5)
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 580.824 ; gain = 136.004 ; free physical = 216 ; free virtual = 5249
 INFO: [HLS 200-10] Starting hardware synthesis ...
 INFO: [HLS 200-10] Synthesizing 'myFuncAccel' ...
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -56,13 +56,13 @@ INFO: [HLS 200-42] -- Implementing module 'Block_codeRepl49_pro'
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 8.97 seconds; current allocated memory: 82.899 MB.
+INFO: [HLS 200-111]  Elapsed time: 7.42 seconds; current allocated memory: 82.901 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.02 seconds; current allocated memory: 83.070 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.02 seconds; current allocated memory: 83.071 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'Loop_sizeLoop_proc' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -70,31 +70,31 @@ INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-61] Pipelining loop 'sizeLoop'.
 INFO: [SCHED 204-61] Pipelining result : Target II = 4, Final II = 4, Depth = 38.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.69 seconds; current allocated memory: 83.771 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.74 seconds; current allocated memory: 83.773 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.46 seconds; current allocated memory: 84.723 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.34 seconds; current allocated memory: 84.727 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'myFuncAccel' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
 WARNING: [SCHED 204-71] Latency directive discarded for region myFuncAccel since region contains function calls with variable latency.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.26 seconds; current allocated memory: 84.939 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.24 seconds; current allocated memory: 84.942 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.09 seconds; current allocated memory: 85.154 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.09 seconds; current allocated memory: 85.157 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'Block_codeRepl49_pro' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [RTGEN 206-100] Finished creating RTL model for 'Block_codeRepl49_pro'.
-INFO: [HLS 200-111]  Elapsed time: 0.22 seconds; current allocated memory: 86.152 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.22 seconds; current allocated memory: 86.156 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'Loop_sizeLoop_proc' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -102,7 +102,7 @@ INFO: [RTGEN 206-100] Generating core module 'myFuncAccel_fadd_32ns_32ns_32_5_fu
 INFO: [RTGEN 206-100] Generating core module 'myFuncAccel_fcmp_32ns_32ns_1_1_1': 1 instance(s).
 INFO: [RTGEN 206-100] Generating core module 'myFuncAccel_fmul_32ns_32ns_32_4_max_dsp_1': 5 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'Loop_sizeLoop_proc'.
-INFO: [HLS 200-111]  Elapsed time: 0.13 seconds; current allocated memory: 88.264 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.12 seconds; current allocated memory: 88.267 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'myFuncAccel' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -116,7 +116,7 @@ INFO: [RTGEN 206-500] Setting interface mode on function 'myFuncAccel' to 'ap_ct
 WARNING: [RTGEN 206-101] Port 'myFuncAccel/dim' has no fanin or fanout and is left dangling.
                Please use C simulation to confirm this function argument can be read from or written to.
 INFO: [RTGEN 206-100] Finished creating RTL model for 'myFuncAccel'.
-INFO: [HLS 200-111]  Elapsed time: 0.65 seconds; current allocated memory: 91.248 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.57 seconds; current allocated memory: 91.251 MB.
 INFO: [RTMG 210-285] Implementing FIFO 'size_c_U(a0_fifo_w32_d2_A)' using Shift Registers.
 INFO: [RTMG 210-285] Implementing FIFO 'threshold_c_U(a0_fifo_w32_d2_A)' using Shift Registers.
 INFO: [RTMG 210-285] Implementing FIFO 'data0_load_loc_chann_U(a0_fifo_w32_d2_A)' using Shift Registers.
@@ -135,7 +135,7 @@ INFO: [RTMG 210-285] Implementing FIFO 'data0_load_12_loc_ch_U(a0_fifo_w32_d2_A)
 INFO: [RTMG 210-285] Implementing FIFO 'data0_load_13_loc_ch_U(a0_fifo_w32_d2_A)' using Shift Registers.
 INFO: [RTMG 210-285] Implementing FIFO 'data0_load_14_loc_ch_U(a0_fifo_w32_d2_A)' using Shift Registers.
 INFO: [RTMG 210-285] Implementing FIFO 'data0_load_15_loc_ch_U(a0_fifo_w32_d2_A)' using Shift Registers.
-INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 580.828 ; gain = 136.004 ; free physical = 2096 ; free virtual = 5391
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 580.824 ; gain = 136.004 ; free physical = 192 ; free virtual = 5230
 INFO: [SYSC 207-301] Generating SystemC RTL for myFuncAccel with prefix a0_.
 INFO: [VHDL 208-304] Generating VHDL RTL for myFuncAccel with prefix a0_.
 INFO: [VLOG 209-307] Generating Verilog RTL for myFuncAccel with prefix a0_.
@@ -162,6 +162,6 @@ INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'a0_myFuncAccel_ap
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/toolsViv/Xilinx/Vivado/2018.3/data/ip'.
-INFO: [Common 17-206] Exiting Vivado at Wed Dec 11 00:56:00 2019...
-INFO: [HLS 200-112] Total elapsed time: 38.58 seconds; peak allocated memory: 91.248 MB.
-INFO: [Common 17-206] Exiting vivado_hls at Wed Dec 11 00:56:00 2019...
+INFO: [Common 17-206] Exiting Vivado at Thu Dec 12 23:28:08 2019...
+INFO: [HLS 200-112] Total elapsed time: 30.33 seconds; peak allocated memory: 91.251 MB.
+INFO: [Common 17-206] Exiting vivado_hls at Thu Dec 12 23:28:08 2019...

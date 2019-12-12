@@ -309,7 +309,7 @@ tatype {name {attribs {resolve_type immediate dependency {} format string minimu
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>9ad7d7c5</spirit:value>
+            <spirit:value>4b01d7e0</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -328,7 +328,7 @@ tatype {name {attribs {resolve_type immediate dependency {} format string minimu
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>17b70f3a</spirit:value>
+            <spirit:value>99be6855</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -347,7 +347,7 @@ tatype {name {attribs {resolve_type immediate dependency {} format string minimu
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>582b61e8</spirit:value>
+            <spirit:value>724aa8b0</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -366,7 +366,7 @@ tatype {name {attribs {resolve_type immediate dependency {} format string minimu
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>d0e2af5d</spirit:value>
+            <spirit:value>1dcf8aa3</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -995,8 +995,8 @@ tatype {name {attribs {resolve_type immediate dependency {} format string minimu
       </xilinx:taxonomies>
       <xilinx:displayName>Myfuncaccel</xilinx:displayName>
       <xilinx:definitionSource>HLS</xilinx:definitionSource>
-      <xilinx:coreRevision>1912110055</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2019-12-10T22:56:00Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>1912122327</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2019-12-12T21:28:08Z</xilinx:coreCreationDateTime>
       <xilinx:sdxKernelAttributes>
         <xilinx:sdx_kernel>true</xilinx:sdx_kernel>
         <xilinx:sdx_kernel_type>hls</xilinx:sdx_kernel_type>
@@ -1005,7 +1005,7 @@ tatype {name {attribs {resolve_type immediate dependency {} format string minimu
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2018.3</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="bc2577df"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="4b440401"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="0d0129cf"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="15693620"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="03e57e32"/>
     </xilinx:packagingInfo>

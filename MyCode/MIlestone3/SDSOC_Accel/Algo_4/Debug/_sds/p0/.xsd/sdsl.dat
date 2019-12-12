@@ -38,9 +38,9 @@
     <cf:portMap cf:blockPort="size" cf:compPort="ps7_M_AXI_GP0"/>
     <cf:portMap cf:blockPort="dim" cf:compPort="ps7_M_AXI_GP0"/>
     <cf:portMap cf:blockPort="threshold" cf:compPort="ps7_M_AXI_GP0"/>
-    <cf:portMap cf:blockPort="data0" cf:compPort="ps7_S_AXI_HP1" cf:sptag="AFI"/>
-    <cf:portMap cf:blockPort="data1" cf:compPort="ps7_S_AXI_HP0" cf:sptag="AFI"/>
-    <cf:portMap cf:blockPort="data2" cf:compPort="ps7_S_AXI_HP2" cf:sptag="AFI"/>
+    <cf:portMap cf:blockPort="data0" cf:compPort="ps7_S_AXI_ACP" cf:sptag="ACP"/>
+    <cf:portMap cf:blockPort="data1" cf:compPort="ps7_S_AXI_ACP" cf:sptag="ACP"/>
+    <cf:portMap cf:blockPort="data2" cf:compPort="ps7_S_AXI_ACP" cf:sptag="ACP"/>
   </cf:instance>
   <cf:connection cf:srcInst="swinst_myFuncAccel_1" cf:srcPort="cmd_myFuncAccel" cf:dstInst="hwinst_myFuncAccel_1" cf:dstPort="cmd_myFuncAccel">
     <cf:dataMover cf:compName="zed" cf:softwareLib="axi_lite"/>

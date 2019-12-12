@@ -71,32 +71,18 @@
     <xd:parameter xd:name="M03_HAS_REGSLICE" xd:value="1"/>
     <xd:parameter xd:name="S00_HAS_REGSLICE" xd:value="1"/>
   </xd:instance>
-  <xd:instance xd:name="axi_ic_ps7_S_AXI_HP1" xd:componentRef="axi_interconnect">
+  <xd:instance xd:name="axi_ic_ps7_S_AXI_ACP" xd:componentRef="axi_interconnect">
     <xd:parameter xd:name="NUM_MI" xd:value="1"/>
-    <xd:parameter xd:name="NUM_SI" xd:value="1"/>
+    <xd:parameter xd:name="NUM_SI" xd:value="3"/>
     <xd:parameter xd:name="STRATEGY" xd:value="2"/>
     <xd:parameter xd:name="M00_HAS_REGSLICE" xd:value="1"/>
     <xd:parameter xd:name="M00_HAS_DATA_FIFO" xd:value="2"/>
     <xd:parameter xd:name="S00_HAS_REGSLICE" xd:value="1"/>
     <xd:parameter xd:name="S00_HAS_DATA_FIFO" xd:value="2"/>
-  </xd:instance>
-  <xd:instance xd:name="axi_ic_ps7_S_AXI_HP0" xd:componentRef="axi_interconnect">
-    <xd:parameter xd:name="NUM_MI" xd:value="1"/>
-    <xd:parameter xd:name="NUM_SI" xd:value="1"/>
-    <xd:parameter xd:name="STRATEGY" xd:value="2"/>
-    <xd:parameter xd:name="M00_HAS_REGSLICE" xd:value="1"/>
-    <xd:parameter xd:name="M00_HAS_DATA_FIFO" xd:value="2"/>
-    <xd:parameter xd:name="S00_HAS_REGSLICE" xd:value="1"/>
-    <xd:parameter xd:name="S00_HAS_DATA_FIFO" xd:value="2"/>
-  </xd:instance>
-  <xd:instance xd:name="axi_ic_ps7_S_AXI_HP2" xd:componentRef="axi_interconnect">
-    <xd:parameter xd:name="NUM_MI" xd:value="1"/>
-    <xd:parameter xd:name="NUM_SI" xd:value="1"/>
-    <xd:parameter xd:name="STRATEGY" xd:value="2"/>
-    <xd:parameter xd:name="M00_HAS_REGSLICE" xd:value="1"/>
-    <xd:parameter xd:name="M00_HAS_DATA_FIFO" xd:value="2"/>
-    <xd:parameter xd:name="S00_HAS_REGSLICE" xd:value="1"/>
-    <xd:parameter xd:name="S00_HAS_DATA_FIFO" xd:value="2"/>
+    <xd:parameter xd:name="S01_HAS_REGSLICE" xd:value="1"/>
+    <xd:parameter xd:name="S01_HAS_DATA_FIFO" xd:value="2"/>
+    <xd:parameter xd:name="S02_HAS_REGSLICE" xd:value="1"/>
+    <xd:parameter xd:name="S02_HAS_DATA_FIFO" xd:value="2"/>
   </xd:instance>
   <xd:instance xd:name="axis_dwc_dm_0_tx_0" xd:componentRef="axis_dwidth_converter">
     <xd:parameter xd:name="M_TDATA_NUM_BYTES" xd:value="4"/>
@@ -113,6 +99,10 @@
   <xd:instance xd:name="sds_irq_const" xd:componentRef="xlconstant">
     <xd:parameter xd:name="CONST_WIDTH" xd:value="1"/>
     <xd:parameter xd:name="CONST_VAL" xd:value="0"/>
+  </xd:instance>
+  <xd:instance xd:name="axcache_0xE" xd:componentRef="xlconstant">
+    <xd:parameter xd:name="CONST_WIDTH" xd:value="4"/>
+    <xd:parameter xd:name="CONST_VAL" xd:value="14"/>
   </xd:instance>
   <xd:connection>
     <xd:port xd:name="ap_iscalar_0_dout" xd:instanceRef="myFuncAccel_1_if"/>
@@ -155,16 +145,8 @@
     <xd:busInterface xd:name="S00_AXI" xd:instanceRef="axi_ic_ps7_M_AXI_GP0"/>
   </xd:connection>
   <xd:connection>
-    <xd:busInterface xd:name="M00_AXI" xd:instanceRef="axi_ic_ps7_S_AXI_HP1"/>
-    <xd:busInterface xd:name="ps7_S_AXI_HP1" xd:instanceRef="zed"/>
-  </xd:connection>
-  <xd:connection>
-    <xd:busInterface xd:name="M00_AXI" xd:instanceRef="axi_ic_ps7_S_AXI_HP0"/>
-    <xd:busInterface xd:name="ps7_S_AXI_HP0" xd:instanceRef="zed"/>
-  </xd:connection>
-  <xd:connection>
-    <xd:busInterface xd:name="M00_AXI" xd:instanceRef="axi_ic_ps7_S_AXI_HP2"/>
-    <xd:busInterface xd:name="ps7_S_AXI_HP2" xd:instanceRef="zed"/>
+    <xd:busInterface xd:name="M00_AXI" xd:instanceRef="axi_ic_ps7_S_AXI_ACP"/>
+    <xd:busInterface xd:name="ps7_S_AXI_ACP" xd:instanceRef="zed"/>
   </xd:connection>
   <xd:connection>
     <xd:busInterface xd:name="M00_AXI" xd:instanceRef="axi_ic_ps7_M_AXI_GP0"/>
@@ -176,7 +158,7 @@
   </xd:connection>
   <xd:connection>
     <xd:busInterface xd:name="M_AXI_MM2S" xd:instanceRef="dm_0"/>
-    <xd:busInterface xd:name="S00_AXI" xd:instanceRef="axi_ic_ps7_S_AXI_HP1"/>
+    <xd:busInterface xd:name="S00_AXI" xd:instanceRef="axi_ic_ps7_S_AXI_ACP"/>
   </xd:connection>
   <xd:connection>
     <xd:busInterface xd:name="M_AXIS_MM2S" xd:instanceRef="dm_0"/>
@@ -192,7 +174,7 @@
   </xd:connection>
   <xd:connection>
     <xd:busInterface xd:name="M_AXI_MM2S" xd:instanceRef="dm_1"/>
-    <xd:busInterface xd:name="S00_AXI" xd:instanceRef="axi_ic_ps7_S_AXI_HP0"/>
+    <xd:busInterface xd:name="S01_AXI" xd:instanceRef="axi_ic_ps7_S_AXI_ACP"/>
   </xd:connection>
   <xd:connection>
     <xd:busInterface xd:name="M_AXIS_MM2S" xd:instanceRef="dm_1"/>
@@ -208,7 +190,7 @@
   </xd:connection>
   <xd:connection>
     <xd:busInterface xd:name="M_AXI_S2MM" xd:instanceRef="dm_2"/>
-    <xd:busInterface xd:name="S00_AXI" xd:instanceRef="axi_ic_ps7_S_AXI_HP2"/>
+    <xd:busInterface xd:name="S02_AXI" xd:instanceRef="axi_ic_ps7_S_AXI_ACP"/>
   </xd:connection>
   <xd:connection>
     <xd:busInterface xd:name="M_AXIS_FIFO_0" xd:instanceRef="myFuncAccel_1_if"/>
@@ -221,9 +203,7 @@
   <xd:connection>
     <xd:port xd:name="clk_wiz_0_clk_out1" xd:instanceRef="zed"/>
     <xd:port xd:name="ps7_M_AXI_GP0_ACLK" xd:instanceRef="zed"/>
-    <xd:port xd:name="ps7_S_AXI_HP1_ACLK" xd:instanceRef="zed"/>
-    <xd:port xd:name="ps7_S_AXI_HP0_ACLK" xd:instanceRef="zed"/>
-    <xd:port xd:name="ps7_S_AXI_HP2_ACLK" xd:instanceRef="zed"/>
+    <xd:port xd:name="ps7_S_AXI_ACP_ACLK" xd:instanceRef="zed"/>
     <xd:port xd:name="s_axi_lite_aclk" xd:instanceRef="dm_0"/>
     <xd:port xd:name="m_axi_mm2s_aclk" xd:instanceRef="dm_0"/>
     <xd:port xd:name="s_axi_lite_aclk" xd:instanceRef="dm_1"/>
@@ -241,18 +221,14 @@
     <xd:port xd:name="M02_ACLK" xd:instanceRef="axi_ic_ps7_M_AXI_GP0"/>
     <xd:port xd:name="M03_ACLK" xd:instanceRef="axi_ic_ps7_M_AXI_GP0"/>
     <xd:port xd:name="ACLK" xd:instanceRef="axi_ic_ps7_M_AXI_GP0"/>
-    <xd:port xd:name="S00_ACLK" xd:instanceRef="axi_ic_ps7_S_AXI_HP1"/>
-    <xd:port xd:name="S00_ACLK" xd:instanceRef="axi_ic_ps7_S_AXI_HP0"/>
-    <xd:port xd:name="S00_ACLK" xd:instanceRef="axi_ic_ps7_S_AXI_HP2"/>
+    <xd:port xd:name="S00_ACLK" xd:instanceRef="axi_ic_ps7_S_AXI_ACP"/>
+    <xd:port xd:name="S01_ACLK" xd:instanceRef="axi_ic_ps7_S_AXI_ACP"/>
+    <xd:port xd:name="S02_ACLK" xd:instanceRef="axi_ic_ps7_S_AXI_ACP"/>
     <xd:port xd:name="aclk" xd:instanceRef="axis_dwc_dm_0_tx_0"/>
     <xd:port xd:name="aclk" xd:instanceRef="axis_dwc_dm_1_tx_0"/>
     <xd:port xd:name="aclk" xd:instanceRef="axis_dwc_dm_2_rx_0"/>
-    <xd:port xd:name="ACLK" xd:instanceRef="axi_ic_ps7_S_AXI_HP1"/>
-    <xd:port xd:name="M00_ACLK" xd:instanceRef="axi_ic_ps7_S_AXI_HP1"/>
-    <xd:port xd:name="ACLK" xd:instanceRef="axi_ic_ps7_S_AXI_HP0"/>
-    <xd:port xd:name="M00_ACLK" xd:instanceRef="axi_ic_ps7_S_AXI_HP0"/>
-    <xd:port xd:name="ACLK" xd:instanceRef="axi_ic_ps7_S_AXI_HP2"/>
-    <xd:port xd:name="M00_ACLK" xd:instanceRef="axi_ic_ps7_S_AXI_HP2"/>
+    <xd:port xd:name="ACLK" xd:instanceRef="axi_ic_ps7_S_AXI_ACP"/>
+    <xd:port xd:name="M00_ACLK" xd:instanceRef="axi_ic_ps7_S_AXI_ACP"/>
   </xd:connection>
   <xd:connection>
     <xd:port xd:name="proc_sys_reset_0_interconnect_aresetn" xd:instanceRef="zed"/>
@@ -262,15 +238,11 @@
     <xd:port xd:name="M02_ARESETN" xd:instanceRef="axi_ic_ps7_M_AXI_GP0"/>
     <xd:port xd:name="M03_ARESETN" xd:instanceRef="axi_ic_ps7_M_AXI_GP0"/>
     <xd:port xd:name="ARESETN" xd:instanceRef="axi_ic_ps7_M_AXI_GP0"/>
-    <xd:port xd:name="M00_ARESETN" xd:instanceRef="axi_ic_ps7_S_AXI_HP1"/>
-    <xd:port xd:name="S00_ARESETN" xd:instanceRef="axi_ic_ps7_S_AXI_HP1"/>
-    <xd:port xd:name="M00_ARESETN" xd:instanceRef="axi_ic_ps7_S_AXI_HP0"/>
-    <xd:port xd:name="S00_ARESETN" xd:instanceRef="axi_ic_ps7_S_AXI_HP0"/>
-    <xd:port xd:name="M00_ARESETN" xd:instanceRef="axi_ic_ps7_S_AXI_HP2"/>
-    <xd:port xd:name="S00_ARESETN" xd:instanceRef="axi_ic_ps7_S_AXI_HP2"/>
-    <xd:port xd:name="ARESETN" xd:instanceRef="axi_ic_ps7_S_AXI_HP1"/>
-    <xd:port xd:name="ARESETN" xd:instanceRef="axi_ic_ps7_S_AXI_HP0"/>
-    <xd:port xd:name="ARESETN" xd:instanceRef="axi_ic_ps7_S_AXI_HP2"/>
+    <xd:port xd:name="M00_ARESETN" xd:instanceRef="axi_ic_ps7_S_AXI_ACP"/>
+    <xd:port xd:name="S00_ARESETN" xd:instanceRef="axi_ic_ps7_S_AXI_ACP"/>
+    <xd:port xd:name="S01_ARESETN" xd:instanceRef="axi_ic_ps7_S_AXI_ACP"/>
+    <xd:port xd:name="S02_ARESETN" xd:instanceRef="axi_ic_ps7_S_AXI_ACP"/>
+    <xd:port xd:name="ARESETN" xd:instanceRef="axi_ic_ps7_S_AXI_ACP"/>
   </xd:connection>
   <xd:connection>
     <xd:port xd:name="proc_sys_reset_0_peripheral_aresetn" xd:instanceRef="zed"/>
@@ -307,5 +279,11 @@
     <xd:port xd:name="xlconcat_0_In13" xd:instanceRef="zed"/>
     <xd:port xd:name="xlconcat_0_In14" xd:instanceRef="zed"/>
     <xd:port xd:name="xlconcat_0_In15" xd:instanceRef="zed"/>
+  </xd:connection>
+  <xd:connection>
+    <xd:port xd:name="dout" xd:instanceRef="axcache_0xE"/>
+    <xd:port xd:name="S00_AXI_arcache" xd:instanceRef="axi_ic_ps7_S_AXI_ACP"/>
+    <xd:port xd:name="S01_AXI_arcache" xd:instanceRef="axi_ic_ps7_S_AXI_ACP"/>
+    <xd:port xd:name="S02_AXI_awcache" xd:instanceRef="axi_ic_ps7_S_AXI_ACP"/>
   </xd:connection>
 </xd:component>

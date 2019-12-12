@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'Block_codeRepl49_pro'
 ================================================================
-* Date:           Wed Dec 11 00:55:31 2019
+* Date:           Thu Dec 12 23:27:45 2019
 
 * Version:        2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)
 * Project:        myFuncAccel
@@ -105,49 +105,49 @@ IsGatedGlobalClock: 0
 * FSM state operations: 
 
 State 1 <SV = 0> <Delay = 3.63>
-ST_1 : Operation 17 [1/1] (3.63ns)   --->   "%data0_read = call float @_ssdm_op_Read.ap_fifo.volatile.floatP(float* %data0)" [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c:46]   --->   Operation 17 'read' 'data0_read' <Predicate = true> <Delay = 3.63> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_1 : Operation 17 [1/1] (3.63ns)   --->   "%data0_read = call float @_ssdm_op_Read.ap_fifo.volatile.floatP(float* %data0)" [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c:45]   --->   Operation 17 'read' 'data0_read' <Predicate = true> <Delay = 3.63> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
 
 State 2 <SV = 1> <Delay = 3.63>
-ST_2 : Operation 18 [1/1] (3.63ns)   --->   "%data0_read_1 = call float @_ssdm_op_Read.ap_fifo.volatile.floatP(float* %data0)" [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c:47]   --->   Operation 18 'read' 'data0_read_1' <Predicate = true> <Delay = 3.63> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_2 : Operation 18 [1/1] (3.63ns)   --->   "%data0_read_1 = call float @_ssdm_op_Read.ap_fifo.volatile.floatP(float* %data0)" [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c:46]   --->   Operation 18 'read' 'data0_read_1' <Predicate = true> <Delay = 3.63> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
 
 State 3 <SV = 2> <Delay = 3.63>
-ST_3 : Operation 19 [1/1] (3.63ns)   --->   "%data0_read_2 = call float @_ssdm_op_Read.ap_fifo.volatile.floatP(float* %data0)" [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c:48]   --->   Operation 19 'read' 'data0_read_2' <Predicate = true> <Delay = 3.63> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_3 : Operation 19 [1/1] (3.63ns)   --->   "%data0_read_2 = call float @_ssdm_op_Read.ap_fifo.volatile.floatP(float* %data0)" [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c:47]   --->   Operation 19 'read' 'data0_read_2' <Predicate = true> <Delay = 3.63> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
 
 State 4 <SV = 3> <Delay = 3.63>
-ST_4 : Operation 20 [1/1] (3.63ns)   --->   "%data0_read_3 = call float @_ssdm_op_Read.ap_fifo.volatile.floatP(float* %data0)" [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c:49]   --->   Operation 20 'read' 'data0_read_3' <Predicate = true> <Delay = 3.63> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_4 : Operation 20 [1/1] (3.63ns)   --->   "%data0_read_3 = call float @_ssdm_op_Read.ap_fifo.volatile.floatP(float* %data0)" [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c:48]   --->   Operation 20 'read' 'data0_read_3' <Predicate = true> <Delay = 3.63> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
 
 State 5 <SV = 4> <Delay = 3.63>
-ST_5 : Operation 21 [1/1] (3.63ns)   --->   "%data0_read_4 = call float @_ssdm_op_Read.ap_fifo.volatile.floatP(float* %data0)" [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c:46]   --->   Operation 21 'read' 'data0_read_4' <Predicate = true> <Delay = 3.63> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_5 : Operation 21 [1/1] (3.63ns)   --->   "%data0_read_4 = call float @_ssdm_op_Read.ap_fifo.volatile.floatP(float* %data0)" [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c:45]   --->   Operation 21 'read' 'data0_read_4' <Predicate = true> <Delay = 3.63> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
 
 State 6 <SV = 5> <Delay = 3.63>
-ST_6 : Operation 22 [1/1] (3.63ns)   --->   "%data0_read_5 = call float @_ssdm_op_Read.ap_fifo.volatile.floatP(float* %data0)" [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c:47]   --->   Operation 22 'read' 'data0_read_5' <Predicate = true> <Delay = 3.63> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_6 : Operation 22 [1/1] (3.63ns)   --->   "%data0_read_5 = call float @_ssdm_op_Read.ap_fifo.volatile.floatP(float* %data0)" [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c:46]   --->   Operation 22 'read' 'data0_read_5' <Predicate = true> <Delay = 3.63> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
 
 State 7 <SV = 6> <Delay = 3.63>
-ST_7 : Operation 23 [1/1] (3.63ns)   --->   "%data0_read_6 = call float @_ssdm_op_Read.ap_fifo.volatile.floatP(float* %data0)" [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c:48]   --->   Operation 23 'read' 'data0_read_6' <Predicate = true> <Delay = 3.63> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_7 : Operation 23 [1/1] (3.63ns)   --->   "%data0_read_6 = call float @_ssdm_op_Read.ap_fifo.volatile.floatP(float* %data0)" [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c:47]   --->   Operation 23 'read' 'data0_read_6' <Predicate = true> <Delay = 3.63> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
 
 State 8 <SV = 7> <Delay = 3.63>
-ST_8 : Operation 24 [1/1] (3.63ns)   --->   "%data0_read_7 = call float @_ssdm_op_Read.ap_fifo.volatile.floatP(float* %data0)" [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c:49]   --->   Operation 24 'read' 'data0_read_7' <Predicate = true> <Delay = 3.63> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_8 : Operation 24 [1/1] (3.63ns)   --->   "%data0_read_7 = call float @_ssdm_op_Read.ap_fifo.volatile.floatP(float* %data0)" [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c:48]   --->   Operation 24 'read' 'data0_read_7' <Predicate = true> <Delay = 3.63> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
 
 State 9 <SV = 8> <Delay = 3.63>
-ST_9 : Operation 25 [1/1] (3.63ns)   --->   "%data0_read_8 = call float @_ssdm_op_Read.ap_fifo.volatile.floatP(float* %data0)" [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c:46]   --->   Operation 25 'read' 'data0_read_8' <Predicate = true> <Delay = 3.63> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_9 : Operation 25 [1/1] (3.63ns)   --->   "%data0_read_8 = call float @_ssdm_op_Read.ap_fifo.volatile.floatP(float* %data0)" [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c:45]   --->   Operation 25 'read' 'data0_read_8' <Predicate = true> <Delay = 3.63> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
 
 State 10 <SV = 9> <Delay = 3.63>
-ST_10 : Operation 26 [1/1] (3.63ns)   --->   "%data0_read_9 = call float @_ssdm_op_Read.ap_fifo.volatile.floatP(float* %data0)" [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c:47]   --->   Operation 26 'read' 'data0_read_9' <Predicate = true> <Delay = 3.63> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_10 : Operation 26 [1/1] (3.63ns)   --->   "%data0_read_9 = call float @_ssdm_op_Read.ap_fifo.volatile.floatP(float* %data0)" [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c:46]   --->   Operation 26 'read' 'data0_read_9' <Predicate = true> <Delay = 3.63> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
 
 State 11 <SV = 10> <Delay = 3.63>
-ST_11 : Operation 27 [1/1] (3.63ns)   --->   "%data0_read_10 = call float @_ssdm_op_Read.ap_fifo.volatile.floatP(float* %data0)" [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c:48]   --->   Operation 27 'read' 'data0_read_10' <Predicate = true> <Delay = 3.63> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_11 : Operation 27 [1/1] (3.63ns)   --->   "%data0_read_10 = call float @_ssdm_op_Read.ap_fifo.volatile.floatP(float* %data0)" [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c:47]   --->   Operation 27 'read' 'data0_read_10' <Predicate = true> <Delay = 3.63> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
 
 State 12 <SV = 11> <Delay = 3.63>
-ST_12 : Operation 28 [1/1] (3.63ns)   --->   "%data0_read_11 = call float @_ssdm_op_Read.ap_fifo.volatile.floatP(float* %data0)" [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c:49]   --->   Operation 28 'read' 'data0_read_11' <Predicate = true> <Delay = 3.63> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_12 : Operation 28 [1/1] (3.63ns)   --->   "%data0_read_11 = call float @_ssdm_op_Read.ap_fifo.volatile.floatP(float* %data0)" [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c:48]   --->   Operation 28 'read' 'data0_read_11' <Predicate = true> <Delay = 3.63> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
 
 State 13 <SV = 12> <Delay = 3.63>
-ST_13 : Operation 29 [1/1] (3.63ns)   --->   "%data0_read_12 = call float @_ssdm_op_Read.ap_fifo.volatile.floatP(float* %data0)" [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c:46]   --->   Operation 29 'read' 'data0_read_12' <Predicate = true> <Delay = 3.63> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_13 : Operation 29 [1/1] (3.63ns)   --->   "%data0_read_12 = call float @_ssdm_op_Read.ap_fifo.volatile.floatP(float* %data0)" [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c:45]   --->   Operation 29 'read' 'data0_read_12' <Predicate = true> <Delay = 3.63> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
 
 State 14 <SV = 13> <Delay = 3.63>
-ST_14 : Operation 30 [1/1] (3.63ns)   --->   "%data0_read_13 = call float @_ssdm_op_Read.ap_fifo.volatile.floatP(float* %data0)" [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c:47]   --->   Operation 30 'read' 'data0_read_13' <Predicate = true> <Delay = 3.63> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_14 : Operation 30 [1/1] (3.63ns)   --->   "%data0_read_13 = call float @_ssdm_op_Read.ap_fifo.volatile.floatP(float* %data0)" [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c:46]   --->   Operation 30 'read' 'data0_read_13' <Predicate = true> <Delay = 3.63> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
 
 State 15 <SV = 14> <Delay = 3.63>
-ST_15 : Operation 31 [1/1] (3.63ns)   --->   "%data0_read_14 = call float @_ssdm_op_Read.ap_fifo.volatile.floatP(float* %data0)" [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c:48]   --->   Operation 31 'read' 'data0_read_14' <Predicate = true> <Delay = 3.63> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_15 : Operation 31 [1/1] (3.63ns)   --->   "%data0_read_14 = call float @_ssdm_op_Read.ap_fifo.volatile.floatP(float* %data0)" [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c:47]   --->   Operation 31 'read' 'data0_read_14' <Predicate = true> <Delay = 3.63> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
 
 State 16 <SV = 15> <Delay = 3.63>
 ST_16 : Operation 32 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* %data0, [8 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1)"   --->   Operation 32 'specinterface' <Predicate = true> <Delay = 0.00>
@@ -157,24 +157,24 @@ ST_16 : Operation 35 [1/1] (0.00ns)   --->   "%size_read = call i32 @_ssdm_op_Re
 ST_16 : Operation 36 [1/1] (3.63ns)   --->   "call void @_ssdm_op_Write.ap_fifo.i32P(i32* %size_out, i32 %size_read)"   --->   Operation 36 'write' <Predicate = true> <Delay = 3.63> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
 ST_16 : Operation 37 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(float* %threshold_out, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str21, i32 0, i32 0, [1 x i8]* @p_str22, [1 x i8]* @p_str23, [1 x i8]* @p_str24, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str25, [11 x i8]* @ScalarProp_str)"   --->   Operation 37 'specinterface' <Predicate = true> <Delay = 0.00>
 ST_16 : Operation 38 [1/1] (3.63ns)   --->   "call void @_ssdm_op_Write.ap_fifo.floatP(float* %threshold_out, float %threshold_read)"   --->   Operation 38 'write' <Predicate = true> <Delay = 3.63> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
-ST_16 : Operation 39 [1/1] (3.63ns)   --->   "%data0_read_15 = call float @_ssdm_op_Read.ap_fifo.volatile.floatP(float* %data0)" [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c:49]   --->   Operation 39 'read' 'data0_read_15' <Predicate = true> <Delay = 3.63> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
-ST_16 : Operation 40 [1/1] (0.00ns)   --->   "%mrv = insertvalue { float, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float } undef, float %data0_read, 0" [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c:46]   --->   Operation 40 'insertvalue' 'mrv' <Predicate = true> <Delay = 0.00>
-ST_16 : Operation 41 [1/1] (0.00ns)   --->   "%mrv_1 = insertvalue { float, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float } %mrv, float %data0_read_1, 1" [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c:46]   --->   Operation 41 'insertvalue' 'mrv_1' <Predicate = true> <Delay = 0.00>
-ST_16 : Operation 42 [1/1] (0.00ns)   --->   "%mrv_2 = insertvalue { float, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float } %mrv_1, float %data0_read_2, 2" [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c:46]   --->   Operation 42 'insertvalue' 'mrv_2' <Predicate = true> <Delay = 0.00>
-ST_16 : Operation 43 [1/1] (0.00ns)   --->   "%mrv_3 = insertvalue { float, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float } %mrv_2, float %data0_read_3, 3" [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c:46]   --->   Operation 43 'insertvalue' 'mrv_3' <Predicate = true> <Delay = 0.00>
-ST_16 : Operation 44 [1/1] (0.00ns)   --->   "%mrv_4 = insertvalue { float, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float } %mrv_3, float %data0_read_4, 4" [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c:46]   --->   Operation 44 'insertvalue' 'mrv_4' <Predicate = true> <Delay = 0.00>
-ST_16 : Operation 45 [1/1] (0.00ns)   --->   "%mrv_5 = insertvalue { float, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float } %mrv_4, float %data0_read_5, 5" [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c:46]   --->   Operation 45 'insertvalue' 'mrv_5' <Predicate = true> <Delay = 0.00>
-ST_16 : Operation 46 [1/1] (0.00ns)   --->   "%mrv_6 = insertvalue { float, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float } %mrv_5, float %data0_read_6, 6" [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c:46]   --->   Operation 46 'insertvalue' 'mrv_6' <Predicate = true> <Delay = 0.00>
-ST_16 : Operation 47 [1/1] (0.00ns)   --->   "%mrv_7 = insertvalue { float, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float } %mrv_6, float %data0_read_7, 7" [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c:46]   --->   Operation 47 'insertvalue' 'mrv_7' <Predicate = true> <Delay = 0.00>
-ST_16 : Operation 48 [1/1] (0.00ns)   --->   "%mrv_8 = insertvalue { float, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float } %mrv_7, float %data0_read_8, 8" [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c:46]   --->   Operation 48 'insertvalue' 'mrv_8' <Predicate = true> <Delay = 0.00>
-ST_16 : Operation 49 [1/1] (0.00ns)   --->   "%mrv_9 = insertvalue { float, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float } %mrv_8, float %data0_read_9, 9" [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c:46]   --->   Operation 49 'insertvalue' 'mrv_9' <Predicate = true> <Delay = 0.00>
-ST_16 : Operation 50 [1/1] (0.00ns)   --->   "%mrv_s = insertvalue { float, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float } %mrv_9, float %data0_read_10, 10" [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c:46]   --->   Operation 50 'insertvalue' 'mrv_s' <Predicate = true> <Delay = 0.00>
-ST_16 : Operation 51 [1/1] (0.00ns)   --->   "%mrv_10 = insertvalue { float, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float } %mrv_s, float %data0_read_11, 11" [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c:46]   --->   Operation 51 'insertvalue' 'mrv_10' <Predicate = true> <Delay = 0.00>
-ST_16 : Operation 52 [1/1] (0.00ns)   --->   "%mrv_11 = insertvalue { float, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float } %mrv_10, float %data0_read_12, 12" [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c:46]   --->   Operation 52 'insertvalue' 'mrv_11' <Predicate = true> <Delay = 0.00>
-ST_16 : Operation 53 [1/1] (0.00ns)   --->   "%mrv_12 = insertvalue { float, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float } %mrv_11, float %data0_read_13, 13" [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c:46]   --->   Operation 53 'insertvalue' 'mrv_12' <Predicate = true> <Delay = 0.00>
-ST_16 : Operation 54 [1/1] (0.00ns)   --->   "%mrv_13 = insertvalue { float, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float } %mrv_12, float %data0_read_14, 14" [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c:46]   --->   Operation 54 'insertvalue' 'mrv_13' <Predicate = true> <Delay = 0.00>
-ST_16 : Operation 55 [1/1] (0.00ns)   --->   "%mrv_14 = insertvalue { float, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float } %mrv_13, float %data0_read_15, 15" [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c:46]   --->   Operation 55 'insertvalue' 'mrv_14' <Predicate = true> <Delay = 0.00>
-ST_16 : Operation 56 [1/1] (0.00ns)   --->   "ret { float, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float } %mrv_14" [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c:46]   --->   Operation 56 'ret' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 39 [1/1] (3.63ns)   --->   "%data0_read_15 = call float @_ssdm_op_Read.ap_fifo.volatile.floatP(float* %data0)" [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c:48]   --->   Operation 39 'read' 'data0_read_15' <Predicate = true> <Delay = 3.63> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_16 : Operation 40 [1/1] (0.00ns)   --->   "%mrv = insertvalue { float, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float } undef, float %data0_read, 0" [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c:45]   --->   Operation 40 'insertvalue' 'mrv' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 41 [1/1] (0.00ns)   --->   "%mrv_1 = insertvalue { float, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float } %mrv, float %data0_read_1, 1" [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c:45]   --->   Operation 41 'insertvalue' 'mrv_1' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 42 [1/1] (0.00ns)   --->   "%mrv_2 = insertvalue { float, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float } %mrv_1, float %data0_read_2, 2" [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c:45]   --->   Operation 42 'insertvalue' 'mrv_2' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 43 [1/1] (0.00ns)   --->   "%mrv_3 = insertvalue { float, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float } %mrv_2, float %data0_read_3, 3" [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c:45]   --->   Operation 43 'insertvalue' 'mrv_3' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 44 [1/1] (0.00ns)   --->   "%mrv_4 = insertvalue { float, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float } %mrv_3, float %data0_read_4, 4" [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c:45]   --->   Operation 44 'insertvalue' 'mrv_4' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 45 [1/1] (0.00ns)   --->   "%mrv_5 = insertvalue { float, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float } %mrv_4, float %data0_read_5, 5" [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c:45]   --->   Operation 45 'insertvalue' 'mrv_5' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 46 [1/1] (0.00ns)   --->   "%mrv_6 = insertvalue { float, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float } %mrv_5, float %data0_read_6, 6" [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c:45]   --->   Operation 46 'insertvalue' 'mrv_6' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 47 [1/1] (0.00ns)   --->   "%mrv_7 = insertvalue { float, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float } %mrv_6, float %data0_read_7, 7" [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c:45]   --->   Operation 47 'insertvalue' 'mrv_7' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 48 [1/1] (0.00ns)   --->   "%mrv_8 = insertvalue { float, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float } %mrv_7, float %data0_read_8, 8" [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c:45]   --->   Operation 48 'insertvalue' 'mrv_8' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 49 [1/1] (0.00ns)   --->   "%mrv_9 = insertvalue { float, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float } %mrv_8, float %data0_read_9, 9" [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c:45]   --->   Operation 49 'insertvalue' 'mrv_9' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 50 [1/1] (0.00ns)   --->   "%mrv_s = insertvalue { float, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float } %mrv_9, float %data0_read_10, 10" [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c:45]   --->   Operation 50 'insertvalue' 'mrv_s' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 51 [1/1] (0.00ns)   --->   "%mrv_10 = insertvalue { float, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float } %mrv_s, float %data0_read_11, 11" [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c:45]   --->   Operation 51 'insertvalue' 'mrv_10' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 52 [1/1] (0.00ns)   --->   "%mrv_11 = insertvalue { float, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float } %mrv_10, float %data0_read_12, 12" [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c:45]   --->   Operation 52 'insertvalue' 'mrv_11' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 53 [1/1] (0.00ns)   --->   "%mrv_12 = insertvalue { float, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float } %mrv_11, float %data0_read_13, 13" [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c:45]   --->   Operation 53 'insertvalue' 'mrv_12' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 54 [1/1] (0.00ns)   --->   "%mrv_13 = insertvalue { float, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float } %mrv_12, float %data0_read_14, 14" [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c:45]   --->   Operation 54 'insertvalue' 'mrv_13' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 55 [1/1] (0.00ns)   --->   "%mrv_14 = insertvalue { float, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float } %mrv_13, float %data0_read_15, 15" [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c:45]   --->   Operation 55 'insertvalue' 'mrv_14' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 56 [1/1] (0.00ns)   --->   "ret { float, float, float, float, float, float, float, float, float, float, float, float, float, float, float, float } %mrv_14" [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c:45]   --->   Operation 56 'ret' <Predicate = true> <Delay = 0.00>
 
 
 ============================================================
@@ -184,63 +184,63 @@ Target clock period: 10ns, clock uncertainty: 2.7ns.
 
  <State 1>: 3.63ns
 The critical path consists of the following:
-	fifo read on port 'data0' (/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c:46) [13]  (3.63 ns)
+	fifo read on port 'data0' (/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c:45) [13]  (3.63 ns)
 
  <State 2>: 3.63ns
 The critical path consists of the following:
-	fifo read on port 'data0' (/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c:47) [14]  (3.63 ns)
+	fifo read on port 'data0' (/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c:46) [14]  (3.63 ns)
 
  <State 3>: 3.63ns
 The critical path consists of the following:
-	fifo read on port 'data0' (/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c:48) [15]  (3.63 ns)
+	fifo read on port 'data0' (/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c:47) [15]  (3.63 ns)
 
  <State 4>: 3.63ns
 The critical path consists of the following:
-	fifo read on port 'data0' (/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c:49) [16]  (3.63 ns)
+	fifo read on port 'data0' (/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c:48) [16]  (3.63 ns)
 
  <State 5>: 3.63ns
 The critical path consists of the following:
-	fifo read on port 'data0' (/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c:46) [17]  (3.63 ns)
+	fifo read on port 'data0' (/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c:45) [17]  (3.63 ns)
 
  <State 6>: 3.63ns
 The critical path consists of the following:
-	fifo read on port 'data0' (/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c:47) [18]  (3.63 ns)
+	fifo read on port 'data0' (/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c:46) [18]  (3.63 ns)
 
  <State 7>: 3.63ns
 The critical path consists of the following:
-	fifo read on port 'data0' (/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c:48) [19]  (3.63 ns)
+	fifo read on port 'data0' (/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c:47) [19]  (3.63 ns)
 
  <State 8>: 3.63ns
 The critical path consists of the following:
-	fifo read on port 'data0' (/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c:49) [20]  (3.63 ns)
+	fifo read on port 'data0' (/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c:48) [20]  (3.63 ns)
 
  <State 9>: 3.63ns
 The critical path consists of the following:
-	fifo read on port 'data0' (/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c:46) [21]  (3.63 ns)
+	fifo read on port 'data0' (/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c:45) [21]  (3.63 ns)
 
  <State 10>: 3.63ns
 The critical path consists of the following:
-	fifo read on port 'data0' (/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c:47) [22]  (3.63 ns)
+	fifo read on port 'data0' (/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c:46) [22]  (3.63 ns)
 
  <State 11>: 3.63ns
 The critical path consists of the following:
-	fifo read on port 'data0' (/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c:48) [23]  (3.63 ns)
+	fifo read on port 'data0' (/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c:47) [23]  (3.63 ns)
 
  <State 12>: 3.63ns
 The critical path consists of the following:
-	fifo read on port 'data0' (/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c:49) [24]  (3.63 ns)
+	fifo read on port 'data0' (/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c:48) [24]  (3.63 ns)
 
  <State 13>: 3.63ns
 The critical path consists of the following:
-	fifo read on port 'data0' (/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c:46) [25]  (3.63 ns)
+	fifo read on port 'data0' (/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c:45) [25]  (3.63 ns)
 
  <State 14>: 3.63ns
 The critical path consists of the following:
-	fifo read on port 'data0' (/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c:47) [26]  (3.63 ns)
+	fifo read on port 'data0' (/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c:46) [26]  (3.63 ns)
 
  <State 15>: 3.63ns
 The critical path consists of the following:
-	fifo read on port 'data0' (/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c:48) [27]  (3.63 ns)
+	fifo read on port 'data0' (/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/src/myAccel.c:47) [27]  (3.63 ns)
 
  <State 16>: 3.63ns
 The critical path consists of the following:

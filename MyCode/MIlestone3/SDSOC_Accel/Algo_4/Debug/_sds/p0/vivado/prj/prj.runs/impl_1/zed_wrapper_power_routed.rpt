@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
-| Date             : Wed Dec 11 01:09:56 2019
+| Date             : Thu Dec 12 23:40:26 2019
 | Host             : skl running 64-bit Ubuntu 18.04.3 LTS
 | Command          : report_power -file zed_wrapper_power_routed.rpt -pb zed_wrapper_power_summary_routed.pb -rpx zed_wrapper_power_routed.rpx
 | Design           : zed_wrapper
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 1.891        |
+| Total On-Chip Power (W)  | 1.884        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 1.743        |
+| Dynamic (W)              | 1.736        |
 | Device Static (W)        | 0.148        |
 | Effective TJA (C/W)      | 11.5         |
-| Max Ambient (C)          | 63.2         |
-| Junction Temperature (C) | 46.8         |
+| Max Ambient (C)          | 63.3         |
+| Junction Temperature (C) | 46.7         |
 | Confidence Level         | Medium       |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -52,22 +52,22 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.039 |        6 |       --- |             --- |
-| Slice Logic              |     0.014 |    27690 |       --- |             --- |
-|   LUT as Logic           |     0.013 |     8531 |     53200 |           16.04 |
-|   Register               |     0.001 |    14735 |    106400 |           13.85 |
-|   CARRY4                 |    <0.001 |      336 |     13300 |            2.53 |
-|   LUT as Distributed RAM |    <0.001 |      190 |     17400 |            1.09 |
-|   LUT as Shift Register  |    <0.001 |      291 |     17400 |            1.67 |
+| Clocks                   |     0.043 |        6 |       --- |             --- |
+| Slice Logic              |     0.014 |    30471 |       --- |             --- |
+|   LUT as Logic           |     0.013 |     9144 |     53200 |           17.19 |
+|   Register               |     0.001 |    16212 |    106400 |           15.24 |
+|   CARRY4                 |    <0.001 |      355 |     13300 |            2.67 |
 |   F7/F8 Muxes            |    <0.001 |      103 |     53200 |            0.19 |
-|   Others                 |     0.000 |     1329 |       --- |             --- |
-| Signals                  |     0.023 |    21775 |       --- |             --- |
-| Block RAM                |     0.007 |       11 |       140 |            7.86 |
+|   LUT as Shift Register  |    <0.001 |      295 |     17400 |            1.70 |
+|   LUT as Distributed RAM |    <0.001 |      288 |     17400 |            1.66 |
+|   Others                 |     0.000 |     1451 |       --- |             --- |
+| Signals                  |     0.023 |    23707 |       --- |             --- |
+| Block RAM                |     0.006 |     13.5 |       140 |            9.64 |
 | MMCM                     |     0.106 |        1 |         4 |           25.00 |
 | DSPs                     |     0.012 |       23 |       220 |           10.45 |
-| PS7                      |     1.542 |        1 |       --- |             --- |
+| PS7                      |     1.531 |        1 |       --- |             --- |
 | Static Power             |     0.148 |          |           |                 |
-| Total                    |     1.891 |          |           |                 |
+| Total                    |     1.884 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -77,7 +77,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.112 |       0.095 |      0.017 |
+| Vccint    |       1.000 |     0.115 |       0.099 |      0.017 |
 | Vccaux    |       1.800 |     0.075 |       0.059 |      0.016 |
 | Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -90,7 +90,7 @@ Table of Contents
 | MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |
 | MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |
 | MGTVccaux |       1.800 |     0.000 |       0.000 |      0.000 |
-| Vccpint   |       1.000 |     0.763 |       0.731 |      0.033 |
+| Vccpint   |       1.000 |     0.753 |       0.720 |      0.033 |
 | Vccpaux   |       1.800 |     0.061 |       0.051 |      0.010 |
 | Vccpll    |       1.800 |     0.017 |       0.014 |      0.003 |
 | Vcco_ddr  |       1.500 |     0.459 |       0.457 |      0.002 |
@@ -156,30 +156,30 @@ Table of Contents
 +--------------------------+-----------+
 | Name                     | Power (W) |
 +--------------------------+-----------+
-| zed_wrapper              |     1.743 |
-|   zed_i                  |     1.743 |
-|     axi_ic_ps7_M_AXI_GP0 |     0.006 |
+| zed_wrapper              |     1.736 |
+|   zed_i                  |     1.736 |
+|     axi_ic_ps7_M_AXI_GP0 |     0.007 |
 |       s00_couplers       |     0.004 |
-|     axi_ic_ps7_S_AXI_HP0 |     0.003 |
-|       s00_couplers       |     0.003 |
-|     axi_ic_ps7_S_AXI_HP1 |     0.003 |
-|       s00_couplers       |     0.003 |
-|     axi_ic_ps7_S_AXI_HP2 |     0.004 |
-|       s00_couplers       |     0.004 |
+|     axi_ic_ps7_S_AXI_ACP |     0.014 |
+|       m00_couplers       |     0.007 |
+|       s00_couplers       |     0.002 |
+|       s01_couplers       |     0.002 |
+|       s02_couplers       |     0.002 |
+|       xbar               |     0.001 |
 |     clk_wiz_0            |     0.107 |
 |       inst               |     0.107 |
 |     dm_0                 |     0.005 |
 |       U0                 |     0.005 |
 |     dm_1                 |     0.005 |
 |       U0                 |     0.005 |
-|     dm_2                 |     0.007 |
-|       U0                 |     0.007 |
-|     myFuncAccel_1        |     0.048 |
-|       inst               |     0.048 |
+|     dm_2                 |     0.006 |
+|       U0                 |     0.006 |
+|     myFuncAccel_1        |     0.047 |
+|       inst               |     0.047 |
 |     myFuncAccel_1_if     |     0.011 |
 |       inst               |     0.011 |
-|     ps7                  |     1.543 |
-|       inst               |     1.543 |
+|     ps7                  |     1.532 |
+|       inst               |     1.532 |
 +--------------------------+-----------+
 
 

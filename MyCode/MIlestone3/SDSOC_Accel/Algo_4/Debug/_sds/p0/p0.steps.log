@@ -21,7 +21,7 @@ RT_LIBPATH=/toolsViv/Xilinx/SDx/2018.3/scripts/rt/data
 LANG=en_US.UTF-8
 SUDO_GID=1000
 DISPLAY=:0
-XILINX_RS_PORT=36033
+XILINX_RS_PORT=39349
 RDI_INSTALLROOT=/toolsViv/Xilinx
 OLDPWD=/toolsViv/Xilinx/SDx/2018.3/bin
 SWT_GTK3=0
@@ -69,7 +69,7 @@ MAIL=/var/mail/root
 LIBOVERLAY_SCROLLBAR=0
 TERM=xterm-256color
 SHELL=/bin/bash
-XILINX_RS_SESSION=498121c2-752e-4478-a4c7-8ea7e9866980
+XILINX_RS_SESSION=2bb1c13f-e073-4c50-a4e0-f4f586157aa9
 MAKELEVEL=1
 HDI_APPROOT=/toolsViv/Xilinx/SDx/2018.3
 SHLVL=8
@@ -95,154 +95,126 @@ _=/toolsViv/Xilinx/SDx/2018.3/bin/unwrapped/lnx64.o/vpl
 
 ------------------------------------------
 VPL internal step: generating ipirun.tcl for vivado
-timestamp: 11 Dec 2019 00:56:20
+timestamp: 12 Dec 2019 23:28:25
 ------------------------------------------
 step: running vivado to generate bitstream
-timestamp: 11 Dec 2019 00:56:20
+timestamp: 12 Dec 2019 23:28:25
 launch dir: /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado
 cmd: /toolsViv/Xilinx/Vivado/2018.3/bin/vivado -mode batch -notrace -source /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/ipirun.tcl -messageDb /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/vivado.pb
    -----------------------
    VPL internal step: creating sdx tcl hooks for implementation run
    File: /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/.local/ocl_util.tcl:1705
-   timestamp: 11 December 2019 00:56:30
+   timestamp: 12 December 2019 23:28:35
    -----------------------
    VPL internal step: source .local/dsa/prj/rebuild.tcl to create prj project
    File: /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/.local/ocl_util.tcl:229
-   timestamp: 11 December 2019 00:56:30
+   timestamp: 12 December 2019 23:28:35
    -----------------------
    VPL internal step: update_ip_catalog
    File: /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/.local/ocl_util.tcl:1087
-   timestamp: 11 December 2019 00:56:33
+   timestamp: 12 December 2019 23:28:38
    -----------------------
    VPL internal step: config_ip_cache -use_cache_location /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/ip_cache
    File: /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/.local/ocl_util.tcl:1097
-   timestamp: 11 December 2019 00:56:36
+   timestamp: 12 December 2019 23:28:41
    -----------------------
    VPL internal step: open_bd_design -auto_upgrade [get_files zed.bd]
    File: /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/.local/ocl_util.tcl:873
-   timestamp: 11 December 2019 00:56:36
+   timestamp: 12 December 2019 23:28:41
    -----------------------
    VPL internal step: source .local/top.bd.tcl
    File: /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/.local/ocl_util.tcl:890
-   timestamp: 11 December 2019 00:56:36
+   timestamp: 12 December 2019 23:28:42
    -----------------------
    VPL internal step: save_bd_design
    File: /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/.local/ocl_util.tcl:893
-   timestamp: 11 December 2019 00:58:11
+   timestamp: 12 December 2019 23:30:47
    -----------------------
    VPL internal step: inserting profiling and debug cores
    File: /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/.local/ocl_util.tcl:660
-   timestamp: 11 December 2019 00:58:13
+   timestamp: 12 December 2019 23:30:51
    -----------------------
    VPL internal step: assign_bd_address
    File: /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/.local/ocl_util.tcl:666
-   timestamp: 11 December 2019 00:58:13
+   timestamp: 12 December 2019 23:30:51
    -----------------------
    VPL internal step: bd::util_cmd set_bd_source SDSoC [current_bd_design]
    File: /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/.local/ocl_util.tcl:677
-   timestamp: 11 December 2019 00:58:13
+   timestamp: 12 December 2019 23:30:52
    -----------------------
    VPL internal step: save_bd_design
    File: /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/.local/ocl_util.tcl:683
-   timestamp: 11 December 2019 00:58:13
+   timestamp: 12 December 2019 23:30:52
    -----------------------
    VPL internal step: writing address_map.xml
    File: /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/.local/ocl_util.tcl:690
-   timestamp: 11 December 2019 00:58:14
+   timestamp: 12 December 2019 23:30:53
    -----------------------
    VPL internal step: writing debug ip layout
    File: /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/.local/ocl_util.tcl:695
-   timestamp: 11 December 2019 00:58:14
+   timestamp: 12 December 2019 23:30:53
    -----------------------
    VPL internal step: generate_target all [get_files zed.bd]
    File: /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/.local/ocl_util.tcl:709
-   timestamp: 11 December 2019 00:58:14
+   timestamp: 12 December 2019 23:30:53
    -----------------------
    VPL internal step: config_ip_cache -export [get_ips -all -of_object [get_files zed.bd]]
    File: /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/.local/ocl_util.tcl:976
-   timestamp: 11 December 2019 00:58:58
+   timestamp: 12 December 2019 23:31:33
    -----------------------
    VPL internal step: write_hwdef -force -file output/system.hdf
    File: /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/.local/ocl_util.tcl:717
-   timestamp: 11 December 2019 00:59:20
+   timestamp: 12 December 2019 23:31:56
    -----------------------
    VPL internal step: add_files -norecurse [make_wrapper -top -files [get_files zed.bd]]
    File: /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/.local/ocl_util.tcl:721
-   timestamp: 11 December 2019 00:59:22
+   timestamp: 12 December 2019 23:31:58
    -----------------------
    VPL internal step: writing user synth clock constraints in output/zed_ooc_copy.xdc
    File: /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/.local/ocl_util.tcl:1133
-   timestamp: 11 December 2019 00:59:22
+   timestamp: 12 December 2019 23:31:58
    -----------------------
    VPL internal step: add_files output/zed_ooc_copy.xdc -fileset [current_fileset -constrset]
    File: /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/.local/ocl_util.tcl:1137
-   timestamp: 11 December 2019 00:59:22
+   timestamp: 12 December 2019 23:31:58
    -----------------------
    VPL internal step: source scripts/_vivado_report_commands.tcl
    File: /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/.local/ocl_util.tcl:263
-   timestamp: 11 December 2019 00:59:22
+   timestamp: 12 December 2019 23:31:58
    -----------------------
    VPL internal step: source scripts/_vivado_synth_props.tcl
    File: /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/.local/ocl_util.tcl:271
-   timestamp: 11 December 2019 00:59:22
+   timestamp: 12 December 2019 23:31:58
    -----------------------
    VPL internal step: source scripts/_vivado_impl_props.tcl
    File: /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/.local/ocl_util.tcl:281
-   timestamp: 11 December 2019 00:59:27
+   timestamp: 12 December 2019 23:32:02
    -----------------------
    VPL internal step: launch_runs synth_1 -jobs 2  
    File: /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/.local/ocl_util.tcl:465
-   timestamp: 11 December 2019 00:59:27
+   timestamp: 12 December 2019 23:32:02
    -----------------------
    VPL internal step: generating resource usage report 'output/resource.json'
    File: /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/.local/ocl_util.tcl:2812
-   timestamp: 11 December 2019 01:05:56
+   timestamp: 12 December 2019 23:35:09
    -----------------------
    VPL internal step: log_generated_reports for synthesis 'output/generated_reports.log'
    File: /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/.local/ocl_util.tcl:485
-   timestamp: 11 December 2019 01:05:56
+   timestamp: 12 December 2019 23:35:09
    -----------------------
    VPL internal step: launched run synth_1
    File: /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/.local/ocl_util.tcl:1365
-   timestamp: 11 December 2019 01:05:56
-   -----------------------
-   VPL internal step: launched run zed_ps7_0_synth_1
-   File: /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/.local/ocl_util.tcl:1365
-   timestamp: 11 December 2019 01:05:56
-   -----------------------
-   VPL internal step: launched run zed_auto_pc_3_synth_1
-   File: /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/.local/ocl_util.tcl:1365
-   timestamp: 11 December 2019 01:05:56
-   -----------------------
-   VPL internal step: launched run zed_s00_data_fifo_3_synth_1
-   File: /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/.local/ocl_util.tcl:1365
-   timestamp: 11 December 2019 01:05:56
-   -----------------------
-   VPL internal step: launched run zed_auto_pc_2_synth_1
-   File: /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/.local/ocl_util.tcl:1365
-   timestamp: 11 December 2019 01:05:56
-   -----------------------
-   VPL internal step: launched run zed_s00_data_fifo_2_synth_1
-   File: /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/.local/ocl_util.tcl:1365
-   timestamp: 11 December 2019 01:05:56
-   -----------------------
-   VPL internal step: launched run zed_s00_data_fifo_1_synth_1
-   File: /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/.local/ocl_util.tcl:1365
-   timestamp: 11 December 2019 01:05:56
-   -----------------------
-   VPL internal step: launched run zed_auto_pc_1_synth_1
-   File: /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/.local/ocl_util.tcl:1365
-   timestamp: 11 December 2019 01:05:56
+   timestamp: 12 December 2019 23:35:09
    -----------------------
    VPL internal step: launched run zed_myFuncAccel_1_0_synth_1
    File: /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/.local/ocl_util.tcl:1365
-   timestamp: 11 December 2019 01:05:56
+   timestamp: 12 December 2019 23:35:09
    -----------------------
    VPL internal step: launch_runs impl_1 -to_step write_bitstream 
    File: /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/.local/ocl_util.tcl:527
-   timestamp: 11 December 2019 01:05:56
+   timestamp: 12 December 2019 23:35:09
    -----------------------
    VPL internal step: log_generated_reports for implementation 'output/generated_reports.log'
    File: /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/.local/ocl_util.tcl:540
-   timestamp: 11 December 2019 01:10:34
+   timestamp: 12 December 2019 23:41:29
 status: success

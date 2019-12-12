@@ -2,8 +2,8 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Wed Dec 11 01:05:04 2019
-# Process ID: 3017
+# Start of session at: Thu Dec 12 23:34:07 2019
+# Process ID: 20602
 # Current directory: /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1
 # Command line: vivado -log zed_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source zed_wrapper.tcl
 # Log file: /home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/zed_wrapper.vds
@@ -17,134 +17,149 @@ INFO: [IP_Flow 19-1700] Loaded user IP repository '/toolsViv/Xilinx/SDx/2018.3/d
 INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/.local/dsa/ipcache'.
 INFO: [IP_Flow 19-1700] Loaded user IP repository '/toolsViv/Xilinx/SDx/2018.3/data/ip'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/toolsViv/Xilinx/Vivado/2018.3/data/ip'.
-add_files: Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1714.961 ; gain = 253.953 ; free physical = 1066 ; free virtual = 4165
+add_files: Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1715.383 ; gain = 253.953 ; free physical = 534 ; free virtual = 4471
 Command: synth_design -top zed_wrapper -part xc7z020clg484-1
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 3038 
+INFO: Helper process launched with PID 20678 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1715.066 ; gain = 0.000 ; free physical = 952 ; free virtual = 4051
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1715.488 ; gain = 0.000 ; free physical = 367 ; free virtual = 4304
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'zed_wrapper' [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/imports/hdl/zed_wrapper.v:12]
-INFO: [Synth 8-6157] synthesizing module 'zed' [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/synth/zed.v:2140]
-INFO: [Synth 8-6157] synthesizing module 'zed_axi_ic_ps7_M_AXI_GP0_0' [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/synth/zed.v:3173]
-INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_78ZREA' [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/synth/zed.v:12]
-INFO: [Synth 8-6157] synthesizing module 'zed_m00_regslice_0' [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-3017-skl/realtime/zed_m00_regslice_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'zed_m00_regslice_0' (1#1) [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-3017-skl/realtime/zed_m00_regslice_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_78ZREA' (2#1) [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/synth/zed.v:12]
-INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_1JEV113' [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/synth/zed.v:222]
-INFO: [Synth 8-6157] synthesizing module 'zed_m01_regslice_0' [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-3017-skl/realtime/zed_m01_regslice_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'zed_m01_regslice_0' (3#1) [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-3017-skl/realtime/zed_m01_regslice_0_stub.v:6]
-WARNING: [Synth 8-350] instance 'm01_regslice' of module 'zed_m01_regslice_0' requires 40 connections, but only 37 given [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/synth/zed.v:377]
-INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_1JEV113' (4#1) [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/synth/zed.v:222]
-INFO: [Synth 8-6157] synthesizing module 'm02_couplers_imp_XZH261' [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/synth/zed.v:417]
-INFO: [Synth 8-6157] synthesizing module 'zed_m02_regslice_0' [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-3017-skl/realtime/zed_m02_regslice_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'zed_m02_regslice_0' (5#1) [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-3017-skl/realtime/zed_m02_regslice_0_stub.v:6]
-WARNING: [Synth 8-350] instance 'm02_regslice' of module 'zed_m02_regslice_0' requires 40 connections, but only 37 given [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/synth/zed.v:572]
-INFO: [Synth 8-6155] done synthesizing module 'm02_couplers_imp_XZH261' (6#1) [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/synth/zed.v:417]
-INFO: [Synth 8-6157] synthesizing module 'm03_couplers_imp_1AL9PDO' [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/synth/zed.v:612]
-INFO: [Synth 8-6157] synthesizing module 'zed_m03_regslice_0' [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-3017-skl/realtime/zed_m03_regslice_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'zed_m03_regslice_0' (7#1) [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-3017-skl/realtime/zed_m03_regslice_0_stub.v:6]
-WARNING: [Synth 8-350] instance 'm03_regslice' of module 'zed_m03_regslice_0' requires 40 connections, but only 37 given [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/synth/zed.v:767]
-INFO: [Synth 8-6155] done synthesizing module 'm03_couplers_imp_1AL9PDO' (8#1) [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/synth/zed.v:612]
-INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_1DPWUA0' [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/synth/zed.v:807]
-INFO: [Synth 8-6157] synthesizing module 'zed_auto_pc_0' [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-3017-skl/realtime/zed_auto_pc_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'zed_auto_pc_0' (9#1) [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-3017-skl/realtime/zed_auto_pc_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'zed_s00_data_fifo_0' [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-3017-skl/realtime/zed_s00_data_fifo_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'zed_s00_data_fifo_0' (10#1) [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-3017-skl/realtime/zed_s00_data_fifo_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'zed_s00_regslice_0' [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-3017-skl/realtime/zed_s00_regslice_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'zed_s00_regslice_0' (11#1) [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-3017-skl/realtime/zed_s00_regslice_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_1DPWUA0' (12#1) [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/synth/zed.v:807]
-INFO: [Synth 8-6157] synthesizing module 'zed_xbar_0' [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-3017-skl/realtime/zed_xbar_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'zed_xbar_0' (13#1) [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-3017-skl/realtime/zed_xbar_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'zed_axi_ic_ps7_M_AXI_GP0_0' (14#1) [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/synth/zed.v:3173]
-INFO: [Synth 8-6157] synthesizing module 'zed_axi_ic_ps7_S_AXI_HP0_0' [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/synth/zed.v:3987]
-INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_1UFEPRT' [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/synth/zed.v:1293]
-INFO: [Synth 8-6157] synthesizing module 'zed_auto_pc_2' [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-3017-skl/realtime/zed_auto_pc_2_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'zed_auto_pc_2' (15#1) [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-3017-skl/realtime/zed_auto_pc_2_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'zed_s00_data_fifo_2' [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-3017-skl/realtime/zed_s00_data_fifo_2_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'zed_s00_data_fifo_2' (16#1) [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-3017-skl/realtime/zed_s00_data_fifo_2_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'zed_s00_regslice_2' [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-3017-skl/realtime/zed_s00_regslice_2_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'zed_s00_regslice_2' (17#1) [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-3017-skl/realtime/zed_s00_regslice_2_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_1UFEPRT' (18#1) [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/synth/zed.v:1293]
-INFO: [Synth 8-6155] done synthesizing module 'zed_axi_ic_ps7_S_AXI_HP0_0' (19#1) [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/synth/zed.v:3987]
-INFO: [Synth 8-6157] synthesizing module 'zed_axi_ic_ps7_S_AXI_HP1_0' [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/synth/zed.v:4157]
-INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_T2XX2Y' [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/synth/zed.v:1873]
-INFO: [Synth 8-6157] synthesizing module 'zed_auto_pc_1' [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-3017-skl/realtime/zed_auto_pc_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'zed_auto_pc_1' (20#1) [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-3017-skl/realtime/zed_auto_pc_1_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'zed_s00_data_fifo_1' [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-3017-skl/realtime/zed_s00_data_fifo_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'zed_s00_data_fifo_1' (21#1) [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-3017-skl/realtime/zed_s00_data_fifo_1_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'zed_s00_regslice_1' [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-3017-skl/realtime/zed_s00_regslice_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'zed_s00_regslice_1' (22#1) [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-3017-skl/realtime/zed_s00_regslice_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_T2XX2Y' (23#1) [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/synth/zed.v:1873]
-INFO: [Synth 8-6155] done synthesizing module 'zed_axi_ic_ps7_S_AXI_HP1_0' (24#1) [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/synth/zed.v:4157]
-INFO: [Synth 8-6157] synthesizing module 'zed_axi_ic_ps7_S_AXI_HP2_0' [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/synth/zed.v:4327]
-INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_GGOBI6' [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/synth/zed.v:1559]
-INFO: [Synth 8-6157] synthesizing module 'zed_auto_pc_3' [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-3017-skl/realtime/zed_auto_pc_3_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'zed_auto_pc_3' (25#1) [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-3017-skl/realtime/zed_auto_pc_3_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'zed_s00_data_fifo_3' [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-3017-skl/realtime/zed_s00_data_fifo_3_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'zed_s00_data_fifo_3' (26#1) [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-3017-skl/realtime/zed_s00_data_fifo_3_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'zed_s00_regslice_3' [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-3017-skl/realtime/zed_s00_regslice_3_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'zed_s00_regslice_3' (27#1) [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-3017-skl/realtime/zed_s00_regslice_3_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_GGOBI6' (28#1) [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/synth/zed.v:1559]
-INFO: [Synth 8-6155] done synthesizing module 'zed_axi_ic_ps7_S_AXI_HP2_0' (29#1) [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/synth/zed.v:4327]
-INFO: [Synth 8-6157] synthesizing module 'zed_axis_dwc_dm_0_tx_0_0' [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-3017-skl/realtime/zed_axis_dwc_dm_0_tx_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'zed_axis_dwc_dm_0_tx_0_0' (30#1) [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-3017-skl/realtime/zed_axis_dwc_dm_0_tx_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'zed_axis_dwc_dm_1_tx_0_0' [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-3017-skl/realtime/zed_axis_dwc_dm_1_tx_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'zed_axis_dwc_dm_1_tx_0_0' (31#1) [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-3017-skl/realtime/zed_axis_dwc_dm_1_tx_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'zed_axis_dwc_dm_2_rx_0_0' [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-3017-skl/realtime/zed_axis_dwc_dm_2_rx_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'zed_axis_dwc_dm_2_rx_0_0' (32#1) [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-3017-skl/realtime/zed_axis_dwc_dm_2_rx_0_0_stub.v:6]
-WARNING: [Synth 8-350] instance 'axis_dwc_dm_2_rx_0' of module 'zed_axis_dwc_dm_2_rx_0_0' requires 14 connections, but only 13 given [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/synth/zed.v:2718]
-INFO: [Synth 8-6157] synthesizing module 'zed_clk_wiz_0_0' [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-3017-skl/realtime/zed_clk_wiz_0_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'zed_clk_wiz_0_0' (33#1) [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-3017-skl/realtime/zed_clk_wiz_0_0_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'zed_dm_0_0' [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-3017-skl/realtime/zed_dm_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'zed_dm_0_0' (34#1) [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-3017-skl/realtime/zed_dm_0_0_stub.v:6]
-WARNING: [Synth 8-350] instance 'dm_0' of module 'zed_dm_0_0' requires 40 connections, but only 37 given [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/synth/zed.v:2742]
-INFO: [Synth 8-6157] synthesizing module 'zed_dm_1_0' [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-3017-skl/realtime/zed_dm_1_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'zed_dm_1_0' (35#1) [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-3017-skl/realtime/zed_dm_1_0_stub.v:6]
-WARNING: [Synth 8-350] instance 'dm_1' of module 'zed_dm_1_0' requires 40 connections, but only 37 given [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/synth/zed.v:2780]
-INFO: [Synth 8-6157] synthesizing module 'zed_dm_2_0' [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-3017-skl/realtime/zed_dm_2_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'zed_dm_2_0' (36#1) [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-3017-skl/realtime/zed_dm_2_0_stub.v:6]
-WARNING: [Synth 8-350] instance 'dm_2' of module 'zed_dm_2_0' requires 43 connections, but only 40 given [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/synth/zed.v:2818]
-INFO: [Synth 8-6157] synthesizing module 'zed_myFuncAccel_1_0' [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-3017-skl/realtime/zed_myFuncAccel_1_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'zed_myFuncAccel_1_0' (37#1) [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-3017-skl/realtime/zed_myFuncAccel_1_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'zed_myFuncAccel_1_if_0' [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-3017-skl/realtime/zed_myFuncAccel_1_if_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'zed_myFuncAccel_1_if_0' (38#1) [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-3017-skl/realtime/zed_myFuncAccel_1_if_0_stub.v:6]
-WARNING: [Synth 8-350] instance 'myFuncAccel_1_if' of module 'zed_myFuncAccel_1_if_0' requires 67 connections, but only 65 given [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/synth/zed.v:2878]
-INFO: [Synth 8-6157] synthesizing module 'zed_proc_sys_reset_0_0' [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-3017-skl/realtime/zed_proc_sys_reset_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'zed_proc_sys_reset_0_0' (39#1) [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-3017-skl/realtime/zed_proc_sys_reset_0_0_stub.v:6]
-WARNING: [Synth 8-350] instance 'proc_sys_reset_0' of module 'zed_proc_sys_reset_0_0' requires 10 connections, but only 7 given [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/synth/zed.v:2944]
-WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/synth/zed.v:2952]
-INFO: [Synth 8-6157] synthesizing module 'zed_proc_sys_reset_1_0' [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-3017-skl/realtime/zed_proc_sys_reset_1_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'zed_proc_sys_reset_1_0' (40#1) [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-3017-skl/realtime/zed_proc_sys_reset_1_0_stub.v:6]
-WARNING: [Synth 8-350] instance 'proc_sys_reset_1' of module 'zed_proc_sys_reset_1_0' requires 10 connections, but only 5 given [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/synth/zed.v:2952]
-WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/synth/zed.v:2958]
-INFO: [Synth 8-6157] synthesizing module 'zed_proc_sys_reset_2_0' [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-3017-skl/realtime/zed_proc_sys_reset_2_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'zed_proc_sys_reset_2_0' (41#1) [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-3017-skl/realtime/zed_proc_sys_reset_2_0_stub.v:6]
-WARNING: [Synth 8-350] instance 'proc_sys_reset_2' of module 'zed_proc_sys_reset_2_0' requires 10 connections, but only 5 given [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/synth/zed.v:2958]
-WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/synth/zed.v:2964]
-INFO: [Synth 8-6157] synthesizing module 'zed_proc_sys_reset_3_0' [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-3017-skl/realtime/zed_proc_sys_reset_3_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'zed_proc_sys_reset_3_0' (42#1) [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-3017-skl/realtime/zed_proc_sys_reset_3_0_stub.v:6]
-WARNING: [Synth 8-350] instance 'proc_sys_reset_3' of module 'zed_proc_sys_reset_3_0' requires 10 connections, but only 5 given [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/synth/zed.v:2964]
-WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/synth/zed.v:2970]
-INFO: [Synth 8-6157] synthesizing module 'zed_proc_sys_reset_4_0' [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-3017-skl/realtime/zed_proc_sys_reset_4_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'zed_proc_sys_reset_4_0' (43#1) [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-3017-skl/realtime/zed_proc_sys_reset_4_0_stub.v:6]
-WARNING: [Synth 8-350] instance 'proc_sys_reset_4' of module 'zed_proc_sys_reset_4_0' requires 10 connections, but only 5 given [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/synth/zed.v:2970]
-WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/synth/zed.v:2976]
-INFO: [Synth 8-6157] synthesizing module 'zed_proc_sys_reset_5_0' [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-3017-skl/realtime/zed_proc_sys_reset_5_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'zed_proc_sys_reset_5_0' (44#1) [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-3017-skl/realtime/zed_proc_sys_reset_5_0_stub.v:6]
-WARNING: [Synth 8-350] instance 'proc_sys_reset_5' of module 'zed_proc_sys_reset_5_0' requires 10 connections, but only 5 given [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/synth/zed.v:2976]
-INFO: [Synth 8-6157] synthesizing module 'zed_ps7_0' [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-3017-skl/realtime/zed_ps7_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'zed_ps7_0' (45#1) [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-3017-skl/realtime/zed_ps7_0_stub.v:6]
-WARNING: [Synth 8-350] instance 'ps7' of module 'zed_ps7_0' requires 204 connections, but only 168 given [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/synth/zed.v:2982]
-INFO: [Synth 8-6157] synthesizing module 'zed_sds_irq_const_0' [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/ip/zed_sds_irq_const_0/synth/zed_sds_irq_const_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'zed' [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/synth/zed.v:2633]
+INFO: [Synth 8-6157] synthesizing module 'zed_axcache_0xE_0' [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/ip/zed_axcache_0xE_0/synth/zed_axcache_0xE_0.v:57]
 INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_5_xlconstant' [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/ipshared/4649/hdl/xlconstant_v1_1_vl_rfs.v:23]
+	Parameter CONST_VAL bound to: 14 - type: integer 
+	Parameter CONST_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_5_xlconstant' (1#1) [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/ipshared/4649/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'zed_axcache_0xE_0' (2#1) [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/ip/zed_axcache_0xE_0/synth/zed_axcache_0xE_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'zed_axi_ic_ps7_M_AXI_GP0_0' [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/synth/zed.v:3570]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_78ZREA' [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/synth/zed.v:12]
+INFO: [Synth 8-6157] synthesizing module 'zed_m00_regslice_0' [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-20602-skl/realtime/zed_m00_regslice_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'zed_m00_regslice_0' (3#1) [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-20602-skl/realtime/zed_m00_regslice_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_78ZREA' (4#1) [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/synth/zed.v:12]
+INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_1JEV113' [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/synth/zed.v:868]
+INFO: [Synth 8-6157] synthesizing module 'zed_m01_regslice_0' [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-20602-skl/realtime/zed_m01_regslice_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'zed_m01_regslice_0' (5#1) [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-20602-skl/realtime/zed_m01_regslice_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'm01_regslice' of module 'zed_m01_regslice_0' requires 40 connections, but only 37 given [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/synth/zed.v:1023]
+INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_1JEV113' (6#1) [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/synth/zed.v:868]
+INFO: [Synth 8-6157] synthesizing module 'm02_couplers_imp_XZH261' [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/synth/zed.v:1063]
+INFO: [Synth 8-6157] synthesizing module 'zed_m02_regslice_0' [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-20602-skl/realtime/zed_m02_regslice_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'zed_m02_regslice_0' (7#1) [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-20602-skl/realtime/zed_m02_regslice_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'm02_regslice' of module 'zed_m02_regslice_0' requires 40 connections, but only 37 given [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/synth/zed.v:1218]
+INFO: [Synth 8-6155] done synthesizing module 'm02_couplers_imp_XZH261' (8#1) [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/synth/zed.v:1063]
+INFO: [Synth 8-6157] synthesizing module 'm03_couplers_imp_1AL9PDO' [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/synth/zed.v:1258]
+INFO: [Synth 8-6157] synthesizing module 'zed_m03_regslice_0' [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-20602-skl/realtime/zed_m03_regslice_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'zed_m03_regslice_0' (9#1) [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-20602-skl/realtime/zed_m03_regslice_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'm03_regslice' of module 'zed_m03_regslice_0' requires 40 connections, but only 37 given [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/synth/zed.v:1413]
+INFO: [Synth 8-6155] done synthesizing module 'm03_couplers_imp_1AL9PDO' (10#1) [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/synth/zed.v:1258]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_1DPWUA0' [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/synth/zed.v:1671]
+INFO: [Synth 8-6157] synthesizing module 'zed_auto_pc_0' [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-20602-skl/realtime/zed_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'zed_auto_pc_0' (11#1) [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-20602-skl/realtime/zed_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'zed_s00_data_fifo_0' [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-20602-skl/realtime/zed_s00_data_fifo_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'zed_s00_data_fifo_0' (12#1) [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-20602-skl/realtime/zed_s00_data_fifo_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'zed_s00_regslice_0' [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-20602-skl/realtime/zed_s00_regslice_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'zed_s00_regslice_0' (13#1) [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-20602-skl/realtime/zed_s00_regslice_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_1DPWUA0' (14#1) [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/synth/zed.v:1671]
+INFO: [Synth 8-6157] synthesizing module 'zed_xbar_0' [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-20602-skl/realtime/zed_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'zed_xbar_0' (15#1) [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-20602-skl/realtime/zed_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'zed_axi_ic_ps7_M_AXI_GP0_0' (16#1) [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/synth/zed.v:3570]
+INFO: [Synth 8-6157] synthesizing module 'zed_axi_ic_ps7_S_AXI_ACP_0' [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/synth/zed.v:4384]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_DBAVE2' [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/synth/zed.v:222]
+INFO: [Synth 8-6157] synthesizing module 'zed_auto_pc_1' [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-20602-skl/realtime/zed_auto_pc_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'zed_auto_pc_1' (17#1) [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-20602-skl/realtime/zed_auto_pc_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'zed_m00_data_fifo_0' [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-20602-skl/realtime/zed_m00_data_fifo_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'zed_m00_data_fifo_0' (18#1) [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-20602-skl/realtime/zed_m00_data_fifo_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'zed_m00_regslice_1' [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-20602-skl/realtime/zed_m00_regslice_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'zed_m00_regslice_1' (19#1) [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-20602-skl/realtime/zed_m00_regslice_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_DBAVE2' (20#1) [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/synth/zed.v:222]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_11FMYJ4' [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/synth/zed.v:1453]
+INFO: [Synth 8-6157] synthesizing module 'zed_s00_data_fifo_1' [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-20602-skl/realtime/zed_s00_data_fifo_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'zed_s00_data_fifo_1' (21#1) [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-20602-skl/realtime/zed_s00_data_fifo_1_stub.v:6]
+WARNING: [Synth 8-350] instance 's00_data_fifo' of module 'zed_s00_data_fifo_1' requires 34 connections, but only 33 given [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/synth/zed.v:1600]
+INFO: [Synth 8-6157] synthesizing module 'zed_s00_regslice_1' [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-20602-skl/realtime/zed_s00_regslice_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'zed_s00_regslice_1' (22#1) [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-20602-skl/realtime/zed_s00_regslice_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_11FMYJ4' (23#1) [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/synth/zed.v:1453]
+INFO: [Synth 8-6157] synthesizing module 's01_couplers_imp_PDU4ET' [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/synth/zed.v:2157]
+INFO: [Synth 8-6157] synthesizing module 'zed_s01_data_fifo_0' [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-20602-skl/realtime/zed_s01_data_fifo_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'zed_s01_data_fifo_0' (24#1) [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-20602-skl/realtime/zed_s01_data_fifo_0_stub.v:6]
+WARNING: [Synth 8-350] instance 's01_data_fifo' of module 'zed_s01_data_fifo_0' requires 34 connections, but only 33 given [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/synth/zed.v:2304]
+INFO: [Synth 8-6157] synthesizing module 'zed_s01_regslice_0' [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-20602-skl/realtime/zed_s01_regslice_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'zed_s01_regslice_0' (25#1) [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-20602-skl/realtime/zed_s01_regslice_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 's01_couplers_imp_PDU4ET' (26#1) [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/synth/zed.v:2157]
+INFO: [Synth 8-6157] synthesizing module 's02_couplers_imp_1S0JE3F' [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/synth/zed.v:2375]
+INFO: [Synth 8-6157] synthesizing module 'zed_s02_data_fifo_0' [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-20602-skl/realtime/zed_s02_data_fifo_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'zed_s02_data_fifo_0' (27#1) [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-20602-skl/realtime/zed_s02_data_fifo_0_stub.v:6]
+WARNING: [Synth 8-350] instance 's02_data_fifo' of module 'zed_s02_data_fifo_0' requires 40 connections, but only 39 given [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/synth/zed.v:2549]
+INFO: [Synth 8-6157] synthesizing module 'zed_s02_regslice_0' [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-20602-skl/realtime/zed_s02_regslice_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'zed_s02_regslice_0' (28#1) [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-20602-skl/realtime/zed_s02_regslice_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 's02_couplers_imp_1S0JE3F' (29#1) [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/synth/zed.v:2375]
+INFO: [Synth 8-6157] synthesizing module 'zed_xbar_1' [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-20602-skl/realtime/zed_xbar_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'zed_xbar_1' (30#1) [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-20602-skl/realtime/zed_xbar_1_stub.v:6]
+WARNING: [Synth 8-689] width (2) of port connection 's_axi_arready' does not match port width (3) of module 'zed_xbar_1' [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/synth/zed.v:5059]
+WARNING: [Synth 8-689] width (128) of port connection 's_axi_rdata' does not match port width (192) of module 'zed_xbar_1' [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/synth/zed.v:5076]
+WARNING: [Synth 8-689] width (2) of port connection 's_axi_rlast' does not match port width (3) of module 'zed_xbar_1' [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/synth/zed.v:5077]
+WARNING: [Synth 8-689] width (4) of port connection 's_axi_rresp' does not match port width (6) of module 'zed_xbar_1' [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/synth/zed.v:5079]
+WARNING: [Synth 8-689] width (2) of port connection 's_axi_rvalid' does not match port width (3) of module 'zed_xbar_1' [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/synth/zed.v:5080]
+WARNING: [Synth 8-350] instance 'xbar' of module 'zed_xbar_1' requires 78 connections, but only 76 given [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/synth/zed.v:5009]
+INFO: [Synth 8-6155] done synthesizing module 'zed_axi_ic_ps7_S_AXI_ACP_0' (31#1) [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/synth/zed.v:4384]
+INFO: [Synth 8-6157] synthesizing module 'zed_axis_dwc_dm_0_tx_0_0' [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-20602-skl/realtime/zed_axis_dwc_dm_0_tx_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'zed_axis_dwc_dm_0_tx_0_0' (32#1) [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-20602-skl/realtime/zed_axis_dwc_dm_0_tx_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'zed_axis_dwc_dm_1_tx_0_0' [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-20602-skl/realtime/zed_axis_dwc_dm_1_tx_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'zed_axis_dwc_dm_1_tx_0_0' (33#1) [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-20602-skl/realtime/zed_axis_dwc_dm_1_tx_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'zed_axis_dwc_dm_2_rx_0_0' [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-20602-skl/realtime/zed_axis_dwc_dm_2_rx_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'zed_axis_dwc_dm_2_rx_0_0' (34#1) [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-20602-skl/realtime/zed_axis_dwc_dm_2_rx_0_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'axis_dwc_dm_2_rx_0' of module 'zed_axis_dwc_dm_2_rx_0_0' requires 14 connections, but only 13 given [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/synth/zed.v:3181]
+INFO: [Synth 8-6157] synthesizing module 'zed_clk_wiz_0_0' [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-20602-skl/realtime/zed_clk_wiz_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'zed_clk_wiz_0_0' (35#1) [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-20602-skl/realtime/zed_clk_wiz_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'zed_dm_0_0' [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-20602-skl/realtime/zed_dm_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'zed_dm_0_0' (36#1) [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-20602-skl/realtime/zed_dm_0_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'dm_0' of module 'zed_dm_0_0' requires 40 connections, but only 36 given [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/synth/zed.v:3205]
+INFO: [Synth 8-6157] synthesizing module 'zed_dm_1_0' [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-20602-skl/realtime/zed_dm_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'zed_dm_1_0' (37#1) [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-20602-skl/realtime/zed_dm_1_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'dm_1' of module 'zed_dm_1_0' requires 40 connections, but only 36 given [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/synth/zed.v:3242]
+INFO: [Synth 8-6157] synthesizing module 'zed_dm_2_0' [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-20602-skl/realtime/zed_dm_2_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'zed_dm_2_0' (38#1) [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-20602-skl/realtime/zed_dm_2_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'dm_2' of module 'zed_dm_2_0' requires 43 connections, but only 39 given [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/synth/zed.v:3279]
+INFO: [Synth 8-6157] synthesizing module 'zed_myFuncAccel_1_0' [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-20602-skl/realtime/zed_myFuncAccel_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'zed_myFuncAccel_1_0' (39#1) [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-20602-skl/realtime/zed_myFuncAccel_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'zed_myFuncAccel_1_if_0' [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-20602-skl/realtime/zed_myFuncAccel_1_if_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'zed_myFuncAccel_1_if_0' (40#1) [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-20602-skl/realtime/zed_myFuncAccel_1_if_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'myFuncAccel_1_if' of module 'zed_myFuncAccel_1_if_0' requires 67 connections, but only 65 given [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/synth/zed.v:3338]
+INFO: [Synth 8-6157] synthesizing module 'zed_proc_sys_reset_0_0' [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-20602-skl/realtime/zed_proc_sys_reset_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'zed_proc_sys_reset_0_0' (41#1) [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-20602-skl/realtime/zed_proc_sys_reset_0_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'proc_sys_reset_0' of module 'zed_proc_sys_reset_0_0' requires 10 connections, but only 7 given [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/synth/zed.v:3404]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/synth/zed.v:3412]
+INFO: [Synth 8-6157] synthesizing module 'zed_proc_sys_reset_1_0' [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-20602-skl/realtime/zed_proc_sys_reset_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'zed_proc_sys_reset_1_0' (42#1) [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-20602-skl/realtime/zed_proc_sys_reset_1_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'proc_sys_reset_1' of module 'zed_proc_sys_reset_1_0' requires 10 connections, but only 5 given [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/synth/zed.v:3412]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/synth/zed.v:3418]
+INFO: [Synth 8-6157] synthesizing module 'zed_proc_sys_reset_2_0' [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-20602-skl/realtime/zed_proc_sys_reset_2_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'zed_proc_sys_reset_2_0' (43#1) [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-20602-skl/realtime/zed_proc_sys_reset_2_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'proc_sys_reset_2' of module 'zed_proc_sys_reset_2_0' requires 10 connections, but only 5 given [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/synth/zed.v:3418]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/synth/zed.v:3424]
+INFO: [Synth 8-6157] synthesizing module 'zed_proc_sys_reset_3_0' [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-20602-skl/realtime/zed_proc_sys_reset_3_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'zed_proc_sys_reset_3_0' (44#1) [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-20602-skl/realtime/zed_proc_sys_reset_3_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'proc_sys_reset_3' of module 'zed_proc_sys_reset_3_0' requires 10 connections, but only 5 given [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/synth/zed.v:3424]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/synth/zed.v:3430]
+INFO: [Synth 8-6157] synthesizing module 'zed_proc_sys_reset_4_0' [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-20602-skl/realtime/zed_proc_sys_reset_4_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'zed_proc_sys_reset_4_0' (45#1) [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-20602-skl/realtime/zed_proc_sys_reset_4_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'proc_sys_reset_4' of module 'zed_proc_sys_reset_4_0' requires 10 connections, but only 5 given [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/synth/zed.v:3430]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/synth/zed.v:3436]
+INFO: [Synth 8-6157] synthesizing module 'zed_proc_sys_reset_5_0' [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-20602-skl/realtime/zed_proc_sys_reset_5_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'zed_proc_sys_reset_5_0' (46#1) [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-20602-skl/realtime/zed_proc_sys_reset_5_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'proc_sys_reset_5' of module 'zed_proc_sys_reset_5_0' requires 10 connections, but only 5 given [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/synth/zed.v:3436]
+INFO: [Synth 8-6157] synthesizing module 'zed_ps7_0' [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-20602-skl/realtime/zed_ps7_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'zed_ps7_0' (47#1) [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/.Xil/Vivado-20602-skl/realtime/zed_ps7_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'ps7' of module 'zed_ps7_0' requires 110 connections, but only 105 given [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/synth/zed.v:3442]
+INFO: [Synth 8-6157] synthesizing module 'zed_sds_irq_const_0' [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/ip/zed_sds_irq_const_0/synth/zed_sds_irq_const_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_5_xlconstant__parameterized0' [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/ipshared/4649/hdl/xlconstant_v1_1_vl_rfs.v:23]
 	Parameter CONST_VAL bound to: 0 - type: integer 
 	Parameter CONST_WIDTH bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_5_xlconstant' (46#1) [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/ipshared/4649/hdl/xlconstant_v1_1_vl_rfs.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'zed_sds_irq_const_0' (47#1) [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/ip/zed_sds_irq_const_0/synth/zed_sds_irq_const_0.v:57]
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_5_xlconstant__parameterized0' (47#1) [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/ipshared/4649/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'zed_sds_irq_const_0' (48#1) [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/ip/zed_sds_irq_const_0/synth/zed_sds_irq_const_0.v:57]
 INFO: [Synth 8-6157] synthesizing module 'zed_xlconcat_0_0' [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/ip/zed_xlconcat_0_0/synth/zed_xlconcat_0_0.v:58]
 INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_1_xlconcat' [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/ipshared/2f66/hdl/xlconcat_v2_1_vl_rfs.v:14]
 	Parameter IN0_WIDTH bound to: 1 - type: integer 
@@ -181,10 +196,10 @@ INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_1_xlconcat' [/home/skalo
 	Parameter IN31_WIDTH bound to: 1 - type: integer 
 	Parameter dout_width bound to: 16 - type: integer 
 	Parameter NUM_PORTS bound to: 16 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_1_xlconcat' (48#1) [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/ipshared/2f66/hdl/xlconcat_v2_1_vl_rfs.v:14]
-INFO: [Synth 8-6155] done synthesizing module 'zed_xlconcat_0_0' (49#1) [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/ip/zed_xlconcat_0_0/synth/zed_xlconcat_0_0.v:58]
-INFO: [Synth 8-6155] done synthesizing module 'zed' (50#1) [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/synth/zed.v:2140]
-INFO: [Synth 8-6155] done synthesizing module 'zed_wrapper' (51#1) [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/imports/hdl/zed_wrapper.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_1_xlconcat' (49#1) [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/ipshared/2f66/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'zed_xlconcat_0_0' (50#1) [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/ip/zed_xlconcat_0_0/synth/zed_xlconcat_0_0.v:58]
+INFO: [Synth 8-6155] done synthesizing module 'zed' (51#1) [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/synth/zed.v:2633]
+INFO: [Synth 8-6155] done synthesizing module 'zed_wrapper' (52#1) [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/imports/hdl/zed_wrapper.v:12]
 WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat has unconnected port In16[0]
 WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat has unconnected port In17[0]
 WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat has unconnected port In18[0]
@@ -201,12 +216,16 @@ WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat has unconnected port In2
 WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat has unconnected port In29[0]
 WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat has unconnected port In30[0]
 WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat has unconnected port In31[0]
-WARNING: [Synth 8-3331] design zed_axi_ic_ps7_S_AXI_HP2_0 has unconnected port ACLK
-WARNING: [Synth 8-3331] design zed_axi_ic_ps7_S_AXI_HP2_0 has unconnected port ARESETN
-WARNING: [Synth 8-3331] design zed_axi_ic_ps7_S_AXI_HP1_0 has unconnected port ACLK
-WARNING: [Synth 8-3331] design zed_axi_ic_ps7_S_AXI_HP1_0 has unconnected port ARESETN
-WARNING: [Synth 8-3331] design zed_axi_ic_ps7_S_AXI_HP0_0 has unconnected port ACLK
-WARNING: [Synth 8-3331] design zed_axi_ic_ps7_S_AXI_HP0_0 has unconnected port ARESETN
+WARNING: [Synth 8-3331] design m00_couplers_imp_DBAVE2 has unconnected port M_AXI_bid[2]
+WARNING: [Synth 8-3331] design m00_couplers_imp_DBAVE2 has unconnected port M_AXI_rid[2]
+WARNING: [Synth 8-3331] design zed_axi_ic_ps7_S_AXI_ACP_0 has unconnected port M00_ACLK
+WARNING: [Synth 8-3331] design zed_axi_ic_ps7_S_AXI_ACP_0 has unconnected port M00_ARESETN
+WARNING: [Synth 8-3331] design zed_axi_ic_ps7_S_AXI_ACP_0 has unconnected port S00_ACLK
+WARNING: [Synth 8-3331] design zed_axi_ic_ps7_S_AXI_ACP_0 has unconnected port S00_ARESETN
+WARNING: [Synth 8-3331] design zed_axi_ic_ps7_S_AXI_ACP_0 has unconnected port S01_ACLK
+WARNING: [Synth 8-3331] design zed_axi_ic_ps7_S_AXI_ACP_0 has unconnected port S01_ARESETN
+WARNING: [Synth 8-3331] design zed_axi_ic_ps7_S_AXI_ACP_0 has unconnected port S02_ACLK
+WARNING: [Synth 8-3331] design zed_axi_ic_ps7_S_AXI_ACP_0 has unconnected port S02_ARESETN
 WARNING: [Synth 8-3331] design m03_couplers_imp_1AL9PDO has unconnected port S_ACLK
 WARNING: [Synth 8-3331] design m03_couplers_imp_1AL9PDO has unconnected port S_ARESETN
 WARNING: [Synth 8-3331] design m03_couplers_imp_1AL9PDO has unconnected port S_AXI_araddr[31]
@@ -281,13 +300,9 @@ WARNING: [Synth 8-3331] design m02_couplers_imp_XZH261 has unconnected port S_AX
 WARNING: [Synth 8-3331] design m02_couplers_imp_XZH261 has unconnected port S_AXI_awaddr[30]
 WARNING: [Synth 8-3331] design m02_couplers_imp_XZH261 has unconnected port S_AXI_awaddr[29]
 WARNING: [Synth 8-3331] design m02_couplers_imp_XZH261 has unconnected port S_AXI_awaddr[28]
-WARNING: [Synth 8-3331] design m02_couplers_imp_XZH261 has unconnected port S_AXI_awaddr[27]
-WARNING: [Synth 8-3331] design m02_couplers_imp_XZH261 has unconnected port S_AXI_awaddr[26]
-WARNING: [Synth 8-3331] design m02_couplers_imp_XZH261 has unconnected port S_AXI_awaddr[25]
-WARNING: [Synth 8-3331] design m02_couplers_imp_XZH261 has unconnected port S_AXI_awaddr[24]
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1715.066 ; gain = 0.000 ; free physical = 976 ; free virtual = 4078
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1715.488 ; gain = 0.000 ; free physical = 367 ; free virtual = 4310
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -300,10 +315,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1715.066 ; gain = 0.000 ; free physical = 978 ; free virtual = 4080
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1715.488 ; gain = 0.000 ; free physical = 367 ; free virtual = 4311
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1715.066 ; gain = 0.000 ; free physical = 978 ; free virtual = 4080
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1715.488 ; gain = 0.000 ; free physical = 367 ; free virtual = 4311
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7z020clg484-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -338,6 +353,8 @@ Parsing XDC File [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSO
 Finished Parsing XDC File [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/ip/zed_myFuncAccel_1_if_0/zed_myFuncAccel_1_if_0/zed_myFuncAccel_1_if_0_in_context.xdc] for cell 'zed_i/myFuncAccel_1_if'
 Parsing XDC File [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/ip/zed_xbar_0/zed_xbar_0/zc702_xbar_0_in_context.xdc] for cell 'zed_i/axi_ic_ps7_M_AXI_GP0/xbar'
 Finished Parsing XDC File [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/ip/zed_xbar_0/zed_xbar_0/zc702_xbar_0_in_context.xdc] for cell 'zed_i/axi_ic_ps7_M_AXI_GP0/xbar'
+Parsing XDC File [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/ip/zed_xbar_1/zed_xbar_1/zed_xbar_1_in_context.xdc] for cell 'zed_i/axi_ic_ps7_S_AXI_ACP/xbar'
+Finished Parsing XDC File [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/ip/zed_xbar_1/zed_xbar_1/zed_xbar_1_in_context.xdc] for cell 'zed_i/axi_ic_ps7_S_AXI_ACP/xbar'
 Parsing XDC File [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/ip/zed_axis_dwc_dm_0_tx_0_0/zed_axis_dwc_dm_0_tx_0_0/zc702_axis_dwc_dm_1_tx_0_0_in_context.xdc] for cell 'zed_i/axis_dwc_dm_0_tx_0'
 Finished Parsing XDC File [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/ip/zed_axis_dwc_dm_0_tx_0_0/zed_axis_dwc_dm_0_tx_0_0/zc702_axis_dwc_dm_1_tx_0_0_in_context.xdc] for cell 'zed_i/axis_dwc_dm_0_tx_0'
 Parsing XDC File [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/ip/zed_axis_dwc_dm_1_tx_0_0/zed_axis_dwc_dm_1_tx_0_0/zc702_axis_dwc_dm_1_tx_0_0_in_context.xdc] for cell 'zed_i/axis_dwc_dm_1_tx_0'
@@ -358,43 +375,43 @@ Parsing XDC File [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSO
 Finished Parsing XDC File [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/ip/zed_m02_regslice_0/zed_m02_regslice_0/zc702_m01_regslice_0_in_context.xdc] for cell 'zed_i/axi_ic_ps7_M_AXI_GP0/m02_couplers/m02_regslice'
 Parsing XDC File [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/ip/zed_m03_regslice_0/zed_m03_regslice_0/zc702_m01_regslice_0_in_context.xdc] for cell 'zed_i/axi_ic_ps7_M_AXI_GP0/m03_couplers/m03_regslice'
 Finished Parsing XDC File [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/ip/zed_m03_regslice_0/zed_m03_regslice_0/zc702_m01_regslice_0_in_context.xdc] for cell 'zed_i/axi_ic_ps7_M_AXI_GP0/m03_couplers/m03_regslice'
-Parsing XDC File [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/ip/zed_s00_regslice_1/zed_s00_regslice_1/zc702_s00_regslice_1_in_context.xdc] for cell 'zed_i/axi_ic_ps7_S_AXI_HP1/s00_couplers/s00_regslice'
-Finished Parsing XDC File [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/ip/zed_s00_regslice_1/zed_s00_regslice_1/zc702_s00_regslice_1_in_context.xdc] for cell 'zed_i/axi_ic_ps7_S_AXI_HP1/s00_couplers/s00_regslice'
-Parsing XDC File [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/ip/zed_s00_data_fifo_1/zed_s00_data_fifo_1/zed_s00_data_fifo_2_in_context.xdc] for cell 'zed_i/axi_ic_ps7_S_AXI_HP1/s00_couplers/s00_data_fifo'
-Finished Parsing XDC File [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/ip/zed_s00_data_fifo_1/zed_s00_data_fifo_1/zed_s00_data_fifo_2_in_context.xdc] for cell 'zed_i/axi_ic_ps7_S_AXI_HP1/s00_couplers/s00_data_fifo'
-Parsing XDC File [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/ip/zed_auto_pc_1/zed_auto_pc_1/zed_auto_pc_2_in_context.xdc] for cell 'zed_i/axi_ic_ps7_S_AXI_HP1/s00_couplers/auto_pc'
-Finished Parsing XDC File [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/ip/zed_auto_pc_1/zed_auto_pc_1/zed_auto_pc_2_in_context.xdc] for cell 'zed_i/axi_ic_ps7_S_AXI_HP1/s00_couplers/auto_pc'
-Parsing XDC File [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/ip/zed_s00_regslice_2/zed_s00_regslice_2/zc702_s00_regslice_1_in_context.xdc] for cell 'zed_i/axi_ic_ps7_S_AXI_HP0/s00_couplers/s00_regslice'
-Finished Parsing XDC File [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/ip/zed_s00_regslice_2/zed_s00_regslice_2/zc702_s00_regslice_1_in_context.xdc] for cell 'zed_i/axi_ic_ps7_S_AXI_HP0/s00_couplers/s00_regslice'
-Parsing XDC File [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/ip/zed_s00_data_fifo_2/zed_s00_data_fifo_2/zed_s00_data_fifo_2_in_context.xdc] for cell 'zed_i/axi_ic_ps7_S_AXI_HP0/s00_couplers/s00_data_fifo'
-Finished Parsing XDC File [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/ip/zed_s00_data_fifo_2/zed_s00_data_fifo_2/zed_s00_data_fifo_2_in_context.xdc] for cell 'zed_i/axi_ic_ps7_S_AXI_HP0/s00_couplers/s00_data_fifo'
-Parsing XDC File [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/ip/zed_auto_pc_2/zed_auto_pc_2/zed_auto_pc_2_in_context.xdc] for cell 'zed_i/axi_ic_ps7_S_AXI_HP0/s00_couplers/auto_pc'
-Finished Parsing XDC File [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/ip/zed_auto_pc_2/zed_auto_pc_2/zed_auto_pc_2_in_context.xdc] for cell 'zed_i/axi_ic_ps7_S_AXI_HP0/s00_couplers/auto_pc'
-Parsing XDC File [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/ip/zed_s00_regslice_3/zed_s00_regslice_3/zc702_s01_regslice_0_in_context.xdc] for cell 'zed_i/axi_ic_ps7_S_AXI_HP2/s00_couplers/s00_regslice'
-Finished Parsing XDC File [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/ip/zed_s00_regslice_3/zed_s00_regslice_3/zc702_s01_regslice_0_in_context.xdc] for cell 'zed_i/axi_ic_ps7_S_AXI_HP2/s00_couplers/s00_regslice'
-Parsing XDC File [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/ip/zed_s00_data_fifo_3/zed_s00_data_fifo_3/zed_s00_data_fifo_3_in_context.xdc] for cell 'zed_i/axi_ic_ps7_S_AXI_HP2/s00_couplers/s00_data_fifo'
-Finished Parsing XDC File [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/ip/zed_s00_data_fifo_3/zed_s00_data_fifo_3/zed_s00_data_fifo_3_in_context.xdc] for cell 'zed_i/axi_ic_ps7_S_AXI_HP2/s00_couplers/s00_data_fifo'
-Parsing XDC File [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/ip/zed_auto_pc_3/zed_auto_pc_3/zed_auto_pc_3_in_context.xdc] for cell 'zed_i/axi_ic_ps7_S_AXI_HP2/s00_couplers/auto_pc'
-Finished Parsing XDC File [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/ip/zed_auto_pc_3/zed_auto_pc_3/zed_auto_pc_3_in_context.xdc] for cell 'zed_i/axi_ic_ps7_S_AXI_HP2/s00_couplers/auto_pc'
+Parsing XDC File [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/ip/zed_s00_regslice_1/zed_s00_regslice_1/zc702_s00_regslice_1_in_context.xdc] for cell 'zed_i/axi_ic_ps7_S_AXI_ACP/s00_couplers/s00_regslice'
+Finished Parsing XDC File [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/ip/zed_s00_regslice_1/zed_s00_regslice_1/zc702_s00_regslice_1_in_context.xdc] for cell 'zed_i/axi_ic_ps7_S_AXI_ACP/s00_couplers/s00_regslice'
+Parsing XDC File [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/ip/zed_s00_data_fifo_1/zed_s00_data_fifo_1/zc702_s00_data_fifo_1_in_context.xdc] for cell 'zed_i/axi_ic_ps7_S_AXI_ACP/s00_couplers/s00_data_fifo'
+Finished Parsing XDC File [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/ip/zed_s00_data_fifo_1/zed_s00_data_fifo_1/zc702_s00_data_fifo_1_in_context.xdc] for cell 'zed_i/axi_ic_ps7_S_AXI_ACP/s00_couplers/s00_data_fifo'
+Parsing XDC File [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/ip/zed_s01_regslice_0/zed_s01_regslice_0/zc702_s00_regslice_1_in_context.xdc] for cell 'zed_i/axi_ic_ps7_S_AXI_ACP/s01_couplers/s01_regslice'
+Finished Parsing XDC File [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/ip/zed_s01_regslice_0/zed_s01_regslice_0/zc702_s00_regslice_1_in_context.xdc] for cell 'zed_i/axi_ic_ps7_S_AXI_ACP/s01_couplers/s01_regslice'
+Parsing XDC File [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/ip/zed_s01_data_fifo_0/zed_s01_data_fifo_0/zc702_s00_data_fifo_1_in_context.xdc] for cell 'zed_i/axi_ic_ps7_S_AXI_ACP/s01_couplers/s01_data_fifo'
+Finished Parsing XDC File [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/ip/zed_s01_data_fifo_0/zed_s01_data_fifo_0/zc702_s00_data_fifo_1_in_context.xdc] for cell 'zed_i/axi_ic_ps7_S_AXI_ACP/s01_couplers/s01_data_fifo'
+Parsing XDC File [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/ip/zed_s02_regslice_0/zed_s02_regslice_0/zc702_s01_regslice_0_in_context.xdc] for cell 'zed_i/axi_ic_ps7_S_AXI_ACP/s02_couplers/s02_regslice'
+Finished Parsing XDC File [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/ip/zed_s02_regslice_0/zed_s02_regslice_0/zc702_s01_regslice_0_in_context.xdc] for cell 'zed_i/axi_ic_ps7_S_AXI_ACP/s02_couplers/s02_regslice'
+Parsing XDC File [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/ip/zed_s02_data_fifo_0/zed_s02_data_fifo_0/zc702_s02_data_fifo_0_in_context.xdc] for cell 'zed_i/axi_ic_ps7_S_AXI_ACP/s02_couplers/s02_data_fifo'
+Finished Parsing XDC File [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/ip/zed_s02_data_fifo_0/zed_s02_data_fifo_0/zc702_s02_data_fifo_0_in_context.xdc] for cell 'zed_i/axi_ic_ps7_S_AXI_ACP/s02_couplers/s02_data_fifo'
+Parsing XDC File [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/ip/zed_m00_data_fifo_0/zed_m00_data_fifo_0/zc702_m00_data_fifo_0_in_context.xdc] for cell 'zed_i/axi_ic_ps7_S_AXI_ACP/m00_couplers/m00_data_fifo'
+Finished Parsing XDC File [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/ip/zed_m00_data_fifo_0/zed_m00_data_fifo_0/zc702_m00_data_fifo_0_in_context.xdc] for cell 'zed_i/axi_ic_ps7_S_AXI_ACP/m00_couplers/m00_data_fifo'
+Parsing XDC File [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/ip/zed_m00_regslice_1/zed_m00_regslice_1/zc702_m00_regslice_1_in_context.xdc] for cell 'zed_i/axi_ic_ps7_S_AXI_ACP/m00_couplers/m00_regslice'
+Finished Parsing XDC File [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/ip/zed_m00_regslice_1/zed_m00_regslice_1/zc702_m00_regslice_1_in_context.xdc] for cell 'zed_i/axi_ic_ps7_S_AXI_ACP/m00_couplers/m00_regslice'
+Parsing XDC File [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/ip/zed_auto_pc_1/zed_auto_pc_1/zc702_auto_pc_1_in_context.xdc] for cell 'zed_i/axi_ic_ps7_S_AXI_ACP/m00_couplers/auto_pc'
+Finished Parsing XDC File [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.srcs/sources_1/bd/zed/ip/zed_auto_pc_1/zed_auto_pc_1/zc702_auto_pc_1_in_context.xdc] for cell 'zed_i/axi_ic_ps7_S_AXI_ACP/m00_couplers/auto_pc'
 Parsing XDC File [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/dont_touch.xdc]
 Finished Parsing XDC File [/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1959.754 ; gain = 0.000 ; free physical = 691 ; free virtual = 3798
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1958.176 ; gain = 0.000 ; free physical = 175 ; free virtual = 4060
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1959.754 ; gain = 0.000 ; free physical = 691 ; free virtual = 3798
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.18 ; elapsed = 00:00:00.18 . Memory (MB): peak = 1959.754 ; gain = 0.000 ; free physical = 691 ; free virtual = 3798
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1958.176 ; gain = 0.000 ; free physical = 175 ; free virtual = 4059
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.19 ; elapsed = 00:00:00.19 . Memory (MB): peak = 1958.176 ; gain = 0.000 ; free physical = 175 ; free virtual = 4059
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 1959.754 ; gain = 244.688 ; free physical = 782 ; free virtual = 3886
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 1958.176 ; gain = 242.688 ; free physical = 271 ; free virtual = 4154
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 1959.754 ; gain = 244.688 ; free physical = 782 ; free virtual = 3886
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 1958.176 ; gain = 242.688 ; free physical = 271 ; free virtual = 4154
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -676,13 +693,13 @@ Applied set_property DONT_TOUCH = true for zed_i/myFuncAccel_1. (constraint file
 Applied set_property DONT_TOUCH = true for zed_i/myFuncAccel_1_if. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for zed_i/axi_ic_ps7_M_AXI_GP0/xbar. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for zed_i/axi_ic_ps7_M_AXI_GP0. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for zed_i/axi_ic_ps7_S_AXI_HP1. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for zed_i/axi_ic_ps7_S_AXI_HP0. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for zed_i/axi_ic_ps7_S_AXI_HP2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for zed_i/axi_ic_ps7_S_AXI_ACP/xbar. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for zed_i/axi_ic_ps7_S_AXI_ACP. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for zed_i/axis_dwc_dm_0_tx_0. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for zed_i/axis_dwc_dm_1_tx_0. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for zed_i/axis_dwc_dm_2_rx_0. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for zed_i/sds_irq_const. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for zed_i/axcache_0xE. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for zed_i/axi_ic_ps7_M_AXI_GP0/s00_couplers/s00_regslice. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for zed_i/axi_ic_ps7_M_AXI_GP0/s00_couplers/s00_data_fifo. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for zed_i/axi_ic_ps7_M_AXI_GP0/s00_couplers/auto_pc. (constraint file  auto generated constraint, line ).
@@ -690,20 +707,20 @@ Applied set_property DONT_TOUCH = true for zed_i/axi_ic_ps7_M_AXI_GP0/m00_couple
 Applied set_property DONT_TOUCH = true for zed_i/axi_ic_ps7_M_AXI_GP0/m01_couplers/m01_regslice. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for zed_i/axi_ic_ps7_M_AXI_GP0/m02_couplers/m02_regslice. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for zed_i/axi_ic_ps7_M_AXI_GP0/m03_couplers/m03_regslice. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for zed_i/axi_ic_ps7_S_AXI_HP1/s00_couplers/s00_regslice. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for zed_i/axi_ic_ps7_S_AXI_HP1/s00_couplers/s00_data_fifo. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for zed_i/axi_ic_ps7_S_AXI_HP1/s00_couplers/auto_pc. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for zed_i/axi_ic_ps7_S_AXI_HP0/s00_couplers/s00_regslice. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for zed_i/axi_ic_ps7_S_AXI_HP0/s00_couplers/s00_data_fifo. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for zed_i/axi_ic_ps7_S_AXI_HP0/s00_couplers/auto_pc. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for zed_i/axi_ic_ps7_S_AXI_HP2/s00_couplers/s00_regslice. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for zed_i/axi_ic_ps7_S_AXI_HP2/s00_couplers/s00_data_fifo. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for zed_i/axi_ic_ps7_S_AXI_HP2/s00_couplers/auto_pc. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for zed_i/axi_ic_ps7_S_AXI_ACP/s00_couplers/s00_regslice. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for zed_i/axi_ic_ps7_S_AXI_ACP/s00_couplers/s00_data_fifo. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for zed_i/axi_ic_ps7_S_AXI_ACP/s01_couplers/s01_regslice. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for zed_i/axi_ic_ps7_S_AXI_ACP/s01_couplers/s01_data_fifo. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for zed_i/axi_ic_ps7_S_AXI_ACP/s02_couplers/s02_regslice. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for zed_i/axi_ic_ps7_S_AXI_ACP/s02_couplers/s02_data_fifo. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for zed_i/axi_ic_ps7_S_AXI_ACP/m00_couplers/m00_data_fifo. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for zed_i/axi_ic_ps7_S_AXI_ACP/m00_couplers/m00_regslice. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for zed_i/axi_ic_ps7_S_AXI_ACP/m00_couplers/auto_pc. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 1959.754 ; gain = 244.688 ; free physical = 787 ; free virtual = 3889
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 1958.176 ; gain = 242.688 ; free physical = 271 ; free virtual = 4154
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 1959.754 ; gain = 244.688 ; free physical = 787 ; free virtual = 3889
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 1958.176 ; gain = 242.688 ; free physical = 272 ; free virtual = 4155
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -739,7 +756,7 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 1959.754 ; gain = 244.688 ; free physical = 773 ; free virtual = 3879
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:21 . Memory (MB): peak = 1958.176 ; gain = 242.688 ; free physical = 260 ; free virtual = 4146
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -766,13 +783,13 @@ INFO: [Synth 8-5578] Moved timing constraint from pin 'zed_i/clk_wiz_0/clk_out6'
 INFO: [Synth 8-5783] Moving clock source from hierarchical pin 'zed_i/clk_wiz_0/clk_in1' to 'zed_i/ps7/bbstub_FCLK_CLK0/O'
 INFO: [Synth 8-5819] Moved 8 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 1959.754 ; gain = 244.688 ; free physical = 651 ; free virtual = 3750
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 1958.176 ; gain = 242.688 ; free physical = 171 ; free virtual = 4041
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 1959.754 ; gain = 244.688 ; free physical = 680 ; free virtual = 3748
+Finished Timing Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 1958.176 ; gain = 242.688 ; free physical = 171 ; free virtual = 4040
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -784,7 +801,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:26 . Memory (MB): peak = 1959.754 ; gain = 244.688 ; free physical = 672 ; free virtual = 3751
+Finished Technology Mapping : Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 1958.176 ; gain = 242.688 ; free physical = 170 ; free virtual = 4039
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -808,7 +825,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 1959.754 ; gain = 244.688 ; free physical = 668 ; free virtual = 3749
+Finished IO Insertion : Time (s): cpu = 00:00:26 ; elapsed = 00:00:30 . Memory (MB): peak = 1958.176 ; gain = 242.688 ; free physical = 173 ; free virtual = 4042
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -821,7 +838,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 1959.754 ; gain = 244.688 ; free physical = 668 ; free virtual = 3749
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:26 ; elapsed = 00:00:30 . Memory (MB): peak = 1958.176 ; gain = 242.688 ; free physical = 173 ; free virtual = 4042
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -833,25 +850,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 1959.754 ; gain = 244.688 ; free physical = 668 ; free virtual = 3749
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:26 ; elapsed = 00:00:30 . Memory (MB): peak = 1958.176 ; gain = 242.688 ; free physical = 173 ; free virtual = 4042
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 1959.754 ; gain = 244.688 ; free physical = 668 ; free virtual = 3749
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:26 ; elapsed = 00:00:30 . Memory (MB): peak = 1958.176 ; gain = 242.688 ; free physical = 173 ; free virtual = 4042
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 1959.754 ; gain = 244.688 ; free physical = 668 ; free virtual = 3749
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:26 ; elapsed = 00:00:30 . Memory (MB): peak = 1958.176 ; gain = 242.688 ; free physical = 173 ; free virtual = 4042
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 1959.754 ; gain = 244.688 ; free physical = 668 ; free virtual = 3749
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:26 ; elapsed = 00:00:30 . Memory (MB): peak = 1958.176 ; gain = 242.688 ; free physical = 173 ; free virtual = 4042
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -869,31 +886,32 @@ Report BlackBoxes:
 |6     |zed_auto_pc_0            |         1|
 |7     |zed_s00_data_fifo_0      |         1|
 |8     |zed_s00_regslice_0       |         1|
-|9     |zed_auto_pc_2            |         1|
-|10    |zed_s00_data_fifo_2      |         1|
-|11    |zed_s00_regslice_2       |         1|
-|12    |zed_auto_pc_1            |         1|
+|9     |zed_xbar_1               |         1|
+|10    |zed_auto_pc_1            |         1|
+|11    |zed_m00_data_fifo_0      |         1|
+|12    |zed_m00_regslice_1       |         1|
 |13    |zed_s00_data_fifo_1      |         1|
 |14    |zed_s00_regslice_1       |         1|
-|15    |zed_auto_pc_3            |         1|
-|16    |zed_s00_data_fifo_3      |         1|
-|17    |zed_s00_regslice_3       |         1|
-|18    |zed_axis_dwc_dm_0_tx_0_0 |         1|
-|19    |zed_axis_dwc_dm_1_tx_0_0 |         1|
-|20    |zed_axis_dwc_dm_2_rx_0_0 |         1|
-|21    |zed_clk_wiz_0_0          |         1|
-|22    |zed_dm_0_0               |         1|
-|23    |zed_dm_1_0               |         1|
-|24    |zed_dm_2_0               |         1|
-|25    |zed_myFuncAccel_1_0      |         1|
-|26    |zed_myFuncAccel_1_if_0   |         1|
-|27    |zed_proc_sys_reset_0_0   |         1|
-|28    |zed_proc_sys_reset_1_0   |         1|
-|29    |zed_proc_sys_reset_2_0   |         1|
-|30    |zed_proc_sys_reset_3_0   |         1|
-|31    |zed_proc_sys_reset_4_0   |         1|
-|32    |zed_proc_sys_reset_5_0   |         1|
-|33    |zed_ps7_0                |         1|
+|15    |zed_s01_data_fifo_0      |         1|
+|16    |zed_s01_regslice_0       |         1|
+|17    |zed_s02_data_fifo_0      |         1|
+|18    |zed_s02_regslice_0       |         1|
+|19    |zed_axis_dwc_dm_0_tx_0_0 |         1|
+|20    |zed_axis_dwc_dm_1_tx_0_0 |         1|
+|21    |zed_axis_dwc_dm_2_rx_0_0 |         1|
+|22    |zed_clk_wiz_0_0          |         1|
+|23    |zed_dm_0_0               |         1|
+|24    |zed_dm_1_0               |         1|
+|25    |zed_dm_2_0               |         1|
+|26    |zed_myFuncAccel_1_0      |         1|
+|27    |zed_myFuncAccel_1_if_0   |         1|
+|28    |zed_proc_sys_reset_0_0   |         1|
+|29    |zed_proc_sys_reset_1_0   |         1|
+|30    |zed_proc_sys_reset_2_0   |         1|
+|31    |zed_proc_sys_reset_3_0   |         1|
+|32    |zed_proc_sys_reset_4_0   |         1|
+|33    |zed_proc_sys_reset_5_0   |         1|
+|34    |zed_ps7_0                |         1|
 +------+-------------------------+----------+
 
 Report Cell Usage: 
@@ -902,16 +920,16 @@ Report Cell Usage:
 +------+-------------------------+------+
 |1     |zed_auto_pc_0            |     1|
 |2     |zed_auto_pc_1            |     1|
-|3     |zed_auto_pc_2            |     1|
-|4     |zed_auto_pc_3            |     1|
-|5     |zed_axis_dwc_dm_0_tx_0_0 |     1|
-|6     |zed_axis_dwc_dm_1_tx_0_0 |     1|
-|7     |zed_axis_dwc_dm_2_rx_0_0 |     1|
-|8     |zed_clk_wiz_0_0          |     1|
-|9     |zed_dm_0_0               |     1|
-|10    |zed_dm_1_0               |     1|
-|11    |zed_dm_2_0               |     1|
-|12    |zed_m00_regslice_0       |     1|
+|3     |zed_axis_dwc_dm_0_tx_0_0 |     1|
+|4     |zed_axis_dwc_dm_1_tx_0_0 |     1|
+|5     |zed_axis_dwc_dm_2_rx_0_0 |     1|
+|6     |zed_clk_wiz_0_0          |     1|
+|7     |zed_dm_0_0               |     1|
+|8     |zed_dm_1_0               |     1|
+|9     |zed_dm_2_0               |     1|
+|10    |zed_m00_data_fifo_0      |     1|
+|11    |zed_m00_regslice_0       |     1|
+|12    |zed_m00_regslice_1       |     1|
 |13    |zed_m01_regslice_0       |     1|
 |14    |zed_m02_regslice_0       |     1|
 |15    |zed_m03_regslice_0       |     1|
@@ -926,58 +944,59 @@ Report Cell Usage:
 |24    |zed_ps7_0                |     1|
 |25    |zed_s00_data_fifo_0      |     1|
 |26    |zed_s00_data_fifo_1      |     1|
-|27    |zed_s00_data_fifo_2      |     1|
-|28    |zed_s00_data_fifo_3      |     1|
-|29    |zed_s00_regslice_0       |     1|
-|30    |zed_s00_regslice_1       |     1|
-|31    |zed_s00_regslice_2       |     1|
-|32    |zed_s00_regslice_3       |     1|
+|27    |zed_s00_regslice_0       |     1|
+|28    |zed_s00_regslice_1       |     1|
+|29    |zed_s01_data_fifo_0      |     1|
+|30    |zed_s01_regslice_0       |     1|
+|31    |zed_s02_data_fifo_0      |     1|
+|32    |zed_s02_regslice_0       |     1|
 |33    |zed_xbar_0               |     1|
+|34    |zed_xbar_1               |     1|
 +------+-------------------------+------+
 
 Report Instance Areas: 
 +------+-------------------------+---------------------------+------+
 |      |Instance                 |Module                     |Cells |
 +------+-------------------------+---------------------------+------+
-|1     |top                      |                           |  4344|
-|2     |  zed_i                  |zed                        |  4344|
-|3     |    axi_ic_ps7_M_AXI_GP0 |zed_axi_ic_ps7_M_AXI_GP0_0 |  1542|
-|4     |      m00_couplers       |m00_couplers_imp_78ZREA    |   152|
-|5     |      m01_couplers       |m01_couplers_imp_1JEV113   |   108|
-|6     |      m02_couplers       |m02_couplers_imp_XZH261    |   108|
-|7     |      m03_couplers       |m03_couplers_imp_1AL9PDO   |   108|
-|8     |      s00_couplers       |s00_couplers_imp_1DPWUA0   |   581|
-|9     |    axi_ic_ps7_S_AXI_HP0 |zed_axi_ic_ps7_S_AXI_HP0_0 |   382|
-|10    |      s00_couplers       |s00_couplers_imp_1UFEPRT   |   382|
-|11    |    axi_ic_ps7_S_AXI_HP1 |zed_axi_ic_ps7_S_AXI_HP1_0 |   382|
-|12    |      s00_couplers       |s00_couplers_imp_T2XX2Y    |   382|
-|13    |    axi_ic_ps7_S_AXI_HP2 |zed_axi_ic_ps7_S_AXI_HP2_0 |   412|
-|14    |      s00_couplers       |s00_couplers_imp_GGOBI6    |   412|
+|1     |top                      |                           |  4987|
+|2     |  zed_i                  |zed                        |  4987|
+|3     |    axcache_0xE          |zed_axcache_0xE_0          |     0|
+|4     |    axi_ic_ps7_M_AXI_GP0 |zed_axi_ic_ps7_M_AXI_GP0_0 |  1542|
+|5     |      m00_couplers       |m00_couplers_imp_78ZREA    |   152|
+|6     |      m01_couplers       |m01_couplers_imp_1JEV113   |   108|
+|7     |      m02_couplers       |m02_couplers_imp_XZH261    |   108|
+|8     |      m03_couplers       |m03_couplers_imp_1AL9PDO   |   108|
+|9     |      s00_couplers       |s00_couplers_imp_1DPWUA0   |   581|
+|10    |    axi_ic_ps7_S_AXI_ACP |zed_axi_ic_ps7_S_AXI_ACP_0 |  2072|
+|11    |      m00_couplers       |m00_couplers_imp_DBAVE2    |   822|
+|12    |      s00_couplers       |s00_couplers_imp_11FMYJ4   |   264|
+|13    |      s01_couplers       |s01_couplers_imp_PDU4ET    |   264|
+|14    |      s02_couplers       |s02_couplers_imp_1S0JE3F   |   284|
 |15    |    sds_irq_const        |zed_sds_irq_const_0        |     0|
 |16    |    xlconcat_0           |zed_xlconcat_0_0           |     0|
 +------+-------------------------+---------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 1959.754 ; gain = 244.688 ; free physical = 668 ; free virtual = 3749
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:26 ; elapsed = 00:00:30 . Memory (MB): peak = 1958.176 ; gain = 242.688 ; free physical = 173 ; free virtual = 4042
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 16 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1959.754 ; gain = 0.000 ; free physical = 726 ; free virtual = 3808
-Synthesis Optimization Complete : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 1959.762 ; gain = 244.688 ; free physical = 737 ; free virtual = 3818
+Synthesis finished with 0 errors, 0 critical warnings and 20 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 1958.176 ; gain = 0.000 ; free physical = 231 ; free virtual = 4100
+Synthesis Optimization Complete : Time (s): cpu = 00:00:26 ; elapsed = 00:00:30 . Memory (MB): peak = 1958.184 ; gain = 242.688 ; free physical = 242 ; free virtual = 4111
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1959.762 ; gain = 0.000 ; free physical = 666 ; free virtual = 3745
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1958.184 ; gain = 0.000 ; free physical = 166 ; free virtual = 4040
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-133 Infos, 121 Warnings, 0 Critical Warnings and 0 Errors encountered.
+137 Infos, 130 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 1959.762 ; gain = 244.801 ; free physical = 713 ; free virtual = 3792
+synth_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:32 . Memory (MB): peak = 1958.184 ; gain = 242.801 ; free physical = 212 ; free virtual = 4086
 INFO: [Common 17-600] The following parameters have non-default value.
 general.maxThreads
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1959.762 ; gain = 0.000 ; free physical = 713 ; free virtual = 3792
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1958.184 ; gain = 0.000 ; free physical = 212 ; free virtual = 4086
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint '/home/skalogerakis/TUC_Projects/TUC_HLS/MyCode/MIlestone3/SDSOC_Accel/Algo_4/Debug/_sds/p0/vivado/prj/prj.runs/synth_1/zed_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file zed_wrapper_utilization_synth.rpt -pb zed_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Wed Dec 11 01:05:56 2019...
+INFO: [Common 17-206] Exiting Vivado at Thu Dec 12 23:35:09 2019...
